@@ -2,6 +2,8 @@ import { Fragment, useState } from "react";
 import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { navigation } from "@/data/navigation";
+import Link from "next/link";
+import { getProductUrl } from "@/utils";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -88,8 +90,8 @@ export const Navigation = () => {
                                   className="object-cover object-center"
                                 />
                               </div>
-                              <a
-                                href={item.href}
+                              <Link
+                                href={getProductUrl(item, category)}
                                 className="mt-6 block text-sm font-medium text-gray-900"
                               >
                                 <span
@@ -97,7 +99,7 @@ export const Navigation = () => {
                                   aria-hidden="true"
                                 />
                                 {item.name}
-                              </a>
+                              </Link>
                             </div>
                           ))}
                         </div>
@@ -110,7 +112,7 @@ export const Navigation = () => {
                   {navigation.pages.map((page) => (
                     <div key={page.name} className="flow-root">
                       <a
-                        href={page.href}
+                        href={page.slug}
                         className="-m-2 block p-2 font-medium text-gray-900"
                       >
                         {page.name}
@@ -133,14 +135,14 @@ export const Navigation = () => {
                 <div className="flex h-16 items-center justify-between">
                   {/* Logo (lg+) */}
                   <div className="hidden lg:flex lg:items-center">
-                    <a href="#" className="flex items-center gap-6">
+                    <Link href="/" className="flex items-center gap-6">
                       <img
                         className="h-8 w-auto"
                         src="https://tailwindui.com/img/logos/mark.svg?color=amber&shade=600"
                         alt=""
                       />
                       <span className="font-bold">OASOME Furnitures</span>
-                    </a>
+                    </Link>
                   </div>
 
                   <div className="hidden h-full lg:flex">
@@ -182,7 +184,17 @@ export const Navigation = () => {
 
                                     <div className="relative bg-white">
                                       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                                        <div className="grid grid-cols-4 gap-x-8 gap-y-10 py-16">
+                                        <Link
+                                          href={`/categories/${category.slug}`}
+                                          className="hidden text-sm font-semibold pt-4 text-amber-600 hover:text-amber-500 sm:block"
+                                        >
+                                          Browse all the {category.name}
+                                          <span aria-hidden="true">
+                                            {" "}
+                                            &rarr;
+                                          </span>
+                                        </Link>
+                                        <div className="grid grid-cols-4 gap-x-8 gap-y-10 pt-8 pb-12">
                                           {category.featured.map((item) => (
                                             <div
                                               key={item.name}
@@ -194,8 +206,11 @@ export const Navigation = () => {
                                                   className="object-cover object-center"
                                                 />
                                               </div>
-                                              <a
-                                                href={item.href}
+                                              <Link
+                                                href={getProductUrl(
+                                                  item,
+                                                  category
+                                                )}
                                                 className="mt-4 block font-medium text-gray-900"
                                               >
                                                 <span
@@ -203,7 +218,7 @@ export const Navigation = () => {
                                                   aria-hidden="true"
                                                 />
                                                 {item.name}
-                                              </a>
+                                              </Link>
                                             </div>
                                           ))}
                                         </div>
@@ -219,7 +234,7 @@ export const Navigation = () => {
                         {navigation.pages.map((page) => (
                           <a
                             key={page.name}
-                            href={page.href}
+                            href={page.slug}
                             className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
                           >
                             {page.name}

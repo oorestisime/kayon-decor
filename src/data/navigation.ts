@@ -3,8 +3,8 @@ import { categories } from "./store";
 export const navigation = {
   categories: categories.filter((category) => category.featured?.length > 0),
   pages: [
-    { name: "FAQ", href: "#" },
-    { name: "Get In Touch", href: "#" },
+    { name: "FAQ", slug: "#" },
+    { name: "Get In Touch", slug: "#" },
   ],
 };
 

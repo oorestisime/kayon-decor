@@ -1,7 +1,7 @@
 export const products = [
   {
     name: "Oval Cutting Boards",
-    href: "#",
+    slug: "oval-cutting-boards",
     category: "cat-kitchenware",
     featured: true,
     favorite: true,
@@ -29,8 +29,8 @@ export const products = [
     ],
   },
   {
-    name: "Carved Wood Bowls",
-    href: "#",
+    name: "Carved Bowls",
+    slug: "carved-bowls",
     category: "cat-kitchenware",
     featured: true,
     images: [
@@ -57,8 +57,8 @@ export const products = [
     ],
   },
   {
-    name: "Teak wood Bowls",
-    href: "#",
+    name: "Teak Bowls",
+    slug: "teak-bowls",
     category: "cat-kitchenware",
     featured: true,
     images: [
@@ -86,7 +86,7 @@ export const products = [
   },
   {
     name: "Ustensils",
-    href: "#",
+    slug: "ustensils",
     category: "cat-kitchenware",
     featured: true,
     images: [
@@ -113,8 +113,8 @@ export const products = [
     ],
   },
   {
-    name: "Tables",
-    href: "#",
+    name: "Solid Wood Tables",
+    slug: "solid-wood-tables",
     category: "cat-furniture",
     featured: true,
     favorite: true,
@@ -143,7 +143,7 @@ export const products = [
   },
   {
     name: "Chairs A",
-    href: "#",
+    slug: "#",
     category: "cat-furniture",
     featured: true,
     images: [
@@ -171,7 +171,7 @@ export const products = [
   },
   {
     name: "Chairs B",
-    href: "#",
+    slug: "#",
     category: "cat-furniture",
     featured: true,
     images: [
@@ -199,7 +199,7 @@ export const products = [
   },
   {
     name: "Side Tables",
-    href: "#",
+    slug: "#",
     category: "cat-furniture",
     featured: true,
     images: [
@@ -227,7 +227,7 @@ export const products = [
   },
   {
     name: "Gucci",
-    href: "#",
+    slug: "#",
     category: "cat-decoration",
     featured: true,
     favorite: true,
@@ -256,7 +256,7 @@ export const products = [
   },
   {
     name: "Wooden fossils",
-    href: "#",
+    slug: "#",
     category: "cat-decoration",
     featured: true,
     images: [
@@ -284,7 +284,7 @@ export const products = [
   },
   {
     name: "Carved Items",
-    href: "#",
+    slug: "#",
     category: "cat-decoration",
     featured: true,
     images: [
@@ -312,7 +312,7 @@ export const products = [
   },
   {
     name: "Baskets",
-    href: "#",
+    slug: "#",
     category: "cat-decoration",
     featured: true,
     images: [
@@ -344,7 +344,7 @@ export const categories = [
   {
     id: "cat-furniture",
     name: "Furniture",
-    href: "furniture",
+    slug: "furniture",
     description: "Hand crafted furniture from Bali",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-03-featured-category.jpg",
@@ -355,7 +355,7 @@ export const categories = [
   {
     id: "cat-kitchenware",
     name: "Kitchenware",
-    href: "kitchenware",
+    slug: "kitchenware",
     description: "Hand crafted kitchenware from Bali",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-03-category-01.jpg",
@@ -366,7 +366,7 @@ export const categories = [
   {
     id: "cat-decoration",
     name: "Decoration",
-    href: "decoration",
+    slug: "decoration",
     description: "Hand crafted decoration from Bali",
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-03-category-02.jpg",
