@@ -10,6 +10,8 @@ import {
 } from "@/data/store";
 import { Favorite } from "@/components/Favorite";
 import { Story } from "@/components/Story";
+import leaf from "@/public/Autumn-leaf-plate.png";
+import Image from "next/image";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -42,9 +44,10 @@ function Product({
                       {({ selected }) => (
                         <>
                           <span className="absolute inset-0 overflow-hidden rounded-md">
-                            <img
+                            <Image
                               src={image}
                               className="h-full w-full object-cover object-center"
+                              alt="product image"
                             />
                           </span>
                           <span
@@ -65,8 +68,9 @@ function Product({
                 {product.images.map((image) => (
                   <Tab.Panel key={image}>
                     <img
-                      src={image}
-                      className="h-full w-full object-cover object-center sm:rounded-lg"
+                      src={require(image)}
+                      className="h-full w-full object-cover object-center"
+                      alt="product image"
                     />
                   </Tab.Panel>
                 ))}

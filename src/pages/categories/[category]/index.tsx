@@ -36,7 +36,7 @@ function Category({
                 className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg lg:aspect-h-6 lg:aspect-w-5 group-hover:opacity-75"
               >
                 <img
-                  src={product.images[0]}
+                  src={require(product.images[0])}
                   className="h-full w-full object-cover object-center"
                 />
               </div>
