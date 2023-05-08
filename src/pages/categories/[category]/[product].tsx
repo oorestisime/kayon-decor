@@ -10,7 +10,6 @@ import {
 } from "@/data/store";
 import { Favorite } from "@/components/Favorite";
 import { Story } from "@/components/Story";
-import leaf from "@/public/Autumn-leaf-plate.png";
 import Image from "next/image";
 
 function classNames(...classes: string[]) {
@@ -67,8 +66,8 @@ function Product({
               <Tab.Panels className="aspect-h-1 aspect-w-1 w-full">
                 {product.images.map((image) => (
                   <Tab.Panel key={image}>
-                    <img
-                      src={require(image)}
+                    <Image
+                      src={image}
                       className="h-full w-full object-cover object-center"
                       alt="product image"
                     />
@@ -86,7 +85,7 @@ function Product({
               <div className="mt-3">
                 <h2 className="sr-only">Product information</h2>
                 <p className="text-3xl tracking-tight text-gray-900">
-                  {selectedVariant.price}
+                  €{selectedVariant.price}
                 </p>
               </div>
 

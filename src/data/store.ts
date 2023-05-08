@@ -1,3 +1,8 @@
+import AutomnLeafPlate from "@/images/Autumn-leaf-plate/Autumn-leaf-plate.png";
+import AutomnLeafPlate2 from "@/images/Autumn-leaf-plate/Autumn-leaf-plate2.png";
+import AutomnLeafPlate3 from "@/images/Autumn-leaf-plate/Autumn-leaf-plate3.jpeg";
+import AutomnLeafPlate4 from "@/images/Autumn-leaf-plate/Autumn-leaf-plate4.jpeg";
+
 export const products = [
   {
     name: "Leaf shaped tableware",
@@ -7,7 +12,12 @@ export const products = [
     favorite: true,
     descriptions:
       "Eco-friendly and stylish, the Wooden Leaf Plate is handcrafted from teak wood, showcasing natural beauty and sustainability.",
-    images: [],
+    images: [
+      AutomnLeafPlate,
+      AutomnLeafPlate2,
+      AutomnLeafPlate3,
+      AutomnLeafPlate4,
+    ],
     variants: [
       {
         size: "Small",
