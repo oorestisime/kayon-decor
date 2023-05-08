@@ -6,7 +6,6 @@ import {
   ProductType,
   products as allProducts,
   categories,
-  products,
 } from "@/data/store";
 import { Favorite } from "@/components/Favorite";
 import { Story } from "@/components/Story";

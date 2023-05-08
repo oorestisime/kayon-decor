@@ -1,7 +1,184 @@
-import AutomnLeafPlate from "@/images/Autumn-leaf-plate/Autumn-leaf-plate.png";
-import AutomnLeafPlate2 from "@/images/Autumn-leaf-plate/Autumn-leaf-plate2.png";
-import AutomnLeafPlate3 from "@/images/Autumn-leaf-plate/Autumn-leaf-plate3.jpeg";
-import AutomnLeafPlate4 from "@/images/Autumn-leaf-plate/Autumn-leaf-plate4.jpeg";
+import OwlShaped from "@/images/Owl-shaped-plate/owl-shaped.png";
+import PizzaPlateRound1 from "@/images/Pizza-plate-round/pizza-plate-round-1.jpeg";
+import PizzaPlateRound2 from "@/images/Pizza-plate-round/pizza-plate-round-2.jpeg";
+import LoveBirdPlate from "@/images/love-bird-plate/love bird plate.png";
+import WoodenTrays6 from "@/images/Wooden-Trays-rectangles/Wooden-trays6.jpeg";
+import WoodenTrays7 from "@/images/Wooden-Trays-rectangles/Wooden-trays7.jpeg";
+import WoodenTrays10 from "@/images/Wooden-Trays-rectangles/Wooden-trays10.jpeg";
+import WoodenTrays2 from "@/images/Wooden-Trays-rectangles/Wooden-trays2.png";
+import WoodenTrays3 from "@/images/Wooden-Trays-rectangles/Wooden-trays3.jpeg";
+import WoodenTrays8 from "@/images/Wooden-Trays-rectangles/Wooden-trays8.jpeg";
+import WoodenTrays4 from "@/images/Wooden-Trays-rectangles/Wooden-trays4.jpeg";
+import WoodenTrays5 from "@/images/Wooden-Trays-rectangles/Wooden-trays5.jpeg";
+import WoodenTrays from "@/images/Wooden-Trays-rectangles/Wooden-trays.png";
+import WoodenTrays9 from "@/images/Wooden-Trays-rectangles/Wooden-trays9.jpeg";
+import TheFlowerPotBowl2 from "@/images/Bowls/The-flower-pot-bowl-2.jpeg";
+import TreatsServingBowl2 from "@/images/Bowls/Treats-serving-bowl-2.jpeg";
+import TheAshtrayBowl2 from "@/images/Bowls/The-ashtray-bowl-2.jpeg";
+import SaladBowl2 from "@/images/Bowls/Salad-bowl-2.jpeg";
+import DeepBowlWithLid9 from "@/images/Bowls/Deep-bowl-with-lid-9.jpeg";
+import RiceBowl5 from "@/images/Bowls/Rice-bowl-5.jpeg";
+import DesignBowlsBoard1 from "@/images/Bowls/Design-bowls-board-1.jpeg";
+import TheFlowerPotBowl from "@/images/Bowls/The-flower-pot-bowl.jpeg";
+import SnackBowl1 from "@/images/Bowls/Snack-bowl-1.jpeg";
+import DeepBowlWithLid5 from "@/images/Bowls/Deep-bowl-with-lid-5.jpeg";
+import DeepBowlWithLid4 from "@/images/Bowls/Deep-bowl-with-lid-4.jpeg";
+import OatsBreakfastBowl2 from "@/images/Bowls/Oats-breakfast-bowl-2.jpeg";
+import RiceBowl4 from "@/images/Bowls/Rice-bowl-4.jpeg";
+import DeepBowlWithLid8 from "@/images/Bowls/Deep-bowl-with-lid-8.jpeg";
+import TheAshtrayBowl3 from "@/images/Bowls/The-ashtray-bowl-3.jpeg";
+import TheFlowerPotBowl3 from "@/images/Bowls/The-flower-pot-bowl-3.jpeg";
+import DesignBowlsBoard7 from "@/images/Bowls/Design-bowls-board-7.jpeg";
+import DesignBowlsBoard11 from "@/images/Bowls/Design-bowls-board-11.jpeg";
+import ServingBowl2 from "@/images/Bowls/Serving-bowl-2.jpeg";
+import DeepBowlWithLid3 from "@/images/Bowls/Deep-bowl-with-lid-3.jpeg";
+import PopcornBowl3 from "@/images/Bowls/Popcorn-bowl-3.jpeg";
+import DeepBowlWithLid11 from "@/images/Bowls/Deep-bowl-with-lid-11.jpeg";
+import TheFlowerPotBowl4 from "@/images/Bowls/The-flower-pot-bowl-4.jpeg";
+import YoghurtBowl1 from "@/images/Bowls/Yoghurt-bowl-1.jpeg";
+import TheAshtrayBowl4 from "@/images/Bowls/The-ashtray-bowl-4.jpeg";
+import AcaiBowl from "@/images/Bowls/acai-bowl.png";
+import RiceBowl3 from "@/images/Bowls/Rice-bowl-3.jpeg";
+import RiceBowl2 from "@/images/Bowls/Rice-bowl-2.jpeg";
+import CerealBowl1 from "@/images/Bowls/Cereal-bowl-1.jpeg";
+import TheAshtrayBowl5 from "@/images/Bowls/The-ashtray-bowl-5.jpeg";
+import PopcornBowl2 from "@/images/Bowls/Popcorn-bowl-2.jpeg";
+import DeepBowlWithLid10 from "@/images/Bowls/Deep-bowl-with-lid-10.jpeg";
+import ServingBowl3 from "@/images/Bowls/Serving-bowl-3.jpeg";
+import DeepBowlWithLid2 from "@/images/Bowls/Deep-bowl-with-lid-2.jpeg";
+import DesignBowlsBoard6 from "@/images/Bowls/Design-bowls-board-6.jpeg";
+import DesignBowlsBoard10 from "@/images/Bowls/Design-bowls-board-10.jpeg";
+import DeepBowlWithLid1 from "@/images/Bowls/Deep-bowl-with-lid-1.jpeg";
+import DesignBowlsBoard5 from "@/images/Bowls/Design-bowls-board-5.jpeg";
+import RiceBowl1 from "@/images/Bowls/Rice-bowl-1.jpeg";
+import CerealBowl2 from "@/images/Bowls/Cereal-bowl-2.jpeg";
+import TheAshtrayBowl6 from "@/images/Bowls/The-ashtray-bowl-6.jpeg";
+import YoghurtBowl3 from "@/images/Bowls/Yoghurt-bowl-3.jpeg";
+import DesignBowlsBoard9 from "@/images/Bowls/Design-bowls-board-9.jpeg";
+import DeepBowlWithLid13 from "@/images/Bowls/Deep-bowl-with-lid-13.jpeg";
+import PopcornBowl1 from "@/images/Bowls/Popcorn-bowl-1.jpeg";
+import DeepBowlWithLid12 from "@/images/Bowls/Deep-bowl-with-lid-12.jpeg";
+import YoghurtBowl2 from "@/images/Bowls/Yoghurt-bowl-2.jpeg";
+import DesignBowlsBoard8 from "@/images/Bowls/Design-bowls-board-8.jpeg";
+import CerealBowl3 from "@/images/Bowls/Cereal-bowl-3.jpeg";
+import DesignBowlsBoard4 from "@/images/Bowls/Design-bowls-board-4.jpeg";
+import ServingBowl1 from "@/images/Bowls/Serving-bowl-1.jpeg";
+import CerealBowl4 from "@/images/Bowls/Cereal-bowl-4.jpeg";
+import DeepBowlWithLid15 from "@/images/Bowls/Deep-bowl-with-lid-15.jpeg";
+import DeepBowlWithLid7 from "@/images/Bowls/Deep-bowl-with-lid-7.jpeg";
+import OatsBreakfastBowl1 from "@/images/Bowls/Oats-breakfast-bowl-1.jpeg";
+import DesignBowlsBoard3 from "@/images/Bowls/Design-bowls-board-3.jpeg";
+import DesignBowlsBoard2 from "@/images/Bowls/Design-bowls-board-2.jpeg";
+import SnackBowl2 from "@/images/Bowls/Snack-bowl-2.jpeg";
+import DeepBowlWithLid6 from "@/images/Bowls/Deep-bowl-with-lid-6.jpeg";
+import BowlPhotoGeneral from "@/images/Bowls/photo general.png";
+import DeepBowlWithLid14 from "@/images/Bowls/Deep-bowl-with-lid-14.jpeg";
+import TheAshtrayBowl1 from "@/images/Bowls/The-ashtray-bowl-1.jpeg";
+import TreatsServingBowl1 from "@/images/Bowls/Treats-serving-bowl-1.jpeg";
+import SaladBowl1 from "@/images/Bowls/Salad-bowl-1.jpeg";
+import TwomLongSuarWoodTableWithLeg from "@/images/Wooden Tables/2m-long-suar-wood-table-with-leg.png";
+import ThreemLongSuarWoodTableWithLeg2 from "@/images/Wooden Tables/3m-long-suar-wood-table-with-leg2.jpeg";
+import TwomLongSuarWoodTableWithLeg3 from "@/images/Wooden Tables/2m-long-suar-wood-table-with-leg3.jpeg";
+import ThreemLongSuarWoodTableWithLeg3 from "@/images/Wooden Tables/3m-long-suar-wood-table-with-leg3.jpeg";
+import TwomLongSuarWoodTableWithLeg2 from "@/images/Wooden Tables/2m-long-suar-wood-table-with-leg-2.png";
+import Twom5LongSuarWoodTableWithLeg from "@/images/Wooden Tables/2.5m-long-suar-wood-table-with-star-leg.jpg";
+import Onem5LongSuarWoodTableWithLeg from "@/images/Wooden Tables/1,5m-long-suar-wood-table-with-leg.jpeg";
+import ThreemLongSuarWoodTableWithLeg from "@/images/Wooden Tables/3m-long-suar-wood-table-with-leg.jpeg";
+import TheSquareWoodenPlate2 from "@/images/The-square-wooden-plate/The-square-wooden-plate2.jpeg";
+import TheSquareWoodenPlate3 from "@/images/The-square-wooden-plate/The-square-wooden-plate3.jpeg";
+import TheSquareWoodenPlate from "@/images/The-square-wooden-plate/The-square-wooden-plate.jpeg";
+import TheSquareWoodenPlateDesignInsta from "@/images/The-square-wooden-plate/The-square-wooden-plate-design-insta.jpeg";
+import TheTrayPlatter from "@/images/The-tray-platter/The-tray-platter.png";
+import PeanutBowl from "@/images/Peanut bowl/Peanut-bowl.png";
+import TheWoodenRockPlate2 from "@/images/The-wooden-rock-plate/The-wooden-rock-plate2.jpeg";
+import TheWoodenRockPlate3 from "@/images/The-wooden-rock-plate/The-wooden-rock-plate3.jpeg";
+import TheWoodenRockPlate4 from "@/images/The-wooden-rock-plate/The-wooden-rock-plate4.jpeg";
+import TheWoodenRockPlateDesigned1 from "@/images/The-wooden-rock-plate/The-wooden-rock-plate-designed1.jpeg";
+import TheWoodenRockPlate from "@/images/The-wooden-rock-plate/The-wooden-rock-plate.png";
+import TheWoodenRockPlateDesigned2 from "@/images/The-wooden-rock-plate/The-wooden-rock-plate-designed2.jpeg";
+import HeartShapedSmall from "@/images/heart-shaped-plate/heart-shaped-small.png";
+import HeartShapedBig from "@/images/heart-shaped-plate/heart-shaped-big.png";
+import TheSquarePizzaPlate2 from "@/images/The-square-pizza-plate/The-square-pizza-plate2.png";
+import TheSquarePizzaPlate from "@/images/The-square-pizza-plate/The-square-pizza-plate.png";
+import TheWaveBowl from "@/images/The wave bowl/The-wave-bowl.jpg";
+import SoapBottle from "@/images/Wooden-Soap-dispenser/Soap-bottle.png";
+import TheMoonPlatter2 from "@/images/The-moon-platter/The moon platter2.png";
+import TheMoonPlatter from "@/images/The-moon-platter/The moon platter.png";
+import TeakWoodUtensils4 from "@/images/Wooden-Utensils/Teak_wood_utensils-4.jpeg";
+import TeakWoodUtensils2 from "@/images/Wooden-Utensils/Teak_wood_utensils-2.jpeg";
+import TeakWoodUtensils5 from "@/images/Wooden-Utensils/Teak_wood_utensils-5.png";
+import TeakWoodUtensils7 from "@/images/Wooden-Utensils/Teak_wood_utensils-7.png";
+import TeakWoodUtensils3 from "@/images/Wooden-Utensils/Teak_wood_utensils-3.jpeg";
+import TeakWoodUtensils6 from "@/images/Wooden-Utensils/Teak_wood_utensils-6.png";
+import TeakWoodUtensils8 from "@/images/Wooden-Utensils/Teak_wood_utensils-8.png";
+import TeakWoodUtensils9 from "@/images/Wooden-Utensils/Teak_wood_utensils-9.png";
+import TeakWoodUtensils1 from "@/images/Wooden-Utensils/Teak_wood_utensils-1.jpeg";
+import PhotoGeneral from "@/images/Wooden-Utensils/photo-general.png";
+import TeakWoodUtensils12 from "@/images/Wooden-Utensils/Teak_wood_utensils-12.png";
+import TeakWoodUtensils10 from "@/images/Wooden-Utensils/Teak_wood_utensils-10.jpg";
+import TeakWoodUtensils11 from "@/images/Wooden-Utensils/Teak_wood_utensils-11.png";
+import TheNemoPlate from "@/images/The-Nemo-plate/The Nemo plate.png";
+import LeafShaped from "@/images/Leaf-shaped-tableware/leaf-shaped.jpg";
+import LeafShaped2 from "@/images/Leaf-shaped-tableware/leaf-shaped2.jpeg";
+import LeafShaped3 from "@/images/Leaf-shaped-tableware/leaf-shaped3.jpeg.png";
+import AutumnLeafPlate2 from "@/images/Autumn-leaf-plate/Autumn-leaf-plate2.png";
+import AutumnLeafPlate from "@/images/Autumn-leaf-plate/Autumn-leaf-plate.png";
+import AutumnLeafPlate4 from "@/images/Autumn-leaf-plate/Autumn-leaf-plate4.jpeg";
+import AutumnLeafPlate3 from "@/images/Autumn-leaf-plate/Autumn-leaf-plate3.jpeg";
+import PrepBoard from "@/images/boards/Prep - Board.png";
+import CuttingBoard2 from "@/images/boards/Cutting - Board-2.png";
+import FishBoard from "@/images/boards/Fish- Board.png";
+import RusticBoard4 from "@/images/boards/Rustic-board4.jpeg";
+import CheeseBoard from "@/images/boards/Cheese-Board.png";
+import FishBoard2 from "@/images/boards/Fish-board-2.png";
+import RusticBoard5 from "@/images/boards/Rustic-board5.jpeg";
+import VegetablesBoard from "@/images/boards/Vegetables - Board.png";
+import RusticBoard2 from "@/images/boards/Rustic-board2.jpeg";
+import RusticBoard3 from "@/images/boards/Rustic-board3.jpeg";
+import MeatBoard from "@/images/boards/Meat - Board.jpeg";
+import FruitBoard from "@/images/boards/Fruit-Board.png";
+import CuttingBoard from "@/images/boards/Cutting - Board.png";
+import RusticBoard6 from "@/images/boards/Rustic-board6.jpeg";
+import DeliBoard from "@/images/boards/Deli-Board.png";
+import RusticBoard from "@/images/boards/Rustic-board.jpeg";
+import AppetizerBoard from "@/images/boards/Appetizer - Board.png";
+import MunchingPlatter from "@/images/The-munching-platter/Munching platter.png";
+import DecoWoodenStand from "@/images/Deco-wooden-stand/Deco-wooden-stand.png";
+import GrindingBowl from "@/images/grinding-bowl/grinding-bowl.png";
+import BasketsBlackSmall30 from "@/images/Baskets-black/baskets-black-small-30.jpeg";
+import BasketsBlackMedium35 from "@/images/Baskets-black/baskets-black-medium-35.jpeg";
+import BasketsBlackLarge40 from "@/images/Baskets-black/baskets-black-large-40.jpeg";
+import BasketsBlackAll from "@/images/Baskets-black/baskets-black-all.jpeg";
+import NoodleBowl from "@/images/Noodles-bowl/noodle bowl.jpg";
+import MargheritaPlate from "@/images/Margherita-plate/Margherita-plate.png";
+import MargheritaPlate2 from "@/images/Margherita-plate/Margherita-plate2.jpeg";
+import MargheritaPlate3 from "@/images/Margherita-plate/Margherita-plate3.jpeg";
+import BasketsWhiteSmall30 from "@/images/Baskets-white/baskets-white-small-30.jpeg";
+import BasketsWhiteAll2 from "@/images/Baskets-white/baskets-white-all-2.jpeg";
+import BasketsWhiteAll from "@/images/Baskets-white/baskets-white-all.jpeg";
+import BasketsWhiteSmallMedium2 from "@/images/Baskets-white/baskets-white-small-medium2.jpeg";
+import BasketsWhiteMedium35 from "@/images/Baskets-white/baskets-white-medium-35.jpeg";
+import BasketsWhiteLarge40 from "@/images/Baskets-white/baskets-white-large-40.jpeg";
+import BasketsWhiteSmallMedium from "@/images/Baskets-white/baskets-white-small-medium.jpeg";
+import BigGucci4 from "@/images/Gucci/Big-gucci4.jpeg";
+import SmallGucci4 from "@/images/Gucci/Small-gucci4.jpeg";
+import BigGucci8 from "@/images/Gucci/Big-gucci8.jpeg";
+import BigGucci5 from "@/images/Gucci/Big-gucci5.jpeg";
+import BigGucci2 from "@/images/Gucci/Big-gucci2.jpeg";
+import SmallGucci2 from "@/images/Gucci/Small-gucci2.jpeg";
+import SmallGucci3 from "@/images/Gucci/Small-gucci3.jpeg";
+import BigGucci3 from "@/images/Gucci/Big-gucci3.jpeg";
+import TwoGucci5 from "@/images/Gucci/Two-gucci5.jpeg";
+import SmallGucci from "@/images/Gucci/Small-gucci.jpeg";
+import TwoGucci4 from "@/images/Gucci/Two-gucci4.jpeg";
+import BigGucci6 from "@/images/Gucci/Big-gucci6.jpeg";
+import BigGucci from "@/images/Gucci/Big-gucci.jpeg";
+import TwoGucci3 from "@/images/Gucci/Two-gucci3.jpeg";
+import TwoGucci2 from "@/images/Gucci/Two-gucci2.jpeg";
+import TwoGucci from "@/images/Gucci/Two-gucci.jpeg";
+import BigGucci7 from "@/images/Gucci/Big-gucci7.jpeg";
+import BearShapedTablewear2 from "@/images/Bear-shaped-tableware/bear-shaped-tablewear-2.jpg.jpeg";
+import BearShapedTablewear3 from "@/images/Bear-shaped-tableware/bear-shaped-tablewear-3.jpg.jpeg";
 
 export const products = [
   {
@@ -13,10 +190,11 @@ export const products = [
     descriptions:
       "Eco-friendly and stylish, the Wooden Leaf Plate is handcrafted from teak wood, showcasing natural beauty and sustainability.",
     images: [
-      AutomnLeafPlate,
-      AutomnLeafPlate2,
-      AutomnLeafPlate3,
-      AutomnLeafPlate4,
+      "Autumn-leaf-plate/Autumn-leaf-plate",
+      AutumnLeafPlate,
+      AutumnLeafPlate2,
+      AutumnLeafPlate3,
+      AutumnLeafPlate4,
     ],
     variants: [
       {
@@ -44,11 +222,7 @@ export const products = [
     featured: true,
     description:
       "Embrace whimsical charm with the Teak Bear Shaped Plate. Handcrafted from premium teak wood, this adorable plate showcases a delightful bear design that adds a touch of playfulness to your dining experience. Crafted with precision and attention to detail, it combines functionality with artistic flair, making it a unique and eye-catching addition to your tableware collection.",
-    images: [
-      // "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg",
-      // "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-02.jpg",
-      // "https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-03.jpg",
-    ],
+    images: [BearShapedTablewear2, BearShapedTablewear3],
     variants: [
       {
         size: "Small",
