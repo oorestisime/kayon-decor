@@ -34,9 +34,9 @@ function Product({
               {/* Image selector */}
               <div className="mx-auto mt-6 hidden w-full max-w-2xl sm:block lg:max-w-none">
                 <Tab.List className="grid grid-cols-4 gap-6">
-                  {product.images.map((image) => (
+                  {product.images.map((image, index) => (
                     <Tab
-                      key={image}
+                      key={index}
                       className="relative flex h-24 cursor-pointer items-center justify-center rounded-md bg-white text-sm font-medium uppercase text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-offset-4"
                     >
                       {({ selected }) => (
@@ -63,8 +63,8 @@ function Product({
               </div>
 
               <Tab.Panels className="aspect-h-1 aspect-w-1 w-full">
-                {product.images.map((image) => (
-                  <Tab.Panel key={image}>
+                {product.images.map((image, index) => (
+                  <Tab.Panel key={index}>
                     <Image
                       src={image}
                       className="h-full w-full object-cover object-center"
