@@ -4,6 +4,8 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { navigation } from "@/data/navigation";
 import Link from "next/link";
 import { getProductUrl } from "@/utils";
+import Image from "next/image";
+import KayonLogo from "@/images/Logo/Brown_Logo.png";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -85,9 +87,10 @@ export const Navigation = () => {
                           {category.featured.map((item) => (
                             <div key={item.name} className="group relative">
                               <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
-                                <img
+                                <Image
                                   src={item.images[0]}
                                   className="object-cover object-center"
+                                  alt="item image"
                                 />
                               </div>
                               <Link
@@ -136,12 +139,8 @@ export const Navigation = () => {
                   {/* Logo (lg+) */}
                   <div className="hidden lg:flex lg:items-center">
                     <Link href="/" className="flex items-center gap-6">
-                      <img
-                        className="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=amber&shade=600"
-                        alt=""
-                      />
-                      <span className="font-bold">OASOME Furnitures</span>
+                      <Image className="h-8 w-auto" src={KayonLogo} alt="" />
+                      <span className="font-bold">Kayon Decor</span>
                     </Link>
                   </div>
 
@@ -201,9 +200,10 @@ export const Navigation = () => {
                                               className="group relative"
                                             >
                                               <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
-                                                <img
+                                                <Image
                                                   src={item.images[0]}
                                                   className="object-cover object-center"
+                                                  alt="item image"
                                                 />
                                               </div>
                                               <Link

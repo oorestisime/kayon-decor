@@ -8,6 +8,7 @@ import {
 } from "@/data/store";
 import { getProductUrl } from "@/utils";
 import Link from "next/link";
+import Image from "next/image";
 
 function Category({
   category,
@@ -35,19 +36,17 @@ function Category({
                 aria-hidden="true"
                 className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg lg:aspect-h-6 lg:aspect-w-5 group-hover:opacity-75"
               >
-                <img
-                  src={require(product.images[0])}
+                <Image
+                  src={product.images[0]}
                   className="h-full w-full object-cover object-center"
+                  alt="product image"
                 />
               </div>
               <h3 className="mt-4 text-base font-semibold text-gray-900">
                 {product.name}
               </h3>
               <p className="mt-2 text-sm text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                {product.description}
               </p>
             </Link>
           ))}

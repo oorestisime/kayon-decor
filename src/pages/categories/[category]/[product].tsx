@@ -84,7 +84,7 @@ function Product({
               <div className="mt-3">
                 <h2 className="sr-only">Product information</h2>
                 <p className="text-3xl tracking-tight text-gray-900">
-                  €{selectedVariant.price}
+                  {selectedVariant.price}€
                 </p>
               </div>
 
@@ -92,10 +92,7 @@ function Product({
                 <h3 className="sr-only">Description</h3>
 
                 <div className="space-y-6 text-base text-gray-700">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
-                  repellat exercitationem ipsum similique libero molestiae,
-                  quam, officiis, quas deserunt vel tenetur! Voluptatem iure
-                  harum minus a numquam obcaecati dolorum animi!
+                  {product.description}
                 </div>
               </div>
 
