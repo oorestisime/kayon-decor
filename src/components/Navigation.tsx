@@ -66,7 +66,7 @@ export const Navigation = () => {
                           className={({ selected }) =>
                             classNames(
                               selected
-                                ? "border-brown text-brown"
+                                ? "border-brown-primary text-brown-primary"
                                 : "border-transparent text-gray-900",
                               "flex-1 whitespace-nowrap border-b-2 px-1 py-4 text-base font-medium"
                             )
@@ -140,7 +140,7 @@ export const Navigation = () => {
                   <div className="hidden lg:flex lg:items-center">
                     <Link href="/" className="flex items-center gap-6">
                       <Image className="h-12 w-auto" src={KayonLogo} alt="" />
-                      <span className="font-bold text-sm text-brown">
+                      <span className="font-bold text-sm text-brown-primary">
                         Elevate your home with handmade decor
                       </span>
                     </Link>
@@ -158,7 +158,7 @@ export const Navigation = () => {
                                   <Popover.Button
                                     className={classNames(
                                       open
-                                        ? "border-brown text-brown"
+                                        ? "border-brown-primary text-brown-primary"
                                         : "border-transparent text-gray-700 hover:text-gray-800",
                                       "relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out"
                                     )}
@@ -187,7 +187,7 @@ export const Navigation = () => {
                                       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                                         <Link
                                           href={`/categories/${category.slug}`}
-                                          className="hidden text-sm font-semibold pt-4 text-brown hover:text-amber-500 sm:block"
+                                          className="hidden text-sm font-semibold pt-4 text-brown-primary hover:text-brown-dark sm:block"
                                         >
                                           Browse all the {category.name}
                                           <span aria-hidden="true">
