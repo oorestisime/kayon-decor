@@ -251,7 +251,6 @@ export async function getStaticProps({
   const product = allProducts.find(
     (product) => product.slug === params.product
   );
-  console.log(product, params);
   if (!product) {
     return {
       notFound: true,

@@ -185,7 +185,8 @@ export const Navigation = () => {
 
                                     <div className="relative bg-white">
                                       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                                        <Link
+                                        <Popover.Button
+                                          as={Link}
                                           href={`/categories/${category.slug}`}
                                           className="hidden text-sm font-semibold pt-4 text-brown-primary hover:text-brown-dark sm:block"
                                         >
@@ -194,7 +195,7 @@ export const Navigation = () => {
                                             {" "}
                                             &rarr;
                                           </span>
-                                        </Link>
+                                        </Popover.Button>
                                         <div className="grid grid-cols-4 gap-x-8 gap-y-10 pt-8 pb-12">
                                           {category.featured.map((item) => (
                                             <div
@@ -208,7 +209,8 @@ export const Navigation = () => {
                                                   alt="item image"
                                                 />
                                               </div>
-                                              <Link
+                                              <Popover.Button
+                                                as={Link}
                                                 href={getProductUrl(
                                                   item,
                                                   category
@@ -220,7 +222,7 @@ export const Navigation = () => {
                                                   aria-hidden="true"
                                                 />
                                                 {item.name}
-                                              </Link>
+                                              </Popover.Button>
                                             </div>
                                           ))}
                                         </div>
