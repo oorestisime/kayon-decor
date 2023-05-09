@@ -1514,3 +1514,13 @@ export const categories = [
 
 export type ProductType = (typeof products)[0];
 export type CategoryType = (typeof categories)[0];
+
+export const favoriteProducts = products.filter((product) => product.favorite);
+export const categoryMap: { [key: string]: CategoryType } = categories.reduce(
+  (map, category) => {
+    // @ts-ignore
+    map[category.id] = category;
+    return map;
+  },
+  {}
+);

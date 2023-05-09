@@ -1,17 +1,7 @@
-import { products, categories, CategoryType } from "@/data/store";
+import { favoriteProducts, categoryMap } from "@/data/store";
 import Link from "next/link";
 import Image from "next/image";
 import { getProductUrl } from "@/utils";
-
-const favoriteProducts = products.filter((product) => product.favorite);
-const categoryMap: { [key: string]: CategoryType } = categories.reduce(
-  (map, category) => {
-    // @ts-ignore
-    map[category.id] = category;
-    return map;
-  },
-  {}
-);
 
 export const Favorite = () => {
   return (

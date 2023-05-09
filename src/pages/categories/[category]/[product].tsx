@@ -1,15 +1,15 @@
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import { RadioGroup, Tab } from "@headlessui/react";
 
 import {
   CategoryType,
   ProductType,
   products as allProducts,
-  categories,
+  categoryMap,
 } from "@/data/store";
 import { Favorite } from "@/components/Favorite";
-import { Story } from "@/components/Story";
 import Image from "next/image";
+import { NextSeo } from "next-seo";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -25,6 +25,10 @@ function Product({
   const [selectedVariant, setSelectedVariant] = useState(product.variants[0]);
   return (
     <>
+      <NextSeo
+        title={`${product.name} | Kayon Decor`}
+        description={product.description}
+      />
       <main className="mx-auto max-w-7xl sm:px-6 sm:pt-16 lg:px-8 pb-6">
         <div className="mx-auto max-w-2xl lg:max-w-none">
           {/* Product */}
@@ -224,18 +228,10 @@ function Product({
 export default Product;
 
 export async function getStaticPaths() {
-  const categorySlugs: Record<string, string> = categories.reduce(
-    (acc, category) => {
-      // @ts-ignore
-      acc[category.id] = category.slug;
-      return acc;
-    },
-    {}
-  );
   return {
     paths: allProducts.map((product) => ({
       params: {
-        category: categorySlugs[product.category],
+        category: categoryMap[product.category],
         product: product.slug,
       },
     })),
@@ -256,9 +252,7 @@ export async function getStaticProps({
       notFound: true,
     };
   }
-  const category = categories.find(
-    (category) => category.slug === params.category
-  );
+  const category = categoryMap[params.category];
 
   return {
     props: {

@@ -9,6 +9,7 @@ import {
 import { getProductUrl } from "@/utils";
 import Link from "next/link";
 import Image from "next/image";
+import { NextSeo } from "next-seo";
 
 function Category({
   category,
@@ -19,6 +20,10 @@ function Category({
 }) {
   return (
     <>
+      <NextSeo
+        title={`${category.name} | Kayon Decor`}
+        description={category.description}
+      />
       <div className="mx-auto max-w-xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <h2 className="text-2xl font-bold tracking-tight text-gray-900">
           Explore the {category.name} collection
