@@ -262,7 +262,7 @@ export const products = [
       },
       {
         size: "Large",
-        specification: "33 x 22 x 2cm",
+        specification: "45 x 25 x 2cm",
         price: "24",
       },
     ],
@@ -285,7 +285,7 @@ export const products = [
       },
       {
         size: "Medium",
-        specification: "15 x 2cm",
+        specification: "20 x 2cm",
         price: "12",
       },
       {
