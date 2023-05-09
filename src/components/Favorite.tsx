@@ -1,10 +1,19 @@
-import { products } from "@/data/store";
+import { products, categories, CategoryType } from "@/data/store";
 import Link from "next/link";
 import Image from "next/image";
+import { getProductUrl } from "@/utils";
+
+const favoriteProducts = products.filter((product) => product.favorite);
+const categoryMap: { [key: string]: CategoryType } = categories.reduce(
+  (map, category) => {
+    // @ts-ignore
+    map[category.id] = category;
+    return map;
+  },
+  {}
+);
 
 export const Favorite = () => {
-  const favoriteProducts = products.filter((product) => product.favorite);
-
   return (
     <section aria-labelledby="category-heading" className="bg-gray-50">
       <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8">
@@ -37,10 +46,15 @@ export const Favorite = () => {
             <div className="flex items-end p-6">
               <div>
                 <h3 className="font-semibold text-white">
-                  <a href="#">
+                  <Link
+                    href={getProductUrl(
+                      favoriteProducts[2],
+                      categoryMap[favoriteProducts[2].category]
+                    )}
+                  >
                     <span className="absolute inset-0" />
                     {favoriteProducts[2].name}
-                  </a>
+                  </Link>
                 </h3>
               </div>
             </div>
@@ -58,10 +72,15 @@ export const Favorite = () => {
             <div className="flex items-end p-6 sm:absolute sm:inset-0">
               <div>
                 <h3 className="font-semibold text-white">
-                  <a href="#">
+                  <Link
+                    href={getProductUrl(
+                      favoriteProducts[0],
+                      categoryMap[favoriteProducts[0].category]
+                    )}
+                  >
                     <span className="absolute inset-0" />
                     {favoriteProducts[0].name}
-                  </a>
+                  </Link>
                 </h3>
               </div>
             </div>
@@ -79,10 +98,15 @@ export const Favorite = () => {
             <div className="flex items-end p-6 sm:absolute sm:inset-0">
               <div>
                 <h3 className="font-semibold text-white">
-                  <a href="#">
+                  <Link
+                    href={getProductUrl(
+                      favoriteProducts[1],
+                      categoryMap[favoriteProducts[1].category]
+                    )}
+                  >
                     <span className="absolute inset-0" />
                     {favoriteProducts[1].name}
-                  </a>
+                  </Link>
                 </h3>
               </div>
             </div>
