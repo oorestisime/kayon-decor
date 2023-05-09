@@ -231,7 +231,7 @@ export async function getStaticPaths() {
   return {
     paths: allProducts.map((product) => ({
       params: {
-        category: categoryMap[product.category],
+        category: categoryMap[product.category].slug,
         product: product.slug,
       },
     })),
@@ -252,7 +252,7 @@ export async function getStaticProps({
       notFound: true,
     };
   }
-  const category = categoryMap[params.category];
+  const category = categoryMap[product.category];
 
   return {
     props: {
