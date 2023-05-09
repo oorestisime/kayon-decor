@@ -1,15 +1,15 @@
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import { RadioGroup, Tab } from "@headlessui/react";
 
 import {
   CategoryType,
   ProductType,
   products as allProducts,
-  categories,
-  products,
+  categoryMap,
 } from "@/data/store";
 import { Favorite } from "@/components/Favorite";
-import { Story } from "@/components/Story";
+import Image from "next/image";
+import { NextSeo } from "next-seo";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -25,6 +25,10 @@ function Product({
   const [selectedVariant, setSelectedVariant] = useState(product.variants[0]);
   return (
     <>
+      <NextSeo
+        title={`${product.name} | Kayon Decor`}
+        description={product.description}
+      />
       <main className="mx-auto max-w-7xl sm:px-6 sm:pt-16 lg:px-8 pb-6">
         <div className="mx-auto max-w-2xl lg:max-w-none">
           {/* Product */}
@@ -34,17 +38,18 @@ function Product({
               {/* Image selector */}
               <div className="mx-auto mt-6 hidden w-full max-w-2xl sm:block lg:max-w-none">
                 <Tab.List className="grid grid-cols-4 gap-6">
-                  {product.images.map((image) => (
+                  {product.images.map((image, index) => (
                     <Tab
-                      key={image}
+                      key={index}
                       className="relative flex h-24 cursor-pointer items-center justify-center rounded-md bg-white text-sm font-medium uppercase text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-offset-4"
                     >
                       {({ selected }) => (
                         <>
                           <span className="absolute inset-0 overflow-hidden rounded-md">
-                            <img
+                            <Image
                               src={image}
                               className="h-full w-full object-cover object-center"
+                              alt="product image"
                             />
                           </span>
                           <span
@@ -62,11 +67,12 @@ function Product({
               </div>
 
               <Tab.Panels className="aspect-h-1 aspect-w-1 w-full">
-                {product.images.map((image) => (
-                  <Tab.Panel key={image}>
-                    <img
+                {product.images.map((image, index) => (
+                  <Tab.Panel key={index}>
+                    <Image
                       src={image}
-                      className="h-full w-full object-cover object-center sm:rounded-lg"
+                      className="h-full w-full object-cover object-center"
+                      alt="product image"
                     />
                   </Tab.Panel>
                 ))}
@@ -82,7 +88,7 @@ function Product({
               <div className="mt-3">
                 <h2 className="sr-only">Product information</h2>
                 <p className="text-3xl tracking-tight text-gray-900">
-                  {selectedVariant.price}
+                  {selectedVariant.price}€
                 </p>
               </div>
 
@@ -90,10 +96,7 @@ function Product({
                 <h3 className="sr-only">Description</h3>
 
                 <div className="space-y-6 text-base text-gray-700">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi
-                  repellat exercitationem ipsum similique libero molestiae,
-                  quam, officiis, quas deserunt vel tenetur! Voluptatem iure
-                  harum minus a numquam obcaecati dolorum animi!
+                  {product.description}
                 </div>
               </div>
 
@@ -225,18 +228,10 @@ function Product({
 export default Product;
 
 export async function getStaticPaths() {
-  const categorySlugs: Record<string, string> = categories.reduce(
-    (acc, category) => {
-      // @ts-ignore
-      acc[category.id] = category.slug;
-      return acc;
-    },
-    {}
-  );
   return {
     paths: allProducts.map((product) => ({
       params: {
-        category: categorySlugs[product.category],
+        category: categoryMap[product.category],
         product: product.slug,
       },
     })),
@@ -252,18 +247,16 @@ export async function getStaticProps({
   const product = allProducts.find(
     (product) => product.slug === params.product
   );
-  console.log(product, params);
   if (!product) {
     return {
       notFound: true,
     };
   }
-  const category = categories.find(
-    (category) => category.slug === params.category
-  );
+  const category = categoryMap[params.category];
 
   return {
     props: {
+      key: product.slug,
       category,
       product,
     },

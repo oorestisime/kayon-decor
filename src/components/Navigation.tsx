@@ -4,6 +4,8 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { navigation } from "@/data/navigation";
 import Link from "next/link";
 import { getProductUrl } from "@/utils";
+import Image from "next/image";
+import KayonLogo from "@/images/Logo/Brown_Logo.png";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -64,7 +66,7 @@ export const Navigation = () => {
                           className={({ selected }) =>
                             classNames(
                               selected
-                                ? "border-amber-600 text-amber-600"
+                                ? "border-brown-primary text-brown-primary"
                                 : "border-transparent text-gray-900",
                               "flex-1 whitespace-nowrap border-b-2 px-1 py-4 text-base font-medium"
                             )
@@ -85,9 +87,10 @@ export const Navigation = () => {
                           {category.featured.map((item) => (
                             <div key={item.name} className="group relative">
                               <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
-                                <img
+                                <Image
                                   src={item.images[0]}
                                   className="object-cover object-center"
+                                  alt="item image"
                                 />
                               </div>
                               <Link
@@ -136,12 +139,10 @@ export const Navigation = () => {
                   {/* Logo (lg+) */}
                   <div className="hidden lg:flex lg:items-center">
                     <Link href="/" className="flex items-center gap-6">
-                      <img
-                        className="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=amber&shade=600"
-                        alt=""
-                      />
-                      <span className="font-bold">OASOME Furnitures</span>
+                      <Image className="h-12 w-auto" src={KayonLogo} alt="" />
+                      <span className="font-bold text-sm text-brown-primary">
+                        Elevate your home with handmade decor
+                      </span>
                     </Link>
                   </div>
 
@@ -157,7 +158,7 @@ export const Navigation = () => {
                                   <Popover.Button
                                     className={classNames(
                                       open
-                                        ? "border-amber-600 text-amber-600"
+                                        ? "border-brown-primary text-brown-primary"
                                         : "border-transparent text-gray-700 hover:text-gray-800",
                                       "relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out"
                                     )}
@@ -184,16 +185,17 @@ export const Navigation = () => {
 
                                     <div className="relative bg-white">
                                       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                                        <Link
+                                        <Popover.Button
+                                          as={Link}
                                           href={`/categories/${category.slug}`}
-                                          className="hidden text-sm font-semibold pt-4 text-amber-600 hover:text-amber-500 sm:block"
+                                          className="hidden text-sm font-semibold pt-4 text-brown-primary hover:text-brown-dark sm:block"
                                         >
                                           Browse all the {category.name}
                                           <span aria-hidden="true">
                                             {" "}
                                             &rarr;
                                           </span>
-                                        </Link>
+                                        </Popover.Button>
                                         <div className="grid grid-cols-4 gap-x-8 gap-y-10 pt-8 pb-12">
                                           {category.featured.map((item) => (
                                             <div
@@ -201,12 +203,14 @@ export const Navigation = () => {
                                               className="group relative"
                                             >
                                               <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
-                                                <img
+                                                <Image
                                                   src={item.images[0]}
                                                   className="object-cover object-center"
+                                                  alt="item image"
                                                 />
                                               </div>
-                                              <Link
+                                              <Popover.Button
+                                                as={Link}
                                                 href={getProductUrl(
                                                   item,
                                                   category
@@ -218,7 +222,7 @@ export const Navigation = () => {
                                                   aria-hidden="true"
                                                 />
                                                 {item.name}
-                                              </Link>
+                                              </Popover.Button>
                                             </div>
                                           ))}
                                         </div>

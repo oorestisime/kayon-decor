@@ -42,7 +42,7 @@ export const Hero = () => {
                 <div className="mt-6">
                   <a
                     href="#"
-                    className="inline-block rounded-md border border-transparent bg-amber-600 px-8 py-3 font-medium text-white hover:bg-amber-700"
+                    className="inline-block rounded-md border border-transparent bg-brown-primary px-8 py-3 font-medium text-white hover:bg-brown-dark"
                   >
                     View Catalog
                   </a>
