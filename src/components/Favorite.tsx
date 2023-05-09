@@ -17,7 +17,7 @@ export const Favorite = () => {
           </h2>
           <Link
             href="/products"
-            className="hidden text-sm font-semibold text-amber-600 hover:text-amber-500 sm:block"
+            className="hidden text-sm font-semibold text-brown hover:text-amber-500 sm:block"
           >
             Browse all
             <span aria-hidden="true"> &rarr;</span>

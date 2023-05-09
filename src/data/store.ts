@@ -1142,6 +1142,7 @@ export const products = [
     slug: "gucci",
     category: "cat-home-decor",
     sub_category: "Gucci",
+    featured: true,
     description:
       "Infuse your space with the warmth and beauty of nature with our Teak Wooden Decorative Piece. Handcrafted from teak wood, this exquisite creation serves as a captivating focal point for any room. Its unique grain patterns and smooth finish evoke a sense of tranquility and timeless elegance. Transform your décor with this eco-friendly and elevating teak wooden decorative piece, and experience the harmonious blend of nature and refinement.",
 
@@ -1239,6 +1240,7 @@ export const products = [
     slug: "wooden-soap-dispenser",
     category: "cat-home-decor",
     sub_category: "Accessories",
+    featured: true,
     description:
       "Elevate your bathroom aesthetics with the Teak Wooden Soap Dispenser. Crafted from beautiful teak wood, this dispenser combines functionality and style effortlessly. Its smooth and durable design adds a touch of natural elegance to any sink or countertop. Enhance your daily handwashing routine with this eco-friendly and luxurious teak wooden soap dispenser.",
 
@@ -1256,6 +1258,7 @@ export const products = [
     slug: "deco-wooden-stand",
     category: "cat-home-decor",
     sub_category: "Accessories",
+    featured: true,
     description:
       "Add a touch of artistic flair to your decor with our Teak Wooden Deco Abstract Stand. Crafted from teak wood, this stand features a unique and abstract design that showcases the beauty of natural wood grain.  Elevate your space with this eye-catching and contemporary teak wooden abstract stand.",
 
