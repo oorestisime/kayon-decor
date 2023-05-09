@@ -179,6 +179,16 @@ import TwoGucci from "@/images/Gucci/Two-gucci.jpeg";
 import BigGucci7 from "@/images/Gucci/Big-gucci7.jpeg";
 import BearShapedTablewear2 from "@/images/Bear-shaped-tableware/bear-shaped-tablewear-2.jpg.jpeg";
 import BearShapedTablewear3 from "@/images/Bear-shaped-tableware/bear-shaped-tablewear-3.jpg.jpeg";
+import LoungeArmChair1 from "@/images/Lounge-Arm-Chair/Lounge-Arm-Chair1.jpeg";
+import LoungeArmChair2 from "@/images/Lounge-Arm-Chair/Lounge-Arm-Chair2.jpeg";
+import LoungeChair1 from "@/images/Lounge-Chair/Lounge-Chair1.jpeg";
+import LoungeChair2 from "@/images/Lounge-Chair/Lounge-Chair2.jpeg";
+import LoungeChair3 from "@/images/Lounge-Chair/Lounge-Chair3.jpeg";
+import MiniBench from "@/images/Mini-Bench/Mini-Bench.jpg";
+import MiniBench2 from "@/images/Mini-Bench/Mini-Bench2.jpeg";
+import SofaSingleSeater1 from "@/images/Sofa-Single-Seater/Sofa-Single-Seater1.jpeg";
+import SofaSingleSeater2 from "@/images/Sofa-Single-Seater/Sofa-Single-Seater2.jpeg";
+import KennedyDiningChair from "@/images/Kennedy-dining-chair/Kennedy-dining-chair.jpeg";
 
 export const products = [
   {
@@ -187,8 +197,8 @@ export const products = [
     category: "cat-tablewares",
     sub_catergory: "Plates/Platters",
     favorite: true,
-    descriptions:
-      "Eco-friendly and stylish, the Wooden Leaf Plate is handcrafted from teak wood, showcasing natural beauty and sustainability.",
+    description:
+      "Introducing our exquisite teak leaf shaped plate, the perfect addition to your tableware collection. This plate is made from high-quality teak wood, which provides exceptional durability and natural resistance to wear and tear. The unique leaf shape and intricate wood grain patterns make this plate an eye-catching centerpiece on any dining table or serving tray. The plate is versatile and can be used for serving appetizers, desserts, or even as a decorative item. The teak wood material gives the plate a natural, rustic feel that complements any decor. It is easy to clean and maintain, making it a practical and stylish addition to your home. Bring a touch of nature to your table with our teak leaf shaped plate. ",
     images: [LeafShaped, LeafShaped2, LeafShaped3],
     variants: [
       {
@@ -345,6 +355,39 @@ export const products = [
         size: "Large",
         specification: "30 x 15 x 2 cm",
         price: "14",
+      },
+    ],
+  },
+  {
+    name: "Noodles bowl",
+    slug: "noodles-bowl",
+    category: "cat-tablewares",
+    sub_category: "Bowls",
+    featured: true,
+    description:
+      "Savor your favorite noodles in style with our Teak Wooden Noodle Bowl. Handcrafted from teak wood, this bowl combines the warmth of natural wood with a practical design. Its smooth interior and sturdy construction make it the perfect vessel for enjoying a comforting bowl of noodles. Elevate your dining experience with this timeless and eco-friendly teak wooden noodle bowl.",
+
+    images: [NoodleBowl],
+    variants: [
+      {
+        size: "1",
+        specification: "13 x 8cm",
+        price: "12",
+      },
+      {
+        size: "2",
+        specification: "15 x 9cm",
+        price: "14",
+      },
+      {
+        size: "3",
+        specification: "18 x 8cm",
+        price: "18",
+      },
+      {
+        size: "4",
+        specification: "20 x 9cm",
+        price: "24",
       },
     ],
   },
@@ -556,39 +599,7 @@ export const products = [
       },
     ],
   },
-  {
-    name: "Noodles bowl",
-    slug: "noodles-bowl",
-    category: "cat-tablewares",
-    sub_category: "Bowls",
-    featured: true,
-    description:
-      "Savor your favorite noodles in style with our Teak Wooden Noodle Bowl. Handcrafted from teak wood, this bowl combines the warmth of natural wood with a practical design. Its smooth interior and sturdy construction make it the perfect vessel for enjoying a comforting bowl of noodles. Elevate your dining experience with this timeless and eco-friendly teak wooden noodle bowl.",
 
-    images: [NoodleBowl],
-    variants: [
-      {
-        size: "1",
-        specification: "13 x 8cm",
-        price: "12",
-      },
-      {
-        size: "2",
-        specification: "15 x 9cm",
-        price: "14",
-      },
-      {
-        size: "3",
-        specification: "18 x 8cm",
-        price: "18",
-      },
-      {
-        size: "4",
-        specification: "20 x 9cm",
-        price: "24",
-      },
-    ],
-  },
   {
     name: "The Wave Bowl",
     slug: "the-wave-bowl",
@@ -1208,6 +1219,7 @@ export const products = [
     slug: "black-baskets",
     category: "cat-home-decor",
     sub_category: "Baskets",
+    featured: true,
     description:
       "Step into the world of Balinese craftsmanship with our hand-woven Balinese baskets. Skillfully crafted by local artisans, these baskets embody the essence of traditional Balinese culture. Each piece showcases intricate patterns and vibrant colors, showcasing the artistry and attention to detail that goes into their creation. Versatile and charming, these baskets are perfect for organizing your home or adding a touch of exotic elegance to your decor. Unique designs and styles. Contact us for availability",
 
@@ -1240,7 +1252,7 @@ export const products = [
     slug: "wooden-soap-dispenser",
     category: "cat-home-decor",
     sub_category: "Accessories",
-    featured: true,
+
     description:
       "Elevate your bathroom aesthetics with the Teak Wooden Soap Dispenser. Crafted from beautiful teak wood, this dispenser combines functionality and style effortlessly. Its smooth and durable design adds a touch of natural elegance to any sink or countertop. Enhance your daily handwashing routine with this eco-friendly and luxurious teak wooden soap dispenser.",
 
@@ -1282,33 +1294,33 @@ export const products = [
       "Experience the beauty of nature in your dining space with our Suar Wood Dining Tables. Handcrafted from premium Suar wood, these tables bring a touch of rustic elegance to any home. Each table is unique, featuring the natural grain patterns and rich colors of the Suar wood, creating a truly one-of-a-kind centerpiece for your dining area. With their sturdy construction and timeless design, these Suar wood dining tables are not only stunning but also built to last. Gather around and create lasting memories with friends and family on a Suar wood dining table that effortlessly combines nature's beauty with functional style. Pre-ordering: Unique designs",
 
     images: [
+      Twom5LongSuarWoodTableWithLeg,
       Onem5LongSuarWoodTableWithLeg,
       TwomLongSuarWoodTableWithLeg,
       TwomLongSuarWoodTableWithLeg2,
       TwomLongSuarWoodTableWithLeg3,
-      Twom5LongSuarWoodTableWithLeg,
       ThreemLongSuarWoodTableWithLeg,
       ThreemLongSuarWoodTableWithLeg2,
       ThreemLongSuarWoodTableWithLeg3,
     ],
     variants: [
       {
-        size: "1",
+        size: "1.5 M",
         specification: "150 x 80 x 75cm 7cm(thickness)",
         price: "1560",
       },
       {
-        size: "2",
+        size: "2 M",
         specification: "200 x 80 x 75cm 7cm(thickness)",
         price: "1990",
       },
       {
-        size: "3",
+        size: "2.5 M",
         specification: "250 x 80 x 75cm 7cm(thickness)",
         price: "2475",
       },
       {
-        size: "4",
+        size: "3 M",
         specification: "300 x 80 x 75cm 7cm(thickness)",
         price: "2870",
       },
@@ -1323,7 +1335,7 @@ export const products = [
     description:
       "Indulge in the ultimate relaxation experience with our Teak Rope Lounge Arm Chair. Crafted with precision and artistry, this chair combines the timeless beauty of teak wood with the comfort of rope seating. The teak wood frame with arms exudes elegance and durability, while the intricately woven rope provides a supportive and comfortable seating surface. Whether lounging by the poolside or on your patio, this chair invites you to unwind and embrace serenity in style. Pre-ordering: Indoor / Outdoor lounge Chair with arm. Select which one",
 
-    images: [],
+    images: [LoungeArmChair1, LoungeArmChair2],
     variants: [
       {
         size: "Indoor",
@@ -1347,7 +1359,7 @@ export const products = [
     description:
       "Experience the epitome of relaxation with our Teak Rope Lounge Chair. Designed with minimalism in mind, this chair features a sleek and streamlined silhouette, enhanced by the use of teak wood and rope materials. The teak wood frame exudes natural beauty and durability, while the rope seating offers a comfortable and supportive experience. Whether placed by the poolside or on your sun-soaked patio, this armless lounge chair is a perfect spot to unwind and soak up the ambiance. Elevate your indoor or outdoor oasis with the understated elegance and comfort of our Teak Rope Lounge Chair, designed for moments of pure tranquility. Pre-ordering: Indoor / Outdoor lounge Chair without arm. Select which one",
 
-    images: [],
+    images: [LoungeChair1, LoungeChair2, LoungeChair3],
     variants: [
       {
         size: "Indoor",
@@ -1371,7 +1383,7 @@ export const products = [
     description:
       "Introducing our Small Teak Rope Lounge Bench, where comfort meets style in a compact design. Crafted with precision and attention to detail, this bench showcases the beauty of teak wood combined with the elegance of rope accents. The teak wood frame provides a sturdy and durable foundation, while the intricately rope seat adds a touch of modern sophistication. Perfect for cozy outdoor spaces or intimate indoor settings, this small teak rope lounge bench offers a comfortable seating option that effortlessly blends natural beauty with contemporary flair. Pre-ordering: Mini bench",
 
-    images: [],
+    images: [MiniBench, MiniBench2],
     variants: [
       {
         size: "",
@@ -1386,10 +1398,11 @@ export const products = [
     slug: "sofa-single-seater",
     category: "cat-home-furniture",
     sub_category: "Chairs",
+    featured: true,
     description:
       "Experience comfort and style in a compact form with our Small Teak Sofa Single Seater. Meticulously crafted from premium teak wood, this sofa embodies timeless elegance and durability. Its sleek design and gently curved frame exude a sense of sophistication, while the plush cushioning provides a cozy seating experience. Perfectly scaled for smaller spaces or as an accent piece, this single-seater teak sofa effortlessly combines functionality with exquisite craftsmanship. Elevate your living space with the charm and comfort of our Small Teak Sofa Single Seater, a perfect retreat for relaxation and unwinding. Pre-ordering: Chair with fabric",
 
-    images: [],
+    images: [SofaSingleSeater1, SofaSingleSeater2],
     variants: [
       {
         size: "",
@@ -1404,10 +1417,11 @@ export const products = [
     slug: "kennedy-dining-chair",
     category: "cat-home-furniture",
     sub_category: "Chairs",
+    featured: true,
     description:
       "Introducing our Teak Wood Kennedy Dining Chair, where beauty meets functionality in perfect harmony. Crafted from high-quality teak wood, this dining chair showcases the natural elegance and durability of the material. The intricately rope backrest adds a touch of contemporary style and provides comfortable support for your back. With its ergonomic design and sturdy construction, this chair offers both comfort and stability during your dining experiences. Whether used for casual family meals or elegant dinner parties, our Teak Wood Kennedy Dining Chair adds a touch of sophistication and comfort to any dining setting. Pre-ordering",
 
-    images: [],
+    images: [KennedyDiningChair],
     variants: [
       {
         size: "",
@@ -1418,8 +1432,8 @@ export const products = [
     ],
   },
   {
-    name: "Cofee Table",
-    slug: "cofee-table",
+    name: "Coffee Table",
+    slug: "coffee-table",
     category: "cat-home-furniture",
     sub_category: "Side Tables",
     description:
@@ -1444,7 +1458,6 @@ export const products = [
     slug: "cofee-table-with-glass",
     category: "cat-home-furniture",
     sub_category: "Side Tables",
-    featured: true,
     description:
       "Introducing our Teak Wood Coffee Table with Glass, a harmonious blend of natural allure and contemporary design. Handcrafted from premium teak wood, this coffee table exudes timeless beauty and durability. With its generous size and sturdy construction, this coffee table provides a perfect gathering spot for coffee conversations or stylishly displaying decor items. ",
 
