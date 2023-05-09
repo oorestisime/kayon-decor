@@ -262,6 +262,7 @@ export async function getStaticProps({
 
   return {
     props: {
+      key: product.slug,
       category,
       product,
     },
