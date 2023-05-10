@@ -1,4 +1,6 @@
 import { offers } from "@/data/navigation";
+import WebsitePhotoPageOne from "@/images/website-photo-1stpage.jpg";
+import Image from "next/image";
 
 export const Hero = () => {
   return (
@@ -52,9 +54,9 @@ export const Hero = () => {
           </div>
         </div>
         <div className="h-48 w-full sm:h-64 lg:absolute lg:right-0 lg:top-0 lg:h-full lg:w-1/2">
-          <img
-            src="https://tailwindui.com/img/ecommerce-images/home-page-02-hero-half-width.jpg"
-            alt=""
+          <Image
+            src={WebsitePhotoPageOne}
+            alt="Website Photo 1st page"
             className="h-full w-full object-cover object-center"
           />
         </div>

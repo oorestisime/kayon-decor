@@ -54,7 +54,9 @@ function Product({
                           </span>
                           <span
                             className={classNames(
-                              selected ? "ring-amber-500" : "ring-transparent",
+                              selected
+                                ? "ring-brown-primary"
+                                : "ring-transparent",
                               "pointer-events-none absolute inset-0 rounded-md ring-2 ring-offset-2"
                             )}
                             aria-hidden="true"
@@ -71,7 +73,7 @@ function Product({
                   <Tab.Panel key={index}>
                     <Image
                       src={image}
-                      className="h-full w-full object-cover object-center"
+                      className="h-full w-full  object-contain object-center"
                       alt="product image"
                     />
                   </Tab.Panel>
@@ -106,7 +108,11 @@ function Product({
                   <div className="mt-10">
                     <div className="flex items-center justify-between">
                       <h3 className="text-sm font-medium text-gray-900">
+
                         Specifications - {selectedVariant.specification}
+
+                       
+
                       </h3>
                     </div>
                     <RadioGroup
@@ -125,7 +131,7 @@ function Product({
                             className={({ active }) =>
                               classNames(
                                 "cursor-pointer bg-white text-gray-900 shadow-sm",
-                                active ? "ring-2 ring-amber-500" : "",
+                                active ? "ring-2 ring-brown-primary" : "",
                                 "group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6"
                               )
                             }
@@ -140,7 +146,7 @@ function Product({
                                   className={classNames(
                                     active ? "border" : "border-2",
                                     checked
-                                      ? "border-amber-500"
+                                      ? "border-brown-primary"
                                       : "border-transparent",
                                     "pointer-events-none absolute -inset-px rounded-md"
                                   )}
@@ -167,7 +173,7 @@ function Product({
                 <div className="mt-10 flex">
                   <button
                     type="submit"
-                    className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-amber-600 px-8 py-3 text-base font-medium text-white hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
+                    className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-brown-primary px-8 py-3 text-base font-medium text-white hover:bg-brown-dark focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
                   >
                     Add to bag
                   </button>
