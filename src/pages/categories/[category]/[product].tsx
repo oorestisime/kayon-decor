@@ -108,7 +108,11 @@ function Product({
                   <div className="mt-10">
                     <div className="flex items-center justify-between">
                       <h3 className="text-sm font-medium text-gray-900">
-                        Dimensions - {selectedVariant.specification}
+
+                        Specifications - {selectedVariant.specification}
+
+                       
+
                       </h3>
                     </div>
                     <RadioGroup
@@ -154,6 +158,15 @@ function Product({
                         ))}
                       </div>
                     </RadioGroup>
+                  </div>
+                )}
+                {product.variants.length === 1 && (
+                  <div className="mt-10">
+                    <div className="flex items-center justify-between">
+                      <h3 className="text-sm font-medium text-gray-900">
+                        Specifications - {selectedVariant.specification}
+                      </h3>
+                    </div>
                   </div>
                 )}
 
