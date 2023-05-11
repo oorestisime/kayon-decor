@@ -1,3 +1,4 @@
+import { Fragment, useState } from "react";
 import { Favorite } from "@/components/Favorite";
 import { Story } from "@/components/Story";
 import {
@@ -10,6 +11,14 @@ import { getProductUrl } from "@/utils";
 import Link from "next/link";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
+import { ChevronDownIcon, PlusIcon } from "@heroicons/react/24/outline";
+import {
+  Dialog,
+  Disclosure,
+  Popover,
+  Tab,
+  Transition,
+} from "@headlessui/react";
 
 function Category({
   category,
@@ -20,43 +29,110 @@ function Category({
   products: ProductType[];
   subCategories: String[];
 }) {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   return (
     <>
-      <NextSeo
-        title={`${category.name} | Kayon Decor`}
-        description={category.description}
-      />
-      <div className="mx-auto max-w-xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <h2 className="text-2xl font-bold tracking-tight text-gray-900">
-          Explore the {category.name} collection
-        </h2>
-        <p className="mt-4 text-base text-gray-500">{category.description}</p>
+      <main className="mx-auto max-w-2xl px-4 lg:max-w-7xl lg:px-8">
+        <NextSeo
+          title={`${category.name} | Kayon Decor`}
+          description={category.description}
+        />
 
-        <div className="mt-10 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
-          {products.map((product) => (
-            <Link
-              key={product.name}
-              href={getProductUrl(product, category)}
-              className="group block"
+        <div className="pb-24 pt-12 lg:grid lg:grid-cols-3 lg:gap-x-8 xl:grid-cols-4">
+          <aside>
+            <h2 className="sr-only">Filters</h2>
+
+            <button
+              type="button"
+              className="inline-flex items-center lg:hidden"
+              onClick={() => setMobileFiltersOpen(true)}
             >
-              <div
+              <span className="text-sm font-medium text-gray-700">Filters</span>
+              <PlusIcon
+                className="ml-1 h-5 w-5 flex-shrink-0 text-gray-400"
                 aria-hidden="true"
-                className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg lg:aspect-h-6 lg:aspect-w-5 group-hover:opacity-75"
-              >
-                <Image
-                  src={product.images[0]}
-                  className="h-full w-full object-cover object-center"
-                  alt="product image"
-                />
-              </div>
-              <h3 className="mt-4 text-base font-semibold text-gray-900">
-                {product.name}
-              </h3>
-              <p className="mt-2 text-sm text-gray-500"></p>
-            </Link>
-          ))}
+              />
+            </button>
+
+            <div className="hidden lg:block">
+              <form className="space-y-10 divide-y divide-gray-200">
+                <div key={category.name} className={"pt-10"}>
+                  <fieldset>
+                    <legend className="block text-lg font-bold text-gray-900">
+                      Categories
+                    </legend>
+                    <div className="space-y-3 pt-6">
+                      {subCategories.map((subCategory, index) => (
+                        <div key={index} className="flex items-center">
+                          <input
+                            id={`${index}`}
+                            name={`${subCategory}`}
+                            defaultValue={"subCategory"}
+                            type="checkbox"
+                            className="h-4 w-4 rounded border-gray-300 text-brown-primary focus:ring-brown-primary"
+                          />
+                          <label
+                            htmlFor={`${subCategory}`}
+                            className="ml-3 text-sm text-gray-600"
+                          >
+                            {subCategory}
+                          </label>
+                        </div>
+                      ))}
+                    </div>
+                  </fieldset>
+                </div>
+              </form>
+            </div>
+          </aside>
+
+          <section
+            aria-labelledby="product-heading"
+            className="mt-6 lg:col-span-2 lg:mt-0 xl:col-span-3"
+          >
+            <h2 id="product-heading" className="sr-only">
+              Products
+            </h2>
+
+            <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:gap-x-8 xl:grid-cols-3">
+              {products.map((product) => (
+                <div
+                  key={product.slug}
+                  className="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white"
+                >
+                  <div className="aspect-h-4 aspect-w-3 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-96">
+                    <Image
+                      src={product.images[0]}
+                      alt="alt image"
+                      className="h-full w-full object-cover object-center sm:h-full sm:w-full"
+                    />
+                  </div>
+                  <div className="flex flex-1 flex-col space-y-2 p-4">
+                    <h3 className="text-sm font-medium text-gray-900">
+                      <a href={getProductUrl(product, category)}>
+                        <span aria-hidden="true" className="absolute inset-0" />
+                        {product.name}
+                      </a>
+                    </h3>
+                    {/* <p className="text-sm text-gray-500">
+                      {product.description}
+                    </p> */}
+                    <div className="flex flex-1 flex-col justify-end">
+                      {/* <p className="text-sm italic text-gray-500">
+                        {product.options}
+                      </p> */}
+                      {/* <p className="text-base font-medium text-gray-900">
+                        {product.varian}
+                      </p> */}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
         </div>
-      </div>
+      </main>
       <Story />
       <Favorite />
     </>
