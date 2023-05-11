@@ -14,9 +14,11 @@ import { NextSeo } from "next-seo";
 function Category({
   category,
   products,
+  subCategories,
 }: {
   category: CategoryType;
   products: ProductType[];
+  subCategories: String[];
 }) {
   return (
     <>
@@ -89,12 +91,18 @@ export async function getStaticProps({
   const products = allProducts.filter(
     (product) => product.category === category.id
   );
+  const subCategories = [
+    ...new Set(products.map((product) => product.sub_category)),
+  ];
+
+  console.log(subCategories);
 
   return {
     props: {
       key: category.slug,
       category,
       products,
+      subCategories,
     },
   };
 }

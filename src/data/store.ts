@@ -195,7 +195,7 @@ export const products = [
     name: "Leaf shaped tableware",
     slug: "leaf-shaped-tableware",
     category: "cat-tablewares",
-    sub_catergory: "Plates/Platters",
+    sub_category: "Plates/Platters",
     favorite: true,
     description:
       "Introducing our exquisite teak leaf shaped plate, the perfect addition to your tableware collection. This plate is made from high-quality teak wood, which provides exceptional durability and natural resistance to wear and tear. The unique leaf shape and intricate wood grain patterns make this plate an eye-catching centerpiece on any dining table or serving tray. The plate is versatile and can be used for serving appetizers, desserts, or even as a decorative item. The teak wood material gives the plate a natural, rustic feel that complements any decor. It is easy to clean and maintain, making it a practical and stylish addition to your home. Bring a touch of nature to your table with our teak leaf shaped plate. ",
