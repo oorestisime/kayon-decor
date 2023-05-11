@@ -10,6 +10,7 @@ import {
 import { Favorite } from "@/components/Favorite";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
+import { useCart } from "@/lib/cart";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -23,6 +24,8 @@ function Product({
   product: ProductType;
 }) {
   const [selectedVariant, setSelectedVariant] = useState(product.variants[0]);
+  const { addItem, cartHasProduct, removeItem } = useCart();
+
   return (
     <>
       <NextSeo
@@ -108,11 +111,7 @@ function Product({
                   <div className="mt-10">
                     <div className="flex items-center justify-between">
                       <h3 className="text-sm font-medium text-gray-900">
-
                         Specifications - {selectedVariant.specification}
-
-                       
-
                       </h3>
                     </div>
                     <RadioGroup
@@ -170,14 +169,34 @@ function Product({
                   </div>
                 )}
 
-                <div className="mt-10 flex">
-                  <button
-                    type="submit"
-                    className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-brown-primary px-8 py-3 text-base font-medium text-white hover:bg-brown-dark focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
-                  >
-                    Add to bag
-                  </button>
-                </div>
+                {/* TODO Fix colors */}
+                {cartHasProduct(product.slug) ? (
+                  <div className="mt-10 flex">
+                    <button
+                      type="submit"
+                      className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-brown-primary px-8 py-3 text-base font-medium text-white hover:bg-brown-dark focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
+                      onClick={() => removeItem(product.slug)}
+                    >
+                      Remove from bag
+                    </button>
+                  </div>
+                ) : (
+                  <div className="mt-10 flex">
+                    <button
+                      type="submit"
+                      className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-brown-primary px-8 py-3 text-base font-medium text-white hover:bg-brown-dark focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
+                      onClick={() =>
+                        addItem({
+                          product: product.slug,
+                          size: selectedVariant.size,
+                          quantity: 1,
+                        })
+                      }
+                    >
+                      Add to bag
+                    </button>
+                  </div>
+                )}
               </form>
 
               <section aria-labelledby="details-heading" className="mt-12">
