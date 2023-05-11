@@ -41,6 +41,23 @@ export const useCart = () => {
     setValue({ ...value, items: newItems });
   };
 
+  const changeQuantity = (product: string, quantity: number) => {
+    if (!value) {
+      return;
+    }
+    if (quantity === 0) {
+      removeItem(product);
+      return;
+    }
+    const newItems = value.items.map((item) => {
+      if (item.product === product) {
+        return { ...item, quantity };
+      }
+      return item;
+    });
+    setValue({ ...value, items: newItems });
+  };
+
   const cartHasProduct = (product: string) => {
     if (!value) {
       return false;
@@ -48,5 +65,5 @@ export const useCart = () => {
     return value.items.some((item) => item.product === product);
   };
 
-  return { value, addItem, removeItem, reset, cartHasProduct };
+  return { value, addItem, removeItem, reset, cartHasProduct, changeQuantity };
 };
