@@ -19,6 +19,7 @@ import {
   Tab,
   Transition,
 } from "@headlessui/react";
+import Product from "./[product]";
 
 function Category({
   category,
@@ -27,10 +28,33 @@ function Category({
 }: {
   category: CategoryType;
   products: ProductType[];
-  subCategories: String[];
+  subCategories: string[];
 }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
+
+  const [checkedSubCategories, setCheckedSubCategories] = useState(
+    subCategories.reduce((acc, cur) => {
+      //@ts-ignore
+      acc[cur] = false;
+      return acc;
+    }, {})
+  );
+
+  const handleOnChange = (category: string) => {
+    setCheckedSubCategories({
+      ...checkedSubCategories,
+      //@ts-ignore
+      [category]: !checkedSubCategories[category],
+    });
+  };
+
+  const filteredProducts = products.filter(
+    //@ts-ignore
+    (product) => checkedSubCategories[product.sub_category] === true
+  );
+  const renderedProducts =
+    filteredProducts.length > 0 ? filteredProducts : products;
   return (
     <>
       <main className="mx-auto max-w-2xl px-4 lg:max-w-7xl lg:px-8">
@@ -64,12 +88,14 @@ function Category({
                     </legend>
                     <div className="space-y-3 pt-6">
                       {subCategories.map((subCategory, index) => (
-                        <div key={index} className="flex items-center">
+                        <div key={subCategory} className="flex items-center">
                           <input
-                            id={`${index}`}
+                            id={subCategory}
                             name={`${subCategory}`}
-                            defaultValue={"subCategory"}
                             type="checkbox"
+                            //@ts-ignore
+                            checked={checkedSubCategories[subCategory]}
+                            onChange={() => handleOnChange(subCategory)}
                             className="h-4 w-4 rounded border-gray-300 text-brown-primary focus:ring-brown-primary"
                           />
                           <label
@@ -96,7 +122,7 @@ function Category({
             </h2>
 
             <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:gap-x-8 xl:grid-cols-3">
-              {products.map((product) => (
+              {renderedProducts.map((product) => (
                 <div
                   key={product.slug}
                   className="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white"
