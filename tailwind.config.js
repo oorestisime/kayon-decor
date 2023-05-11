@@ -18,6 +18,9 @@ module.exports = {
           dark: "#665548",
         },
       },
+      objectPosition: {
+        "costum-position": "100% 86%",
+      },
     },
   },
   plugins: [
