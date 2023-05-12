@@ -25,7 +25,7 @@ export const Footer = () => {
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
           <p className="text-center text-xs leading-5 text-gray-500">
-            &copy; 2023 OASOME Furnitures, Inc. All rights reserved.
+            &copy; 2023 Kayon Decor, Inc. All rights reserved.
           </p>
         </div>
       </div>
