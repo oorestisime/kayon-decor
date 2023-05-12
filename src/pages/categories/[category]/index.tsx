@@ -59,6 +59,15 @@ function Category({
   function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(" ");
   }
+  const renderPrice = (product: ProductType) => {
+    if (product.variants.length === 1) {
+      return product.variants[0].price;
+    }
+    return `${product.variants[0].price} - ${
+      product.variants[product.variants.length - 1].price
+    }`;
+  };
+
   return (
     <>
       <NextSeo
@@ -240,21 +249,23 @@ function Category({
                   </div>
                   <div className="flex flex-1 flex-col space-y-2 p-4">
                     <h3 className="text-sm font-medium text-gray-900">
-                      <a href={getProductUrl(product, category)}>
+                      <Link href={getProductUrl(product, category)}>
                         <span aria-hidden="true" className="absolute inset-0" />
                         {product.name}
-                      </a>
+                      </Link>
                     </h3>
-                    {/* <p className="text-sm text-gray-500">
+                    <p className="text-sm text-gray-500 line-clamp-4">
                       {product.description}
-                    </p> */}
+                    </p>
                     <div className="flex flex-1 flex-col justify-end">
-                      {/* <p className="text-sm italic text-gray-500">
-                        {product.options}
-                      </p> */}
-                      {/* <p className="text-base font-medium text-gray-900">
-                        {product.varian}
-                      </p> */}
+                      {product.variants.length > 1 ? (
+                        <p className="text-sm italic text-gray-500">
+                          {product.variants.length} sizes available
+                        </p>
+                      ) : null}
+                      <p className="text-base font-medium text-gray-900">
+                        {renderPrice(product)}€
+                      </p>
                     </div>
                   </div>
                 </div>

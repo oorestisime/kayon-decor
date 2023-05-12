@@ -1,11 +1,14 @@
+"use client";
+
 import { Fragment, useState } from "react";
 import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { ShoppingBagIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { navigation } from "@/data/navigation";
 import Link from "next/link";
 import { getProductUrl } from "@/utils";
 import Image from "next/image";
 import KayonLogo from "@/images/Logo/Brown_Logo.png";
+import { CartType, useCart } from "@/lib/cart";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -13,6 +16,7 @@ function classNames(...classes: string[]) {
 
 export const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { cart } = useCart();
 
   return (
     <>
@@ -236,39 +240,40 @@ export const Navigation = () => {
                         ))}
 
                         {navigation.pages.map((page) => (
-                          <a
+                          <Link
                             key={page.name}
                             href={page.slug}
                             className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
                           >
                             {page.name}
-                          </a>
+                          </Link>
                         ))}
+                        {/* Cart */}
+                        <div className="flex flex-1 items-center justify-end">
+                          <div className="ml-4 flow-root lg:ml-8">
+                            <Link
+                              href="/cart"
+                              className="group -m-2 flex items-center p-2"
+                            >
+                              <ShoppingBagIcon
+                                className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
+                                aria-hidden="true"
+                              />
+                              <span
+                                suppressHydrationWarning
+                                className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800"
+                              >
+                                {cart?.items?.length || 0}
+                              </span>
+                              <span className="sr-only">
+                                items in cart, view bag
+                              </span>
+                            </Link>
+                          </div>
+                        </div>
                       </div>
                     </Popover.Group>
                   </div>
-
-                  {/* Mobile menu and search (lg-) */}
-                  <div className="flex flex-1 items-center lg:hidden">
-                    <button
-                      type="button"
-                      className="-ml-2 p-2 text-gray-400"
-                      onClick={() => setMobileMenuOpen(true)}
-                    >
-                      <span className="sr-only">Open menu</span>
-                      <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-                    </button>
-                  </div>
-
-                  {/* Logo (lg-) */}
-                  <a href="#" className="lg:hidden">
-                    <span className="sr-only">Your Company</span>
-                    <img
-                      src="https://tailwindui.com/img/logos/mark.svg?color=white"
-                      alt=""
-                      className="h-8 w-auto"
-                    />
-                  </a>
                 </div>
               </div>
             </div>

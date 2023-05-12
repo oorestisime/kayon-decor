@@ -1,12 +1,15 @@
+"use client";
+
+import { VariantType } from "@/data/store";
 import { useLocalStorage } from "react-use";
 
 const cartKey = "kayon-cart";
 type CartItemType = {
   product: string;
-  size: string;
+  variant: VariantType;
   quantity: number;
 };
-type CartType = {
+export type CartType = {
   items: CartItemType[];
   email: string;
   name: string;
@@ -19,7 +22,6 @@ const defaultCart: CartType = {
 
 export const useCart = () => {
   const [value, setValue] = useLocalStorage(cartKey, defaultCart);
-
   const addItem = (item: CartItemType) => {
     if (!value) {
     }
@@ -31,22 +33,29 @@ export const useCart = () => {
     setValue(defaultCart);
   };
 
-  const removeItem = (product: string) => {
+  const removeItem = (product: string, variant: VariantType) => {
     if (!value) {
       return;
     }
-    const newItems = (value || defaultCart).items.filter(
-      (item) => item.product !== product
-    );
+    const newItems = (value || defaultCart).items.filter((item) => {
+      if (item.product === product && item.variant.size === variant.size) {
+        return false;
+      }
+      return true;
+    });
     setValue({ ...value, items: newItems });
   };
 
-  const changeQuantity = (product: string, quantity: number) => {
+  const changeQuantity = (
+    product: string,
+    variant: VariantType,
+    quantity: number
+  ) => {
     if (!value) {
       return;
     }
     if (quantity === 0) {
-      removeItem(product);
+      removeItem(product, variant);
       return;
     }
     const newItems = value.items.map((item) => {
@@ -58,12 +67,21 @@ export const useCart = () => {
     setValue({ ...value, items: newItems });
   };
 
-  const cartHasProduct = (product: string) => {
+  const cartHasProduct = (product: string, variant: VariantType) => {
     if (!value) {
       return false;
     }
-    return value.items.some((item) => item.product === product);
+    return value.items.some(
+      (item) => item.product === product && item.variant.size === variant.size
+    );
   };
 
-  return { value, addItem, removeItem, reset, cartHasProduct, changeQuantity };
+  return {
+    cart: value,
+    addItem,
+    removeItem,
+    reset,
+    cartHasProduct,
+    changeQuantity,
+  };
 };

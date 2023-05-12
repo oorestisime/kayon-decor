@@ -10,7 +10,7 @@ import {
 import { Favorite } from "@/components/Favorite";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
-import { useCart } from "@/lib/cart";
+import { AddToBag } from "@/components/AddToBag";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -24,7 +24,6 @@ function Product({
   product: ProductType;
 }) {
   const [selectedVariant, setSelectedVariant] = useState(product.variants[0]);
-  const { addItem, cartHasProduct, removeItem } = useCart();
 
   return (
     <>
@@ -53,6 +52,7 @@ function Product({
                               src={image}
                               className="h-full w-full object-cover object-center"
                               alt="product image"
+                              priority
                             />
                           </span>
                           <span
@@ -105,7 +105,7 @@ function Product({
                 </div>
               </div>
 
-              <form className="mt-6">
+              <div className="mt-6">
                 {/* Sizes */}
                 {product.variants.length > 1 && (
                   <div className="mt-10">
@@ -170,88 +170,8 @@ function Product({
                     </div>
                   </div>
                 )}
-
-                {/* TODO Fix colors */}
-                {cartHasProduct(product.slug) ? (
-                  <div className="mt-10 flex">
-                    <button
-                      type="submit"
-                      className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-brown-primary px-8 py-3 text-base font-medium text-white hover:bg-brown-dark focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
-                      onClick={() => removeItem(product.slug)}
-                    >
-                      Remove from bag
-                    </button>
-                  </div>
-                ) : (
-                  <div className="mt-10 flex">
-                    <button
-                      type="submit"
-                      className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-brown-primary px-8 py-3 text-base font-medium text-white hover:bg-brown-dark focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
-                      onClick={() =>
-                        addItem({
-                          product: product.slug,
-                          size: selectedVariant.size,
-                          quantity: 1,
-                        })
-                      }
-                    >
-                      Add to bag
-                    </button>
-                  </div>
-                )}
-              </form>
-
-              <section aria-labelledby="details-heading" className="mt-12">
-                <h2 id="details-heading" className="sr-only">
-                  Additional details
-                </h2>
-
-                {/* <div className="divide-y divide-gray-200 border-t">
-                {product.details.map((detail) => (
-                  <Disclosure as="div" key={detail.name}>
-                    {({ open }) => (
-                      <>
-                        <h3>
-                          <Disclosure.Button className="group relative flex w-full items-center justify-between py-6 text-left">
-                            <span
-                              className={classNames(
-                                open ? "text-amber-600" : "text-gray-900",
-                                "text-sm font-medium"
-                              )}
-                            >
-                              {detail.name}
-                            </span>
-                            <span className="ml-6 flex items-center">
-                              {open ? (
-                                <MinusIcon
-                                  className="block h-6 w-6 text-amber-400 group-hover:text-amber-500"
-                                  aria-hidden="true"
-                                />
-                              ) : (
-                                <PlusIcon
-                                  className="block h-6 w-6 text-gray-400 group-hover:text-gray-500"
-                                  aria-hidden="true"
-                                />
-                              )}
-                            </span>
-                          </Disclosure.Button>
-                        </h3>
-                        <Disclosure.Panel
-                          as="div"
-                          className="prose prose-sm pb-6"
-                        >
-                          <ul role="list">
-                            {detail.items.map((item) => (
-                              <li key={item}>{item}</li>
-                            ))}
-                          </ul>
-                        </Disclosure.Panel>
-                      </>
-                    )}
-                  </Disclosure>
-                ))}
-              </div> */}
-              </section>
+                <AddToBag product={product} variant={selectedVariant} />
+              </div>
             </div>
           </div>
         </div>
