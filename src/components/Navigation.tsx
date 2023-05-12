@@ -144,7 +144,7 @@ export const Navigation = () => {
                     <Link href="/" className="flex items-center gap-6">
                       <Image className="h-12 w-auto" src={KayonLogo} alt="" />
                       <span className="font-bold text-sm text-brown-primary">
-                        Elevate your home with handmade decor
+                        From artisans hands to your home
                       </span>
                     </Link>
                   </div>

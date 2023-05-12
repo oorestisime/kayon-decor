@@ -18,6 +18,9 @@ module.exports = {
           dark: "#665548",
         },
       },
+      objectPosition: {
+        "first-page": "10% 100%",
+      },
     },
   },
   plugins: [

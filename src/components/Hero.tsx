@@ -57,7 +57,7 @@ export const Hero = () => {
           <Image
             src={WebsitePhotoPageOne}
             alt="Website Photo 1st page"
-            className="h-full w-full object-cover object-center"
+            className="h-full w-full object-cover object-first-page"
           />
         </div>
       </div>
