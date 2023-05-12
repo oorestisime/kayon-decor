@@ -59,7 +59,7 @@ export const useCart = () => {
       return;
     }
     const newItems = value.items.map((item) => {
-      if (item.product === product) {
+      if (item.product === product && item.variant.size === variant.size) {
         return { ...item, quantity };
       }
       return item;

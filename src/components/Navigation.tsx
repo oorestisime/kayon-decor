@@ -1,5 +1,3 @@
-"use client";
-
 import { Fragment, useState } from "react";
 import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
 import { ShoppingBagIcon, XMarkIcon } from "@heroicons/react/24/outline";
@@ -9,6 +7,7 @@ import { getProductUrl } from "@/utils";
 import Image from "next/image";
 import KayonLogo from "@/images/Logo/Brown_Logo.png";
 import { CartType, useCart } from "@/lib/cart";
+import { Suspense } from "react";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -259,15 +258,20 @@ export const Navigation = () => {
                                 className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
                                 aria-hidden="true"
                               />
-                              <span
-                                suppressHydrationWarning
-                                className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800"
+                              <Suspense
+                                fallback={
+                                  <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
+                                    0
+                                  </span>
+                                }
                               >
-                                {cart?.items?.length || 0}
-                              </span>
-                              <span className="sr-only">
-                                items in cart, view bag
-                              </span>
+                                <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
+                                  {cart?.items?.length || 0}
+                                </span>
+                                <span className="sr-only">
+                                  items in cart, view bag
+                                </span>
+                              </Suspense>
                             </Link>
                           </div>
                         </div>
