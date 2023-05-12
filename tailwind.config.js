@@ -20,6 +20,7 @@ module.exports = {
       },
       objectPosition: {
         "first-page": "10% 100%",
+        "story-photo": "100% 85%",
       },
     },
   },

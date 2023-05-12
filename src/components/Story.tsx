@@ -1,12 +1,16 @@
+import Image from "next/image";
+import firstPagePhoto from "@/images/1stpage-photo.jpeg";
+import firstPagePhoto2 from "@/images/1stpage-photo2.jpeg";
+
 export const Story = () => {
   return (
     <section aria-labelledby="cause-heading">
       <div className="relative bg-gray-800 px-6 py-32 sm:px-12 sm:py-40 lg:px-16">
         <div className="absolute inset-0 overflow-hidden">
-          <img
-            src="https://tailwindui.com/img/ecommerce-images/home-page-03-feature-section-full-width.jpg"
-            alt=""
-            className="h-full w-full object-cover object-center"
+          <Image
+            src={firstPagePhoto2}
+            alt="first Page Photo"
+            className="h-full w-full object-cover object-story-photo"
           />
         </div>
         <div
