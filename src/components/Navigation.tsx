@@ -14,12 +14,12 @@ function classNames(...classes: string[]) {
 }
 
 export const Navigation = () => {
-  // const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { cart } = useCart();
 
   return (
     <>
-      {/* <Transition.Root show={mobileMenuOpen} as={Fragment}>
+      <Transition.Root show={mobileMenuOpen} as={Fragment}>
         <Dialog
           as="div"
           className="relative z-40 lg:hidden"
@@ -35,9 +35,9 @@ export const Navigation = () => {
             leaveTo="opacity-0"
           >
             <div className="fixed inset-0 bg-black bg-opacity-25" />
-          </Transition.Child> */}
+          </Transition.Child>
 
-      {/* <div className="fixed inset-0 z-40 flex">
+          <div className="fixed inset-0 z-40 flex">
             <Transition.Child
               as={Fragment}
               enter="transition ease-in-out duration-300 transform"
@@ -57,10 +57,10 @@ export const Navigation = () => {
                     <span className="sr-only">Close menu</span>
                     <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                   </button>
-                </div> */}
+                </div>
 
-      {/* Links */}
-      {/* <Tab.Group as="div" className="mt-2">
+                {/* Links */}
+                <Tab.Group as="div" className="mt-2">
                   <div className="border-b border-gray-200">
                     <Tab.List className="-mb-px flex space-x-8 px-4">
                       {navigation.categories.map((category) => (
@@ -79,8 +79,8 @@ export const Navigation = () => {
                         </Tab>
                       ))}
                     </Tab.List>
-                  </div> */}
-      {/* <Tab.Panels as={Fragment}>
+                  </div>
+                  <Tab.Panels as={Fragment}>
                     {navigation.categories.map((category) => (
                       <Tab.Panel
                         key={category.name}
@@ -112,8 +112,8 @@ export const Navigation = () => {
                       </Tab.Panel>
                     ))}
                   </Tab.Panels>
-                </Tab.Group> */}
-      {/* 
+                </Tab.Group>
+
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   {navigation.pages.map((page) => (
                     <div key={page.name} className="flow-root">
@@ -129,8 +129,8 @@ export const Navigation = () => {
               </Dialog.Panel>
             </Transition.Child>
           </div>
-        </Dialog> */}
-      {/* </Transition.Root> */}
+        </Dialog>
+      </Transition.Root>
       {/* Navigation */}
 
       <header className="relative z-10">
