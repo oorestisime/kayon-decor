@@ -8,7 +8,7 @@ const stats = [
   // { label: "of-a-kind piece", value: "1" },
   { label: "product variations", value: "∞" },
 ];
-export default function FAQ() {
+export default function AboutUs() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <main className="isolate">
