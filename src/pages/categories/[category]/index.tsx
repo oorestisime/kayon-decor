@@ -218,16 +218,7 @@ function Category({
             </div>
           </aside>
 
-          <section
-            aria-labelledby="product-heading"
-            className="mt-6 lg:col-span-2 lg:mt-0 xl:col-span-3"
-          >
-            <h2 id="product-heading" className="sr-only">
-              Products
-            </h2>
-
-            <Products products={renderedProducts} category={category} />
-          </section>
+          <Products products={renderedProducts} category={category} />
         </div>
       </main>
       <Story />
