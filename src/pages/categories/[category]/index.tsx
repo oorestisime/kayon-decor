@@ -22,7 +22,7 @@ import {
 import Product from "./[product]";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
-type SubCategoryType = {
+export type SubCategoryType = {
   [key: string]: boolean;
 };
 

@@ -57,9 +57,15 @@ export default function ContactUs() {
               Get in touch
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Proin volutpat consequat porttitor cras nullam gravida at. Orci
-              molestie a eu arcu. Sed ut tincidunt integer elementum id sem.
-              Arcu sed malesuada et magna.
+              We're here to help you with all your buying needs! If you have any
+              questions about our products, need assistance placing an order, or
+              want to explore customization options, we're just a message away.
+              Fill out the contact form provided, and our dedicated team will
+              promptly respond to your inquiry. Alternatively, you can also
+              reach us via email or phone. We appreciate your interest in our
+              offerings and can't wait to assist you in finding the perfect
+              products. Get in touch with us today and let's make your shopping
+              experience exceptional!
             </p>
             <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
               <div className="flex gap-x-4">
@@ -71,9 +77,9 @@ export default function ContactUs() {
                   />
                 </dt>
                 <dd>
-                  545 Mavis Island
+                  Lykavitou 7, Nea Ekali
                   <br />
-                  Chicago, IL 99191
+                  3111 Limassol, Cyprus
                 </dd>
               </div>
               <div className="flex gap-x-4">
@@ -85,11 +91,8 @@ export default function ContactUs() {
                   />
                 </dt>
                 <dd>
-                  <a
-                    className="hover:text-gray-900"
-                    href="tel:+1 (555) 234-5678"
-                  >
-                    +1 (555) 234-5678
+                  <a className="hover:text-gray-900" href="tel:+357 99809955">
+                    +357 99809955 / 99 980636
                   </a>
                 </dd>
               </div>
