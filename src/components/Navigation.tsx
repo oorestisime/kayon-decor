@@ -1,13 +1,12 @@
 import { Fragment, useState } from "react";
 import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
-import { ShoppingBagIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { XMarkIcon } from "@heroicons/react/24/outline";
 import { navigation } from "@/data/navigation";
 import Link from "next/link";
 import { getProductUrl } from "@/utils";
 import Image from "next/image";
 import KayonLogo from "@/images/Logo/Brown_Logo.png";
-import { CartType, useCart } from "@/lib/cart";
-import { Suspense } from "react";
+import { CartMenu } from "./CartMenu";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -15,7 +14,6 @@ function classNames(...classes: string[]) {
 
 export const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { cart } = useCart();
 
   return (
     <>
@@ -248,33 +246,7 @@ export const Navigation = () => {
                           </Link>
                         ))}
                         {/* Cart */}
-                        <div className="flex flex-1 items-center justify-end">
-                          <div className="ml-4 flow-root lg:ml-8">
-                            <Link
-                              href="/cart"
-                              className="group -m-2 flex items-center p-2"
-                            >
-                              <ShoppingBagIcon
-                                className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
-                                aria-hidden="true"
-                              />
-                              <Suspense
-                                fallback={
-                                  <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
-                                    0
-                                  </span>
-                                }
-                              >
-                                <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
-                                  {cart?.items?.length || 0}
-                                </span>
-                                <span className="sr-only">
-                                  items in cart, view bag
-                                </span>
-                              </Suspense>
-                            </Link>
-                          </div>
-                        </div>
+                        <CartMenu />
                       </div>
                     </Popover.Group>
                   </div>

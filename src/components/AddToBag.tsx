@@ -1,7 +1,8 @@
 "use client";
 
 import { ProductType, VariantType } from "@/data/store";
-import { useCart } from "@/lib/cart";
+import { GlobalCartContext } from "@/lib/cart";
+import { useContext } from "react";
 
 export const AddToBag = ({
   product,
@@ -10,7 +11,7 @@ export const AddToBag = ({
   product: ProductType;
   variant: VariantType;
 }) => {
-  const { addItem, cartHasProduct, removeItem } = useCart();
+  const { addItem, cartHasProduct, removeItem } = useContext(GlobalCartContext);
 
   if (cartHasProduct(product.slug, variant)) {
     return (

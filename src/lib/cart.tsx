@@ -1,9 +1,9 @@
-"use client";
-
 import { VariantType } from "@/data/store";
+import { ReactElement, createContext } from "react";
 import { useLocalStorage } from "react-use";
 
 const cartKey = "kayon-cart";
+
 type CartItemType = {
   product: string;
   variant: VariantType;
@@ -20,8 +20,38 @@ const defaultCart: CartType = {
   name: "",
 };
 
-export const useCart = () => {
+interface IGlobalContextProps {
+  cart?: CartType;
+  addItem: (item: CartItemType) => void;
+  reset: () => void;
+  removeItem: (product: string, variant: VariantType) => void;
+  changeQuantity: (
+    product: string,
+    variant: VariantType,
+    quantity: number
+  ) => void;
+  cartHasProduct: (product: string, variant: VariantType) => boolean;
+  editName: (name: string) => void;
+  editEmail: (email: string) => void;
+}
+
+export const GlobalCartContext = createContext<IGlobalContextProps>({
+  addItem: () => {},
+  reset: () => {},
+  removeItem: () => {},
+  changeQuantity: () => {},
+  cartHasProduct: () => false,
+  editName: () => {},
+  editEmail: () => {},
+});
+
+export const GlobalCartContextProvider = ({
+  children,
+}: {
+  children: ReactElement[];
+}) => {
   const [value, setValue] = useLocalStorage(cartKey, defaultCart);
+
   const addItem = (item: CartItemType) => {
     if (!value) {
     }
@@ -76,12 +106,34 @@ export const useCart = () => {
     );
   };
 
-  return {
-    cart: value,
-    addItem,
-    removeItem,
-    reset,
-    cartHasProduct,
-    changeQuantity,
+  const editEmail = (email: string) => {
+    if (!value) {
+      return;
+    }
+    setValue({ ...value, email });
   };
+
+  const editName = (name: string) => {
+    if (!value) {
+      return;
+    }
+    setValue({ ...value, name });
+  };
+
+  return (
+    <GlobalCartContext.Provider
+      value={{
+        cart: value,
+        addItem,
+        removeItem,
+        reset,
+        cartHasProduct,
+        changeQuantity,
+        editEmail,
+        editName,
+      }}
+    >
+      {children}
+    </GlobalCartContext.Provider>
+  );
 };

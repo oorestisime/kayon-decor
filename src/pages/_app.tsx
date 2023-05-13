@@ -1,5 +1,6 @@
 import { Footer } from "@/components/Footer";
 import { Navigation } from "@/components/Navigation";
+import { GlobalCartContextProvider } from "@/lib/cart";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { Playfair_Display } from "next/font/google";
@@ -19,9 +20,11 @@ export default function App({ Component, pageProps }: AppProps) {
         }
       `}</style>
       <div className="bg-white">
-        <Navigation />
-        <Component {...pageProps} />
-        <Footer />
+        <GlobalCartContextProvider>
+          <Navigation />
+          <Component {...pageProps} />
+          <Footer />
+        </GlobalCartContextProvider>
       </div>
     </>
   );

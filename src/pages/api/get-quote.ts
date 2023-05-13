@@ -24,6 +24,7 @@ export default async function handler(
   if (req.method !== "POST") {
     return res.status(405).json({ message: "Method not allowed" });
   }
+  console.log(req.body);
   if (
     !req.body.email ||
     (req.body.items?.length || 0) === 0 ||
@@ -35,14 +36,15 @@ export default async function handler(
     return res.status(400).json({ message: "Invalid email" });
   }
   const items = JSON.stringify(req.body.items);
-  await sendEmail({
-    to: "kayon-decor@gmail.com",
-    subject: "Get Quote - Kayon Decor",
-    html: template
-      .replace("{{name}}", req.body.name)
-      .replace("{{email}}", req.body.email)
-      .replace("{{items}}", items),
-  });
+  // await sendEmail({
+  //   to: "kayon-decor@gmail.com",
+  //   subject: "Get Quote - Kayon Decor",
+  //   html: template
+  //     .replace("{{name}}", req.body.name)
+  //     .replace("{{email}}", req.body.email)
+  //     .replace("{{items}}", items),
+  // });
+  console.log(items);
 
   return res.status(200).json({ message: "Email sent successfully" });
 }

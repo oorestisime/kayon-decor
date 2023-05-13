@@ -6,12 +6,12 @@ import {
   categoryMap,
   productMap,
 } from "@/data/store";
-import { useCart } from "@/lib/cart";
+import { GlobalCartContext } from "@/lib/cart";
 import { getProductUrl } from "@/utils";
 import { NextSeo } from "next-seo";
 import Image from "next/image";
 import Link from "next/link";
-import { Suspense } from "react";
+import { Suspense, useContext, useEffect, useState } from "react";
 import { XMarkIcon as XMarkIconMini } from "@heroicons/react/20/solid";
 
 const Product = ({
@@ -30,11 +30,13 @@ const Product = ({
   return (
     <li className="flex py-6 sm:py-10">
       <div className="flex-shrink-0">
-        <Image
-          src={product.images[0]}
-          alt={`${product.name} image`}
-          className="h-24 w-24 rounded-md object-cover object-center sm:h-48 sm:w-48"
-        />
+        <Link href={getProductUrl(product, categoryMap[product.category])}>
+          <Image
+            src={product.images[0]}
+            alt={`${product.name} image`}
+            className="h-24 w-24 rounded-md object-cover object-center sm:h-48 sm:w-48"
+          />
+        </Link>
       </div>
 
       <div className="ml-4 flex flex-1 flex-col justify-between sm:ml-6">
@@ -102,7 +104,39 @@ const Product = ({
 };
 
 function Cart() {
-  const { removeItem, cart, changeQuantity } = useCart();
+  const { removeItem, cart, changeQuantity, editEmail, editName } =
+    useContext(GlobalCartContext);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setIsClient(true);
+    }
+  }, []);
+
+  const handleSubmit = async (event) => {
+    // Stop the form from submitting and refreshing the page.
+    event.preventDefault();
+
+    // Send the data to the server in JSON format.
+    const JSONdata = JSON.stringify(cart);
+    const endpoint = "/api/get-quote";
+
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSONdata,
+    };
+    const response = await fetch(endpoint, options);
+    const result = await response.json();
+    if (result.message === "Email sent successfully") {
+      alert("Email sent successfully");
+    } else {
+      alert("Something went wrong, please try again");
+    }
+  };
 
   const total =
     cart?.items.reduce((acc, item) => {
@@ -122,14 +156,11 @@ function Cart() {
           Shopping Cart
         </h1>
 
-        <Suspense
-          fallback={
-            <h2 id="cart-heading" className="sr-only">
-              No Items in your shopping cart
-            </h2>
-          }
-        >
-          <form className="mt-12 lg:grid lg:grid-cols-12 lg:items-start lg:gap-x-12 xl:gap-x-16">
+        {isClient ? (
+          <form
+            onSubmit={handleSubmit}
+            className="mt-12 lg:grid lg:grid-cols-12 lg:items-start lg:gap-x-12 xl:gap-x-16"
+          >
             <section aria-labelledby="cart-heading" className="lg:col-span-7">
               <h2 id="cart-heading" className="sr-only">
                 Items in your shopping cart
@@ -155,53 +186,98 @@ function Cart() {
             {/* Order summary */}
             <section
               aria-labelledby="summary-heading"
-              className="mt-16 rounded-lg bg-gray-50 px-4 py-6 sm:p-6 lg:col-span-5 lg:mt-0 lg:p-8"
+              className="mt-16 sm:p-6 lg:col-span-5 lg:mt-0 lg:p-8"
             >
-              <h2
-                id="summary-heading"
-                className="text-lg font-medium text-gray-900"
-              >
-                Order summary
-              </h2>
-
-              <dl className="mt-6 space-y-4">
-                <div className="flex items-center justify-between">
-                  <dt className="text-sm text-gray-600">Subtotal</dt>
-                  <dd className="text-sm font-medium text-gray-900">
-                    {total * 0.8}€
-                  </dd>
-                </div>
-
-                <div className="flex items-center justify-between border-t border-gray-200 pt-4">
-                  <dt className="flex text-sm text-gray-600">
-                    <span>Tax estimate</span>
-                  </dt>
-                  {/* 20 % tax */}
-                  <dd className="text-sm font-medium text-gray-900">
-                    {total * 0.2}€
-                  </dd>
-                </div>
-                <div className="flex items-center justify-between border-t border-gray-200 pt-4">
-                  <dt className="text-base font-medium text-gray-900">
-                    Order total
-                  </dt>
-                  <dd className="text-base font-medium text-gray-900">
-                    {total}€
-                  </dd>
-                </div>
-              </dl>
-
-              <div className="mt-6">
-                <button
-                  type="submit"
-                  className="w-full rounded-md border border-transparent bg-brown-primary px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-brown-dark focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
+              <div className="bg-gray-50 rounded-lg mb-6 px-4 py-6">
+                <h2
+                  id="summary-heading"
+                  className="text-lg font-medium text-gray-900"
                 >
-                  Get a Quote!
-                </button>
+                  Personal Details{" "}
+                </h2>
+
+                <dl className="mt-6 space-y-4">
+                  <div className="flex items-center justify-between">
+                    <dt className="text-sm text-gray-600">Name</dt>
+                    <dd className="text-sm font-medium text-gray-900">
+                      <input
+                        required
+                        value={cart?.name}
+                        id="name"
+                        name="name"
+                        type="text"
+                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-amber-500 sm:text-sm sm:leading-6"
+                        onChange={(e) => editName(e.target.value)}
+                      />
+                    </dd>
+                  </div>
+
+                  <div className="flex items-center justify-between border-t border-gray-200 pt-4">
+                    <dt className="flex text-sm text-gray-600">
+                      <span>Email</span>
+                    </dt>
+                    <dd className="text-sm font-medium text-gray-900">
+                      <input
+                        required
+                        value={cart?.email}
+                        id="email"
+                        name="email"
+                        type="email"
+                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-amber-500 sm:text-sm sm:leading-6"
+                        onChange={(e) => editEmail(e.target.value)}
+                      />
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+
+              <div className="bg-gray-50 rounded-lg px-4 py-6">
+                <h2
+                  id="summary-heading"
+                  className="text-lg font-medium text-gray-900"
+                >
+                  Order summary
+                </h2>
+
+                <dl className="mt-6 space-y-4">
+                  <div className="flex items-center justify-between">
+                    <dt className="text-sm text-gray-600">Subtotal</dt>
+                    <dd className="text-sm font-medium text-gray-900">
+                      {(total * 0.8).toFixed(2)}€
+                    </dd>
+                  </div>
+
+                  <div className="flex items-center justify-between border-t border-gray-200 pt-4">
+                    <dt className="flex text-sm text-gray-600">
+                      <span>Tax estimate</span>
+                    </dt>
+                    {/* 20 % tax */}
+                    <dd className="text-sm font-medium text-gray-900">
+                      {(total * 0.2).toFixed(2)}€
+                    </dd>
+                  </div>
+                  <div className="flex items-center justify-between border-t border-gray-200 pt-4">
+                    <dt className="text-base font-medium text-gray-900">
+                      Order total
+                    </dt>
+                    <dd className="text-base font-medium text-gray-900">
+                      {total.toFixed(2)}€
+                    </dd>
+                  </div>
+                </dl>
+
+                <div className="mt-6">
+                  <button
+                    type="submit"
+                    className="w-full rounded-md border border-transparent bg-brown-primary px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-brown-dark focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
+                  >
+                    Get a Personalized Quote!
+                  </button>
+                </div>
               </div>
             </section>
           </form>
-        </Suspense>
+        ) : null}
       </main>
       <Story />
       <Favorite />
