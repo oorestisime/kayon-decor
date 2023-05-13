@@ -66,6 +66,12 @@ export default function faq() {
         </h2>
         <FAQ data={faqs} />
       </div>
+      <div className="mx-auto mt-24 max-w-4xl divide-y divide-gray-900/10">
+        <h3 className="text-base leading-10 tracking-tight text-gray-900">
+          If you have any other questions, please feel free to reach out to our
+          customer service team. We're here to assist you.
+        </h3>
+      </div>
     </div>
   );
 }
