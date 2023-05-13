@@ -170,7 +170,6 @@ function Category({
                       </fieldset>
                     )}
                   </Disclosure>
-                  )
                 </form>
               </Dialog.Panel>
             </Transition.Child>
