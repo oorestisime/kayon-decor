@@ -30,7 +30,7 @@ export const Story = () => {
             them as much as we do.
           </p>
           <a
-            href="#"
+            href="/about-us"
             className="mt-8 block w-full rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto"
           >
             Read our story

@@ -13,11 +13,12 @@ function classNames(...classes: string[]) {
 }
 
 export const Navigation = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  // const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { cart } = useCart();
 
   return (
     <>
-      <Transition.Root show={mobileMenuOpen} as={Fragment}>
+      {/* <Transition.Root show={mobileMenuOpen} as={Fragment}>
         <Dialog
           as="div"
           className="relative z-40 lg:hidden"
@@ -55,10 +56,10 @@ export const Navigation = () => {
                     <span className="sr-only">Close menu</span>
                     <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                   </button>
-                </div>
+                </div> */}
 
-                {/* Links */}
-                <Tab.Group as="div" className="mt-2">
+      {/* Links */}
+      {/* <Tab.Group as="div" className="mt-2">
                   <div className="border-b border-gray-200">
                     <Tab.List className="-mb-px flex space-x-8 px-4">
                       {navigation.categories.map((category) => (
@@ -128,7 +129,7 @@ export const Navigation = () => {
             </Transition.Child>
           </div>
         </Dialog>
-      </Transition.Root>
+      </Transition.Root> */}
       {/* Navigation */}
 
       <header className="relative z-10">
