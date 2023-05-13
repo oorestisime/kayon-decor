@@ -1,14 +1,9 @@
 import { ProductType, CategoryType } from "@/data/store";
+import { categoryMap } from "@/data/store";
 import Image from "next/image";
 import Link from "next/link";
 import { getProductUrl } from "@/utils";
-export const Products = ({
-  products,
-  category,
-}: {
-  products: ProductType[];
-  category: CategoryType;
-}) => {
+export const Products = ({ products }: { products: ProductType[] }) => {
   const renderPrice = (product: ProductType) => {
     if (product.variants.length === 1) {
       return product.variants[0].price;
@@ -17,6 +12,7 @@ export const Products = ({
       product.variants[product.variants.length - 1].price
     }`;
   };
+
   return (
     <section
       aria-labelledby="product-heading"
@@ -40,7 +36,9 @@ export const Products = ({
             </div>
             <div className="flex flex-1 flex-col space-y-2 p-4">
               <h3 className="text-sm font-medium text-gray-900">
-                <Link href={getProductUrl(product, category)}>
+                <Link
+                  href={getProductUrl(product, categoryMap[product.category])}
+                >
                   <span aria-hidden="true" className="absolute inset-0" />
                   {product.name}
                 </Link>

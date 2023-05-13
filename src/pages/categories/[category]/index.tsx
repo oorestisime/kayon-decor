@@ -218,7 +218,7 @@ function Category({
             </div>
           </aside>
 
-          <Products products={renderedProducts} category={category} />
+          <Products products={renderedProducts} />
         </div>
       </main>
       <Story />
@@ -255,6 +255,7 @@ export async function getStaticProps({
   const products = allProducts.filter(
     (product) => product.category === category.id
   );
+
   const subCategories = [
     ...new Set(products.map((product) => product.sub_category)),
   ];
