@@ -43,7 +43,7 @@ export const Hero = () => {
                 </p>
                 <div className="mt-6">
                   <a
-                    href="#"
+                    href="/products"
                     className="inline-block rounded-md border border-transparent bg-brown-primary px-8 py-3 font-medium text-white hover:bg-brown-dark"
                   >
                     View Catalog

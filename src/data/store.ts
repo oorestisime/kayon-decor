@@ -1465,13 +1465,13 @@ export const products = [
     variants: [
       {
         size: "1",
-        specification: "L90 x W65 x H50 cm",
-        price: "915",
+        specification: "L90 x W50 x H50 cm",
+        price: "590",
       },
       {
         size: "2",
-        specification: "L95 x W50 x H50 cm",
-        price: "590",
+        specification: "L95 x W65 x H50 cm",
+        price: "915",
       },
     ],
   },
@@ -1483,6 +1483,7 @@ export const categories = [
     name: "Home Furniture",
     slug: "home-furniture",
     description: "Hand crafted furniture from Bali",
+    subCategory: ["Tables", "Chairs", "Side Tables"],
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-03-featured-category.jpg",
     featured: products.filter(
@@ -1494,6 +1495,7 @@ export const categories = [
     name: "Tablewares",
     slug: "tablewares",
     description: "Hand crafted tableware from Bali",
+    subCategory: ["Plates/Platters", "Bowls", "Trays"],
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-03-category-02.jpg",
     featured: products.filter(
@@ -1505,6 +1507,7 @@ export const categories = [
     name: "Kitchenware",
     slug: "kitchenware",
     description: "Hand crafted kitchenware from Bali",
+    subCategory: ["Wooden Boards", "Grinding Bowls", "Wooden Utensils"],
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-03-category-02.jpg",
     featured: products.filter(
@@ -1517,6 +1520,7 @@ export const categories = [
     name: "Home Decor",
     slug: "home-decor",
     description: "Hand crafted decoration from Bali",
+    subCategory: ["Gucci", "Baskets", "Accessories"],
     imageSrc:
       "https://tailwindui.com/img/ecommerce-images/home-page-03-category-01.jpg",
     featured: products.filter(
