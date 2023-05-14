@@ -14,7 +14,7 @@ function classNames(...classes: string[]) {
 
 export const Navigation = () => {
   // const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { cart } = useCart();
+  // const { cart } = useCart();
 
   return (
     <>
