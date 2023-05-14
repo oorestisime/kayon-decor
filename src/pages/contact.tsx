@@ -3,8 +3,42 @@ import {
   EnvelopeIcon,
   PhoneIcon,
 } from "@heroicons/react/24/outline";
+import { FormEvent, SyntheticEvent } from "react";
 
 export default function ContactUs() {
+  const handleSubmit = async (event: SyntheticEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    // Send the data to the server in JSON format.
+    const form = event.currentTarget;
+    const formElements = form.elements as typeof form.elements & {
+      firstName: { value: string };
+      lastName: { value: string };
+      email: { value: string };
+      message: { value: string };
+    };
+    const JSONdata = JSON.stringify({
+      email: formElements.email.value,
+      name: `${formElements.firstName.value} ${formElements.lastName.value}`,
+      message: formElements.message.value,
+    });
+    const endpoint = "/api/contact";
+
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSONdata,
+    };
+    const response = await fetch(endpoint, options);
+    const result = await response.json();
+    if (result.message === "Email sent successfully") {
+      alert("Email sent successfully");
+    } else {
+      alert("Something went wrong, please try again");
+    }
+  };
   return (
     <div className="relative isolate bg-white">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
@@ -111,16 +145,17 @@ export default function ContactUs() {
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div>
                 <label
-                  htmlFor="first-name"
+                  htmlFor="firstName"
                   className="block text-sm font-semibold leading-6 text-gray-900"
                 >
                   First name
                 </label>
                 <div className="mt-2.5">
                   <input
+                    required
                     type="text"
-                    name="first-name"
-                    id="first-name"
+                    name="firstName"
+                    id="firstName"
                     autoComplete="given-name"
                     className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brown-primary sm:text-sm sm:leading-6"
                   />
@@ -128,16 +163,17 @@ export default function ContactUs() {
               </div>
               <div>
                 <label
-                  htmlFor="last-name"
+                  htmlFor="lastName"
                   className="block text-sm font-semibold leading-6 text-gray-900"
                 >
                   Last name
                 </label>
                 <div className="mt-2.5">
                   <input
+                    required
                     type="text"
-                    name="last-name"
-                    id="last-name"
+                    name="lastName"
+                    id="lastName"
                     autoComplete="family-name"
                     className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brown-primary sm:text-sm sm:leading-6"
                   />
@@ -152,6 +188,7 @@ export default function ContactUs() {
                 </label>
                 <div className="mt-2.5">
                   <input
+                    required
                     type="email"
                     name="email"
                     id="email"
@@ -160,23 +197,7 @@ export default function ContactUs() {
                   />
                 </div>
               </div>
-              <div className="sm:col-span-2">
-                <label
-                  htmlFor="phone-number"
-                  className="block text-sm font-semibold leading-6 text-gray-900"
-                >
-                  Phone number
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    type="tel"
-                    name="phone-number"
-                    id="phone-number"
-                    autoComplete="tel"
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brown-primary sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
+
               <div className="sm:col-span-2">
                 <label
                   htmlFor="message"
@@ -186,6 +207,7 @@ export default function ContactUs() {
                 </label>
                 <div className="mt-2.5">
                   <textarea
+                    required
                     name="message"
                     id="message"
                     rows={4}

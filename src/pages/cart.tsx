@@ -11,7 +11,7 @@ import { getProductUrl } from "@/utils";
 import { NextSeo } from "next-seo";
 import Image from "next/image";
 import Link from "next/link";
-import { Suspense, useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState, FormEvent } from "react";
 import { XMarkIcon as XMarkIconMini } from "@heroicons/react/20/solid";
 
 const Product = ({
@@ -114,7 +114,7 @@ function Cart() {
     }
   }, []);
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = async (event: FormEvent) => {
     // Stop the form from submitting and refreshing the page.
     event.preventDefault();
 
