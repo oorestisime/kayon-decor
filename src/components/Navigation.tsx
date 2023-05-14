@@ -56,12 +56,18 @@ export const Navigation = () => {
                     <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                   </button>
                 </div>
+                <div className="flex pb-2 pt-5">
+                  <CartMenu
+                    onClick={() => setMobileMenuOpen(false)}
+                    justify="justify-start"
+                  />
+                </div>
 
                 {/* Links */}
                 <Tab.Group as="div" className="mt-2">
                   <div className="border-b border-gray-200">
                     <Tab.List className="-mb-px flex space-x-8 px-4">
-                      {navigation.categories.map((category) => (
+                      {navigation.categories.slice(0, 2).map((category) => (
                         <Tab
                           key={category.name}
                           className={({ selected }) =>
@@ -79,7 +85,7 @@ export const Navigation = () => {
                     </Tab.List>
                   </div>
                   <Tab.Panels as={Fragment}>
-                    {navigation.categories.map((category) => (
+                    {navigation.categories.slice(0, 2).map((category) => (
                       <Tab.Panel
                         key={category.name}
                         className="space-y-12 px-4 py-6"
@@ -95,6 +101,7 @@ export const Navigation = () => {
                                 />
                               </div>
                               <Link
+                                onClick={() => setMobileMenuOpen(false)}
                                 href={getProductUrl(item, category)}
                                 className="mt-6 block text-sm font-medium text-gray-900"
                               >
@@ -116,6 +123,7 @@ export const Navigation = () => {
                   {navigation.pages.map((page) => (
                     <div key={page.name} className="flow-root">
                       <Link
+                        onClick={() => setMobileMenuOpen(false)}
                         href={page.slug}
                         className="-m-2 block p-2 font-medium text-gray-900"
                       >
