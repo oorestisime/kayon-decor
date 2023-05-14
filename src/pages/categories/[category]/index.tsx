@@ -9,7 +9,7 @@ import {
 } from "@/data/store";
 import { Products } from "@/components/Products";
 import { getProductUrl } from "@/utils";
-import Link from "next/link";
+
 import Image from "next/image";
 import { NextSeo } from "next-seo";
 import { ChevronDownIcon, PlusIcon } from "@heroicons/react/24/outline";

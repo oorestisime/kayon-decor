@@ -1,7 +1,7 @@
 import Image from "next/image";
 import firstPagePhoto from "@/images/1stpage-photo.jpeg";
 import firstPagePhoto2 from "@/images/1stpage-photo2.jpeg";
-
+import Link from "next/link";
 export const Story = () => {
   return (
     <section aria-labelledby="cause-heading">
@@ -29,12 +29,12 @@ export const Story = () => {
             pieces. Each one is unique and made with love. We hope you will love
             them as much as we do.
           </p>
-          <a
+          <Link
             href="/about-us"
             className="mt-8 block w-full rounded-md border border-transparent bg-white px-8 py-3 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto"
           >
             Read our story
-          </a>
+          </Link>
         </div>
       </div>
     </section>
