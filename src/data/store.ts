@@ -1442,12 +1442,12 @@ export const products = [
     images: [],
     variants: [
       {
-        size: "2 legged",
+        size: "1 legged",
         specification: "L95 x W45 x H50 cm",
         price: "476",
       },
       {
-        size: "1 legged",
+        size: "2 legged",
         specification: "L75 x W50 x H50 cm",
         price: "476",
       },
@@ -1484,8 +1484,7 @@ export const categories = [
     slug: "home-furniture",
     description: "Hand crafted furniture from Bali",
     subCategory: ["Tables", "Chairs", "Side Tables"],
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-03-featured-category.jpg",
+    imageSrc: "",
     featured: products.filter(
       (product) => product.category === "cat-home-furniture" && product.featured
     ),
@@ -1496,8 +1495,7 @@ export const categories = [
     slug: "tablewares",
     description: "Hand crafted tableware from Bali",
     subCategory: ["Plates/Platters", "Bowls", "Trays"],
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-03-category-02.jpg",
+    imageSrc: "",
     featured: products.filter(
       (product) => product.category === "cat-tablewares" && product.featured
     ),
@@ -1508,8 +1506,7 @@ export const categories = [
     slug: "kitchenware",
     description: "Hand crafted kitchenware from Bali",
     subCategory: ["Wooden Boards", "Grinding Bowls", "Wooden Utensils"],
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-03-category-02.jpg",
+    imageSrc: "",
     featured: products.filter(
       (product) => product.category === "cat-kitchenware" && product.featured
     ),
@@ -1521,8 +1518,7 @@ export const categories = [
     slug: "home-decor",
     description: "Hand crafted decoration from Bali",
     subCategory: ["Gucci", "Baskets", "Accessories"],
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-03-category-01.jpg",
+    imageSrc: "",
     featured: products.filter(
       (product) => product.category === "cat-home-decor" && product.featured
     ),
