@@ -5,7 +5,7 @@ export const navigation = {
   pages: [
     { name: "About us", slug: "/about-us" },
     { name: "FAQ", slug: "/faq" },
-    { name: "Get In Touch", slug: "/contact-us" },
+    { name: "Get In Touch", slug: "/contact" },
   ],
 };
 
