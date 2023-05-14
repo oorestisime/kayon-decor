@@ -1,6 +1,7 @@
 import { offers } from "@/data/navigation";
 import WebsitePhotoPageOne from "@/images/website-photo-1stpage.jpg";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Hero = () => {
   return (
@@ -42,12 +43,12 @@ export const Hero = () => {
                   the best products. Yet they are affordable.
                 </p>
                 <div className="mt-6">
-                  <a
+                  <Link
                     href="/products"
                     className="inline-block rounded-md border border-transparent bg-brown-primary px-8 py-3 font-medium text-white hover:bg-brown-dark"
                   >
                     View Catalog
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
