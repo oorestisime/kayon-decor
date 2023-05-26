@@ -56,70 +56,17 @@ export const Navigation = () => {
                     <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                   </button>
                 </div>
-                <div className="flex pb-2 pt-5">
-                  <CartMenu
-                    onClick={() => setMobileMenuOpen(false)}
-                    justify="justify-start"
-                  />
-                </div>
-
-                {/* Links */}
-                <Tab.Group as="div" className="mt-2">
-                  <div className="border-b border-gray-200">
-                    <Tab.List className="-mb-px flex space-x-8 px-4">
-                      {navigation.categories.slice(0, 2).map((category) => (
-                        <Tab
-                          key={category.name}
-                          className={({ selected }) =>
-                            classNames(
-                              selected
-                                ? "border-brown-primary text-brown-primary outline-none"
-                                : "border-transparent text-gray-900",
-                              "flex-1 whitespace-nowrap border-b-2 px-1 py-4 text-base font-medium"
-                            )
-                          }
-                        >
-                          {category.name}
-                        </Tab>
-                      ))}
-                    </Tab.List>
-                  </div>
-                  <Tab.Panels as={Fragment}>
-                    {navigation.categories.slice(0, 2).map((category) => (
-                      <Tab.Panel
-                        key={category.name}
-                        className="space-y-12 px-4 py-6"
-                      >
-                        <div className="grid grid-cols-2 gap-x-4 gap-y-10">
-                          {category.featured.map((item) => (
-                            <div key={item.name} className="group relative">
-                              <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
-                                <Image
-                                  src={item.images[0]}
-                                  className="object-cover object-center"
-                                  alt="item image"
-                                />
-                              </div>
-                              <Link
-                                onClick={() => setMobileMenuOpen(false)}
-                                href={getProductUrl(item, category)}
-                                className="mt-6 block text-sm font-medium text-gray-900"
-                              >
-                                <span
-                                  className="absolute inset-0 z-10"
-                                  aria-hidden="true"
-                                />
-                                {item.name}
-                              </Link>
-                            </div>
-                          ))}
-                        </div>
-                      </Tab.Panel>
-                    ))}
-                  </Tab.Panels>
-                </Tab.Group>
 
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
+                  {navigation.categories.map((category) => (
+                    <Link
+                      onClick={() => setMobileMenuOpen(false)}
+                      href={`/categories/${category.slug}`}
+                      className="-m-2 block p-2 font-medium text-gray-900"
+                    >
+                      {category.name}
+                    </Link>
+                  ))}
                   {navigation.pages.map((page) => (
                     <div key={page.name} className="flow-root">
                       <Link
@@ -258,7 +205,7 @@ export const Navigation = () => {
                       </div>
                     </Popover.Group>
                   </div>
-                  <div className="flex flex-1 items-center lg:hidden">
+                  <div className="flex w-full items-center justify-between lg:hidden">
                     <button
                       type="button"
                       className="-ml-2 p-2 text-gray-400"
@@ -267,6 +214,13 @@ export const Navigation = () => {
                       <span className="sr-only">Open menu</span>
                       <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                     </button>
+                    <Link href="/">
+                      <Image className="h-8 w-auto" src={KayonLogo} alt="" />
+                    </Link>
+                    <CartMenu
+                      justify={false}
+                      onClick={() => setMobileMenuOpen(false)}
+                    />
                   </div>
                 </div>
               </div>

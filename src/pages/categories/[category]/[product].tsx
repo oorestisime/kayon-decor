@@ -11,6 +11,7 @@ import { Favorite } from "@/components/Favorite";
 import Image from "next/image";
 import { NextSeo } from "next-seo";
 import { AddToBag } from "@/components/AddToBag";
+import { Breadcrumb } from "@/components/Breadcrumb";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -34,6 +35,7 @@ function Product({
       <main className="mx-auto max-w-7xl sm:px-6 sm:pt-16 lg:px-8 pb-6">
         <div className="mx-auto max-w-2xl lg:max-w-none">
           {/* Product */}
+          <Breadcrumb category={category} product={product} />
           <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8">
             {/* Image gallery */}
             <Tab.Group as="div" className="flex flex-col-reverse">
@@ -50,7 +52,7 @@ function Product({
                           <span className="absolute inset-0 overflow-hidden rounded-md">
                             <Image
                               src={image}
-                              className="h-full w-full object-cover object-center"
+                              className="h-full w-full object-contain object-center"
                               alt="product image"
                               priority
                             />
@@ -76,7 +78,7 @@ function Product({
                   <Tab.Panel key={index}>
                     <Image
                       src={image}
-                      className="h-full w-full  object-contain object-center"
+                      className="h-full w-full object-contain object-center"
                       alt="product image"
                     />
                   </Tab.Panel>

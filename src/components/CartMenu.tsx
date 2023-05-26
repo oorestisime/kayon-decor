@@ -6,10 +6,10 @@ import Link from "next/link";
 import { useContext, useEffect, useState } from "react";
 
 export const CartMenu = ({
-  justify = "justify-end",
+  justify = true,
   onClick,
 }: {
-  justify?: "justify-end" | "justify-start";
+  justify?: boolean;
   onClick?: () => void;
 }) => {
   const { cart } = useContext(GlobalCartContext);
@@ -23,7 +23,7 @@ export const CartMenu = ({
   }, [cart?.items?.length]);
 
   return (
-    <div className={`flex flex-1 items-center ${justify}`}>
+    <div className={justify ? `flex flex-1 items-center justify-end` : ""}>
       <div
         className={`${
           animate ? "animate-bounce text-gray-900" : ""
