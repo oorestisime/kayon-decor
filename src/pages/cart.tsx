@@ -104,9 +104,10 @@ const Product = ({
 };
 
 function Cart() {
-  const { removeItem, cart, changeQuantity, editEmail, editName } =
+  const { removeItem, cart, changeQuantity, editEmail, editName, reset } =
     useContext(GlobalCartContext);
   const [isClient, setIsClient] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -131,11 +132,11 @@ function Cart() {
     };
     const response = await fetch(endpoint, options);
     const result = await response.json();
-    if (result.message === "Email sent successfully") {
-      alert("Email sent successfully");
-    } else {
+    if (result.message !== "Email sent successfully") {
       alert("Something went wrong, please try again");
     }
+    setSubmitted(true);
+    reset();
   };
 
   const total =
@@ -152,11 +153,36 @@ function Cart() {
       />
 
       <main className="mx-auto max-w-2xl px-4 pb-24 pt-16 sm:px-6 lg:max-w-7xl lg:px-8">
-        <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Shopping Cart
+        <h1 className="text-3xl pb-4 font-bold tracking-tight text-gray-900 sm:text-4xl">
+          {submitted ? "Thank you!" : "Shopping Cart"}
         </h1>
 
-        {isClient ? (
+        {isClient && submitted ? (
+          <div className="border-t border-gray-200 px-4 py-6 sm:px-6 lg:p-8">
+            <h4 className="sr-only">Thank you!</h4>
+            <p className="text-sm font-medium text-gray-900">
+              We will get back to you as soon as possible quote to discuss your
+              order
+            </p>
+            <div className="mt-6" aria-hidden="true">
+              <div className="overflow-hidden rounded-full bg-gray-200">
+                <div
+                  className="h-2 rounded-full bg-brown-primary"
+                  style={{
+                    width: `calc((0 * 2 + 1) / 8 * 100%)`,
+                  }}
+                />
+              </div>
+              <div className="mt-6 hidden grid-cols-4 text-sm font-medium text-gray-600 sm:grid">
+                <div className="text-brown-primary">Interest received!</div>
+                <div className="text-center">Processing</div>
+                <div className="text-center">Shipped</div>
+                <div className="text-right">Delivered</div>
+              </div>
+            </div>
+          </div>
+        ) : null}
+        {isClient && !submitted && cart?.items?.length > 0 ? (
           <form
             onSubmit={handleSubmit}
             className="mt-12 lg:grid lg:grid-cols-12 lg:items-start lg:gap-x-12 xl:gap-x-16"

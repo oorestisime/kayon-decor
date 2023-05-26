@@ -31,7 +31,8 @@ export default async function handler(
     return res.status(400).json({ message: "Invalid email" });
   }
   await sendEmail({
-    to: "kayon-decor@gmail.com",
+    to: "kayondecor@gmail.com",
+    from: "kayondecor@gmail.com",
     subject: "Contact - Kayon Decor",
     html: template
       .replace("{{name}}", req.body.name)
