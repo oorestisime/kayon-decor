@@ -60,6 +60,7 @@ export const Navigation = () => {
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   {navigation.categories.map((category) => (
                     <Link
+                      key={category.id}
                       onClick={() => setMobileMenuOpen(false)}
                       href={`/categories/${category.slug}`}
                       className="-m-2 block p-2 font-medium text-gray-900"

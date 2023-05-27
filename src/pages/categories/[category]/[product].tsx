@@ -31,6 +31,11 @@ function Product({
       <NextSeo
         title={`${product.name} | Kayon Decor`}
         description={product.description}
+        openGraph={{
+          images: product.images.slice(0, 2).map((image) => ({
+            url: image.src,
+          })),
+        }}
       />
       <main className="mx-auto max-w-7xl sm:px-6 sm:pt-16 lg:px-8 pb-6">
         <div className="mx-auto max-w-2xl lg:max-w-none">

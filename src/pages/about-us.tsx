@@ -1,7 +1,5 @@
-import { useState } from "react";
-import { Dialog } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { defaultMaxListeners } from "events";
+import { NextSeo } from "next-seo";
+
 const stats = [
   { label: "distance from local artisans", value: "10.000 Km" },
   { label: "away from your home", value: "60-90 days" },
@@ -9,7 +7,6 @@ const stats = [
   { label: "product variations", value: "∞" },
 ];
 export default function AboutUs() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <main className="isolate">
       {/* Hero section */}
