@@ -5,6 +5,7 @@ import Aboutus2 from "@/images/About-us/aboutus2.jpeg";
 import Aboutus3 from "@/images/About-us/aboutus3.jpeg";
 import Aboutus4 from "@/images/About-us/aboutus4.jpeg";
 import Aboutus5 from "@/images/About-us/aboutus5.jpeg";
+import AboutusEnd from "@/images/About-us/aboutus-endpage.jpeg";
 const stats = [
   { label: "distance from local artisans", value: "10.000 Km" },
   { label: "away from your home", value: "60-90 days" },
@@ -191,8 +192,8 @@ export default function AboutUs() {
 
       {/* Image section */}
       <div className="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
-        <img
-          src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
+        <Image
+          src={AboutusEnd}
           alt=""
           className="aspect-[5/2] w-full object-cover xl:rounded-3xl"
         />
