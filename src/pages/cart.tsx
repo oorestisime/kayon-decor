@@ -119,7 +119,7 @@ function Cart() {
     event.preventDefault();
 
     // Send the data to the server in JSON format.
-    const JSONdata = JSON.stringify(cart);
+    const JSONdata = JSON.stringify(cart, null, 2);
     const endpoint = "/api/get-quote";
 
     const options = {
