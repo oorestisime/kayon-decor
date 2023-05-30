@@ -186,8 +186,8 @@ import IslandOasisArmchair from "@/images/Island-Oasis-Armchair/Island-Oasis-Arm
 
 import KennedyDiningChair from "@/images/Kennedy-dining-chair/Kennedy-dining-chair.jpg";
 import CaneChair from "@/images/Cane-chair/Cane-chair.jpeg";
-import Abuabubasket1 from "@/images/Abu-abu-baskets/Abu-abuBaskets1.jpeg";
-import Abuabubasket2 from "@/images/Abu-abu-baskets/Abu-abuBaskets2.jpeg";
+import Abuabubasket1 from "@/images/Abu-abu-baskets/basket.jpeg";
+import Abuabubasket2 from "@/images/Abu-abu-baskets/basket2.jpeg";
 import Alambasket1 from "@/images/Alam-baskets/AlamBaskets1.jpg";
 import Alambasket2 from "@/images/Alam-baskets/AlamBaskets2.jpg";
 import Anyambasket1 from "@/images/Anyam-Baskets/AnyamBaskets1.jpg";
