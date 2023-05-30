@@ -1989,7 +1989,7 @@ export const products = [
       {
         size: "",
         specification:
-          "Material: Teak wood Fabric: Venna Dark grey,Finishing color: Natural Teak, Custom Design",
+          "Material: Teak wood Fabric: Venna Dark grey,   Finishing color: Natural Teak,   Dimensions: 90 x 70 x 82cm     Custom Design",
         price: "976",
       },
     ],
