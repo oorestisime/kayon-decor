@@ -1140,9 +1140,29 @@ export const products = [
     ],
     variants: [
       {
-        size: "",
-        specification: "different sizes and unique styles ",
-        price: "48",
+        size: "XSmall",
+        specification: "D15cm",
+        price: "15",
+      },
+      {
+        size: "Small",
+        specification: "D20cm",
+        price: "20",
+      },
+      {
+        size: "Medium",
+        specification: "D25cm",
+        price: "25",
+      },
+      {
+        size: "Large",
+        specification: "D30cm",
+        price: "30",
+      },
+      {
+        size: "Large",
+        specification: "D40cm",
+        price: "40",
       },
     ],
   },
@@ -1236,7 +1256,7 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H=30cm D=30cm",
+        specification: "H30cm D30cm",
         price: "48",
       },
       {
