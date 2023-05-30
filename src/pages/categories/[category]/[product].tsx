@@ -12,6 +12,8 @@ import Image from "next/image";
 import { NextSeo } from "next-seo";
 import { AddToBag } from "@/components/AddToBag";
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { getProductUrl } from "@/utils";
+import { Seo } from "@/components/Seo";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -28,14 +30,11 @@ function Product({
 
   return (
     <>
-      <NextSeo
+      <Seo
         title={`${product.name} | Kayon Decor`}
         description={product.description}
-        openGraph={{
-          images: product.images.slice(0, 2).map((image) => ({
-            url: image.src,
-          })),
-        }}
+        url={`https://kayon-decor.com/${getProductUrl(product, category)}`}
+        images={product.images}
       />
       <main className="mx-auto max-w-7xl sm:px-6 sm:pt-16 lg:px-8 pb-6">
         <div className="mx-auto max-w-2xl lg:max-w-none">

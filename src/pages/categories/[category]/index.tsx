@@ -23,6 +23,7 @@ import {
 import Product from "./[product]";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { Seo } from "@/components/Seo";
 
 export type SubCategoryType = {
   [key: string]: boolean;
@@ -64,9 +65,10 @@ function Category({
 
   return (
     <>
-      <NextSeo
+      <Seo
         title={`${category.name} | Kayon Decor`}
         description={category.description}
+        url={`https://kayon-decor.com/categories/${category.slug}`}
       />
       {/* Mobile filter dialog */}
       <Transition.Root show={mobileFiltersOpen} as={Fragment}>
