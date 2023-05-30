@@ -186,17 +186,17 @@ import IslandOasisArmchair from "@/images/Island-Oasis-Armchair/Island-Oasis-Arm
 
 import KennedyDiningChair from "@/images/Kennedy-dining-chair/Kennedy-dining-chair.jpg";
 import CaneChair from "@/images/Cane-chair/Cane-chair.jpeg";
-import Abuabubasket1 from "@/images/Abu-abu-baskets/Abu-abuBaskets1.jpeg";
-import Abuabubasket2 from "@/images/Abu-abu-baskets/Abu-abuBaskets2.jpeg";
+import Abuabubasket1 from "@/images/abu-abu/basket.jpeg";
+import Abuabubasket2 from "@/images/abu-abu/basket2.jpeg";
 import Alambasket1 from "@/images/Alam-baskets/AlamBaskets1.jpg";
-import Alambasket2 from "@/images/Alam-baskets/AlamBaskets2.jpg";
+import Alambasket2 from "@/images/Alam-baskets/basket2.jpg";
 import Anyambasket1 from "@/images/Anyam-Baskets/AnyamBaskets1.jpg";
 import Anyambasket2 from "@/images/Anyam-Baskets/AnyamBaskets2.jpg";
 import Anyambasket3 from "@/images/Anyam-Baskets/AnyamBaskets3.jpeg";
 import BlossomBasket1 from "@/images/Blossom-Baskets/BlossomBaskets1.jpeg";
 import BlossomBasket2 from "@/images/Blossom-Baskets/BlossomBaskets2.jpeg";
-import BohoStorageBasket1 from "@/images/Boho-Storage-Baskets/BohoStorageBaskets1.jpg";
-import BohoStorageBasket2 from "@/images/Boho-Storage-Baskets/BohoStorageBaskets2.jpg";
+import BohoStorageBasket1 from "@/images/Boho-Storage-Baskets/baskets.jpg";
+import BohoStorageBasket2 from "@/images/Boho-Storage-Baskets/baskets2.jpg";
 import CuciBasket1 from "@/images/Cuci-Baskets/CuciBaskets1.jpg";
 import CuciBasket2 from "@/images/Cuci-Baskets/CuciBaskets2.jpg";
 import DiamondBasket1 from "@/images/Diamond-Baskets/DiamondBaskets1.jpg";
