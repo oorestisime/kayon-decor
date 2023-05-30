@@ -1,4 +1,5 @@
 import OwlShaped from "@/images/Owl-shaped-plate/owl-shaped.png";
+import OwlShaped2 from "@/images/Owl-shaped-plate/Owl-shaped2.png";
 import PizzaPlateRound1 from "@/images/Pizza-plate-round/pizza-plate-round-1.jpeg";
 import PizzaPlateRound2 from "@/images/Pizza-plate-round/pizza-plate-round-2.jpeg";
 import LoveBirdPlate from "@/images/love-bird-plate/love bird plate.png";
@@ -84,6 +85,7 @@ import TwomLongSuarWoodTableWithLeg2 from "@/images/Wooden Tables/2m-long-suar-w
 import Twom5LongSuarWoodTableWithLeg from "@/images/Wooden Tables/2.5m-long-suar-wood-table-with-star-leg.jpg";
 import Onem5LongSuarWoodTableWithLeg from "@/images/Wooden Tables/1,5m-long-suar-wood-table-with-leg.jpeg";
 import ThreemLongSuarWoodTableWithLeg from "@/images/Wooden Tables/3m-long-suar-wood-table-with-leg.jpeg";
+import TablesFavorite from "@/images/Wooden Tables/favoritesTables.jpeg";
 import TheSquareWoodenPlate2 from "@/images/The-square-wooden-plate/The-square-wooden-plate2.jpeg";
 import TheSquareWoodenPlate3 from "@/images/The-square-wooden-plate/The-square-wooden-plate3.jpeg";
 import TheSquareWoodenPlate from "@/images/The-square-wooden-plate/The-square-wooden-plate.jpeg";
@@ -113,7 +115,7 @@ import TeakWoodUtensils6 from "@/images/Wooden-Utensils/Teak_wood_utensils-6.png
 import TeakWoodUtensils8 from "@/images/Wooden-Utensils/Teak_wood_utensils-8.png";
 import TeakWoodUtensils9 from "@/images/Wooden-Utensils/Teak_wood_utensils-9.png";
 import TeakWoodUtensils1 from "@/images/Wooden-Utensils/Teak_wood_utensils-1.jpeg";
-import PhotoGeneral from "@/images/Wooden-Utensils/photo-general.png";
+import TeakWoodUtensilsGeneral from "@/images/Wooden-Utensils/photo-general.png";
 import TeakWoodUtensils12 from "@/images/Wooden-Utensils/Teak_wood_utensils-12.png";
 import TeakWoodUtensils10 from "@/images/Wooden-Utensils/Teak_wood_utensils-10.jpg";
 import TeakWoodUtensils11 from "@/images/Wooden-Utensils/Teak_wood_utensils-11.png";
@@ -145,21 +147,12 @@ import AppetizerBoard from "@/images/boards/Appetizer - Board.png";
 import MunchingPlatter from "@/images/The-munching-platter/Munching platter.png";
 import DecoWoodenStand from "@/images/Deco-wooden-stand/Deco-wooden-stand.png";
 import GrindingBowl from "@/images/grinding-bowl/grinding-bowl.png";
-import BasketsBlackSmall30 from "@/images/Baskets-black/baskets-black-small-30.jpeg";
-import BasketsBlackMedium35 from "@/images/Baskets-black/baskets-black-medium-35.jpeg";
-import BasketsBlackLarge40 from "@/images/Baskets-black/baskets-black-large-40.jpeg";
-import BasketsBlackAll from "@/images/Baskets-black/baskets-black-all.jpeg";
+
 import NoodleBowl from "@/images/Noodles-bowl/noodle bowl.jpg";
 import MargheritaPlate from "@/images/Margherita-plate/Margherita-plate.png";
 import MargheritaPlate2 from "@/images/Margherita-plate/Margherita-plate2.jpeg";
 import MargheritaPlate3 from "@/images/Margherita-plate/Margherita-plate3.jpeg";
-import BasketsWhiteSmall30 from "@/images/Baskets-white/baskets-white-small-30.jpeg";
-import BasketsWhiteAll2 from "@/images/Baskets-white/baskets-white-all-2.jpeg";
-import BasketsWhiteAll from "@/images/Baskets-white/baskets-white-all.jpeg";
-import BasketsWhiteSmallMedium2 from "@/images/Baskets-white/baskets-white-small-medium2.jpeg";
-import BasketsWhiteMedium35 from "@/images/Baskets-white/baskets-white-medium-35.jpeg";
-import BasketsWhiteLarge40 from "@/images/Baskets-white/baskets-white-large-40.jpeg";
-import BasketsWhiteSmallMedium from "@/images/Baskets-white/baskets-white-small-medium.jpeg";
+
 import BigGucci4 from "@/images/Gucci/Big-gucci4.jpeg";
 import SmallGucci4 from "@/images/Gucci/Small-gucci4.jpeg";
 import BigGucci8 from "@/images/Gucci/Big-gucci8.jpeg";
@@ -177,6 +170,7 @@ import TwoGucci3 from "@/images/Gucci/Two-gucci3.jpeg";
 import TwoGucci2 from "@/images/Gucci/Two-gucci2.jpeg";
 import TwoGucci from "@/images/Gucci/Two-gucci.jpeg";
 import BigGucci7 from "@/images/Gucci/Big-gucci7.jpeg";
+
 import BearShapedTablewear2 from "@/images/Bear-shaped-tableware/bear-shaped-tablewear-2.jpg.jpeg";
 import BearShapedTablewear3 from "@/images/Bear-shaped-tableware/bear-shaped-tablewear-3.jpg.jpeg";
 import LoungeArmChair1 from "@/images/Lounge-Arm-Chair/Lounge-Arm-Chair1.jpeg";
@@ -188,12 +182,60 @@ import MiniBench from "@/images/Mini-Bench/Mini-Bench.jpg";
 import MiniBench2 from "@/images/Mini-Bench/Mini-Bench2.jpeg";
 import SofaSingleSeater1 from "@/images/Sofa-Single-Seater/Sofa-Single-Seater1.jpeg";
 import SofaSingleSeater2 from "@/images/Sofa-Single-Seater/Sofa-Single-Seater2.jpeg";
-import KennedyDiningChair from "@/images/Kennedy-dining-chair/Kennedy-dining-chair.jpeg";
+import IslandOasisArmchair from "@/images/Island-Oasis-Armchair/Island-Oasis-Armchair.jpeg";
+
+import KennedyDiningChair from "@/images/Kennedy-dining-chair/Kennedy-dining-chair.jpg";
+import CaneChair from "@/images/Cane-chair/Cane-chair.jpeg";
+import Abuabubasket1 from "@/images/abu-abu/basket.jpeg";
+import Abuabubasket2 from "@/images/abu-abu/basket2.jpeg";
+import Alambasket1 from "@/images/Alam-baskets/AlamBaskets1.jpg";
+import Alambasket2 from "@/images/Alam-baskets/basket2.jpg";
+import Anyambasket1 from "@/images/Anyam-Baskets/AnyamBaskets1.jpg";
+import Anyambasket2 from "@/images/Anyam-Baskets/AnyamBaskets2.jpg";
+import Anyambasket3 from "@/images/Anyam-Baskets/AnyamBaskets3.jpeg";
+import BlossomBasket1 from "@/images/Blossom-Baskets/BlossomBaskets1.jpeg";
+import BlossomBasket2 from "@/images/Blossom-Baskets/BlossomBaskets2.jpeg";
+import BohoStorageBasket1 from "@/images/Boho-Storage-Baskets/baskets.jpg";
+import BohoStorageBasket2 from "@/images/Boho-Storage-Baskets/baskets2.jpg";
+import CuciBasket1 from "@/images/Cuci-Baskets/CuciBaskets1.jpg";
+import CuciBasket2 from "@/images/Cuci-Baskets/CuciBaskets2.jpg";
+import DiamondBasket1 from "@/images/Diamond-Baskets/DiamondBaskets1.jpg";
+import DiamondBasket2 from "@/images/Diamond-Baskets/DiamondBaskets2.jpg";
+import GarisLaundryBasket1 from "@/images/Garis-Laundry-Baskets/GarisLaundryBaskets1.jpg";
+import GarisLaundryBasket2 from "@/images/Garis-Laundry-Baskets/GarisLaundryBaskets2.jpg";
+import HarmoniBasket1 from "@/images/Harmoni-Baskets/HarmoniBaskets1.jpg";
+import HarmoniBasket2 from "@/images/Harmoni-Baskets/HarmoniBaskets2.jpg";
+import HitamBasket1 from "@/images/Hitam-Baskets/HitamBaskets1.jpeg";
+import HitamBasket2 from "@/images/Hitam-Baskets/HitamBaskets2.jpeg";
+import IndahBasket1 from "@/images/Indah-Baskets/IndahBaskets1.jpg";
+import IndahBasket2 from "@/images/Indah-Baskets/IndahBaskets2.jpg";
+import JanatBasket1 from "@/images/Janat-Baskets/JanatBaskets1.jpg";
+import JanatBasket2 from "@/images/Janat-Baskets/JanatBaskets2.jpg";
+import JanatBasket3 from "@/images/Janat-Baskets/JanatBaskets3.jpg";
+import KaryaBasket1 from "@/images/Karya-Baskets/KaryaBaskets1.jpg";
+import KaryaBasket2 from "@/images/Karya-Baskets/KaryaBaskets2.jpg";
+import PenatuBasket1 from "@/images/Penatu-Baskets/PenatuBaskets1.jpg";
+import PenatuBasket2 from "@/images/Penatu-Baskets/PenatuBaskets2.jpg";
+import RattanBasket1 from "@/images/Rattan-Baskets/RattanBaskets1.jpeg";
+import RattanBasket2 from "@/images/Rattan-Baskets/RattanBaskets2.jpg";
+import RobekBasket1 from "@/images/Robek-Baskets/RobekBaskets1.jpeg";
+import RobekBasket2 from "@/images/Robek-Baskets/RobekBaskets2.jpeg";
+import SarangBasket1 from "@/images/Sarang-Baskets/SarangBaskets.jpeg";
+import TriwarnaBasket1 from "@/images/Triwarna-Baskets/TriwarnaBaskets1.jpeg";
+import TriwarnaBasket2 from "@/images/Triwarna-Baskets/TriwarnaBaskets2.jpeg";
+import TropicVibeBasket1 from "@/images/Tropic-Vibe-Basket/TropicVibeBaskets1.jpeg";
+import TropicVibeBasket2 from "@/images/Tropic-Vibe-Basket/TropicVibeBaskets2.jpeg";
+import TropicalKnotBasket1 from "@/images/Tropical-Knot-baskets/TropicalKnotBaskets.jpg";
+import TuaBasket1 from "@/images/Tua-Baskets/TuaBaskets1.jpeg";
+import TuaBasket2 from "@/images/Tua-Baskets/TuaBaskets2.jpeg";
+import SilangBasket1 from "@/images/Silang-Baskets/SilangBaskets1.jpeg";
+import SilangBasket2 from "@/images/Silang-Baskets/SilangBaskets2.jpeg";
+import SilangBasket3 from "@/images/Silang-Baskets/SilangBaskets3.jpeg";
 
 export const products = [
   {
-    name: "Leaf shaped tableware",
-    slug: "leaf-shaped-tableware",
+    name: "Leaf Haven",
+    slug: "leaf-haven",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     favorite: true,
@@ -219,8 +261,8 @@ export const products = [
     ],
   },
   {
-    name: "Bear shaped tableware",
-    slug: "bear-shaped-tableware",
+    name: "Teddy plate",
+    slug: "teddy-plate",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
 
@@ -336,14 +378,14 @@ export const products = [
     ],
   },
   {
-    name: "Owl shaped plate",
-    slug: "owl-shaped-plate",
+    name: "Owl Haven Platters",
+    slug: "owl-haven",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     description:
       "Unleash the charm of nature with the Teak Owl Shaped Plate. Crafted from teak wood, this enchanting plate showcases a whimsical owl design, capturing the spirit of wisdom and mystery. Ideal for serving snacks, small treats, or as a decorative accent, it infuses your table with a touch of woodland magic. Elevate your dining experience with this unique and delightful owl-shaped plate.",
 
-    images: [OwlShaped],
+    images: [OwlShaped, OwlShaped2],
     variants: [
       {
         size: "Small",
@@ -370,22 +412,22 @@ export const products = [
     images: [NoodleBowl],
     variants: [
       {
-        size: "1",
+        size: "XSmall",
         specification: "13 x 8cm",
         price: "12",
       },
       {
-        size: "2",
+        size: "Small",
         specification: "15 x 9cm",
         price: "14",
       },
       {
-        size: "3",
+        size: "Medium",
         specification: "18 x 8cm",
         price: "18",
       },
       {
-        size: "4",
+        size: "Large",
         specification: "20 x 9cm",
         price: "24",
       },
@@ -414,7 +456,8 @@ export const products = [
     slug: "the-munching-platter",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
-    description: "",
+    description:
+      "Introducing our stunning teak munching platter, the perfect addition to your dining and entertaining needs. Crafted from high-quality teak wood, this platter offers exceptional durability and natural resistance to wear and tear, ensuring it will last for years to come. Its simple yet elegant design makes it the ideal serving platter for any occasion, from formal dinner parties to casual family gatherings. The natural wood grain patterns on the surface give the platter a unique and rustic feel that will enhance the presentation of any dish you serve. Its generous size allows you to serve a variety of dishes, making it a versatile addition to your tableware collection. Its easy-to-clean surface makes it a practical choice for everyday use. Elevate your dining experience with our teak platter. Order yours today and impress your guests with style and functionality.",
 
     images: [MunchingPlatter],
     variants: [
@@ -531,8 +574,8 @@ export const products = [
     ],
   },
   {
-    name: "Wooden rectangular trays",
-    slug: "wooden-rectangular-trays",
+    name: "Classic Serving tray",
+    slug: "classic-serving-tray",
     category: "cat-tablewares",
     sub_category: "Trays",
     description:
@@ -551,32 +594,32 @@ export const products = [
     ],
     variants: [
       {
-        size: "1",
+        size: "XSmall",
         specification: "20 x 13 x 2cm",
         price: "9.5",
       },
       {
-        size: "2",
+        size: "Small",
         specification: "22 x 14 x 2cm",
         price: "12",
       },
       {
-        size: "3",
+        size: "Medium",
         specification: "25 x 15 x 2cm",
         price: "14.5",
       },
       {
-        size: "4",
+        size: "Large",
         specification: "26 x 16 x 2cm",
         price: "18",
       },
       {
-        size: "5",
+        size: "XLarge",
         specification: "28 x 17 x 2cm",
         price: "24",
       },
       {
-        size: "6",
+        size: "XXLarge",
         specification: "30 x 18 x 2cm",
         price: "30",
       },
@@ -882,23 +925,7 @@ export const products = [
       },
     ],
   },
-  {
-    name: "Cheese Board",
-    slug: "cheese-board",
-    category: "cat-kitchenware",
-    sub_category: "Wooden Boards",
-    description:
-      "Experience the epitome of elegance with our Teak Wooden Cheese Board. Handcrafted from teak wood, this board showcases the stunning beauty and intricate patterns of the wood grain. Its smooth surface and ample size make it the perfect platform for displaying and serving a variety of cheeses. Elevate your entertaining with this eco-friendly and stylish teak wooden cheese board.",
 
-    images: [CheeseBoard],
-    variants: [
-      {
-        size: "",
-        specification: "22 x 12 x 2cm",
-        price: "7",
-      },
-    ],
-  },
   {
     name: "Fruit Board",
     slug: "fruit-board",
@@ -927,19 +954,19 @@ export const products = [
     images: [DeliBoard],
     variants: [
       {
-        size: "1",
+        size: "Small",
 
         specification: "40 x 17 x 2cm",
         price: "18",
       },
       {
-        size: "2",
+        size: "Medium",
 
         specification: "45 x 21 x 2cm",
         price: "21.5",
       },
       {
-        size: "3",
+        size: "Large",
 
         specification: "50 x 25 x 2cm",
         price: "24",
@@ -957,13 +984,13 @@ export const products = [
     images: [CuttingBoard, CuttingBoard2],
     variants: [
       {
-        size: "1",
+        size: "Medium",
 
         specification: "40 x 20 x 2cm",
         price: "18",
       },
       {
-        size: "2",
+        size: "Large",
 
         specification: "45 x 25 x 2cm",
         price: "24",
@@ -982,16 +1009,34 @@ export const products = [
     images: [AppetizerBoard],
     variants: [
       {
-        size: "1",
+        size: "Medium",
 
         specification: "40 x 17 x 2cm",
         price: "18",
       },
       {
-        size: "2",
+        size: "Large",
 
         specification: "45 x 21 x 2cm",
         price: "24",
+      },
+    ],
+  },
+  {
+    name: "Cheese Board",
+    slug: "cheese-board",
+    category: "cat-kitchenware",
+    sub_category: "Wooden Boards",
+    featured: true,
+    description:
+      "Experience the epitome of elegance with our Teak Wooden Cheese Board. Handcrafted from teak wood, this board showcases the stunning beauty and intricate patterns of the wood grain. Its smooth surface and ample size make it the perfect platform for displaying and serving a variety of cheeses. Elevate your entertaining with this eco-friendly and stylish teak wooden cheese board.",
+
+    images: [CheeseBoard],
+    variants: [
+      {
+        size: "",
+        specification: "22 x 12 x 2cm",
+        price: "7",
       },
     ],
   },
@@ -1006,19 +1051,19 @@ export const products = [
     images: [PrepBoard],
     variants: [
       {
-        size: "1",
+        size: "Small",
 
         specification: "35 x 14 x 2cm",
         price: "12",
       },
       {
-        size: "2",
+        size: "Medium",
 
         specification: "40 x 17 x 2cm",
         price: "18",
       },
       {
-        size: "3",
+        size: "Large",
 
         specification: "45 x 20 x 2cm",
         price: "24",
@@ -1064,7 +1109,7 @@ export const products = [
     slug: "meat-board",
     category: "cat-kitchenware",
     sub_category: "Wooden Boards",
-    featured: true,
+
     description:
       "Achieve precision in meat preparation with our Teak Wooden Meat Cutting Board. Handcrafted from teak wood, this board provides a reliable and hygienic surface for slicing and cutting various types of meat. Its smooth texture and durable construction make it perfect for handling and prepping your favorite cuts.",
 
@@ -1095,9 +1140,29 @@ export const products = [
     ],
     variants: [
       {
-        size: "",
-        specification: "",
-        price: "48",
+        size: "XSmall",
+        specification: "D15cm",
+        price: "15",
+      },
+      {
+        size: "Small",
+        specification: "D20cm",
+        price: "20",
+      },
+      {
+        size: "Medium",
+        specification: "D25cm",
+        price: "25",
+      },
+      {
+        size: "Large",
+        specification: "D30cm",
+        price: "30",
+      },
+      {
+        size: "XLarge",
+        specification: "D40cm",
+        price: "40",
       },
     ],
   },
@@ -1134,8 +1199,16 @@ export const products = [
       "Welcome the touch of nature in your kitchen with our Teak Wooden Utensils. Handcrafted from teak wood, these utensils exude a warm and rustic charm. Each piece is meticulously carved to provide a comfortable grip and smooth handling. Elevate your cooking experience with these eco-friendly and durable teak wooden utensils, bringing a natural touch to your culinary creations.",
 
     images: [
+      TeakWoodUtensilsGeneral,
       TeakWoodUtensils1,
       TeakWoodUtensils2,
+      TeakWoodUtensils3,
+      TeakWoodUtensils4,
+      TeakWoodUtensils5,
+      TeakWoodUtensils6,
+      TeakWoodUtensils7,
+      TeakWoodUtensils8,
+      TeakWoodUtensils9,
       TeakWoodUtensils10,
       TeakWoodUtensils11,
       TeakWoodUtensils12,
@@ -1143,7 +1216,7 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "",
+        specification: "Different sizes and styles available",
         price: "10",
       },
     ],
@@ -1169,81 +1242,588 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "",
+        specification: "Teak Wood, Dimensions: h30cm d30cm",
         price: "107",
       },
       {
         size: "Large",
-        specification: "",
+        specification: "Teak Wood, Dimensions: h50cm d30cm",
         price: "140",
       },
     ],
   },
   {
-    name: "White Baskets",
-    slug: "white-baskets",
+    name: "Diamond Baskets",
+    slug: "diamond-baskets",
     category: "cat-home-decor",
     sub_category: "Baskets",
-    featured: true,
-    favorite: true,
-    description:
-      "Step into the world of Balinese craftsmanship with our hand-woven Balinese baskets. Skillfully crafted by local artisans, these baskets embody the essence of traditional Balinese culture. Each piece showcases intricate patterns and vibrant colors, showcasing the artistry and attention to detail that goes into their creation. Versatile and charming, these baskets are perfect for organizing your home or adding a touch of exotic elegance to your decor. Unique designs and styles. Contact us for availability",
 
-    images: [
-      BasketsWhiteAll,
-      BasketsWhiteAll2,
-      BasketsWhiteLarge40,
-      BasketsWhiteMedium35,
-      BasketsWhiteSmall30,
-    ],
+    description:
+      "Experience the natural beauty and eco-friendly craftsmanship of our Balinese baskets, expertly handcrafted from sustainable banana fiber and cotton rope. Each basket tells a story of traditional weaving techniques passed down through generations, combining the strength and durability of banana fiber with the softness and versatility of cotton rope. These unique baskets not only add a touch of rustic charm to any space but also provide a practical storage solution for your everyday needs. From organizing essentials to displaying your favorite items, our Balinese baskets bring an element of nature and artistry to your home. ",
+    images: [DiamondBasket1, DiamondBasket2],
     variants: [
       {
         size: "Small",
-        specification: "30cm",
+        specification: "H30cm D30cm",
         price: "48",
       },
       {
         size: "Medium",
-        specification: "35",
+        specification: "H=32cm D=35cm",
+        price: "55",
+      },
+      {
+        size: "Large",
+        specification: "H=35cm D=40cm",
+        price: "65",
+      },
+    ],
+  },
+  {
+    name: "Tropical Knot baskets",
+    slug: "tropical-knot",
+    category: "cat-home-decor",
+    sub_category: "Baskets",
+    description:
+      "Immerse yourself in the timeless beauty and intricate craftsmanship of our Balinese baskets, meticulously handcrafted using a combination of natural banana fiber, soft cotton rope, and artful knots. These baskets not only serve as functional storage solutions but also double as decorative works of art, adding a touch of bohemian elegance to your space. The combination of banana fiber, cotton rope, and knots creates a visually captivating and tactile experience, making these baskets a true delight for both the eyes and the hands. Elevate your home decor with the organic beauty and intricate details of our Balinese baskets, bringing a sense of warmth, authenticity, and artistry into your living space.",
+    images: [TropicalKnotBasket1],
+    variants: [
+      {
+        size: "Small",
+        specification: "H=40cm D=30cm",
+        price: "48",
+      },
+      {
+        size: "Medium",
+        specification: "H=45cm D=35cm",
         price: "60",
       },
       {
         size: "Large",
-        specification: "40",
+        specification: "H=50cm D=40cm",
         price: "70",
       },
     ],
   },
   {
-    name: "Black baskets",
-    slug: "black-baskets",
+    name: "Boho storage baskets",
+    slug: "boho-storage",
     category: "cat-home-decor",
     sub_category: "Baskets",
-    featured: true,
     description:
-      "Step into the world of Balinese craftsmanship with our hand-woven Balinese baskets. Skillfully crafted by local artisans, these baskets embody the essence of traditional Balinese culture. Each piece showcases intricate patterns and vibrant colors, showcasing the artistry and attention to detail that goes into their creation. Versatile and charming, these baskets are perfect for organizing your home or adding a touch of exotic elegance to your decor. Unique designs and styles. Contact us for availability",
-
-    images: [
-      BasketsBlackAll,
-      BasketsBlackSmall30,
-      BasketsBlackMedium35,
-      BasketsBlackLarge40,
-    ],
+      "Indulge in the enchanting boho charm of our Balinese baskets, lovingly handcrafted using the finest mendong, a water grass known for its natural strength and beauty, intertwined with soft cotton rope. Each basket showcases the artistry and dedication of Balinese artisans, expertly weaving together these organic materials to create stunning textures and intricate patterns. The combination of mendong and cotton rope exudes a rustic yet elegant vibe, perfect for adding a touch of bohemian style to your space. These versatile baskets serve as functional storage solutions, ideal for organizing your belongings with a boho twist. Whether used to hold blankets, toys, or everyday essentials, our Balinese boho baskets effortlessly blend practicality with artistic flair. Embrace the spirit of free-spirited living with these unique and handcrafted treasures, bringing a sense of natural beauty and bohemian sophistication to your home.",
+    images: [BohoStorageBasket1, BohoStorageBasket2],
     variants: [
       {
         size: "Small",
-        specification: "30cm",
+        specification: "H=23cm D=25cm",
         price: "48",
       },
       {
         size: "Medium",
-        specification: "35",
+        specification: "H=25cm D=28cm",
         price: "60",
       },
       {
         size: "Large",
-        specification: "40",
+        specification: "H=27cm D=32cm",
         price: "70",
+      },
+    ],
+  },
+  {
+    name: "Janat baskets",
+    slug: "janat-baskets",
+    category: "cat-home-decor",
+    sub_category: "Baskets",
+    description:
+      "Discover the captivating beauty of our Balinese baskets, handcrafted with the finest seagrass and adorned with intricate details of raffia. These exquisite baskets embody the essence of coastal living, blending natural elements with artisanal craftsmanship. Each basket is meticulously woven by skilled Balinese artisans, utilizing seagrass for its durability and flexibility, while the delicate raffia accents add a touch of elegance and texture. These versatile baskets are not only functional storage solutions but also stylish additions to any home decor. Whether used for organizing essentials, displaying potted plants, or adding a bohemian touch to your space, our Balinese baskets bring a sense of rustic charm and coastal vibes to your living environment. Embrace the coastal allure and artistic heritage of Bali with these handcrafted treasures that celebrate the beauty of nature.",
+    images: [JanatBasket1, JanatBasket2, JanatBasket3],
+    variants: [
+      {
+        size: "Small",
+        specification: "H=28cm D=28cm",
+        price: "48",
+      },
+      {
+        size: "Medium",
+        specification: "H=30cm D=35cm",
+        price: "60",
+      },
+      {
+        size: "Large",
+        specification: "H=33cm D=40cm",
+        price: "70",
+      },
+    ],
+  },
+  {
+    name: "Garis laundry baskets",
+    slug: "garis-laundry",
+    category: "cat-home-decor",
+    sub_category: "Baskets",
+    featured: true,
+    description:
+      "Experience the natural beauty and exquisite craftsmanship of our Balinese baskets, handwoven with the finest banana fiber and adorned with intricate raffia accents. Each basket is a testament to the traditional weaving techniques passed down through generations of Balinese artisans. The strong and sustainable banana fiber provides a sturdy foundation, while the delicate raffia embellishments add a touch of elegance and visual interest. These versatile baskets are not only functional storage solutions but also works of art that bring a sense of warmth and authenticity to your home. Whether used for organizing household items, showcasing plants, or as decorative pieces, our Balinese baskets made from banana fiber and raffia effortlessly blend style and functionality. Embrace the natural textures and cultural heritage of Bali with these beautifully handcrafted treasures, bringing a touch of tropical charm to your living space",
+    images: [GarisLaundryBasket1, GarisLaundryBasket2],
+    variants: [
+      {
+        size: "Small",
+        specification: "H=28cm D=26cm",
+        price: "48",
+      },
+      {
+        size: "Medium",
+        specification: "H=30cm D=35cm",
+        price: "60",
+      },
+      {
+        size: "Large",
+        specification: "H=35cm D=48cm",
+        price: "70",
+      },
+    ],
+  },
+  {
+    name: "Alam baskets",
+    slug: "alam-baskets",
+    category: "cat-home-decor",
+    sub_category: "Baskets",
+    favorite: true,
+    description:
+      "Discover the timeless beauty and eco-friendly craftsmanship of our Balinese baskets, expertly handcrafted from sustainable banana fiber and soft cotton rope. Each basket showcases the artistry of Balinese artisans who skillfully weave together these natural materials to create stunning textures and patterns. The combination of banana fiber and cotton rope not only ensures durability but also adds a touch of rustic charm to these functional and decorative pieces. These versatile baskets are perfect for organizing your belongings, adding a natural touch to your space, or as stylish storage solutions. Embrace the organic elegance and cultural heritage of Bali with these meticulously crafted baskets, bringing a sense of warmth and nature-inspired beauty to your home.",
+
+    images: [Alambasket1, Alambasket2],
+
+    variants: [
+      {
+        size: "Small",
+        specification: "H=28cm D=28cm",
+        price: "48",
+      },
+      {
+        size: "Medium",
+        specification: "H=30cm D=35cm",
+        price: "60",
+      },
+      {
+        size: "Large",
+        specification: "H=33cm D=40cm",
+        price: "70",
+      },
+    ],
+  },
+  {
+    name: "Anyam baskets",
+    slug: "anyam-baskets",
+    category: "cat-home-decor",
+    sub_category: "Baskets",
+    description:
+      "Experience the rustic allure and sustainable craftsmanship of our Balinese baskets, meticulously handcrafted from ethically sourced banana fiber and soft cotton rope. Each basket tells a story of skilled artisans who intertwine these natural materials to create beautiful textures and intricate patterns. The combination of banana fiber and cotton rope not only ensures durability but also adds a touch of organic charm to these versatile baskets. Perfect for organizing essentials, displaying potted plants, or adding a boho-chic touch to your space, our Balinese baskets blend functionality with timeless style. Embrace the eco-friendly beauty and cultural heritage of Bali with these handwoven treasures, bringing a touch of nature and artisanal craftsmanship into your home.",
+    images: [Anyambasket1, Anyambasket2, Anyambasket3],
+    variants: [
+      {
+        size: "Small",
+        specification: "H=40cm D=30cm",
+        price: "48",
+      },
+      {
+        size: "Medium",
+        specification: "H=45cm D=35cm",
+        price: "60",
+      },
+      {
+        size: "Large",
+        specification: "H=50cm D=40cm",
+        price: "70",
+      },
+    ],
+  },
+  {
+    name: "Indah baskets",
+    slug: "indah-baskets",
+    category: "cat-home-decor",
+    sub_category: "Baskets",
+    description:
+      "Introducing our exquisite Balinese baskets, meticulously handcrafted with a combination of natural banana fiber and soft cotton rope. These unique baskets showcase the seamless blend of organic materials, resulting in a stunning and sustainable design. The strong and resilient banana fiber provides a sturdy base, while the cotton rope adds a touch of softness and texture. Each basket is a testament to the skilled craftsmanship of Balinese artisans, who intricately weave these materials to create intricate patterns and a truly one-of-a-kind piece. Versatile and functional, our Balinese baskets serve as practical storage solutions or decorative accents, infusing your space with a touch of rustic elegance. Bring the authentic beauty of Bali into your home with these handcrafted treasures, each carrying the spirit of traditional craftsmanship and natural beauty.",
+    images: [IndahBasket1, IndahBasket2],
+    variants: [
+      {
+        size: "Small",
+        specification: "H=15cm D=32cm",
+        price: "35",
+      },
+      {
+        size: "Medium",
+        specification: "H=17cm D=38cm",
+        price: "45",
+      },
+      {
+        size: "Large",
+        specification: "H=18cm D=45cm",
+        price: "50",
+      },
+    ],
+  },
+  {
+    name: "Karya baskets",
+    slug: "karya-baskets",
+    category: "cat-home-decor",
+    sub_category: "Baskets",
+    description:
+      "Step into the world of artisanal beauty with our Balinese baskets, meticulously handcrafted from natural banana fiber and soft cotton rope. These captivating baskets embody the spirit of Bali's rich cultural heritage and showcase the skillful craftsmanship of local artisans. The combination of banana fiber and cotton rope creates a harmonious blend of strength and texture, resulting in a stunning and versatile piece. Whether used for organizing your space or adding a touch of bohemian charm to your home decor, these baskets effortlessly merge functionality with artistry. Each basket is a testament to the sustainable practices and the intricate techniques passed down through generations. Embrace the warmth and natural elegance of our Balinese baskets, handwoven with love and care, and bring a piece of Bali's enchanting spirit into your living space.",
+    images: [KaryaBasket1, KaryaBasket2],
+    variants: [
+      {
+        size: "Medium",
+        specification: "H=24cm D=32cm",
+        price: "50",
+      },
+      {
+        size: "Large",
+        specification: "H=27cm D=40cm",
+        price: "60",
+      },
+    ],
+  },
+  {
+    name: "Cuci baskets",
+    slug: "cuci-baskets",
+    category: "cat-home-decor",
+    sub_category: "Baskets",
+    description:
+      "Elevate your storage solutions with our exquisite Balinese baskets, meticulously handcrafted from natural banana fiber and soft cotton rope. These versatile baskets effortlessly blend functionality with beauty, making them perfect for storing laundry or as stylish decorative pieces. The durable banana fiber provides a sturdy foundation, while the cotton rope adds a touch of softness and texture. Each basket is a testament to the skilled craftsmanship of Balinese artisans, who weave these natural materials into intricate patterns and designs. Use them to keep your laundry organized or as eye-catching accents to enhance your home decor. Embrace the timeless elegance and eco-friendly nature of our Balinese baskets, as they bring a touch of rustic charm and practicality to your space.",
+    images: [CuciBasket1, CuciBasket2],
+    variants: [
+      {
+        size: "Small",
+        specification: "H=40cm D=30cm",
+        price: "48",
+      },
+      {
+        size: "Medium",
+        specification: "H=45cm D=35cm",
+        price: "60",
+      },
+      {
+        size: "Large",
+        specification: "H=50cm D=40cm",
+        price: "70",
+      },
+    ],
+  },
+  {
+    name: "Harmoni baskets",
+    slug: "harmoni-baskets",
+    category: "cat-home-decor",
+    sub_category: "Baskets",
+    description:
+      "Immerse yourself in the natural beauty and intricate craftsmanship of our Balinese baskets, expertly handcrafted from a combination of sustainable banana fiber, soft cotton rope, and delicate raffia accents. Each basket tells a story of skilled artisans who weave these natural materials together, creating stunning textures and patterns that reflect the rich cultural heritage of Bali. The durable banana fiber forms a sturdy foundation, while the cotton rope and raffia add a touch of elegance and visual interest. These versatile baskets can be used for storage, organization, or as decorative accents, adding a rustic and bohemian charm to your living space. Experience the eco-friendly materials and artisanal techniques that go into creating these unique pieces, bringing a sense of warmth, authenticity, and natural beauty to your home.",
+    images: [HarmoniBasket1, HarmoniBasket2],
+    variants: [
+      {
+        size: "Small",
+        specification: "H=26cm D=30cm",
+        price: "48",
+      },
+      {
+        size: "Medium",
+        specification: "H=30cm D=35cm",
+        price: "60",
+      },
+      {
+        size: "Large",
+        specification: "H=34cm D=40cm",
+        price: "70",
+      },
+    ],
+  },
+  {
+    name: "Abu-abu baskets",
+    slug: "abu-abu",
+    category: "cat-home-decor",
+    sub_category: "Baskets",
+    description:
+      "Embrace the natural allure of our Balinese baskets, meticulously handcrafted from sustainable mendong, a water grass known for its strength and beauty, and adorned with delicate raffia accents. Each basket showcases the artistry and dedication of Balinese artisans, who weave together these organic materials to create stunning textures and intricate patterns. The use of mendong and raffia creates a harmonious blend of rustic charm and subtle elegance. These versatile baskets serve as functional storage solutions or eye-catching decorative pieces, adding a touch of bohemian style to any space. Let the natural fibers and earthy tones of our Balinese baskets bring a sense of organic beauty and cultural heritage to your home, reflecting the timeless craftsmanship and connection to nature that define Balinese artistry.",
+    images: [Abuabubasket1, Abuabubasket2],
+    variants: [
+      {
+        size: "Medium",
+        specification: "H=24cm D=30cm",
+        price: "50",
+      },
+      {
+        size: "Large",
+        specification: "H=30cm D=38cm",
+        price: "60",
+      },
+    ],
+  },
+  {
+    name: "Hitam baskets",
+    slug: "hitam-baskets",
+    category: "cat-home-decor",
+    sub_category: "Baskets",
+    description:
+      "Indulge in the natural beauty and coastal charm of our Balinese baskets, lovingly handcrafted from seagrass and embellished with delicate raffia accents. Each basket is a testament to the skilled artisans who weave together the seagrass fibers, resulting in a sturdy and durable foundation. The addition of raffia accents adds a touch of elegance and visual interest, elevating these baskets to functional works of art. Perfect for organizing your space or as stylish decorative pieces, our Balinese baskets bring a sense of coastal serenity and bohemian style to your home. The organic textures of seagrass combined with the delicate details of raffia create a harmonious blend of rustic charm and timeless elegance. Embrace the tranquility of the sea and the craftsmanship of Bali with these handcrafted treasures, each one unique and infused with the natural beauty of the Indonesian islands",
+    images: [HitamBasket1, HitamBasket2],
+    variants: [
+      {
+        size: "Small",
+        specification: "H=26cm D=28cm",
+        price: "48",
+      },
+      {
+        size: "Medium",
+        specification: "H=30cm D=34cm",
+        price: "60",
+      },
+      {
+        size: "Large",
+        specification: "H=33cm D=38cm",
+        price: "70",
+      },
+    ],
+  },
+  {
+    name: "Robek baskets",
+    slug: "robek-baskets",
+    category: "cat-home-decor",
+    sub_category: "Baskets",
+    description:
+      "Experience the natural beauty and exceptional craftsmanship of our Balinese baskets, meticulously handwoven from seagrass and adorned with sturdy iron bone accents. These exquisite baskets capture the essence of coastal living, combining the durability of seagrass with the rustic charm of iron bone. Each basket is intricately crafted by skilled Balinese artisans, who weave the seagrass fibers and incorporate the iron bone details to create a unique and visually appealing design. These versatile baskets serve as stylish storage solutions or decorative accents, adding a touch of organic elegance to any space. Embrace the coastal vibes and artistic heritage of Bali with these handcrafted treasures that celebrate the beauty of nature and the rich craftsmanship of the island.",
+    images: [RobekBasket1, RobekBasket2],
+    variants: [
+      {
+        size: "Small",
+        specification: "H=35cm D=30cm",
+        price: "55",
+      },
+      {
+        size: "Medium",
+        specification: "H=40cm D=35cm",
+        price: "65",
+      },
+      {
+        size: "Large",
+        specification: "H=50cm D=40cm",
+        price: "80",
+      },
+    ],
+  },
+  {
+    name: "Penatu baskets",
+    slug: "penatu-baskets",
+    category: "cat-home-decor",
+    sub_category: "Baskets",
+    description:
+      "Immerse yourself in the enchanting beauty of our Balinese baskets, meticulously handcrafted from a blend of sustainable banana fiber, soft cotton rope, and sturdy iron bone accents. Each basket is a testament to the skill and creativity of Balinese artisans who weave together these natural materials, resulting in a unique and visually captivating design. The banana fiber provides a strong foundation, while the cotton rope adds a touch of softness and texture. The iron bone accents lend a rustic and contemporary element, creating a perfect balance of traditional and modern aesthetics. These versatile baskets serve as functional storage solutions or decorative accents, infusing your space with a touch of natural elegance. Experience the artisanal craftsmanship and cultural heritage of Bali with these handcrafted treasures, which bring a sense of authenticity and timeless beauty to your home.",
+    featured: true,
+    images: [PenatuBasket1, PenatuBasket2],
+    variants: [
+      {
+        size: "Small",
+        specification: "H=35cm D=28cm",
+        price: "55",
+      },
+      {
+        size: "Medium",
+        specification: "H=40cm D=38cm",
+        price: "65",
+      },
+      {
+        size: "Large",
+        specification: "H=45cm D=48cm",
+        price: "85",
+      },
+    ],
+  },
+  {
+    name: "Tropic Vibe baskets",
+    slug: "tropic-vibe",
+    category: "cat-home-decor",
+    sub_category: "Baskets",
+    description:
+      "Discover the perfect blend of functionality and style with our Balinese baskets, expertly handcrafted from sustainable banana fiber, soft cotton rope, and adorned with durable iron bone accents. These versatile baskets effortlessly serve multiple purposes, whether it's organizing your space, storing laundry, or adding a touch of natural elegance to your decor. The sturdy banana fiber provides a reliable structure, while the cotton rope and iron bone details add visual interest and a hint of rustic charm. These baskets are a true testament to the skilled craftsmanship of Balinese artisans, who meticulously weave together these natural materials to create intricate patterns and textures. Embrace the eco-friendly beauty and cultural heritage of Bali with these multifunctional baskets that bring organization, practicality, and a touch of artistic flair to your living space.",
+    images: [TropicVibeBasket1, TropicVibeBasket2],
+    variants: [
+      {
+        size: "Small",
+        specification: "H=40cm D=30cm",
+        price: "55",
+      },
+      {
+        size: "Medium",
+        specification: "H=45cm D=35cm",
+        price: "65",
+      },
+      {
+        size: "Large",
+        specification: "H=50cm D=40cm",
+        price: "80",
+      },
+    ],
+  },
+  {
+    name: "Triwarna baskets",
+    slug: "triwarna-baskets",
+    category: "cat-home-decor",
+    sub_category: "Baskets",
+    description:
+      "Introducing our captivating collection of Balinese baskets, handwoven with utmost care from seagrass and adorned with delicate raffia details. These exquisite baskets embody the essence of tropical beauty, evoking the sun-soaked shores and serene coastal landscapes of Bali. The natural seagrass fibers lend a rustic and textured appeal, while the subtle raffia accents add a touch of elegance and sophistication. Each basket is a testament to the skilled craftsmanship of Balinese artisans, who masterfully intertwine these organic materials to create functional and visually stunning pieces. Whether used for storage or as decorative accents, these baskets bring a sense of nature-inspired tranquility and bohemian charm to any space. Embrace the unique allure of our Balinese baskets, as they invite the warmth and exoticism of Bali's coastal paradise into your home.",
+    images: [TriwarnaBasket1, TriwarnaBasket2],
+    variants: [
+      {
+        size: "Small",
+        specification: "H=34cm D=28cm",
+        price: "45",
+      },
+      {
+        size: "Medium",
+        specification: "H=42cm D=32cm",
+        price: "50",
+      },
+      {
+        size: "Large",
+        specification: "H=46cm D=35cm",
+        price: "60",
+      },
+      {
+        size: "XLarge",
+        specification: "H=50cm D=38cm",
+        price: "75",
+      },
+    ],
+  },
+
+  {
+    name: "Tua baskets",
+    slug: "tua-baskets",
+    category: "cat-home-decor",
+    sub_category: "Baskets",
+
+    description:
+      "Indulge in the natural beauty and timeless craftsmanship of our Balinese baskets, meticulously handcrafted from sustainable banana fiber and soft cotton rope. Each basket is a testament to the skill and dedication of Balinese artisans, who weave together these natural materials with precision and artistry. The sturdy banana fiber provides a durable foundation, while the cotton rope adds a touch of softness and texture. These versatile baskets serve a multitude of purposes, whether it's organizing your space, storing essentials, or adding a rustic charm to your home decor. Embrace the eco-friendly elegance and cultural heritage of Bali with these handwoven treasures, as they bring a sense of authenticity and natural beauty to your living space. Let our Balinese baskets become a functional and stylish addition to your home, reflecting the artistry and craftsmanship that define Balinese traditions.",
+    images: [TuaBasket1, TuaBasket2],
+    variants: [
+      {
+        size: "Small",
+        specification: "H=20cm D=32cm",
+        price: "48",
+      },
+      {
+        size: "Medium",
+        specification: "H=25cm D=37cm",
+        price: "60",
+      },
+      {
+        size: "Large",
+        specification: "H=34cm D=40cm",
+        price: "70",
+      },
+    ],
+  },
+  {
+    name: "Rattan baskets",
+    slug: "rattan-baskets",
+    category: "cat-home-decor",
+    sub_category: "Baskets",
+
+    description:
+      "Discover the exquisite charm of our small Balinese baskets, meticulously handcrafted from sustainable banana fiber and soft cotton rope. These compact baskets showcase the artistry and attention to detail of Balinese artisans, who skillfully weave together these natural materials. The sturdy banana fiber forms a durable structure, while the cotton rope adds a touch of softness and texture. These small baskets are perfect for organizing small items, such as keys, jewelry, or cosmetics, while adding a rustic and bohemian flair to your space. Embrace the eco-friendly elegance and cultural heritage of Bali with these handwoven treasures, as they bring a touch of natural beauty and artisanal craftsmanship to your home. Let our small Balinese baskets become functional and decorative accents, infusing your space with the unique spirit of Bali.",
+    images: [RattanBasket1, RattanBasket2],
+    variants: [
+      {
+        size: "Small",
+        specification: "H=15cm D=32cm",
+        price: "35",
+      },
+      {
+        size: "Medium",
+        specification: "H=17cm D=38cm",
+        price: "45",
+      },
+      {
+        size: "Large",
+        specification: "H=18cm D=45cm",
+        price: "50",
+      },
+    ],
+  },
+  {
+    name: "Blossom baskets",
+    slug: "blossom-baskets",
+    category: "cat-home-decor",
+    sub_category: "Baskets",
+
+    description:
+      "Experience the harmonious blend of nature's elements with our Balinese baskets, meticulously handcrafted from seagrass and banana fiber. These baskets embody the beauty of the sea and the earth, combining the natural textures of seagrass with the durability of banana fiber. Each basket is a testament to the skilled craftsmanship of Balinese artisans, who weave together these organic materials to create functional and visually stunning pieces. Perfectly suited for holding flower pots or serving as decorative accents, these baskets bring a touch of rustic charm and natural elegance to any space. Embrace the timeless beauty and cultural heritage of Bali with these handcrafted treasures that infuse your home with a sense of serenity and natural beauty. Let our Balinese baskets become the perfect complement to your floral displays or a captivating addition to your decor, evoking the tranquility and grace of the Balinese landscape.",
+    images: [BlossomBasket1, BlossomBasket2],
+    variants: [
+      {
+        size: "Small",
+        specification: "H=15cm D=15cm",
+        price: "38",
+      },
+      {
+        size: "Medium",
+        specification: "H=18cm D=18cm",
+        price: "45",
+      },
+      {
+        size: "Large",
+        specification: "H=20cm D=20cm",
+        price: "50",
+      },
+    ],
+  },
+  {
+    name: "Sarang baskets",
+    slug: "sarang-baskets",
+    category: "cat-home-decor",
+    sub_category: "Baskets",
+
+    description:
+      "Experience the enchantment of Balinese craftsmanship with our exquisite baskets, meticulously handcrafted from a blend of raffia, seagrass, and banana fiber. These natural fibers come together in perfect harmony, creating a unique and visually captivating design. The raffia accents add a delicate touch of texture, while the seagrass and banana fiber provide a sturdy foundation. These versatile baskets can be used for storage, organization, or as decorative accents, adding a touch of bohemian elegance to any space. Embrace the natural beauty and cultural heritage of Bali with these handwoven treasures, each one reflecting the skilled artistry and connection to nature that define Balinese craftsmanship. Let our Balinese baskets become a statement piece in your home, showcasing the timeless allure of natural fibers and the rich traditions of Bali.",
+    images: [SarangBasket1],
+    variants: [
+      {
+        size: "Small",
+        specification: "H=20cm D=25cm",
+        price: "48",
+      },
+      {
+        size: "Medium",
+        specification: "H=23cm D=35cm",
+        price: "55",
+      },
+      {
+        size: "Large",
+        specification: "H=25cm D=45cm",
+        price: "60",
+      },
+    ],
+  },
+  {
+    name: "Silang Baskets",
+    slug: "silang-baskets",
+    category: "cat-home-decor",
+    sub_category: "Baskets",
+    featured: true,
+
+    description:
+      "Discover the natural beauty and exquisite craftsmanship of our Balinese baskets, meticulously handcrafted from sustainable banana fiber and soft cotton rope. Each basket is a testament to the skill and dedication of Balinese artisans, who weave together these natural materials with precision and artistry. The sturdy banana fiber provides a durable foundation, while the cotton rope adds a touch of softness and texture. These versatile baskets serve a multitude of purposes, whether it's organizing your space, storing essentials, or adding a rustic charm to your home decor. Embrace the eco-friendly elegance and cultural heritage of Bali with these handwoven treasures, as they bring a sense of authenticity and natural beauty to your living space. Let our Balinese baskets become a functional and stylish addition to your home, reflecting the artistry and craftsmanship that define Balinese traditions.",
+    images: [SilangBasket1, SilangBasket2, SilangBasket3],
+    variants: [
+      {
+        size: "Medium",
+        specification: "H=24cm D=32cm",
+        price: "50",
+      },
+      {
+        size: "Large",
+        specification: "H=27cm D=40cm",
+        price: "60",
       },
     ],
   },
@@ -1265,24 +1845,24 @@ export const products = [
       },
     ],
   },
-  {
-    name: "Deco wooden stand",
-    slug: "deco-wooden-stand",
-    category: "cat-home-decor",
-    sub_category: "Accessories",
-    featured: true,
-    description:
-      "Add a touch of artistic flair to your decor with our Teak Wooden Deco Abstract Stand. Crafted from teak wood, this stand features a unique and abstract design that showcases the beauty of natural wood grain.  Elevate your space with this eye-catching and contemporary teak wooden abstract stand.",
+  // {
+  //   name: "Deco wooden stand",
+  //   slug: "deco-wooden-stand",
+  //   category: "cat-home-decor",
+  //   sub_category: "Accessories",
+  //   featured: true,
+  //   description:
+  //     "Add a touch of artistic flair to your decor with our Teak Wooden Deco Abstract Stand. Crafted from teak wood, this stand features a unique and abstract design that showcases the beauty of natural wood grain.  Elevate your space with this eye-catching and contemporary teak wooden abstract stand.",
 
-    images: [DecoWoodenStand],
-    variants: [
-      {
-        size: "",
-        specification: "50 cm height",
-        price: "95",
-      },
-    ],
-  },
+  //   images: [DecoWoodenStand],
+  //   variants: [
+  //     {
+  //       size: "",
+  //       specification: "50 cm height",
+  //       price: "95",
+  //     },
+  //   ],
+  // },
   {
     name: "Wooden Natural Dining Tables",
     slug: "wooden-natural-dining-tables",
@@ -1302,26 +1882,28 @@ export const products = [
       ThreemLongSuarWoodTableWithLeg,
       ThreemLongSuarWoodTableWithLeg2,
       ThreemLongSuarWoodTableWithLeg3,
+      TablesFavorite,
     ],
+
     variants: [
       {
-        size: "1.5 M",
+        size: "Small",
         specification: "150 x 80 x 75cm 7cm(thickness)",
         price: "1560",
       },
       {
-        size: "2 M",
+        size: "Medium",
         specification: "200 x 80 x 75cm 7cm(thickness)",
         price: "1990",
       },
       {
-        size: "2.5 M",
-        specification: "250 x 80 x 75cm 7cm(thickness)",
+        size: "Large",
+        specification: "250 x 80 x 75cm 10cm(thickness)",
         price: "2475",
       },
       {
-        size: "3 M",
-        specification: "300 x 80 x 75cm 7cm(thickness)",
+        size: "XLarge",
+        specification: "300 x 80 x 75cm 10cm(thickness)",
         price: "2870",
       },
     ],
@@ -1340,13 +1922,13 @@ export const products = [
       {
         size: "Indoor",
         specification:
-          "Material: Teak wood & Robe Luum Finishing color: Natural Teak, Custom Design",
+          "Material: Teak wood & Robe Luum    Finishing color: Natural Teak, Custom Design     Dimensions: 80 x 60 x 75cm",
         price: "726",
       },
       {
         size: "Outdoor",
         specification:
-          "Material: Teak wood & Robe Synthetic Finishing color: Natural Teak, Custom Design",
+          "Material: Teak wood & Robe Synthetic    Finishing color: Natural Teak, Custom Design     Dimensions: 80 x 60 x 75cm",
         price: "848",
       },
     ],
@@ -1364,13 +1946,13 @@ export const products = [
       {
         size: "Indoor",
         specification:
-          "Material: Teak wood & Robe Luum Finishing color: Natural Teak, Custom Design",
+          "Material: Teak wood & Robe Luum      Finishing color: Natural Teak, Custom Design     Dimensions: 80 x 60 x 72cm",
         price: "678",
       },
       {
         size: "Outdoor",
         specification:
-          "Material: Teak wood & Robe Synthetic Finishing color: Natural Teak, Custom Design",
+          "Material: Teak wood & Robe Synthetic   Finishing color: Natural Teak, Custom Design      Dimensions: 80 x 60 x 72cm",
         price: "799",
       },
     ],
@@ -1388,7 +1970,7 @@ export const products = [
       {
         size: "",
         specification:
-          "Material: Teak wood & Robe Luum Finishing color: Natural Teak, Custom Design",
+          "Material: Teak wood & Robe Luum,  Finishing color: Natural Teak, Dimensions: 90 x 70 x 82cm     Custom Design",
         price: "475",
       },
     ],
@@ -1407,7 +1989,7 @@ export const products = [
       {
         size: "",
         specification:
-          "Material: Teak wood Fabric: Venna Dark grey,Finishing color: Natural Teak, Custom Design",
+          "Material: Teak wood Fabric: Venna Dark grey,   Finishing color: Natural Teak,   Dimensions: 90 x 70 x 82cm     Custom Design",
         price: "976",
       },
     ],
@@ -1426,8 +2008,46 @@ export const products = [
       {
         size: "",
         specification:
-          "Material: Teak wood & Synthetic Rope, Finishing color: Natural teak oil",
+          "Material: Teak wood & Synthetic Rope,      Finishing color: Natural teak oil       Dimensions: 45 x 50 x 80cm",
         price: "570",
+      },
+    ],
+  },
+  {
+    name: "Island Oasis Armchair",
+    slug: "island-oasis",
+    category: "cat-home-furniture",
+    sub_category: "Chairs",
+
+    description:
+      "Introducing our luxurious 'Island Oasis' sofa chair, the perfect addition to elevate your indoor or outdoor space. Crafted with the highest quality solid teak wood, this chair offers unparalleled durability and resistance to weathering, ensuring that it lasts for years to come. The curved armrests provide the ultimate comfort, making it the perfect spot to relax after a long day. The chair is upholstered with soft, yet durable fabric, giving you a comfortable seating experience that you'll love. Its stylish and elegant design will add a touch of sophistication to any room or patio. Invest in our teak fabric arm sofa chair and experience the ultimate in comfort, quality, and style. Order yours today and take the first step towards luxury living! Pre-ordering",
+
+    images: [IslandOasisArmchair],
+    variants: [
+      {
+        size: "",
+        specification:
+          "Material: Teak wood, Finishing color: Natural teak oil, dimensions 70x75x85",
+        price: "1249.50",
+      },
+    ],
+  },
+  {
+    name: "Cane Chair",
+    slug: "cane-chair",
+    category: "cat-home-furniture",
+    sub_category: "Chairs",
+
+    description:
+      "Introducing our elegant teak 'Cane' chair, the perfect accent piece for any home. This chair features a solid teak wood frame that provides exceptional strength and durability, ensuring it will last for years to come. The intricate rope detailing on the arms adds a touch of sophistication, making this chair an eye-catching addition to any room. The chair is upholstered with high-quality fabric, offering both comfort and durability, so you can relax in style. The teak wood frame and rope accents create a natural, rustic look that complements any decor. This chair is suitable for indoor use, making it a practical addition to any living space. Experience the ultimate in style and comfort with our teak rope arm chair. Order yours today and add a touch of elegance to your home decor. Pre-ordering",
+
+    images: [CaneChair],
+    variants: [
+      {
+        size: "",
+        specification:
+          "Material: Teak wood and Rope, Fabric: Venna Grey, Finishing color: Natural Walnut, dimensions 65x50x70",
+        price: "1190.00",
       },
     ],
   },
@@ -1454,8 +2074,8 @@ export const products = [
     ],
   },
   {
-    name: "Cofee Table with glass",
-    slug: "cofee-table-with-glass",
+    name: "Coffee Table with glass",
+    slug: "coffee-table-glass",
     category: "cat-home-furniture",
     sub_category: "Side Tables",
     description:
@@ -1464,12 +2084,12 @@ export const products = [
     images: [],
     variants: [
       {
-        size: "1",
+        size: "Medium",
         specification: "L90 x W50 x H50 cm",
         price: "590",
       },
       {
-        size: "2",
+        size: "Large",
         specification: "L95 x W65 x H50 cm",
         price: "915",
       },

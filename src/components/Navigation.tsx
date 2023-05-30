@@ -97,7 +97,7 @@ export const Navigation = () => {
                   <div className="hidden lg:flex lg:items-center">
                     <Link href="/" className="flex items-center gap-6">
                       <Image className="h-12 w-auto" src={KayonLogo} alt="" />
-                      <span className="font-bold text-sm text-brown-primary">
+                      <span className="font-light text-xs text-brown-primary">
                         From artisans hands to your home
                       </span>
                     </Link>
