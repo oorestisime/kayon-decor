@@ -232,7 +232,7 @@ function Cart() {
                         id="name"
                         name="name"
                         type="text"
-                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-amber-500 sm:text-sm sm:leading-6"
+                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brown-primary sm:text-sm sm:leading-6"
                         onChange={(e) => editName(e.target.value)}
                       />
                     </dd>
@@ -249,7 +249,7 @@ function Cart() {
                         id="email"
                         name="email"
                         type="email"
-                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-amber-500 sm:text-sm sm:leading-6"
+                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brown-primary sm:text-sm sm:leading-6"
                         onChange={(e) => editEmail(e.target.value)}
                       />
                     </dd>
@@ -295,7 +295,7 @@ function Cart() {
                 <div className="mt-6">
                   <button
                     type="submit"
-                    className="w-full rounded-md border border-transparent bg-brown-primary px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-brown-dark focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
+                    className="w-full rounded-md border border-transparent bg-brown-primary px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-brown-dark focus:outline-none focus:ring-2 focus:ring-brown-primary focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
                   >
                     Get a Personalized Quote!
                   </button>
