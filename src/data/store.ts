@@ -412,22 +412,22 @@ export const products = [
     images: [NoodleBowl],
     variants: [
       {
-        size: "1",
+        size: "XSmall",
         specification: "13 x 8cm",
         price: "12",
       },
       {
-        size: "2",
+        size: "Small",
         specification: "15 x 9cm",
         price: "14",
       },
       {
-        size: "3",
+        size: "Medium",
         specification: "18 x 8cm",
         price: "18",
       },
       {
-        size: "4",
+        size: "Large",
         specification: "20 x 9cm",
         price: "24",
       },
@@ -594,32 +594,32 @@ export const products = [
     ],
     variants: [
       {
-        size: "1",
+        size: "XSmall",
         specification: "20 x 13 x 2cm",
         price: "9.5",
       },
       {
-        size: "2",
+        size: "Small",
         specification: "22 x 14 x 2cm",
         price: "12",
       },
       {
-        size: "3",
+        size: "Medium",
         specification: "25 x 15 x 2cm",
         price: "14.5",
       },
       {
-        size: "4",
+        size: "Large",
         specification: "26 x 16 x 2cm",
         price: "18",
       },
       {
-        size: "5",
+        size: "XLarge",
         specification: "28 x 17 x 2cm",
         price: "24",
       },
       {
-        size: "6",
+        size: "XXLarge",
         specification: "30 x 18 x 2cm",
         price: "30",
       },
@@ -954,19 +954,19 @@ export const products = [
     images: [DeliBoard],
     variants: [
       {
-        size: "1",
+        size: "Small",
 
         specification: "40 x 17 x 2cm",
         price: "18",
       },
       {
-        size: "2",
+        size: "Medium",
 
         specification: "45 x 21 x 2cm",
         price: "21.5",
       },
       {
-        size: "3",
+        size: "Large",
 
         specification: "50 x 25 x 2cm",
         price: "24",
@@ -984,13 +984,13 @@ export const products = [
     images: [CuttingBoard, CuttingBoard2],
     variants: [
       {
-        size: "1",
+        size: "Medium",
 
         specification: "40 x 20 x 2cm",
         price: "18",
       },
       {
-        size: "2",
+        size: "Large",
 
         specification: "45 x 25 x 2cm",
         price: "24",
@@ -1009,13 +1009,13 @@ export const products = [
     images: [AppetizerBoard],
     variants: [
       {
-        size: "1",
+        size: "Medium",
 
         specification: "40 x 17 x 2cm",
         price: "18",
       },
       {
-        size: "2",
+        size: "Large",
 
         specification: "45 x 21 x 2cm",
         price: "24",
@@ -1051,19 +1051,19 @@ export const products = [
     images: [PrepBoard],
     variants: [
       {
-        size: "1",
+        size: "Small",
 
         specification: "35 x 14 x 2cm",
         price: "12",
       },
       {
-        size: "2",
+        size: "Medium",
 
         specification: "40 x 17 x 2cm",
         price: "18",
       },
       {
-        size: "3",
+        size: "Large",
 
         specification: "45 x 20 x 2cm",
         price: "24",
@@ -1141,7 +1141,7 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "",
+        specification: "different sizes and unique styles ",
         price: "48",
       },
     ],
@@ -2056,12 +2056,12 @@ export const products = [
     images: [],
     variants: [
       {
-        size: "1",
+        size: "Medium",
         specification: "L90 x W50 x H50 cm",
         price: "590",
       },
       {
-        size: "2",
+        size: "Large",
         specification: "L95 x W65 x H50 cm",
         price: "915",
       },
