@@ -223,7 +223,6 @@ function Category({
         </div>
       </main>
       <Story />
-      <Favorite />
     </>
   );
 }

@@ -183,7 +183,6 @@ function Product({
           </div>
         </div>
       </main>
-      <Favorite />
     </>
   );
 }

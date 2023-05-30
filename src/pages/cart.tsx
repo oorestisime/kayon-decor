@@ -306,7 +306,6 @@ function Cart() {
         ) : null}
       </main>
       <Story />
-      <Favorite />
     </>
   );
 }
