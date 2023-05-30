@@ -2046,8 +2046,8 @@ export const products = [
     ],
   },
   {
-    name: "Cofee Table with glass",
-    slug: "cofee-table-with-glass",
+    name: "Coffee Table with glass",
+    slug: "coffee-table-glass",
     category: "cat-home-furniture",
     sub_category: "Side Tables",
     description:
