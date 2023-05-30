@@ -1,4 +1,4 @@
-import OwlShaped from "@/images/Owl-shaped-plate/Owl-shaped.png";
+import OwlShaped from "@/images/Owl-shaped-plate/owl-shaped.png";
 import OwlShaped2 from "@/images/Owl-shaped-plate/Owl-shaped2.png";
 import PizzaPlateRound1 from "@/images/Pizza-plate-round/pizza-plate-round-1.jpeg";
 import PizzaPlateRound2 from "@/images/Pizza-plate-round/pizza-plate-round-2.jpeg";
@@ -186,8 +186,8 @@ import IslandOasisArmchair from "@/images/Island-Oasis-Armchair/Island-Oasis-Arm
 
 import KennedyDiningChair from "@/images/Kennedy-dining-chair/Kennedy-dining-chair.jpg";
 import CaneChair from "@/images/Cane-chair/Cane-chair.jpeg";
-import Abuabubasket1 from "@/images/Abu-abu-baskets/Abu-abubaskets1.jpeg";
-import Abuabubasket2 from "@/images/Abu-abu-baskets/Abu-abubaskets2.jpeg";
+import Abuabubasket1 from "@/images/Abu-abu-baskets/Abu-abuBaskets1.jpeg";
+import Abuabubasket2 from "@/images/Abu-abu-baskets/Abu-abuBaskets2.jpeg";
 import Alambasket1 from "@/images/Alam-baskets/AlamBaskets1.jpg";
 import Alambasket2 from "@/images/Alam-baskets/AlamBaskets2.jpg";
 import Anyambasket1 from "@/images/Anyam-Baskets/AnyamBaskets1.jpg";
