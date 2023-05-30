@@ -182,7 +182,7 @@ function Cart() {
             </div>
           </div>
         ) : null}
-        {isClient && !submitted && cart?.items?.length > 0 ? (
+        {isClient && !submitted && (cart?.items?.length || 0) > 0 ? (
           <form
             onSubmit={handleSubmit}
             className="mt-12 lg:grid lg:grid-cols-12 lg:items-start lg:gap-x-12 xl:gap-x-16"
