@@ -115,7 +115,7 @@ import TeakWoodUtensils6 from "@/images/Wooden-Utensils/Teak_wood_utensils-6.png
 import TeakWoodUtensils8 from "@/images/Wooden-Utensils/Teak_wood_utensils-8.png";
 import TeakWoodUtensils9 from "@/images/Wooden-Utensils/Teak_wood_utensils-9.png";
 import TeakWoodUtensils1 from "@/images/Wooden-Utensils/Teak_wood_utensils-1.jpeg";
-import PhotoGeneral from "@/images/Wooden-Utensils/photo-general.png";
+import TeakWoodUtensilsGeneral from "@/images/Wooden-Utensils/photo-general.png";
 import TeakWoodUtensils12 from "@/images/Wooden-Utensils/Teak_wood_utensils-12.png";
 import TeakWoodUtensils10 from "@/images/Wooden-Utensils/Teak_wood_utensils-10.jpg";
 import TeakWoodUtensils11 from "@/images/Wooden-Utensils/Teak_wood_utensils-11.png";
@@ -1199,8 +1199,16 @@ export const products = [
       "Welcome the touch of nature in your kitchen with our Teak Wooden Utensils. Handcrafted from teak wood, these utensils exude a warm and rustic charm. Each piece is meticulously carved to provide a comfortable grip and smooth handling. Elevate your cooking experience with these eco-friendly and durable teak wooden utensils, bringing a natural touch to your culinary creations.",
 
     images: [
+      TeakWoodUtensilsGeneral,
       TeakWoodUtensils1,
       TeakWoodUtensils2,
+      TeakWoodUtensils3,
+      TeakWoodUtensils4,
+      TeakWoodUtensils5,
+      TeakWoodUtensils6,
+      TeakWoodUtensils7,
+      TeakWoodUtensils8,
+      TeakWoodUtensils9,
       TeakWoodUtensils10,
       TeakWoodUtensils11,
       TeakWoodUtensils12,
@@ -1234,12 +1242,12 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "",
+        specification: "Teak Wood, Dimensions: h30cm d30cm",
         price: "107",
       },
       {
         size: "Large",
-        specification: "",
+        specification: "Teak Wood, Dimensions: h50cm d30cm",
         price: "140",
       },
     ],
@@ -1914,13 +1922,13 @@ export const products = [
       {
         size: "Indoor",
         specification:
-          "Material: Teak wood & Robe Luum Finishing color: Natural Teak, Custom Design",
+          "Material: Teak wood & Robe Luum    Finishing color: Natural Teak, Custom Design     Dimensions: 80 x 60 x 75cm",
         price: "726",
       },
       {
         size: "Outdoor",
         specification:
-          "Material: Teak wood & Robe Synthetic Finishing color: Natural Teak, Custom Design",
+          "Material: Teak wood & Robe Synthetic    Finishing color: Natural Teak, Custom Design     Dimensions: 80 x 60 x 75cm",
         price: "848",
       },
     ],
@@ -1938,13 +1946,13 @@ export const products = [
       {
         size: "Indoor",
         specification:
-          "Material: Teak wood & Robe Luum Finishing color: Natural Teak, Custom Design",
+          "Material: Teak wood & Robe Luum      Finishing color: Natural Teak, Custom Design     Dimensions: 80 x 60 x 72cm",
         price: "678",
       },
       {
         size: "Outdoor",
         specification:
-          "Material: Teak wood & Robe Synthetic Finishing color: Natural Teak, Custom Design",
+          "Material: Teak wood & Robe Synthetic   Finishing color: Natural Teak, Custom Design      Dimensions: 80 x 60 x 72cm",
         price: "799",
       },
     ],
@@ -2000,7 +2008,7 @@ export const products = [
       {
         size: "",
         specification:
-          "Material: Teak wood & Synthetic Rope, Finishing color: Natural teak oil",
+          "Material: Teak wood & Synthetic Rope,      Finishing color: Natural teak oil       Dimensions: 45 x 50 x 80cm",
         price: "570",
       },
     ],
