@@ -84,6 +84,7 @@ import TwomLongSuarWoodTableWithLeg2 from "@/images/Wooden Tables/2m-long-suar-w
 import Twom5LongSuarWoodTableWithLeg from "@/images/Wooden Tables/2.5m-long-suar-wood-table-with-star-leg.jpg";
 import Onem5LongSuarWoodTableWithLeg from "@/images/Wooden Tables/1,5m-long-suar-wood-table-with-leg.jpeg";
 import ThreemLongSuarWoodTableWithLeg from "@/images/Wooden Tables/3m-long-suar-wood-table-with-leg.jpeg";
+import TablesFavorite from "@/images/Wooden Tables/favoritesTables.jpeg";
 import TheSquareWoodenPlate2 from "@/images/The-square-wooden-plate/The-square-wooden-plate2.jpeg";
 import TheSquareWoodenPlate3 from "@/images/The-square-wooden-plate/The-square-wooden-plate3.jpeg";
 import TheSquareWoodenPlate from "@/images/The-square-wooden-plate/The-square-wooden-plate.jpeg";
@@ -222,6 +223,9 @@ import TropicVibeBasket2 from "@/images/Tropic-Vibe-Basket/TropicVibeBaskets2.jp
 import TropicalKnotBasket1 from "@/images/Tropical-Knot-baskets/TropicalKnotBaskets.jpg";
 import TuaBasket1 from "@/images/Tua-Baskets/TuaBaskets1.jpeg";
 import TuaBasket2 from "@/images/Tua-Baskets/TuaBaskets2.jpeg";
+import SilangBasket1 from "@/images/Silang-Baskets/SilangBaskets1.jpeg";
+import SilangBasket2 from "@/images/Silang-Baskets/SilangBaskets2.jpeg";
+import SilangBasket3 from "@/images/Silang-Baskets/SilangBaskets3.jpeg";
 
 export const products = [
   {
@@ -915,23 +919,7 @@ export const products = [
       },
     ],
   },
-  {
-    name: "Cheese Board",
-    slug: "cheese-board",
-    category: "cat-kitchenware",
-    sub_category: "Wooden Boards",
-    description:
-      "Experience the epitome of elegance with our Teak Wooden Cheese Board. Handcrafted from teak wood, this board showcases the stunning beauty and intricate patterns of the wood grain. Its smooth surface and ample size make it the perfect platform for displaying and serving a variety of cheeses. Elevate your entertaining with this eco-friendly and stylish teak wooden cheese board.",
 
-    images: [CheeseBoard],
-    variants: [
-      {
-        size: "",
-        specification: "22 x 12 x 2cm",
-        price: "7",
-      },
-    ],
-  },
   {
     name: "Fruit Board",
     slug: "fruit-board",
@@ -1029,6 +1017,24 @@ export const products = [
     ],
   },
   {
+    name: "Cheese Board",
+    slug: "cheese-board",
+    category: "cat-kitchenware",
+    sub_category: "Wooden Boards",
+    featured: true,
+    description:
+      "Experience the epitome of elegance with our Teak Wooden Cheese Board. Handcrafted from teak wood, this board showcases the stunning beauty and intricate patterns of the wood grain. Its smooth surface and ample size make it the perfect platform for displaying and serving a variety of cheeses. Elevate your entertaining with this eco-friendly and stylish teak wooden cheese board.",
+
+    images: [CheeseBoard],
+    variants: [
+      {
+        size: "",
+        specification: "22 x 12 x 2cm",
+        price: "7",
+      },
+    ],
+  },
+  {
     name: "Prep Board",
     slug: "prep-board",
     category: "cat-kitchenware",
@@ -1097,7 +1103,7 @@ export const products = [
     slug: "meat-board",
     category: "cat-kitchenware",
     sub_category: "Wooden Boards",
-    featured: true,
+
     description:
       "Achieve precision in meat preparation with our Teak Wooden Meat Cutting Board. Handcrafted from teak wood, this board provides a reliable and hygienic surface for slicing and cutting various types of meat. Its smooth texture and durable construction make it perfect for handling and prepping your favorite cuts.",
 
@@ -1218,7 +1224,6 @@ export const products = [
     category: "cat-home-decor",
     sub_category: "Baskets",
 
-    favorite: true,
     description:
       "Experience the natural beauty and eco-friendly craftsmanship of our Balinese baskets, expertly handcrafted from sustainable banana fiber and cotton rope. Each basket tells a story of traditional weaving techniques passed down through generations, combining the strength and durability of banana fiber with the softness and versatility of cotton rope. These unique baskets not only add a touch of rustic charm to any space but also provide a practical storage solution for your everyday needs. From organizing essentials to displaying your favorite items, our Balinese baskets bring an element of nature and artistry to your home. ",
     images: [DiamondBasket1, DiamondBasket2],
@@ -1231,12 +1236,12 @@ export const products = [
       {
         size: "Medium",
         specification: "H=32cm D=35cm",
-        price: "60",
+        price: "55",
       },
       {
         size: "Large",
         specification: "H=35cm D=40cm",
-        price: "70",
+        price: "65",
       },
     ],
   },
@@ -1323,6 +1328,7 @@ export const products = [
     slug: "garis-laundry",
     category: "cat-home-decor",
     sub_category: "Baskets",
+    featured: true,
     description:
       "Experience the natural beauty and exquisite craftsmanship of our Balinese baskets, handwoven with the finest banana fiber and adorned with intricate raffia accents. Each basket is a testament to the traditional weaving techniques passed down through generations of Balinese artisans. The strong and sustainable banana fiber provides a sturdy foundation, while the delicate raffia embellishments add a touch of elegance and visual interest. These versatile baskets are not only functional storage solutions but also works of art that bring a sense of warmth and authenticity to your home. Whether used for organizing household items, showcasing plants, or as decorative pieces, our Balinese baskets made from banana fiber and raffia effortlessly blend style and functionality. Embrace the natural textures and cultural heritage of Bali with these beautifully handcrafted treasures, bringing a touch of tropical charm to your living space",
     images: [GarisLaundryBasket1, GarisLaundryBasket2],
@@ -1349,10 +1355,12 @@ export const products = [
     slug: "alam-baskets",
     category: "cat-home-decor",
     sub_category: "Baskets",
+    favorite: true,
     description:
       "Discover the timeless beauty and eco-friendly craftsmanship of our Balinese baskets, expertly handcrafted from sustainable banana fiber and soft cotton rope. Each basket showcases the artistry of Balinese artisans who skillfully weave together these natural materials to create stunning textures and patterns. The combination of banana fiber and cotton rope not only ensures durability but also adds a touch of rustic charm to these functional and decorative pieces. These versatile baskets are perfect for organizing your belongings, adding a natural touch to your space, or as stylish storage solutions. Embrace the organic elegance and cultural heritage of Bali with these meticulously crafted baskets, bringing a sense of warmth and nature-inspired beauty to your home.",
-    featured: true,
+
     images: [Alambasket1, Alambasket2],
+
     variants: [
       {
         size: "Small",
@@ -1409,17 +1417,17 @@ export const products = [
       {
         size: "Small",
         specification: "H=15cm D=32cm",
-        price: "48",
+        price: "35",
       },
       {
         size: "Medium",
         specification: "H=17cm D=38cm",
-        price: "60",
+        price: "45",
       },
       {
         size: "Large",
         specification: "H=18cm D=45cm",
-        price: "70",
+        price: "50",
       },
     ],
   },
@@ -1435,12 +1443,12 @@ export const products = [
       {
         size: "Medium",
         specification: "H=24cm D=32cm",
-        price: "60",
+        price: "50",
       },
       {
         size: "Large",
         specification: "H=27cm D=40cm",
-        price: "70",
+        price: "60",
       },
     ],
   },
@@ -1508,12 +1516,12 @@ export const products = [
       {
         size: "Medium",
         specification: "H=24cm D=30cm",
-        price: "60",
+        price: "50",
       },
       {
         size: "Large",
         specification: "H=30cm D=38cm",
-        price: "70",
+        price: "60",
       },
     ],
   },
@@ -1555,17 +1563,17 @@ export const products = [
       {
         size: "Small",
         specification: "H=35cm D=30cm",
-        price: "48",
+        price: "55",
       },
       {
         size: "Medium",
         specification: "H=40cm D=35cm",
-        price: "60",
+        price: "65",
       },
       {
         size: "Large",
         specification: "H=50cm D=40cm",
-        price: "70",
+        price: "80",
       },
     ],
   },
@@ -1582,17 +1590,17 @@ export const products = [
       {
         size: "Small",
         specification: "H=35cm D=28cm",
-        price: "48",
+        price: "55",
       },
       {
         size: "Medium",
         specification: "H=40cm D=38cm",
-        price: "60",
+        price: "65",
       },
       {
         size: "Large",
         specification: "H=45cm D=48cm",
-        price: "70",
+        price: "85",
       },
     ],
   },
@@ -1608,17 +1616,17 @@ export const products = [
       {
         size: "Small",
         specification: "H=40cm D=30cm",
-        price: "48",
+        price: "55",
       },
       {
         size: "Medium",
         specification: "H=45cm D=35cm",
-        price: "60",
+        price: "65",
       },
       {
         size: "Large",
         specification: "H=50cm D=40cm",
-        price: "70",
+        price: "80",
       },
     ],
   },
@@ -1634,22 +1642,22 @@ export const products = [
       {
         size: "Small",
         specification: "H=34cm D=28cm",
-        price: "48",
+        price: "45",
       },
       {
         size: "Medium",
         specification: "H=42cm D=32cm",
-        price: "60",
+        price: "50",
       },
       {
         size: "Large",
         specification: "H=46cm D=35cm",
-        price: "70",
+        price: "60",
       },
       {
         size: "XLarge",
         specification: "H=50cm D=38cm",
-        price: "70",
+        price: "75",
       },
     ],
   },
@@ -1694,17 +1702,17 @@ export const products = [
       {
         size: "Small",
         specification: "H=15cm D=32cm",
-        price: "48",
+        price: "35",
       },
       {
         size: "Medium",
         specification: "H=17cm D=38cm",
-        price: "60",
+        price: "45",
       },
       {
         size: "Large",
         specification: "H=18cm D=45cm",
-        price: "70",
+        price: "50",
       },
     ],
   },
@@ -1721,17 +1729,17 @@ export const products = [
       {
         size: "Small",
         specification: "H=15cm D=15cm",
-        price: "48",
+        price: "38",
       },
       {
         size: "Medium",
         specification: "H=18cm D=18cm",
-        price: "60",
+        price: "45",
       },
       {
         size: "Large",
         specification: "H=20cm D=20cm",
-        price: "70",
+        price: "50",
       },
     ],
   },
@@ -1753,12 +1761,35 @@ export const products = [
       {
         size: "Medium",
         specification: "H=23cm D=35cm",
-        price: "60",
+        price: "55",
       },
       {
         size: "Large",
         specification: "H=25cm D=45cm",
-        price: "70",
+        price: "60",
+      },
+    ],
+  },
+  {
+    name: "Silang Baskets",
+    slug: "silang-baskets",
+    category: "cat-home-decor",
+    sub_category: "Baskets",
+    featured: true,
+
+    description:
+      "Discover the natural beauty and exquisite craftsmanship of our Balinese baskets, meticulously handcrafted from sustainable banana fiber and soft cotton rope. Each basket is a testament to the skill and dedication of Balinese artisans, who weave together these natural materials with precision and artistry. The sturdy banana fiber provides a durable foundation, while the cotton rope adds a touch of softness and texture. These versatile baskets serve a multitude of purposes, whether it's organizing your space, storing essentials, or adding a rustic charm to your home decor. Embrace the eco-friendly elegance and cultural heritage of Bali with these handwoven treasures, as they bring a sense of authenticity and natural beauty to your living space. Let our Balinese baskets become a functional and stylish addition to your home, reflecting the artistry and craftsmanship that define Balinese traditions.",
+    images: [SilangBasket1, SilangBasket2, SilangBasket3],
+    variants: [
+      {
+        size: "Medium",
+        specification: "H=24cm D=32cm",
+        price: "50",
+      },
+      {
+        size: "Large",
+        specification: "H=27cm D=40cm",
+        price: "60",
       },
     ],
   },
@@ -1780,24 +1811,24 @@ export const products = [
       },
     ],
   },
-  {
-    name: "Deco wooden stand",
-    slug: "deco-wooden-stand",
-    category: "cat-home-decor",
-    sub_category: "Accessories",
-    featured: true,
-    description:
-      "Add a touch of artistic flair to your decor with our Teak Wooden Deco Abstract Stand. Crafted from teak wood, this stand features a unique and abstract design that showcases the beauty of natural wood grain.  Elevate your space with this eye-catching and contemporary teak wooden abstract stand.",
+  // {
+  //   name: "Deco wooden stand",
+  //   slug: "deco-wooden-stand",
+  //   category: "cat-home-decor",
+  //   sub_category: "Accessories",
+  //   featured: true,
+  //   description:
+  //     "Add a touch of artistic flair to your decor with our Teak Wooden Deco Abstract Stand. Crafted from teak wood, this stand features a unique and abstract design that showcases the beauty of natural wood grain.  Elevate your space with this eye-catching and contemporary teak wooden abstract stand.",
 
-    images: [DecoWoodenStand],
-    variants: [
-      {
-        size: "",
-        specification: "50 cm height",
-        price: "95",
-      },
-    ],
-  },
+  //   images: [DecoWoodenStand],
+  //   variants: [
+  //     {
+  //       size: "",
+  //       specification: "50 cm height",
+  //       price: "95",
+  //     },
+  //   ],
+  // },
   {
     name: "Wooden Natural Dining Tables",
     slug: "wooden-natural-dining-tables",
@@ -1817,7 +1848,9 @@ export const products = [
       ThreemLongSuarWoodTableWithLeg,
       ThreemLongSuarWoodTableWithLeg2,
       ThreemLongSuarWoodTableWithLeg3,
+      TablesFavorite,
     ],
+
     variants: [
       {
         size: "1.5 M",
