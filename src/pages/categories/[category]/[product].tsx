@@ -118,8 +118,8 @@ function Product({
                   <div className="mt-10">
                     <div className="flex items-center justify-between">
                       <h3 className="text-sm font-medium text-gray-900">
-                        <strong>Dimensions</strong> -{" "}
-                        {selectedVariant.dimensions}
+                        <strong>Specifications</strong> -{" "}
+                        {selectedVariant.specification}
                       </h3>
                     </div>
                     <RadioGroup
@@ -171,8 +171,8 @@ function Product({
                   <div className="mt-10">
                     <div className="flex items-center justify-between">
                       <h3 className="text-sm font-medium text-gray-900">
-                        <strong>Dimensions</strong> -{" "}
-                        {selectedVariant.dimensions}
+                        <strong>Specifications</strong> -{" "}
+                        {selectedVariant.specification}
                       </h3>
                     </div>
                   </div>

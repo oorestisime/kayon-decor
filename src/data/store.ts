@@ -245,17 +245,17 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "24 x 14 x 2cm",
+        specification: "24 x 14 x 2cm",
         price: "12",
       },
       {
         size: "Medium",
-        dimensions: "27 x 16 x 2cm",
+        specification: "27 x 16 x 2cm",
         price: "14",
       },
       {
         size: "Large",
-        dimensions: "30 x 18 x 2cm",
+        specification: "30 x 18 x 2cm",
         price: "18",
       },
     ],
@@ -272,12 +272,12 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "17 x 15 x 2cm",
+        specification: "17 x 15 x 2cm",
         price: "12",
       },
       {
         size: "Large",
-        dimensions: "20 x 22 x 2cm",
+        specification: "20 x 22 x 2cm",
         price: "18",
       },
     ],
@@ -299,12 +299,12 @@ export const products = [
     variants: [
       {
         size: "Medium",
-        dimensions: "33 x 22 x 2cm",
+        specification: "33 x 22 x 2cm",
         price: "18",
       },
       {
         size: "Large",
-        dimensions: "45 x 25 x 2cm",
+        specification: "45 x 25 x 2cm",
         price: "24",
       },
     ],
@@ -322,17 +322,17 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "15 x 2cm",
+        specification: "15 x 2cm",
         price: "7",
       },
       {
         size: "Medium",
-        dimensions: "20 x 2cm",
+        specification: "20 x 2cm",
         price: "12",
       },
       {
         size: "Large",
-        dimensions: "25 x 2cm",
+        specification: "25 x 2cm",
         price: "18",
       },
     ],
@@ -349,7 +349,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "15 x 15 x 2cn",
+        specification: "15 x 15 x 2cn",
         price: "10",
       },
     ],
@@ -366,13 +366,13 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "14 x 11 x 2cm",
+        specification: "14 x 11 x 2cm",
         price: "7",
       },
 
       {
         size: "Large",
-        dimensions: "15 x 15 x 2cm",
+        specification: "15 x 15 x 2cm",
         price: "12",
       },
     ],
@@ -389,13 +389,13 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "23 x 15 x 2cm",
+        specification: "23 x 15 x 2cm",
         price: "12",
       },
 
       {
         size: "Large",
-        dimensions: "30 x 15 x 2 cm",
+        specification: "30 x 15 x 2 cm",
         price: "14",
       },
     ],
@@ -413,22 +413,22 @@ export const products = [
     variants: [
       {
         size: "1",
-        dimensions: "13 x 8cm",
+        specification: "13 x 8cm",
         price: "12",
       },
       {
         size: "2",
-        dimensions: "15 x 9cm",
+        specification: "15 x 9cm",
         price: "14",
       },
       {
         size: "3",
-        dimensions: "18 x 8cm",
+        specification: "18 x 8cm",
         price: "18",
       },
       {
         size: "4",
-        dimensions: "20 x 9cm",
+        specification: "20 x 9cm",
         price: "24",
       },
     ],
@@ -446,7 +446,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "30 x 16 x 2cm",
+        specification: "30 x 16 x 2cm",
         price: "18",
       },
     ],
@@ -463,7 +463,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "50 x 25 x 2cm",
+        specification: "50 x 25 x 2cm",
         price: "36",
       },
     ],
@@ -480,17 +480,17 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "20 x 32 x 2cm",
+        specification: "20 x 32 x 2cm",
         price: "18",
       },
       {
         size: "Medium",
-        dimensions: "25 x 37 x 2cm",
+        specification: "25 x 37 x 2cm",
         price: "21",
       },
       {
         size: "Large",
-        dimensions: "30 x 42 x 2cm",
+        specification: "30 x 42 x 2cm",
         price: "30",
       },
     ],
@@ -512,7 +512,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "12 x 9  x 2cm",
+        specification: "12 x 9  x 2cm",
         price: "10",
       },
     ],
@@ -533,7 +533,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "23 x 23 x 2cm",
+        specification: "23 x 23 x 2cm",
         price: "14",
       },
     ],
@@ -550,7 +550,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "35 x 2cm",
+        specification: "35 x 2cm",
         price: "36",
       },
     ],
@@ -568,7 +568,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "20 x 30 x 2cm",
+        specification: "20 x 30 x 2cm",
         price: "18",
       },
     ],
@@ -595,32 +595,32 @@ export const products = [
     variants: [
       {
         size: "1",
-        dimensions: "20 x 13 x 2cm",
+        specification: "20 x 13 x 2cm",
         price: "9.5",
       },
       {
         size: "2",
-        dimensions: "22 x 14 x 2cm",
+        specification: "22 x 14 x 2cm",
         price: "12",
       },
       {
         size: "3",
-        dimensions: "25 x 15 x 2cm",
+        specification: "25 x 15 x 2cm",
         price: "14.5",
       },
       {
         size: "4",
-        dimensions: "26 x 16 x 2cm",
+        specification: "26 x 16 x 2cm",
         price: "18",
       },
       {
         size: "5",
-        dimensions: "28 x 17 x 2cm",
+        specification: "28 x 17 x 2cm",
         price: "24",
       },
       {
         size: "6",
-        dimensions: "30 x 18 x 2cm",
+        specification: "30 x 18 x 2cm",
         price: "30",
       },
     ],
@@ -637,7 +637,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "40 x 20 x 2cm",
+        specification: "40 x 20 x 2cm",
         price: "21",
       },
     ],
@@ -655,7 +655,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "37 x 12 x 4cm",
+        specification: "37 x 12 x 4cm",
         price: "18",
       },
     ],
@@ -672,17 +672,17 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "25 x 10 x 4cm",
+        specification: "25 x 10 x 4cm",
         price: "12",
       },
       {
         size: "Medium",
-        dimensions: "35 x 10 x 4cm",
+        specification: "35 x 10 x 4cm",
         price: "14",
       },
       {
         size: "Large",
-        dimensions: "45 x 10 x 4cm",
+        specification: "45 x 10 x 4cm",
         price: "18",
       },
     ],
@@ -699,7 +699,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "10 x 2cm",
+        specification: "10 x 2cm",
         price: "6",
       },
     ],
@@ -716,7 +716,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "22 x 7cm",
+        specification: "22 x 7cm",
         price: "18",
       },
     ],
@@ -733,7 +733,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "18 x 6cm",
+        specification: "18 x 6cm",
         price: "14",
       },
     ],
@@ -750,7 +750,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "17 x 9cm",
+        specification: "17 x 9cm",
         price: "14",
       },
     ],
@@ -767,7 +767,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "17 x 5cm",
+        specification: "17 x 5cm",
         price: "14",
       },
     ],
@@ -784,7 +784,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "14 x 5cm",
+        specification: "14 x 5cm",
         price: "12",
       },
     ],
@@ -801,7 +801,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "12.5 x 4.5cm",
+        specification: "12.5 x 4.5cm",
         price: "14",
       },
     ],
@@ -818,7 +818,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "10 x 5cm",
+        specification: "10 x 5cm",
         price: "12",
       },
     ],
@@ -835,7 +835,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "9 x 4.5cm",
+        specification: "9 x 4.5cm",
         price: "12",
       },
     ],
@@ -857,7 +857,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "14 x 8cm",
+        specification: "14 x 8cm",
         price: "21",
       },
     ],
@@ -879,7 +879,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "7 x 4cm",
+        specification: "7 x 4cm",
         price: "10",
       },
     ],
@@ -896,7 +896,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "28 x 10cm",
+        specification: "28 x 10cm",
         price: "50",
       },
     ],
@@ -920,7 +920,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "16 x 16 x 8cm",
+        specification: "16 x 16 x 8cm",
         price: "21",
       },
     ],
@@ -938,7 +938,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "40 x 16 x 2cm",
+        specification: "40 x 16 x 2cm",
         price: "14",
       },
     ],
@@ -956,19 +956,19 @@ export const products = [
       {
         size: "1",
 
-        dimensions: "40 x 17 x 2cm",
+        specification: "40 x 17 x 2cm",
         price: "18",
       },
       {
         size: "2",
 
-        dimensions: "45 x 21 x 2cm",
+        specification: "45 x 21 x 2cm",
         price: "21.5",
       },
       {
         size: "3",
 
-        dimensions: "50 x 25 x 2cm",
+        specification: "50 x 25 x 2cm",
         price: "24",
       },
     ],
@@ -986,13 +986,13 @@ export const products = [
       {
         size: "1",
 
-        dimensions: "40 x 20 x 2cm",
+        specification: "40 x 20 x 2cm",
         price: "18",
       },
       {
         size: "2",
 
-        dimensions: "45 x 25 x 2cm",
+        specification: "45 x 25 x 2cm",
         price: "24",
       },
     ],
@@ -1011,13 +1011,13 @@ export const products = [
       {
         size: "1",
 
-        dimensions: "40 x 17 x 2cm",
+        specification: "40 x 17 x 2cm",
         price: "18",
       },
       {
         size: "2",
 
-        dimensions: "45 x 21 x 2cm",
+        specification: "45 x 21 x 2cm",
         price: "24",
       },
     ],
@@ -1035,7 +1035,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "22 x 12 x 2cm",
+        specification: "22 x 12 x 2cm",
         price: "7",
       },
     ],
@@ -1053,19 +1053,19 @@ export const products = [
       {
         size: "1",
 
-        dimensions: "35 x 14 x 2cm",
+        specification: "35 x 14 x 2cm",
         price: "12",
       },
       {
         size: "2",
 
-        dimensions: "40 x 17 x 2cm",
+        specification: "40 x 17 x 2cm",
         price: "18",
       },
       {
         size: "3",
 
-        dimensions: "45 x 20 x 2cm",
+        specification: "45 x 20 x 2cm",
         price: "24",
       },
     ],
@@ -1082,7 +1082,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "50 x 25 x 2cm",
+        specification: "50 x 25 x 2cm",
         price: "24",
       },
     ],
@@ -1099,7 +1099,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "45 x 13 x 2cm",
+        specification: "45 x 13 x 2cm",
         price: "14",
       },
     ],
@@ -1117,7 +1117,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "16 x 40 x 2cm",
+        specification: "16 x 40 x 2cm",
         price: "18",
       },
     ],
@@ -1141,7 +1141,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "",
+        specification: "",
         price: "48",
       },
     ],
@@ -1159,12 +1159,12 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "11 x 9cm",
+        specification: "11 x 9cm",
         price: "12",
       },
       {
         size: "Large",
-        dimensions: "13 x 19cm",
+        specification: "13 x 19cm",
         price: "14",
       },
     ],
@@ -1188,7 +1188,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "",
+        specification: "",
         price: "10",
       },
     ],
@@ -1214,12 +1214,12 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "",
+        specification: "",
         price: "107",
       },
       {
         size: "Large",
-        dimensions: "",
+        specification: "",
         price: "140",
       },
     ],
@@ -1236,17 +1236,17 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "H=30cm D=30cm",
+        specification: "H=30cm D=30cm",
         price: "48",
       },
       {
         size: "Medium",
-        dimensions: "H=32cm D=35cm",
+        specification: "H=32cm D=35cm",
         price: "55",
       },
       {
         size: "Large",
-        dimensions: "H=35cm D=40cm",
+        specification: "H=35cm D=40cm",
         price: "65",
       },
     ],
@@ -1262,17 +1262,17 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "H=40cm D=30cm",
+        specification: "H=40cm D=30cm",
         price: "48",
       },
       {
         size: "Medium",
-        dimensions: "H=45cm D=35cm",
+        specification: "H=45cm D=35cm",
         price: "60",
       },
       {
         size: "Large",
-        dimensions: "H=50cm D=40cm",
+        specification: "H=50cm D=40cm",
         price: "70",
       },
     ],
@@ -1288,17 +1288,17 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "H=23cm D=25cm",
+        specification: "H=23cm D=25cm",
         price: "48",
       },
       {
         size: "Medium",
-        dimensions: "H=25cm D=28cm",
+        specification: "H=25cm D=28cm",
         price: "60",
       },
       {
         size: "Large",
-        dimensions: "H=27cm D=32cm",
+        specification: "H=27cm D=32cm",
         price: "70",
       },
     ],
@@ -1314,17 +1314,17 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "H=28cm D=28cm",
+        specification: "H=28cm D=28cm",
         price: "48",
       },
       {
         size: "Medium",
-        dimensions: "H=30cm D=35cm",
+        specification: "H=30cm D=35cm",
         price: "60",
       },
       {
         size: "Large",
-        dimensions: "H=33cm D=40cm",
+        specification: "H=33cm D=40cm",
         price: "70",
       },
     ],
@@ -1341,17 +1341,17 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "H=28cm D=26cm",
+        specification: "H=28cm D=26cm",
         price: "48",
       },
       {
         size: "Medium",
-        dimensions: "H=30cm D=35cm",
+        specification: "H=30cm D=35cm",
         price: "60",
       },
       {
         size: "Large",
-        dimensions: "H=35cm D=48cm",
+        specification: "H=35cm D=48cm",
         price: "70",
       },
     ],
@@ -1370,17 +1370,17 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "H=28cm D=28cm",
+        specification: "H=28cm D=28cm",
         price: "48",
       },
       {
         size: "Medium",
-        dimensions: "H=30cm D=35cm",
+        specification: "H=30cm D=35cm",
         price: "60",
       },
       {
         size: "Large",
-        dimensions: "H=33cm D=40cm",
+        specification: "H=33cm D=40cm",
         price: "70",
       },
     ],
@@ -1396,17 +1396,17 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "H=40cm D=30cm",
+        specification: "H=40cm D=30cm",
         price: "48",
       },
       {
         size: "Medium",
-        dimensions: "H=45cm D=35cm",
+        specification: "H=45cm D=35cm",
         price: "60",
       },
       {
         size: "Large",
-        dimensions: "H=50cm D=40cm",
+        specification: "H=50cm D=40cm",
         price: "70",
       },
     ],
@@ -1422,17 +1422,17 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "H=15cm D=32cm",
+        specification: "H=15cm D=32cm",
         price: "35",
       },
       {
         size: "Medium",
-        dimensions: "H=17cm D=38cm",
+        specification: "H=17cm D=38cm",
         price: "45",
       },
       {
         size: "Large",
-        dimensions: "H=18cm D=45cm",
+        specification: "H=18cm D=45cm",
         price: "50",
       },
     ],
@@ -1448,12 +1448,12 @@ export const products = [
     variants: [
       {
         size: "Medium",
-        dimensions: "H=24cm D=32cm",
+        specification: "H=24cm D=32cm",
         price: "50",
       },
       {
         size: "Large",
-        dimensions: "H=27cm D=40cm",
+        specification: "H=27cm D=40cm",
         price: "60",
       },
     ],
@@ -1469,17 +1469,17 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "H=40cm D=30cm",
+        specification: "H=40cm D=30cm",
         price: "48",
       },
       {
         size: "Medium",
-        dimensions: "H=45cm D=35cm",
+        specification: "H=45cm D=35cm",
         price: "60",
       },
       {
         size: "Large",
-        dimensions: "H=50cm D=40cm",
+        specification: "H=50cm D=40cm",
         price: "70",
       },
     ],
@@ -1495,17 +1495,17 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "H=26cm D=30cm",
+        specification: "H=26cm D=30cm",
         price: "48",
       },
       {
         size: "Medium",
-        dimensions: "H=30cm D=35cm",
+        specification: "H=30cm D=35cm",
         price: "60",
       },
       {
         size: "Large",
-        dimensions: "H=34cm D=40cm",
+        specification: "H=34cm D=40cm",
         price: "70",
       },
     ],
@@ -1521,12 +1521,12 @@ export const products = [
     variants: [
       {
         size: "Medium",
-        dimensions: "H=24cm D=30cm",
+        specification: "H=24cm D=30cm",
         price: "50",
       },
       {
         size: "Large",
-        dimensions: "H=30cm D=38cm",
+        specification: "H=30cm D=38cm",
         price: "60",
       },
     ],
@@ -1542,17 +1542,17 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "H=26cm D=28cm",
+        specification: "H=26cm D=28cm",
         price: "48",
       },
       {
         size: "Medium",
-        dimensions: "H=30cm D=34cm",
+        specification: "H=30cm D=34cm",
         price: "60",
       },
       {
         size: "Large",
-        dimensions: "H=33cm D=38cm",
+        specification: "H=33cm D=38cm",
         price: "70",
       },
     ],
@@ -1568,17 +1568,17 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "H=35cm D=30cm",
+        specification: "H=35cm D=30cm",
         price: "55",
       },
       {
         size: "Medium",
-        dimensions: "H=40cm D=35cm",
+        specification: "H=40cm D=35cm",
         price: "65",
       },
       {
         size: "Large",
-        dimensions: "H=50cm D=40cm",
+        specification: "H=50cm D=40cm",
         price: "80",
       },
     ],
@@ -1595,17 +1595,17 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "H=35cm D=28cm",
+        specification: "H=35cm D=28cm",
         price: "55",
       },
       {
         size: "Medium",
-        dimensions: "H=40cm D=38cm",
+        specification: "H=40cm D=38cm",
         price: "65",
       },
       {
         size: "Large",
-        dimensions: "H=45cm D=48cm",
+        specification: "H=45cm D=48cm",
         price: "85",
       },
     ],
@@ -1621,17 +1621,17 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "H=40cm D=30cm",
+        specification: "H=40cm D=30cm",
         price: "55",
       },
       {
         size: "Medium",
-        dimensions: "H=45cm D=35cm",
+        specification: "H=45cm D=35cm",
         price: "65",
       },
       {
         size: "Large",
-        dimensions: "H=50cm D=40cm",
+        specification: "H=50cm D=40cm",
         price: "80",
       },
     ],
@@ -1647,22 +1647,22 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "H=34cm D=28cm",
+        specification: "H=34cm D=28cm",
         price: "45",
       },
       {
         size: "Medium",
-        dimensions: "H=42cm D=32cm",
+        specification: "H=42cm D=32cm",
         price: "50",
       },
       {
         size: "Large",
-        dimensions: "H=46cm D=35cm",
+        specification: "H=46cm D=35cm",
         price: "60",
       },
       {
         size: "XLarge",
-        dimensions: "H=50cm D=38cm",
+        specification: "H=50cm D=38cm",
         price: "75",
       },
     ],
@@ -1680,17 +1680,17 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "H=20cm D=32cm",
+        specification: "H=20cm D=32cm",
         price: "48",
       },
       {
         size: "Medium",
-        dimensions: "H=25cm D=37cm",
+        specification: "H=25cm D=37cm",
         price: "60",
       },
       {
         size: "Large",
-        dimensions: "H=34cm D=40cm",
+        specification: "H=34cm D=40cm",
         price: "70",
       },
     ],
@@ -1707,17 +1707,17 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "H=15cm D=32cm",
+        specification: "H=15cm D=32cm",
         price: "35",
       },
       {
         size: "Medium",
-        dimensions: "H=17cm D=38cm",
+        specification: "H=17cm D=38cm",
         price: "45",
       },
       {
         size: "Large",
-        dimensions: "H=18cm D=45cm",
+        specification: "H=18cm D=45cm",
         price: "50",
       },
     ],
@@ -1734,17 +1734,17 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "H=15cm D=15cm",
+        specification: "H=15cm D=15cm",
         price: "38",
       },
       {
         size: "Medium",
-        dimensions: "H=18cm D=18cm",
+        specification: "H=18cm D=18cm",
         price: "45",
       },
       {
         size: "Large",
-        dimensions: "H=20cm D=20cm",
+        specification: "H=20cm D=20cm",
         price: "50",
       },
     ],
@@ -1761,17 +1761,17 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "H=20cm D=25cm",
+        specification: "H=20cm D=25cm",
         price: "48",
       },
       {
         size: "Medium",
-        dimensions: "H=23cm D=35cm",
+        specification: "H=23cm D=35cm",
         price: "55",
       },
       {
         size: "Large",
-        dimensions: "H=25cm D=45cm",
+        specification: "H=25cm D=45cm",
         price: "60",
       },
     ],
@@ -1789,12 +1789,12 @@ export const products = [
     variants: [
       {
         size: "Medium",
-        dimensions: "H=24cm D=32cm",
+        specification: "H=24cm D=32cm",
         price: "50",
       },
       {
         size: "Large",
-        dimensions: "H=27cm D=40cm",
+        specification: "H=27cm D=40cm",
         price: "60",
       },
     ],
@@ -1812,7 +1812,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions: "16 x 7cm",
+        specification: "16 x 7cm",
         price: "12",
       },
     ],
@@ -1830,7 +1830,7 @@ export const products = [
   //   variants: [
   //     {
   //       size: "",
-  //       dimensions: "50 cm height",
+  //       specification: "50 cm height",
   //       price: "95",
   //     },
   //   ],
@@ -1860,22 +1860,22 @@ export const products = [
     variants: [
       {
         size: "1.5 M",
-        dimensions: "150 x 80 x 75cm 7cm(thickness)",
+        specification: "150 x 80 x 75cm 7cm(thickness)",
         price: "1560",
       },
       {
         size: "2 M",
-        dimensions: "200 x 80 x 75cm 7cm(thickness)",
+        specification: "200 x 80 x 75cm 7cm(thickness)",
         price: "1990",
       },
       {
         size: "2.5 M",
-        dimensions: "250 x 80 x 75cm 7cm(thickness)",
+        specification: "250 x 80 x 75cm 7cm(thickness)",
         price: "2475",
       },
       {
         size: "3 M",
-        dimensions: "300 x 80 x 75cm 7cm(thickness)",
+        specification: "300 x 80 x 75cm 7cm(thickness)",
         price: "2870",
       },
     ],
@@ -1893,13 +1893,13 @@ export const products = [
     variants: [
       {
         size: "Indoor",
-        dimensions:
+        specification:
           "Material: Teak wood & Robe Luum Finishing color: Natural Teak, Custom Design",
         price: "726",
       },
       {
         size: "Outdoor",
-        dimensions:
+        specification:
           "Material: Teak wood & Robe Synthetic Finishing color: Natural Teak, Custom Design",
         price: "848",
       },
@@ -1917,13 +1917,13 @@ export const products = [
     variants: [
       {
         size: "Indoor",
-        dimensions:
+        specification:
           "Material: Teak wood & Robe Luum Finishing color: Natural Teak, Custom Design",
         price: "678",
       },
       {
         size: "Outdoor",
-        dimensions:
+        specification:
           "Material: Teak wood & Robe Synthetic Finishing color: Natural Teak, Custom Design",
         price: "799",
       },
@@ -1941,7 +1941,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions:
+        specification:
           "Material: Teak wood & Robe Luum Finishing color: Natural Teak, Custom Design",
         price: "475",
       },
@@ -1960,7 +1960,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions:
+        specification:
           "Material: Teak wood Fabric: Venna Dark grey,Finishing color: Natural Teak, Custom Design",
         price: "976",
       },
@@ -1979,7 +1979,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions:
+        specification:
           "Material: Teak wood & Synthetic Rope, Finishing color: Natural teak oil",
         price: "570",
       },
@@ -1998,7 +1998,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions:
+        specification:
           "Material: Teak wood, Finishing color: Natural teak oil, dimensions 70x75x85",
         price: "1249.50",
       },
@@ -2017,7 +2017,7 @@ export const products = [
     variants: [
       {
         size: "",
-        dimensions:
+        specification:
           "Material: Teak wood and Rope, Fabric: Venna Grey, Finishing color: Natural Walnut, dimensions 65x50x70",
         price: "1190.00",
       },
@@ -2035,12 +2035,12 @@ export const products = [
     variants: [
       {
         size: "1 legged",
-        dimensions: "L95 x W45 x H50 cm",
+        specification: "L95 x W45 x H50 cm",
         price: "476",
       },
       {
         size: "2 legged",
-        dimensions: "L75 x W50 x H50 cm",
+        specification: "L75 x W50 x H50 cm",
         price: "476",
       },
     ],
@@ -2057,12 +2057,12 @@ export const products = [
     variants: [
       {
         size: "1",
-        dimensions: "L90 x W50 x H50 cm",
+        specification: "L90 x W50 x H50 cm",
         price: "590",
       },
       {
         size: "2",
-        dimensions: "L95 x W65 x H50 cm",
+        specification: "L95 x W65 x H50 cm",
         price: "915",
       },
     ],

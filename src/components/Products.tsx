@@ -49,7 +49,7 @@ export const Products = ({ products }: { products: ProductType[] }) => {
               <div className="flex flex-1 flex-col justify-end">
                 {product.variants.length > 1 ? (
                   <p className="text-sm italic text-gray-500">
-                    {product.variants.length} sizes available
+                    {product.variants.length} variants available
                   </p>
                 ) : null}
                 <p className="text-base font-medium text-gray-900">
