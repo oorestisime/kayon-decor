@@ -1,4 +1,3 @@
-import { Favorite } from "@/components/Favorite";
 import { Story } from "@/components/Story";
 import {
   ProductType,
