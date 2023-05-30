@@ -1208,7 +1208,7 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "",
+        specification: "Different sizes and styles available",
         price: "10",
       },
     ],
