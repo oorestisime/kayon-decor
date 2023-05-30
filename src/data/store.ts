@@ -1887,23 +1887,23 @@ export const products = [
 
     variants: [
       {
-        size: "1.5 M",
+        size: "Small",
         specification: "150 x 80 x 75cm 7cm(thickness)",
         price: "1560",
       },
       {
-        size: "2 M",
+        size: "Medium",
         specification: "200 x 80 x 75cm 7cm(thickness)",
         price: "1990",
       },
       {
-        size: "2.5 M",
-        specification: "250 x 80 x 75cm 7cm(thickness)",
+        size: "Large",
+        specification: "250 x 80 x 75cm 10cm(thickness)",
         price: "2475",
       },
       {
-        size: "3 M",
-        specification: "300 x 80 x 75cm 7cm(thickness)",
+        size: "XLarge",
+        specification: "300 x 80 x 75cm 10cm(thickness)",
         price: "2870",
       },
     ],
