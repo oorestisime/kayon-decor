@@ -184,11 +184,25 @@ function Cart() {
           </div>
         ) : null}
         {isClient && !submitted && (cart?.items?.length || 0) === 0 ? (
-          <div className="border-t border-gray-200 px-4 py-6 sm:px-6 lg:p-8">
-            <h4 className="sr-only">No items in cart</h4>
-            <p className="text-sm font-medium text-gray-900">
-              There are no items in your cart.
-            </p>
+          <div className="bg-gray-50 px-16 sm:rounded-lg">
+            <div className="flex flex-col items-center py-5 sm:p-6">
+              <h2 className="font-semibold text-2xl text-gray-900">
+                Your cart is empty.
+              </h2>
+              <div className="mt-2 max-w-xl text-base text-gray-500">
+                <p>To get a quote you have to add items to your cart.</p>
+              </div>
+              <div className="mt-5">
+                <Link href="/products">
+                  <button
+                    type="button"
+                    className="inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                  >
+                    Products
+                  </button>
+                </Link>
+              </div>
+            </div>
           </div>
         ) : null}
         {isClient && !submitted && (cart?.items?.length || 0) > 0 ? (
