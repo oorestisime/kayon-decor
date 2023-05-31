@@ -183,6 +183,14 @@ function Cart() {
             </div>
           </div>
         ) : null}
+        {isClient && !submitted && (cart?.items?.length || 0) === 0 ? (
+          <div className="border-t border-gray-200 px-4 py-6 sm:px-6 lg:p-8">
+            <h4 className="sr-only">No items in cart</h4>
+            <p className="text-sm font-medium text-gray-900">
+              There are no items in your cart.
+            </p>
+          </div>
+        ) : null}
         {isClient && !submitted && (cart?.items?.length || 0) > 0 ? (
           <form
             onSubmit={handleSubmit}

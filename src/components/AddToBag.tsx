@@ -41,7 +41,7 @@ export const AddToBag = ({
           })
         }
       >
-        Add to bag
+        Pre-order now!
       </button>
     </div>
   );
