@@ -4,6 +4,7 @@ import { GlobalCartContextProvider } from "@/lib/cart";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { Playfair_Display } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
 const playfairDisplay = Playfair_Display({
   weight: ["400", "600"],
@@ -23,6 +24,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <GlobalCartContextProvider>
           <Navigation />
           <Component {...pageProps} />
+          <Analytics />
           <Footer />
         </GlobalCartContextProvider>
       </div>
