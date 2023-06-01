@@ -231,6 +231,7 @@ import SilangBasket1 from "@/images/Silang-Baskets/SilangBaskets1.jpeg";
 import SilangBasket2 from "@/images/Silang-Baskets/SilangBaskets2.jpeg";
 import SilangBasket3 from "@/images/Silang-Baskets/SilangBaskets3.jpeg";
 import RusticBoard7 from "@/images/boards/rustic-board7.jpg";
+import TheMoonPlatter3 from "@/images/the-moon-platter/the moon platter3.png";
 
 export const products = [
   {
@@ -546,7 +547,7 @@ export const products = [
     description:
       "Embrace celestial beauty with the Moon Shaped Wooden Platter. Crafted from fine wood, this captivating platter features a graceful crescent moon design that adds a touch of enchantment to your table. Its smooth surface and elegant curves provide a stunning backdrop for presenting your culinary creations. Perfect for serving appetizers, desserts, or as a decorative accent, this moon-shaped platter brings a celestial touch to your dining experience.",
 
-    images: [TheMoonPlatter, TheMoonPlatter2],
+    images: [TheMoonPlatter, TheMoonPlatter2, TheMoonPlatter3],
     variants: [
       {
         size: "",
