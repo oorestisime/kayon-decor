@@ -232,6 +232,7 @@ import SilangBasket2 from "@/images/Silang-Baskets/SilangBaskets2.jpeg";
 import SilangBasket3 from "@/images/Silang-Baskets/SilangBaskets3.jpeg";
 import RusticBoard7 from "@/images/boards/rustic-board7.jpg";
 import TheMoonPlatter3 from "@/images/the-moon-platter/the moon platter3.png";
+import LingKaranTray from "@/images/Lingkaran-tray/Lingkaran-tray.png";
 
 export const products = [
   {
@@ -298,6 +299,11 @@ export const products = [
       AutumnLeafPlate4,
     ],
     variants: [
+      {
+        size: "Small",
+        specification: "L18 x W15 x H2cm",
+        price: "10",
+      },
       {
         size: "Medium",
         specification: "L33 x W22 x H2cm",
@@ -640,6 +646,42 @@ export const products = [
         size: "",
         specification: "L40 x W20 x H2cm",
         price: "21",
+      },
+    ],
+  },
+  {
+    name: "Lingkaran tray",
+    slug: "lingkaran-tray",
+    category: "cat-tablewares",
+    sub_category: "Trays",
+    description:
+      "Elevate your home decor with our Teak Wood Rounded Tray. Crafted from exquisite teak wood, this tray showcases a rich color and intricate grain patterns. Its rounded shape adds a modern touch to its classic design. Perfect for serving or displaying, it offers ample space and is easy to maintain. Bring elegance and functionality to your living space with this stunning teak wood tray.",
+    images: [LingKaranTray],
+    variants: [
+      {
+        size: "XSmall",
+        specification: "L14 x W10 x H2cm",
+        price: "10",
+      },
+      {
+        size: "Small",
+        specification: "L20 x W14 x H2cm",
+        price: "12.99",
+      },
+      {
+        size: "Medium",
+        specification: "L25 x W18 x H2cm",
+        price: "14.99",
+      },
+      {
+        size: "Large",
+        specification: "L30 x W20 x H2cm",
+        price: "18.99",
+      },
+      {
+        size: "XLarge",
+        specification: "L35 x W26 x H2cm",
+        price: "25.99",
       },
     ],
   },
