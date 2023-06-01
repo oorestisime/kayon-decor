@@ -1928,13 +1928,13 @@ export const products = [
         size: "Indoor",
         specification:
           "Material: Teak wood & Robe Luum,   Finishing color: Natural Teak,   Dimensions: L80 x W60 x H75cm,  Custom Design",
-        price: "726",
+        price: "430",
       },
       {
         size: "Outdoor",
         specification:
           "Material: Teak wood & Robe Synthetic,    Finishing color: Natural Teak,    Dimensions: L80 x W60 x H75cm, Custom Design  ",
-        price: "848",
+        price: "460",
       },
     ],
   },
@@ -1952,13 +1952,13 @@ export const products = [
         size: "Indoor",
         specification:
           "Material: Teak wood & Robe Luum,     Finishing color: Natural Teak,      Dimensions: L80 x W60 x H72cm,  Custom Design",
-        price: "678",
+        price: "400",
       },
       {
         size: "Outdoor",
         specification:
           "Material: Teak wood & Robe Synthetic,   Finishing color: Natural Teak,       Dimensions: L80 x W60 x H72cm,  Custom Design",
-        price: "799",
+        price: "430",
       },
     ],
   },
@@ -1976,7 +1976,7 @@ export const products = [
         size: "",
         specification:
           "Material: Teak wood & Robe Luum,  Finishing color: Natural Teak, Dimensions: L90 x W70 x H82cm,    Custom Design",
-        price: "475",
+        price: "150",
       },
     ],
   },
@@ -1995,7 +1995,7 @@ export const products = [
         size: "",
         specification:
           "Material: Teak wood Fabric: Venna Dark grey,   Finishing color: Natural Teak,   Dimensions: L90 x W70 x H82cm     Custom Design",
-        price: "976",
+        price: "475",
       },
     ],
   },
@@ -2014,7 +2014,7 @@ export const products = [
         size: "",
         specification:
           "Material: Teak wood & Synthetic Rope,      Finishing color: Natural teak oil       Dimensions: L45 x W50 x H80cm",
-        price: "570",
+        price: "270",
       },
     ],
   },
@@ -2033,7 +2033,7 @@ export const products = [
         size: "",
         specification:
           "Material: Teak wood, Finishing color: Natural teak oil, Dimensions L70 x W75 x H85cm",
-        price: "1249.50",
+        price: "550",
       },
     ],
   },
@@ -2052,7 +2052,7 @@ export const products = [
         size: "",
         specification:
           "Material: Teak wood and Rope, Fabric: Venna Grey, Finishing color: Natural Walnut, Dimensions L65 x W50 x H70cm",
-        price: "1190.00",
+        price: "550",
       },
     ],
   },
@@ -2069,12 +2069,12 @@ export const products = [
       {
         size: "1 legged",
         specification: "L95 x W45 x H50cm",
-        price: "476",
+        price: "410",
       },
       {
         size: "2 legged",
         specification: "L75 x W50 x H50cm",
-        price: "476",
+        price: "450",
       },
     ],
   },
@@ -2091,12 +2091,12 @@ export const products = [
       {
         size: "Medium",
         specification: "L90 x W50 x H50cm",
-        price: "590",
+        price: "470",
       },
       {
         size: "Large",
         specification: "L95 x W65 x H50cm",
-        price: "915",
+        price: "490",
       },
     ],
   },
