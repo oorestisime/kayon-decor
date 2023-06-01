@@ -231,7 +231,7 @@ import SilangBasket1 from "@/images/Silang-Baskets/SilangBaskets1.jpeg";
 import SilangBasket2 from "@/images/Silang-Baskets/SilangBaskets2.jpeg";
 import SilangBasket3 from "@/images/Silang-Baskets/SilangBaskets3.jpeg";
 import RusticBoard7 from "@/images/boards/rustic-board7.jpg";
-import TheMoonPlatter3 from "@/images/the-moon-platter/the-moon-platter3.png";
+import TheMoonPlatter3 from "@/images/The-moon-platter/The moon platter3.png";
 import LingKaranTray from "@/images/Lingkaran-tray/Lingkaran-tray.png";
 
 export const products = [
