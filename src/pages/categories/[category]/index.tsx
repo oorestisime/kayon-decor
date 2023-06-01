@@ -173,6 +173,9 @@ function Category({
         </Dialog>
       </Transition.Root>
       <main className="mx-auto max-w-2xl px-4 lg:max-w-7xl lg:px-8">
+        <div className="mt-6">
+          <Breadcrumb category={category} />
+        </div>
         <div className="pb-24 lg:grid lg:grid-cols-3 lg:gap-x-8 xl:grid-cols-4">
           <aside>
             <h2 className="sr-only">Filters</h2>
