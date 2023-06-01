@@ -56,6 +56,7 @@ export const Hero = () => {
         </div>
         <div className="h-48 w-full sm:h-64 lg:absolute lg:right-0 lg:top-0 lg:h-full lg:w-1/2">
           <Image
+            priority
             src={WebsitePhotoPageOne}
             alt="Website Photo 1st page"
             className="h-full w-full object-cover object-first-page"

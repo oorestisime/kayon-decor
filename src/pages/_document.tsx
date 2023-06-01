@@ -8,7 +8,6 @@ export default function Document() {
         <Main />
         <NextScript />
       </body>
-      <script src="//code.jivosite.com/widget/mgE74Gh6AE" async />
     </Html>
   );
 }

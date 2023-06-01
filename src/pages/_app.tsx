@@ -5,6 +5,7 @@ import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { Playfair_Display } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import Script from "next/script";
 
 const playfairDisplay = Playfair_Display({
   weight: ["400", "600"],
@@ -26,6 +27,10 @@ export default function App({ Component, pageProps }: AppProps) {
           <Component {...pageProps} />
           <Analytics />
           <Footer />
+          <Script
+            strategy="lazyOnload"
+            src="//code.jivosite.com/widget/mgE74Gh6AE"
+          />
         </GlobalCartContextProvider>
       </div>
     </>
