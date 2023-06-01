@@ -14,7 +14,6 @@ import { AddToBag } from "@/components/AddToBag";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { getProductUrl } from "@/utils";
 import { Seo } from "@/components/Seo";
-import { Story } from "@/components/Story";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -183,7 +182,7 @@ function Product({
           </div>
         </div>
       </main>
-      <Story />
+      <Favorite />
     </>
   );
 }

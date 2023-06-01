@@ -10,11 +10,11 @@ export const Breadcrumb = ({
   product?: ProductType;
 }) => {
   return (
-    <nav className="flex lg:hidden px-4 pb-4" aria-label="Breadcrumb">
+    <nav className="flex  px-4 pb-4" aria-label="Breadcrumb">
       <ol role="list" className="flex items-center">
         <li>
           <div>
-            <a href="#" className="text-gray-400 hover:text-gray-500">
+            <a href="/" className="text-gray-400 hover:text-gray-500">
               <HomeIcon className="h-3 w-3 flex-shrink-0" aria-hidden="true" />
               <span className="sr-only">Home</span>
             </a>

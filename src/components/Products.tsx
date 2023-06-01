@@ -21,7 +21,7 @@ export const Products = ({ products }: { products: ProductType[] }) => {
       <h2 id="product-heading" className="sr-only">
         Products
       </h2>
-      <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:gap-x-8 xl:grid-cols-3">
+      <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-5 lg:gap-x-5 xl:grid-cols-3">
         {products.map((product) => (
           <div
             key={product.slug}
@@ -31,7 +31,7 @@ export const Products = ({ products }: { products: ProductType[] }) => {
               <Image
                 src={product.images[0]}
                 alt="alt image"
-                className="h-full w-full object-cover object-center sm:h-full sm:w-full"
+                className=" h-full w-full object-cover object-center sm:h-full sm:w-full group-hover:object-contain"
               />
             </div>
             <div className="flex flex-1 flex-col space-y-2 p-4">
@@ -43,7 +43,7 @@ export const Products = ({ products }: { products: ProductType[] }) => {
                   {product.name}
                 </Link>
               </h3>
-              <p className="text-sm text-gray-500 line-clamp-4">
+              <p className="text-sm text-gray-500 line-clamp-3 group-hover:line-clamp-none ">
                 {product.description}
               </p>
               <div className="flex flex-1 flex-col justify-end">

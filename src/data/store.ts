@@ -64,7 +64,6 @@ import DesignBowlsBoard8 from "@/images/Bowls/Design-bowls-board-8.jpeg";
 import CerealBowl3 from "@/images/Bowls/Cereal-bowl-3.jpeg";
 import DesignBowlsBoard4 from "@/images/Bowls/Design-bowls-board-4.jpeg";
 import ServingBowl1 from "@/images/Bowls/Serving-bowl-1.jpeg";
-import CerealBowl4 from "@/images/Bowls/Cereal-bowl-4.jpeg";
 import DeepBowlWithLid15 from "@/images/Bowls/Deep-bowl-with-lid-15.jpeg";
 import DeepBowlWithLid7 from "@/images/Bowls/Deep-bowl-with-lid-7.jpeg";
 import OatsBreakfastBowl1 from "@/images/Bowls/Oats-breakfast-bowl-1.jpeg";
@@ -231,6 +230,9 @@ import TuaBasket2 from "@/images/Tua-Baskets/TuaBaskets2.jpeg";
 import SilangBasket1 from "@/images/Silang-Baskets/SilangBaskets1.jpeg";
 import SilangBasket2 from "@/images/Silang-Baskets/SilangBaskets2.jpeg";
 import SilangBasket3 from "@/images/Silang-Baskets/SilangBaskets3.jpeg";
+import RusticBoard7 from "@/images/boards/rustic-board7.jpg";
+import TheMoonPlatter3 from "@/images/The-moon-platter/The moon platter3.png";
+import LingKaranTray from "@/images/Lingkaran-tray/Lingkaran-tray.png";
 
 export const products = [
   {
@@ -297,6 +299,11 @@ export const products = [
       AutumnLeafPlate4,
     ],
     variants: [
+      {
+        size: "Small",
+        specification: "L18 x W15 x H2cm",
+        price: "10",
+      },
       {
         size: "Medium",
         specification: "L33 x W22 x H2cm",
@@ -546,7 +553,7 @@ export const products = [
     description:
       "Embrace celestial beauty with the Moon Shaped Wooden Platter. Crafted from fine wood, this captivating platter features a graceful crescent moon design that adds a touch of enchantment to your table. Its smooth surface and elegant curves provide a stunning backdrop for presenting your culinary creations. Perfect for serving appetizers, desserts, or as a decorative accent, this moon-shaped platter brings a celestial touch to your dining experience.",
 
-    images: [TheMoonPlatter, TheMoonPlatter2],
+    images: [TheMoonPlatter, TheMoonPlatter2, TheMoonPlatter3],
     variants: [
       {
         size: "",
@@ -642,6 +649,42 @@ export const products = [
       },
     ],
   },
+  {
+    name: "Lingkaran tray",
+    slug: "lingkaran-tray",
+    category: "cat-tablewares",
+    sub_category: "Trays",
+    description:
+      "Elevate your home decor with our Teak Wood Rounded Tray. Crafted from exquisite teak wood, this tray showcases a rich color and intricate grain patterns. Its rounded shape adds a modern touch to its classic design. Perfect for serving or displaying, it offers ample space and is easy to maintain. Bring elegance and functionality to your living space with this stunning teak wood tray.",
+    images: [LingKaranTray],
+    variants: [
+      {
+        size: "XSmall",
+        specification: "L14 x W10 x H2cm",
+        price: "10",
+      },
+      {
+        size: "Small",
+        specification: "L20 x W14 x H2cm",
+        price: "12.99",
+      },
+      {
+        size: "Medium",
+        specification: "L25 x W18 x H2cm",
+        price: "14.99",
+      },
+      {
+        size: "Large",
+        specification: "L30 x W20 x H2cm",
+        price: "18.99",
+      },
+      {
+        size: "XLarge",
+        specification: "L35 x W26 x H2cm",
+        price: "25.99",
+      },
+    ],
+  },
 
   {
     name: "The Wave Bowl",
@@ -712,7 +755,7 @@ export const products = [
     description:
       "Start your day with a touch of nature using our Teak Wooden Cereal Bowl. Handcrafted from teak wood, this bowl combines functionality and aesthetics seamlessly. Its smooth texture and warm tones add a rustic charm to your breakfast routine. Enjoy your favorite cereals in style with this eco-friendly teak wooden cereal bowl.",
 
-    images: [CerealBowl1, CerealBowl2, CerealBowl3, CerealBowl4],
+    images: [CerealBowl1, CerealBowl2, CerealBowl3],
     variants: [
       {
         size: "",
@@ -729,7 +772,7 @@ export const products = [
     description:
       "Elevate your movie nights with our Teak Wooden Popcorn Bowl. Handcrafted from teak wood, this bowl adds a touch of natural elegance to your popcorn experience. Its sturdy construction and generous size make it perfect for sharing and enjoying your favorite snack. Enhance your home entertainment with this eco-friendly and stylish teak wooden popcorn bowl.",
 
-    images: [PopcornBowl1, PopcornBowl2, PopcornBowl3],
+    images: [PopcornBowl3, PopcornBowl1, PopcornBowl2],
     variants: [
       {
         size: "",
@@ -746,7 +789,7 @@ export const products = [
     description:
       "Savor the flavors of your favorite rice dishes in our Teak Wooden Rice Bowl. Handcrafted from teak wood, this bowl combines functionality with timeless beauty. Its smooth interior and sturdy construction make it the perfect vessel for serving rice. Elevate your dining experience with this eco-friendly and elegant teak wooden rice bowl.",
 
-    images: [RiceBowl1, RiceBowl2, RiceBowl3, RiceBowl4, RiceBowl5],
+    images: [RiceBowl3, RiceBowl1, RiceBowl2, RiceBowl4, RiceBowl5],
     variants: [
       {
         size: "",
@@ -780,7 +823,7 @@ export const products = [
     description:
       "Serve in style with our Teak Wooden Serving Bowl. Handcrafted from teak wood, this bowl showcases the natural beauty and rich tones of the wood. Its spacious design makes it perfect for serving salads, fruits, or other delicious dishes. Elevate your dining experience with this eco-friendly and elegant teak wooden serving bowl.",
 
-    images: [ServingBowl1, ServingBowl2, ServingBowl3],
+    images: [ServingBowl3, ServingBowl1, ServingBowl2],
     variants: [
       {
         size: "",
@@ -797,7 +840,7 @@ export const products = [
     description:
       "Indulge in yoghurt with rustic sophistication using our Teak Wooden Yoghurt Bowl. Handcrafted from teak wood, this bowl exudes natural beauty and organic charm. Its smooth texture and ergonomic design make it an ideal choice for serving and enjoying yoghurt. Enjoy your dining experience with this eco-friendly and stylish teak wooden bowl.",
 
-    images: [YoghurtBowl1, YoghurtBowl2, YoghurtBowl3],
+    images: [YoghurtBowl2, YoghurtBowl1, YoghurtBowl3],
     variants: [
       {
         size: "",
@@ -814,7 +857,7 @@ export const products = [
     description:
       "Start your day with a touch of elegance using our Teak Wooden Oats Breakfast Bowl. Handcrafted from teak wood, this bowl combines beauty and functionality seamlessly. Its smooth interior and ergonomic design make it perfect for serving and enjoying your nutritious oats breakfast. Elevate your morning routine with this eco-friendly and stylish teak wooden bowl.",
 
-    images: [OatsBreakfastBowl1, OatsBreakfastBowl2],
+    images: [OatsBreakfastBowl2, OatsBreakfastBowl1],
     variants: [
       {
         size: "",
@@ -871,8 +914,9 @@ export const products = [
       "Discover the beauty of simplicity with our Small Teak Wooden Pot. Handcrafted from teak wood, this compact pot combines functionality with natural elegance. Its smooth texture and warm tones make it perfect for serving small portions or a plant pot. Add a touch of timeless charm to your table or décor with this small teak wooden product.",
 
     images: [
-      TheFlowerPotBowl,
       TheFlowerPotBowl2,
+      TheFlowerPotBowl,
+
       TheFlowerPotBowl3,
       TheFlowerPotBowl4,
     ],
@@ -910,9 +954,10 @@ export const products = [
       "Handcrafted from teak wood, this square-shaped bowl provides a stylish and functional solution for ash disposal. Its smooth surface and sturdy construction make it a perfect accessory for smokers. Elevate your smoking area with this eco-friendly and timeless teak wooden ashtray bowl.",
 
     images: [
+      TheAshtrayBowl3,
       TheAshtrayBowl1,
       TheAshtrayBowl2,
-      TheAshtrayBowl3,
+
       TheAshtrayBowl4,
       TheAshtrayBowl5,
       TheAshtrayBowl6,
@@ -934,7 +979,7 @@ export const products = [
     description:
       "Celebrate nature's harvest with our Teak Wooden Fruit Board. Handcrafted from teak wood, this board combines functionality with rustic charm. Its smooth surface and ample size make it perfect for displaying and serving a variety of fresh fruits. Elevate your table setting with this eco-friendly and versatile teak wooden fruit board.",
 
-    images: [FishBoard, FishBoard2],
+    images: [FishBoard2, FishBoard],
     variants: [
       {
         size: "",
@@ -1095,7 +1140,7 @@ export const products = [
     description:
       "Experience the epitome of seafood elegance with our Teak Wooden Fish Board. Handcrafted from teak wood, this board offers a specialized surface for handling and serving fresh fish. Its smooth texture and ample size make it perfect for filleting, cutting, serving, and presenting your favorite catch.",
 
-    images: [FishBoard, FishBoard2],
+    images: [FishBoard2, FishBoard],
     variants: [
       {
         size: "",
@@ -1131,11 +1176,13 @@ export const products = [
       "Experience the perfect blend of rustic elegance and functionality with our Teak Wooden Rustic Rounded Cutting Board. Crafted from teak wood, this board showcases a natural, rugged charm with its rounded shape and rustic appeal. Its sturdy construction and smooth surface make it a reliable tool for all your cutting and chopping tasks. ",
 
     images: [
+      RusticBoard7,
+      RusticBoard5,
+
+      RusticBoard3,
       RusticBoard,
       RusticBoard2,
-      RusticBoard3,
       RusticBoard4,
-      RusticBoard5,
       RusticBoard6,
     ],
     variants: [
@@ -1874,6 +1921,7 @@ export const products = [
       "Experience the beauty of nature in your dining space with our Suar Wood Dining Tables. Handcrafted from premium Suar wood, these tables bring a touch of rustic elegance to any home. Each table is unique, featuring the natural grain patterns and rich colors of the Suar wood, creating a truly one-of-a-kind centerpiece for your dining area. With their sturdy construction and timeless design, these Suar wood dining tables are not only stunning but also built to last. Gather around and create lasting memories with friends and family on a Suar wood dining table that effortlessly combines nature's beauty with functional style. Pre-ordering: Unique designs",
 
     images: [
+      TablesFavorite,
       Twom5LongSuarWoodTableWithLeg,
       Onem5LongSuarWoodTableWithLeg,
       TwomLongSuarWoodTableWithLeg,
@@ -1882,7 +1930,6 @@ export const products = [
       ThreemLongSuarWoodTableWithLeg,
       ThreemLongSuarWoodTableWithLeg2,
       ThreemLongSuarWoodTableWithLeg3,
-      TablesFavorite,
     ],
 
     variants: [
@@ -1923,13 +1970,13 @@ export const products = [
         size: "Indoor",
         specification:
           "Material: Teak wood & Robe Luum,   Finishing color: Natural Teak,   Dimensions: L80 x W60 x H75cm,  Custom Design",
-        price: "726",
+        price: "430",
       },
       {
         size: "Outdoor",
         specification:
           "Material: Teak wood & Robe Synthetic,    Finishing color: Natural Teak,    Dimensions: L80 x W60 x H75cm, Custom Design  ",
-        price: "848",
+        price: "460",
       },
     ],
   },
@@ -1947,13 +1994,13 @@ export const products = [
         size: "Indoor",
         specification:
           "Material: Teak wood & Robe Luum,     Finishing color: Natural Teak,      Dimensions: L80 x W60 x H72cm,  Custom Design",
-        price: "678",
+        price: "400",
       },
       {
         size: "Outdoor",
         specification:
           "Material: Teak wood & Robe Synthetic,   Finishing color: Natural Teak,       Dimensions: L80 x W60 x H72cm,  Custom Design",
-        price: "799",
+        price: "430",
       },
     ],
   },
@@ -1971,7 +2018,7 @@ export const products = [
         size: "",
         specification:
           "Material: Teak wood & Robe Luum,  Finishing color: Natural Teak, Dimensions: L90 x W70 x H82cm,    Custom Design",
-        price: "475",
+        price: "150",
       },
     ],
   },
@@ -1990,7 +2037,7 @@ export const products = [
         size: "",
         specification:
           "Material: Teak wood Fabric: Venna Dark grey,   Finishing color: Natural Teak,   Dimensions: L90 x W70 x H82cm     Custom Design",
-        price: "976",
+        price: "475",
       },
     ],
   },
@@ -2009,7 +2056,7 @@ export const products = [
         size: "",
         specification:
           "Material: Teak wood & Synthetic Rope,      Finishing color: Natural teak oil       Dimensions: L45 x W50 x H80cm",
-        price: "570",
+        price: "270",
       },
     ],
   },
@@ -2028,7 +2075,7 @@ export const products = [
         size: "",
         specification:
           "Material: Teak wood, Finishing color: Natural teak oil, Dimensions L70 x W75 x H85cm",
-        price: "1249.50",
+        price: "550",
       },
     ],
   },
@@ -2047,7 +2094,7 @@ export const products = [
         size: "",
         specification:
           "Material: Teak wood and Rope, Fabric: Venna Grey, Finishing color: Natural Walnut, Dimensions L65 x W50 x H70cm",
-        price: "1190.00",
+        price: "550",
       },
     ],
   },
@@ -2064,12 +2111,12 @@ export const products = [
       {
         size: "1 legged",
         specification: "L95 x W45 x H50cm",
-        price: "476",
+        price: "410",
       },
       {
         size: "2 legged",
         specification: "L75 x W50 x H50cm",
-        price: "476",
+        price: "450",
       },
     ],
   },
@@ -2086,12 +2133,12 @@ export const products = [
       {
         size: "Medium",
         specification: "L90 x W50 x H50cm",
-        price: "590",
+        price: "470",
       },
       {
         size: "Large",
         specification: "L95 x W65 x H50cm",
-        price: "915",
+        price: "490",
       },
     ],
   },
