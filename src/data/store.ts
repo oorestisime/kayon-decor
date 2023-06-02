@@ -759,7 +759,7 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "D22 x H7cm",
+        specification: "H7cm x Diam.22cm ",
         price: "18",
       },
     ],
@@ -1990,22 +1990,22 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "L150 x W80 x H75cm 7cm(thickness)",
+        specification: "L150 x W80 x H75cm     T7cm",
         price: "1560",
       },
       {
         size: "Medium",
-        specification: "L200 x W80 x H75cm 7cm(thickness)",
+        specification: "L200 x W80 x H75cm     T7cm",
         price: "1990",
       },
       {
         size: "Large",
-        specification: "L250 x W80 x H75cm 10cm(thickness)",
+        specification: "L250 x W80 x H75cm    T10cm",
         price: "2475",
       },
       {
         size: "XLarge",
-        specification: "L300 x W80 x H75cm 10cm(thickness)",
+        specification: "L300 x W80 x H75cm    T10cm",
         price: "2870",
       },
     ],

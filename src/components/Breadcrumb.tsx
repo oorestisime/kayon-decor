@@ -10,7 +10,7 @@ export const Breadcrumb = ({
   product?: ProductType;
 }) => {
   return (
-    <nav className="flex  px-4 pb-4" aria-label="Breadcrumb">
+    <nav className="flex  px-4 pb-4 lg:px-0" aria-label="Breadcrumb">
       <ol role="list" className="flex items-center">
         <li>
           <div>
