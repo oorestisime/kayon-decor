@@ -121,6 +121,26 @@ function Product({
                         {selectedVariant.specification}
                       </h3>
                     </div>
+                    {product.sub_category === "Baskets" && (
+                      <div className="flex items-center justify-between mt-3">
+                        <h3 className="text-sm font-medium text-gray-900">
+                          <strong>
+                            Contact us for further information about different
+                            colors and availability
+                          </strong>
+                        </h3>
+                      </div>
+                    )}
+                    {product.slug === "wooden-utensils" && (
+                      <div className="flex items-center justify-between mt-3">
+                        <h3 className="text-sm font-medium text-gray-900">
+                          <strong>
+                            Contact us for further information in different
+                            variants
+                          </strong>
+                        </h3>
+                      </div>
+                    )}
                     <RadioGroup
                       value={selectedVariant}
                       onChange={setSelectedVariant}
