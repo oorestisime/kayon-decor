@@ -4,7 +4,7 @@ import { GlobalCartContext } from "@/lib/cart";
 import { ShoppingBagIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { useContext, useEffect, useState } from "react";
-import { useLocation } from "react-use";
+import { usePathname } from "next/navigation";
 import { classNames } from "./Navigation";
 export const CartMenu = ({
   justify = true,
@@ -22,7 +22,7 @@ export const CartMenu = ({
 
     return () => clearTimeout(timer); // Clean up on unmount or if cartItemCount changes
   }, [cart?.items?.length]);
-
+  const path = usePathname();
   return (
     <div className={justify ? `flex flex-1 items-center justify-end` : ""}>
       <div
@@ -37,7 +37,7 @@ export const CartMenu = ({
         >
           <ShoppingBagIcon
             className={classNames(
-              useLocation().pathname === "/cart"
+              path === "/cart"
                 ? "text-brown-primary font-semibold"
                 : "text-gray-400",
               "h-6 w-6 flex-shrink-0  group-hover:text-brown-primary"

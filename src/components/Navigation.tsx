@@ -7,7 +7,7 @@ import { getProductUrl } from "@/utils";
 import Image from "next/image";
 import KayonLogo from "@/images/Logo/Brown_Logo.png";
 import { CartMenu } from "./CartMenu";
-import { useLocation } from "react-use";
+import { usePathname } from "next/navigation";
 
 export function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -15,7 +15,8 @@ export function classNames(...classes: string[]) {
 
 export const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const path = useLocation().pathname;
+  const path = usePathname();
+
   return (
     <>
       <Transition.Root show={mobileMenuOpen} as={Fragment}>
@@ -117,9 +118,9 @@ export const Navigation = () => {
                                     className={classNames(
                                       path === `/categories/${category.slug}`
                                         ? "text-brown-primary outline-none font-bold"
-                                        : "font-medium",
+                                        : "font-medium text-gray-700",
                                       open
-                                        ? "border-brown-primary text-brown-primary outline-none"
+                                        ? "!border-brown-primary !text-brown-primary outline-none"
                                         : "border-transparent hover:text-brown-primary hover:border-brown-primary",
                                       "relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm transition-colors duration-200 ease-out"
                                     )}
