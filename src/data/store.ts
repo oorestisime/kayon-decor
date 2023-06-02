@@ -1262,9 +1262,64 @@ export const products = [
     ],
     variants: [
       {
-        size: "",
+        size: "A",
         specification: "Different sizes and styles available",
         price: "10",
+      },
+      {
+        size: "B",
+        specification: "Different sizes and styles available",
+        price: "10",
+      },
+      {
+        size: "C",
+        specification: "Different sizes and styles available",
+        price: "10",
+      },
+      {
+        size: "D",
+        specification: "Different sizes and styles available",
+        price: "10",
+      },
+      {
+        size: "A17",
+        specification: "L17 x 9cm",
+        price: "6",
+      },
+      {
+        size: "A18",
+        specification: "L19 x 7cm",
+        price: "7.5",
+      },
+      {
+        size: "A22",
+        specification: "L23 x 7cm",
+        price: "8",
+      },
+      {
+        size: "A30",
+        specification: "L32 x 6cm",
+        price: "8.99",
+      },
+      {
+        size: "A31 (set)",
+        specification: "L29 x 9cm",
+        price: "10.99",
+      },
+      {
+        size: "A35",
+        specification: "L27 x 8cm",
+        price: "9.99",
+      },
+      {
+        size: "A36",
+        specification: "L30 x 10cm",
+        price: "7.99",
+      },
+      {
+        size: "A37",
+        specification: "L40 x 8cm",
+        price: "10.99",
       },
     ],
   },
