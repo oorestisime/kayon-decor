@@ -14,6 +14,7 @@ import { AddToBag } from "@/components/AddToBag";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { getProductUrl } from "@/utils";
 import { Seo } from "@/components/Seo";
+import { Story } from "@/components/Story";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -121,6 +122,26 @@ function Product({
                         {selectedVariant.specification}
                       </h3>
                     </div>
+                    {product.sub_category === "Baskets" && (
+                      <div className="flex items-center justify-between mt-3">
+                        <h3 className="text-sm font-medium text-gray-900">
+                          <strong>
+                            Contact us for further information about different
+                            colors and availability
+                          </strong>
+                        </h3>
+                      </div>
+                    )}
+                    {product.slug === "wooden-utensils" && (
+                      <div className="flex items-center justify-between mt-3">
+                        <h3 className="text-sm font-medium text-gray-900">
+                          <strong>
+                            Contact us for further information in different
+                            variants
+                          </strong>
+                        </h3>
+                      </div>
+                    )}
                     <RadioGroup
                       value={selectedVariant}
                       onChange={setSelectedVariant}
@@ -183,6 +204,7 @@ function Product({
         </div>
       </main>
       <Favorite />
+      <Story />
     </>
   );
 }
