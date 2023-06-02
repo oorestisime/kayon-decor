@@ -4,7 +4,8 @@ import { GlobalCartContext } from "@/lib/cart";
 import { ShoppingBagIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { useContext, useEffect, useState } from "react";
-
+import { useLocation } from "react-use";
+import { classNames } from "./Navigation";
 export const CartMenu = ({
   justify = true,
   onClick,
@@ -35,7 +36,12 @@ export const CartMenu = ({
           className="group -m-2 flex items-center p-2"
         >
           <ShoppingBagIcon
-            className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
+            className={classNames(
+              useLocation().pathname === "/cart"
+                ? "text-brown-primary font-semibold"
+                : "text-gray-400",
+              "h-6 w-6 flex-shrink-0  group-hover:text-brown-primary"
+            )}
             aria-hidden="true"
           />
 

@@ -7,14 +7,15 @@ import { getProductUrl } from "@/utils";
 import Image from "next/image";
 import KayonLogo from "@/images/Logo/Brown_Logo.png";
 import { CartMenu } from "./CartMenu";
+import { useLocation } from "react-use";
 
-function classNames(...classes: string[]) {
+export function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
 export const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+  const path = useLocation().pathname;
   return (
     <>
       <Transition.Root show={mobileMenuOpen} as={Fragment}>
@@ -114,10 +115,13 @@ export const Navigation = () => {
                                 <div className="relative flex">
                                   <Popover.Button
                                     className={classNames(
+                                      path === `/categories/${category.slug}`
+                                        ? "text-brown-primary outline-none font-bold"
+                                        : "font-medium",
                                       open
                                         ? "border-brown-primary text-brown-primary outline-none"
-                                        : "border-transparent text-gray-700 hover:text-gray-800",
-                                      "relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out"
+                                        : "border-transparent hover:text-brown-primary hover:border-brown-primary",
+                                      "relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm transition-colors duration-200 ease-out"
                                     )}
                                   >
                                     {category.name}
@@ -196,7 +200,12 @@ export const Navigation = () => {
                           <Link
                             key={page.name}
                             href={page.slug}
-                            className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
+                            className={classNames(
+                              path === `${page.slug}`
+                                ? "text-brown-primary outline-none font-bold"
+                                : "font-medium  text-gray-700",
+                              "flex items-center text-sm hover:text-brown-primary hover:border-brown-primary "
+                            )}
                           >
                             {page.name}
                           </Link>
