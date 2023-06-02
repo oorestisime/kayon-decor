@@ -187,7 +187,7 @@ export default function Example() {
                 {categories.map((category) => (
                   <div key={category.name} className="pt-10">
                     <fieldset>
-                      <legend className="block text-sm font-medium text-gray-900">
+                      <legend className="block text-sm font-semibold text-gray-900">
                         {category.name}
                       </legend>
                       <div className="space-y-3 pt-6">
