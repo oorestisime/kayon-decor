@@ -43,7 +43,7 @@ export const Products = ({ products }: { products: ProductType[] }) => {
                   {product.name}
                 </Link>
               </h3>
-              <p className="text-sm text-gray-500 line-clamp-3 group-hover:line-clamp-none ">
+              <p className="text-sm text-gray-500 line-clamp-4 ">
                 {product.description}
               </p>
               <div className="flex flex-1 flex-col justify-end">
