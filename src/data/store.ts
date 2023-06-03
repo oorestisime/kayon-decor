@@ -121,7 +121,7 @@ import TeakWoodUtensils11 from "@/images/Wooden-Utensils/Teak_wood_utensils-11.j
 import TheNemoPlate from "@/images/The-Nemo-plate/The Nemo plate.jpg";
 import LeafShaped from "@/images/Leaf-shaped-tableware/leaf-shaped.jpg";
 import LeafShaped2 from "@/images/Leaf-shaped-tableware/leaf-shaped2.jpg";
-import LeafShaped3 from "@/images/Leaf-shaped-tableware/leaf-shaped3.jpg.jpg";
+import LeafShaped3 from "@/images/Leaf-shaped-tableware/leaf-shaped3.png";
 import AutumnLeafPlate2 from "@/images/Autumn-leaf-plate/Autumn-leaf-plate2.jpg";
 import AutumnLeafPlate from "@/images/Autumn-leaf-plate/Autumn-leaf-plate.jpg";
 import AutumnLeafPlate4 from "@/images/Autumn-leaf-plate/Autumn-leaf-plate4.jpg";
@@ -170,8 +170,8 @@ import TwoGucci2 from "@/images/Gucci/Two-gucci2.jpg";
 import TwoGucci from "@/images/Gucci/Two-gucci.jpg";
 import BigGucci7 from "@/images/Gucci/Big-gucci7.jpg";
 
-import BearShapedTablewear2 from "@/images/Bear-shaped-tableware/bear-shaped-tablewear-2.jpg.jpg";
-import BearShapedTablewear3 from "@/images/Bear-shaped-tableware/bear-shaped-tablewear-3.jpg.jpg";
+import BearShapedTablewear2 from "@/images/Bear-shaped-tableware/bear-shaped-tablewear-2.jpg";
+import BearShapedTablewear3 from "@/images/Bear-shaped-tableware/bear-shaped-tablewear-3.jpg";
 import LoungeArmChair1 from "@/images/Lounge-Arm-Chair/Lounge-Arm-Chair1.jpg";
 import LoungeArmChair2 from "@/images/Lounge-Arm-Chair/Lounge-Arm-Chair2.jpg";
 import LoungeChair1 from "@/images/Lounge-Chair/Lounge-Chair1.jpg";
