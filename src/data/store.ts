@@ -1385,15 +1385,7 @@ export const products = [
     description:
       "Infuse your space with the warmth and beauty of nature with our Teak Wooden Decorative Piece. Handcrafted from teak wood, this exquisite creation serves as a captivating focal point for any room. Its unique grain patterns and smooth finish evoke a sense of tranquility and timeless elegance. Transform your décor with this eco-friendly and elevating teak wooden decorative piece, and experience the harmonious blend of nature and refinement.",
 
-    images: [
-      BigGucci,
-      BigGucci2,
-      BigGucci3,
-      SmallGucci,
-      SmallGucci2,
-      SmallGucci3,
-      SmallGucci4,
-    ],
+    images: [BigGucci, BigGucci8, SmallGucci, TwoGucci4, TwoGucci5],
     variants: [
       {
         size: "Small",
