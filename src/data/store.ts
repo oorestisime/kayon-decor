@@ -233,11 +233,13 @@ import SilangBasket3 from "@/images/Silang-Baskets/SilangBaskets3.jpeg";
 import RusticBoard7 from "@/images/boards/rustic-board7.jpg";
 import TheMoonPlatter3 from "@/images/The-moon-platter/The moon platter3.png";
 import LingKaranTray from "@/images/Lingkaran-tray/Lingkaran-tray.png";
+import TeakWoodUtensils13 from "@/images/Wooden-Utensils/Teak_wood_utensils-13.jpg";
 
 export const products = [
   {
     name: "Leaf Haven",
     slug: "leaf-haven",
+    SKU: "P001",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     favorite: true,
@@ -265,6 +267,7 @@ export const products = [
   {
     name: "Teddy plate",
     slug: "teddy-plate",
+    SKU: "P002",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
 
@@ -287,6 +290,7 @@ export const products = [
   {
     name: "Autumn Leaf plate",
     slug: "atumn-leaf-plate",
+    SKU: "P003",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     description:
@@ -319,6 +323,7 @@ export const products = [
   {
     name: "Margherita plate",
     slug: "margherita-plate",
+    SKU: "P004",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     featured: true,
@@ -347,6 +352,7 @@ export const products = [
   {
     name: "Love Bird Plate",
     slug: "love-bird-plate",
+    SKU: "P005",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     description:
@@ -364,6 +370,7 @@ export const products = [
   {
     name: "Heart shaped plate",
     slug: "heart-shaped-plate",
+    SKU: "P006",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     description:
@@ -387,6 +394,7 @@ export const products = [
   {
     name: "Owl Haven Platters",
     slug: "owl-haven",
+    SKU: "P007",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     description:
@@ -410,6 +418,7 @@ export const products = [
   {
     name: "Noodles bowl",
     slug: "noodles-bowl",
+    SKU: "B001",
     category: "cat-tablewares",
     sub_category: "Bowls",
     featured: true,
@@ -443,6 +452,7 @@ export const products = [
   {
     name: "The Nemo Plate",
     slug: "the-nemo-plate",
+    SKU: "P008",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     featured: true,
@@ -461,6 +471,7 @@ export const products = [
   {
     name: "The Munching Platter",
     slug: "the-munching-platter",
+    SKU: "P009",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     description:
@@ -478,6 +489,7 @@ export const products = [
   {
     name: "Pizza Plate round",
     slug: "pizza-plate-round",
+    SKU: "P010",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     description:
@@ -505,6 +517,7 @@ export const products = [
   {
     name: "The Wooden Rock Plate",
     slug: "the-wooden-rock-plate",
+    SKU: "P011",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     description:
@@ -527,6 +540,7 @@ export const products = [
   {
     name: "The Square Wooden plate",
     slug: "the-square-wooden-plate",
+    SKU: "P012",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     description:
@@ -548,6 +562,7 @@ export const products = [
   {
     name: "The Moon Platter",
     slug: "the-moon-platter",
+    SKU: "P013",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     description:
@@ -565,6 +580,7 @@ export const products = [
   {
     name: "The square pizza plate",
     slug: "the-square-pizza-plate",
+    SKU: "P014",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     featured: true,
@@ -583,6 +599,7 @@ export const products = [
   {
     name: "Classic Serving tray",
     slug: "classic-serving-tray",
+    SKU: "T001-T006",
     category: "cat-tablewares",
     sub_category: "Trays",
     description:
@@ -635,6 +652,7 @@ export const products = [
   {
     name: "The tray platter",
     slug: "the-tray-platter",
+    SKU: "T007",
     category: "cat-tablewares",
     sub_category: "Trays",
     description:
@@ -652,6 +670,7 @@ export const products = [
   {
     name: "Lingkaran tray",
     slug: "lingkaran-tray",
+    SKU: "T008",
     category: "cat-tablewares",
     sub_category: "Trays",
     description:
@@ -689,6 +708,7 @@ export const products = [
   {
     name: "The Wave Bowl",
     slug: "the-wave-bowl",
+    SKU: "B002",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -706,6 +726,7 @@ export const products = [
   {
     name: "Peanut bowl",
     slug: "peanut-bowl",
+    SKU: "B003",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -733,6 +754,7 @@ export const products = [
   {
     name: "The acal Bowl",
     slug: "the-acal-bowl",
+    SKU: "B004",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -750,6 +772,7 @@ export const products = [
   {
     name: "Cereal Bowl",
     slug: "cereal-bowl",
+    SKU: "B005",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -767,6 +790,7 @@ export const products = [
   {
     name: "Pop Corn Bowl",
     slug: "pop-corn-bowl",
+    SKU: "B006",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -784,6 +808,7 @@ export const products = [
   {
     name: "Rice Bowl",
     slug: "rice-bowl",
+    SKU: "B007",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -801,6 +826,7 @@ export const products = [
   {
     name: "Snack Bowl",
     slug: "snack-bowl",
+    SKU: "B008",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -818,6 +844,7 @@ export const products = [
   {
     name: "Serving Bowl",
     slug: "serving-bowl",
+    SKU: "B009",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -835,6 +862,7 @@ export const products = [
   {
     name: "Yoghurt Bowl",
     slug: "yoghurt-bowl",
+    SKU: "B010",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -852,6 +880,7 @@ export const products = [
   {
     name: "Oats Breakfast Bowl",
     slug: "oats-breakfast-bowl",
+    SKU: "B011",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -869,6 +898,7 @@ export const products = [
   {
     name: "Treats Serving Bowl",
     slug: "treats-serving-bowl",
+    SKU: "B012",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -886,6 +916,7 @@ export const products = [
   {
     name: "Deep Bowl with Lid",
     slug: "deep-bowl-with-lid",
+    SKU: "B013",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -908,6 +939,7 @@ export const products = [
   {
     name: "The Flower Pot bowl",
     slug: "the-flower-pot-bowl",
+    SKU: "B014",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -931,6 +963,7 @@ export const products = [
   {
     name: "Salad Bowl",
     slug: "salad-bowl",
+    SKU: "B015",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -948,6 +981,7 @@ export const products = [
   {
     name: "The Ashtray Square Bowl",
     slug: "the-ashtray-square-bowl",
+    SKU: "B016",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -974,6 +1008,7 @@ export const products = [
   {
     name: "Fruit Board",
     slug: "fruit-board",
+    SKU: "WB002",
     category: "cat-kitchenware",
     sub_category: "Wooden Boards",
     description:
@@ -991,6 +1026,7 @@ export const products = [
   {
     name: "Deli Board",
     slug: "deli-board",
+    SKU: "WB003",
     category: "cat-kitchenware",
     sub_category: "Wooden Boards",
     description:
@@ -1021,6 +1057,7 @@ export const products = [
   {
     name: "Cuting Board",
     slug: "cuting-board",
+    SKU: "WB004",
     category: "cat-kitchenware",
     sub_category: "Wooden Boards",
     description:
@@ -1045,6 +1082,7 @@ export const products = [
   {
     name: "Appetizer Board",
     slug: "appetizer-board",
+    SKU: "WB005",
     category: "cat-kitchenware",
     sub_category: "Wooden Boards",
     featured: true,
@@ -1070,6 +1108,7 @@ export const products = [
   {
     name: "Cheese Board",
     slug: "cheese-board",
+    SKU: "WB001",
     category: "cat-kitchenware",
     sub_category: "Wooden Boards",
     featured: true,
@@ -1088,6 +1127,7 @@ export const products = [
   {
     name: "Prep Board",
     slug: "prep-board",
+    SKU: "WB006",
     category: "cat-kitchenware",
     sub_category: "Wooden Boards",
     description:
@@ -1118,6 +1158,7 @@ export const products = [
   {
     name: "Vegetables Board",
     slug: "vegetables-board",
+    SKU: "WB007",
     category: "cat-kitchenware",
     sub_category: "Wooden Boards",
     description:
@@ -1135,6 +1176,7 @@ export const products = [
   {
     name: "Fish Board",
     slug: "fish-board",
+    SKU: "WB008",
     category: "cat-kitchenware",
     sub_category: "Wooden Boards",
     description:
@@ -1152,6 +1194,7 @@ export const products = [
   {
     name: "Meat Board",
     slug: "meat-board",
+    SKU: "WB009",
     category: "cat-kitchenware",
     sub_category: "Wooden Boards",
 
@@ -1170,6 +1213,7 @@ export const products = [
   {
     name: "Rustic rounded board",
     slug: "rustic-rounded-board",
+    SKU: "WB010",
     category: "cat-kitchenware",
     sub_category: "Wooden Boards",
     description:
@@ -1216,6 +1260,7 @@ export const products = [
   {
     name: "Grinding Bowl",
     slug: "grinding-bowl",
+    SKU: "GB001",
     category: "cat-kitchenware",
     sub_category: "Grinding Bowls",
     featured: true,
@@ -1239,6 +1284,7 @@ export const products = [
   {
     name: "Wooden Utensils",
     slug: "wooden-utensils",
+    SKU: "WU001 - WU013",
     category: "cat-kitchenware",
     sub_category: "Wooden Utensils",
     featured: true,
@@ -1259,66 +1305,72 @@ export const products = [
       TeakWoodUtensils10,
       TeakWoodUtensils11,
       TeakWoodUtensils12,
+      TeakWoodUtensils13,
     ],
     variants: [
       {
-        size: "A",
-        specification: "Different sizes and styles available",
-        price: "10",
+        size: " TYPE A",
+        specification: "L36 x W10cm",
+        price: "14.99",
       },
       {
-        size: "B",
-        specification: "Different sizes and styles available",
-        price: "10",
-      },
-      {
-        size: "C",
-        specification: "Different sizes and styles available",
-        price: "10",
-      },
-      {
-        size: "D",
-        specification: "Different sizes and styles available",
-        price: "10",
-      },
-      {
-        size: "A17",
-        specification: "L17 x 9cm",
-        price: "6",
-      },
-      {
-        size: "A18",
-        specification: "L19 x 7cm",
-        price: "7.5",
-      },
-      {
-        size: "A22",
-        specification: "L23 x 7cm",
-        price: "8",
-      },
-      {
-        size: "A30",
-        specification: "L32 x 6cm",
-        price: "8.99",
-      },
-      {
-        size: "A31 (set)",
-        specification: "L29 x 9cm",
-        price: "10.99",
-      },
-      {
-        size: "A35",
-        specification: "L27 x 8cm",
+        size: "TYPE B",
+        specification: "L28 x W8.5cm",
         price: "9.99",
       },
       {
-        size: "A36",
-        specification: "L30 x 10cm",
+        size: "TYPE C",
+        specification: "L29 x W9cm",
+        price: "8.99",
+      },
+      {
+        size: "TYPE D",
+        specification: "L23 x W7.5cm",
+        price: "8.99",
+      },
+      {
+        size: "TYPE E",
+        specification: "L35 x W6cm",
+        price: "11.99",
+      },
+      {
+        size: "TYPE F",
+        specification: "L19 x W7cm",
+        price: "7.50",
+      },
+      {
+        size: "TYPE G",
+        specification: "L23 x W7cm",
+        price: "8.50",
+      },
+      {
+        size: "TYPE H",
+        specification: "L32 x W6cm",
+        price: "8.99",
+      },
+      {
+        size: "TYPE I",
+        specification: "L29 x W9cm (pack of 2)",
+        price: "14.99",
+      },
+      {
+        size: "TYPE J",
+        specification: "L27 x W8cm",
+        price: "11.99",
+      },
+      {
+        size: "TYPE K",
+        specification: "L30 x W10cm",
         price: "7.99",
       },
       {
-        size: "A37",
-        specification: "L40 x 8cm",
+        size: "TYPE L",
+        specification: "L40 x W8cm",
+        price: "10.99",
+      },
+      {
+        size: "TYPE M",
+        specification: "L35 x W12cm",
         price: "10.99",
       },
     ],
@@ -1326,6 +1378,7 @@ export const products = [
   {
     name: "Gucci",
     slug: "gucci",
+    SKU: "GU001",
     category: "cat-home-decor",
     sub_category: "Gucci",
     featured: true,
@@ -1357,6 +1410,7 @@ export const products = [
   {
     name: "Diamond Baskets",
     slug: "diamond-baskets",
+    SKU: "BASK001",
     category: "cat-home-decor",
     sub_category: "Baskets",
 
@@ -1384,6 +1438,7 @@ export const products = [
   {
     name: "Tropical Knot baskets",
     slug: "tropical-knot",
+    SKU: "BASK002",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1410,6 +1465,7 @@ export const products = [
   {
     name: "Boho storage baskets",
     slug: "boho-storage",
+    SKU: "BASK003",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1436,6 +1492,7 @@ export const products = [
   {
     name: "Janat baskets",
     slug: "janat-baskets",
+    SKU: "BASK004",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1462,6 +1519,7 @@ export const products = [
   {
     name: "Garis laundry baskets",
     slug: "garis-laundry",
+    SKU: "BASK005",
     category: "cat-home-decor",
     sub_category: "Baskets",
     featured: true,
@@ -1489,6 +1547,7 @@ export const products = [
   {
     name: "Alam baskets",
     slug: "alam-baskets",
+    SKU: "BASK006",
     category: "cat-home-decor",
     sub_category: "Baskets",
     favorite: true,
@@ -1518,6 +1577,7 @@ export const products = [
   {
     name: "Anyam baskets",
     slug: "anyam-baskets",
+    SKU: "BASK007",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1544,6 +1604,7 @@ export const products = [
   {
     name: "Indah baskets",
     slug: "indah-baskets",
+    SKU: "BASK008",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1570,6 +1631,7 @@ export const products = [
   {
     name: "Karya baskets",
     slug: "karya-baskets",
+    SKU: "BASK009",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1591,6 +1653,7 @@ export const products = [
   {
     name: "Cuci baskets",
     slug: "cuci-baskets",
+    SKU: "BASK010",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1617,6 +1680,7 @@ export const products = [
   {
     name: "Harmoni baskets",
     slug: "harmoni-baskets",
+    SKU: "BASK011",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1643,6 +1707,7 @@ export const products = [
   {
     name: "Abu-abu baskets",
     slug: "abu-abu",
+    SKU: "BASK012",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1664,6 +1729,7 @@ export const products = [
   {
     name: "Hitam baskets",
     slug: "hitam-baskets",
+    SKU: "BASK013",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1690,6 +1756,7 @@ export const products = [
   {
     name: "Robek baskets",
     slug: "robek-baskets",
+    SKU: "BASK014",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1716,6 +1783,7 @@ export const products = [
   {
     name: "Penatu baskets",
     slug: "penatu-baskets",
+    SKU: "BASK015",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1743,6 +1811,7 @@ export const products = [
   {
     name: "Tropic Vibe baskets",
     slug: "tropic-vibe",
+    SKU: "BASK016",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1769,6 +1838,7 @@ export const products = [
   {
     name: "Triwarna baskets",
     slug: "triwarna-baskets",
+    SKU: "BASK017",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1801,6 +1871,7 @@ export const products = [
   {
     name: "Tua baskets",
     slug: "tua-baskets",
+    SKU: "BASK018",
     category: "cat-home-decor",
     sub_category: "Baskets",
 
@@ -1828,6 +1899,7 @@ export const products = [
   {
     name: "Rattan baskets",
     slug: "rattan-baskets",
+    SKU: "BASK019",
     category: "cat-home-decor",
     sub_category: "Baskets",
 
@@ -1855,6 +1927,7 @@ export const products = [
   {
     name: "Blossom baskets",
     slug: "blossom-baskets",
+    SKU: "BASK020",
     category: "cat-home-decor",
     sub_category: "Baskets",
 
@@ -1882,6 +1955,7 @@ export const products = [
   {
     name: "Sarang baskets",
     slug: "sarang-baskets",
+    SKU: "BASK021",
     category: "cat-home-decor",
     sub_category: "Baskets",
 
@@ -1909,6 +1983,7 @@ export const products = [
   {
     name: "Silang Baskets",
     slug: "silang-baskets",
+    SKU: "BASK022",
     category: "cat-home-decor",
     sub_category: "Baskets",
     featured: true,
@@ -1929,27 +2004,29 @@ export const products = [
       },
     ],
   },
-  {
-    name: "Wooden Soap Dispenser",
-    slug: "wooden-soap-dispenser",
-    category: "cat-home-decor",
-    sub_category: "Accessories",
+  // {
+  //   name: "Wooden Soap Dispenser",
+  //   slug: "wooden-soap-dispenser",
+  //   SKU: "A001",
+  //   category: "cat-home-decor",
+  //   sub_category: "Accessories",
 
-    description:
-      "Elevate your bathroom aesthetics with the Teak Wooden Soap Dispenser. Crafted from beautiful teak wood, this dispenser combines functionality and style effortlessly. Its smooth and durable design adds a touch of natural elegance to any sink or countertop. Enhance your daily handwashing routine with this eco-friendly and luxurious teak wooden soap dispenser.",
+  //   description:
+  //     "Elevate your bathroom aesthetics with the Teak Wooden Soap Dispenser. Crafted from beautiful teak wood, this dispenser combines functionality and style effortlessly. Its smooth and durable design adds a touch of natural elegance to any sink or countertop. Enhance your daily handwashing routine with this eco-friendly and luxurious teak wooden soap dispenser.",
 
-    images: [SoapBottle],
-    variants: [
-      {
-        size: "",
-        specification: "H7 x Diam.16cm",
-        price: "12",
-      },
-    ],
-  },
+  //   images: [SoapBottle],
+  //   variants: [
+  //     {
+  //       size: "",
+  //       specification: "H7 x Diam.16cm",
+  //       price: "12",
+  //     },
+  //   ],
+  // },
   // {
   //   name: "Deco wooden stand",
   //   slug: "deco-wooden-stand",
+  //   SKU: "A002"
   //   category: "cat-home-decor",
   //   sub_category: "Accessories",
   //   featured: true,
@@ -1968,12 +2045,13 @@ export const products = [
   {
     name: "Wooden Natural Dining Tables",
     slug: "wooden-natural-dining-tables",
+    SKU: "TAB001",
     category: "cat-home-furniture",
     sub_category: "Tables",
     featured: true,
     favorite: true,
     description:
-      "Experience the beauty of nature in your dining space with our Suar Wood Dining Tables. Handcrafted from premium Suar wood, these tables bring a touch of rustic elegance to any home. Each table is unique, featuring the natural grain patterns and rich colors of the Suar wood, creating a truly one-of-a-kind centerpiece for your dining area. With their sturdy construction and timeless design, these Suar wood dining tables are not only stunning but also built to last. Gather around and create lasting memories with friends and family on a Suar wood dining table that effortlessly combines nature's beauty with functional style. Pre-ordering: Unique designs",
+      "Experience the beauty of nature in your dining space with our Suar Wood Dining Tables. Handcrafted from premium Suar wood, these tables bring a touch of rustic elegance to any home. Each table is unique, featuring the natural grain patterns and rich colors of the Suar wood, creating a truly one-of-a-kind centerpiece for your dining area. With their sturdy construction and timeless design, these Suar wood dining tables are not only stunning but also built to last. Gather around and create lasting memories with friends and family on a Suar wood dining table that effortlessly combines nature's beauty with functional style.",
 
     images: [
       TablesFavorite,
@@ -2013,11 +2091,12 @@ export const products = [
   {
     name: "Lounge Arm Chair ",
     slug: "lounge-arm-chair",
+    SKU: "CH001 - CH002",
     category: "cat-home-furniture",
     sub_category: "Chairs",
     featured: true,
     description:
-      "Indulge in the ultimate relaxation experience with our Teak Rope Lounge Arm Chair. Crafted with precision and artistry, this chair combines the timeless beauty of teak wood with the comfort of rope seating. The teak wood frame with arms exudes elegance and durability, while the intricately woven rope provides a supportive and comfortable seating surface. Whether lounging by the poolside or on your patio, this chair invites you to unwind and embrace serenity in style. Pre-ordering: Indoor / Outdoor lounge Chair with arm. Select which one",
+      "Indulge in the ultimate relaxation experience with our Teak Rope Lounge Arm Chair. Crafted with precision and artistry, this chair combines the timeless beauty of teak wood with the comfort of rope seating. The teak wood frame with arms exudes elegance and durability, while the intricately woven rope provides a supportive and comfortable seating surface. Whether lounging by the poolside or on your patio, this chair invites you to unwind and embrace serenity in style.",
 
     images: [LoungeArmChair1, LoungeArmChair2],
     variants: [
@@ -2038,10 +2117,11 @@ export const products = [
   {
     name: "Lounge  Chair ",
     slug: "lounge-chair",
+    SKU: "CH003 - CH004",
     category: "cat-home-furniture",
     sub_category: "Chairs",
     description:
-      "Experience the epitome of relaxation with our Teak Rope Lounge Chair. Designed with minimalism in mind, this chair features a sleek and streamlined silhouette, enhanced by the use of teak wood and rope materials. The teak wood frame exudes natural beauty and durability, while the rope seating offers a comfortable and supportive experience. Whether placed by the poolside or on your sun-soaked patio, this armless lounge chair is a perfect spot to unwind and soak up the ambiance. Elevate your indoor or outdoor oasis with the understated elegance and comfort of our Teak Rope Lounge Chair, designed for moments of pure tranquility. Pre-ordering: Indoor / Outdoor lounge Chair without arm. Select which one",
+      "Experience the epitome of relaxation with our Teak Rope Lounge Chair. Designed with minimalism in mind, this chair features a sleek and streamlined silhouette, enhanced by the use of teak wood and rope materials. The teak wood frame exudes natural beauty and durability, while the rope seating offers a comfortable and supportive experience. Whether placed by the poolside or on your sun-soaked patio, this armless lounge chair is a perfect spot to unwind and soak up the ambiance. Elevate your indoor or outdoor oasis with the understated elegance and comfort of our Teak Rope Lounge Chair, designed for moments of pure tranquility.",
 
     images: [LoungeChair1, LoungeChair2, LoungeChair3],
     variants: [
@@ -2062,10 +2142,11 @@ export const products = [
   {
     name: "Mini Bench",
     slug: "mini-bench",
+    SKU: "CH005",
     category: "cat-home-furniture",
     sub_category: "Chairs",
     description:
-      "Introducing our Small Teak Rope Lounge Bench, where comfort meets style in a compact design. Crafted with precision and attention to detail, this bench showcases the beauty of teak wood combined with the elegance of rope accents. The teak wood frame provides a sturdy and durable foundation, while the intricately rope seat adds a touch of modern sophistication. Perfect for cozy outdoor spaces or intimate indoor settings, this small teak rope lounge bench offers a comfortable seating option that effortlessly blends natural beauty with contemporary flair. Pre-ordering: Mini bench",
+      "Introducing our Small Teak Rope Lounge Bench, where comfort meets style in a compact design. Crafted with precision and attention to detail, this bench showcases the beauty of teak wood combined with the elegance of rope accents. The teak wood frame provides a sturdy and durable foundation, while the intricately rope seat adds a touch of modern sophistication. Perfect for cozy outdoor spaces or intimate indoor settings, this small teak rope lounge bench offers a comfortable seating option that effortlessly blends natural beauty with contemporary flair.",
 
     images: [MiniBench, MiniBench2],
     variants: [
@@ -2080,11 +2161,12 @@ export const products = [
   {
     name: "Sofa Single Seater",
     slug: "sofa-single-seater",
+    SKU: "CH006",
     category: "cat-home-furniture",
     sub_category: "Chairs",
     featured: true,
     description:
-      "Experience comfort and style in a compact form with our Small Teak Sofa Single Seater. Meticulously crafted from premium teak wood, this sofa embodies timeless elegance and durability. Its sleek design and gently curved frame exude a sense of sophistication, while the plush cushioning provides a cozy seating experience. Perfectly scaled for smaller spaces or as an accent piece, this single-seater teak sofa effortlessly combines functionality with exquisite craftsmanship. Elevate your living space with the charm and comfort of our Small Teak Sofa Single Seater, a perfect retreat for relaxation and unwinding. Pre-ordering: Chair with fabric",
+      "Experience comfort and style in a compact form with our Small Teak Sofa Single Seater. Meticulously crafted from premium teak wood, this sofa embodies timeless elegance and durability. Its sleek design and gently curved frame exude a sense of sophistication, while the plush cushioning provides a cozy seating experience. Perfectly scaled for smaller spaces or as an accent piece, this single-seater teak sofa effortlessly combines functionality with exquisite craftsmanship. Elevate your living space with the charm and comfort of our Small Teak Sofa Single Seater, a perfect retreat for relaxation and unwinding.",
 
     images: [SofaSingleSeater1, SofaSingleSeater2],
     variants: [
@@ -2099,11 +2181,12 @@ export const products = [
   {
     name: "Kennedy dining chair",
     slug: "kennedy-dining-chair",
+    SKU: "CH007",
     category: "cat-home-furniture",
     sub_category: "Chairs",
     featured: true,
     description:
-      "Introducing our Teak Wood Kennedy Dining Chair, where beauty meets functionality in perfect harmony. Crafted from high-quality teak wood, this dining chair showcases the natural elegance and durability of the material. The intricately rope backrest adds a touch of contemporary style and provides comfortable support for your back. With its ergonomic design and sturdy construction, this chair offers both comfort and stability during your dining experiences. Whether used for casual family meals or elegant dinner parties, our Teak Wood Kennedy Dining Chair adds a touch of sophistication and comfort to any dining setting. Pre-ordering",
+      "Introducing our Teak Wood Kennedy Dining Chair, where beauty meets functionality in perfect harmony. Crafted from high-quality teak wood, this dining chair showcases the natural elegance and durability of the material. The intricately rope backrest adds a touch of contemporary style and provides comfortable support for your back. With its ergonomic design and sturdy construction, this chair offers both comfort and stability during your dining experiences. Whether used for casual family meals or elegant dinner parties, our Teak Wood Kennedy Dining Chair adds a touch of sophistication and comfort to any dining setting.",
 
     images: [KennedyDiningChair],
     variants: [
@@ -2118,11 +2201,12 @@ export const products = [
   {
     name: "Island Oasis Armchair",
     slug: "island-oasis",
+    SKU: "CH008",
     category: "cat-home-furniture",
     sub_category: "Chairs",
 
     description:
-      "Introducing our luxurious 'Island Oasis' sofa chair, the perfect addition to elevate your indoor or outdoor space. Crafted with the highest quality solid teak wood, this chair offers unparalleled durability and resistance to weathering, ensuring that it lasts for years to come. The curved armrests provide the ultimate comfort, making it the perfect spot to relax after a long day. The chair is upholstered with soft, yet durable fabric, giving you a comfortable seating experience that you'll love. Its stylish and elegant design will add a touch of sophistication to any room or patio. Invest in our teak fabric arm sofa chair and experience the ultimate in comfort, quality, and style. Order yours today and take the first step towards luxury living! Pre-ordering",
+      "Introducing our luxurious 'Island Oasis' sofa chair, the perfect addition to elevate your indoor or outdoor space. Crafted with the highest quality solid teak wood, this chair offers unparalleled durability and resistance to weathering, ensuring that it lasts for years to come. The curved armrests provide the ultimate comfort, making it the perfect spot to relax after a long day. The chair is upholstered with soft, yet durable fabric, giving you a comfortable seating experience that you'll love. Its stylish and elegant design will add a touch of sophistication to any room or patio. Invest in our teak fabric arm sofa chair and experience the ultimate in comfort, quality, and style. Order yours today and take the first step towards luxury living!",
 
     images: [IslandOasisArmchair],
     variants: [
@@ -2137,11 +2221,12 @@ export const products = [
   {
     name: "Cane Chair",
     slug: "cane-chair",
+    SKU: "CH009",
     category: "cat-home-furniture",
     sub_category: "Chairs",
 
     description:
-      "Introducing our elegant teak 'Cane' chair, the perfect accent piece for any home. This chair features a solid teak wood frame that provides exceptional strength and durability, ensuring it will last for years to come. The intricate rope detailing on the arms adds a touch of sophistication, making this chair an eye-catching addition to any room. The chair is upholstered with high-quality fabric, offering both comfort and durability, so you can relax in style. The teak wood frame and rope accents create a natural, rustic look that complements any decor. This chair is suitable for indoor use, making it a practical addition to any living space. Experience the ultimate in style and comfort with our teak rope arm chair. Order yours today and add a touch of elegance to your home decor. Pre-ordering",
+      "Introducing our elegant teak 'Cane' chair, the perfect accent piece for any home. This chair features a solid teak wood frame that provides exceptional strength and durability, ensuring it will last for years to come. The intricate rope detailing on the arms adds a touch of sophistication, making this chair an eye-catching addition to any room. The chair is upholstered with high-quality fabric, offering both comfort and durability, so you can relax in style. The teak wood frame and rope accents create a natural, rustic look that complements any decor. This chair is suitable for indoor use, making it a practical addition to any living space. Experience the ultimate in style and comfort with our teak rope arm chair. Order yours today and add a touch of elegance to your home decor.",
 
     images: [CaneChair],
     variants: [
@@ -2153,50 +2238,52 @@ export const products = [
       },
     ],
   },
-  {
-    name: "Coffee Table",
-    slug: "coffee-table",
-    category: "cat-home-furniture",
-    sub_category: "Side Tables",
-    description:
-      "Introducing our Teak Wood Coffee Table, where beauty meets functionality in perfect harmony. Handcrafted from high-quality teak wood, this coffee table exudes natural elegance and durability. The rich grain patterns and warm tones of the wood create a stunning focal point in any living room. Its sleek and timeless design provides ample surface area for displaying décor or resting your favorite beverages. Whether you're enjoying a morning cup of coffee or gathering with friends and family, our Teak Wood Coffee Table is the perfect addition to your living space.",
+  // {
+  //   name: "Coffee Table",
+  //   slug: "coffee-table",
+  //   SKU: "STAB001 - STAB002",
+  //   category: "cat-home-furniture",
+  //   sub_category: "Side Tables",
+  //   description:
+  //     "Introducing our Teak Wood Coffee Table, where beauty meets functionality in perfect harmony. Handcrafted from high-quality teak wood, this coffee table exudes natural elegance and durability. The rich grain patterns and warm tones of the wood create a stunning focal point in any living room. Its sleek and timeless design provides ample surface area for displaying décor or resting your favorite beverages. Whether you're enjoying a morning cup of coffee or gathering with friends and family, our Teak Wood Coffee Table is the perfect addition to your living space.",
 
-    images: [],
-    variants: [
-      {
-        size: "1 legged",
-        specification: "L95 x W45 x H50cm",
-        price: "410",
-      },
-      {
-        size: "2 legged",
-        specification: "L75 x W50 x H50cm",
-        price: "450",
-      },
-    ],
-  },
-  {
-    name: "Coffee Table with glass",
-    slug: "coffee-table-glass",
-    category: "cat-home-furniture",
-    sub_category: "Side Tables",
-    description:
-      "Introducing our Teak Wood Coffee Table with Glass, a harmonious blend of natural allure and contemporary design. Handcrafted from premium teak wood, this coffee table exudes timeless beauty and durability. With its generous size and sturdy construction, this coffee table provides a perfect gathering spot for coffee conversations or stylishly displaying decor items. ",
+  //   images: [],
+  //   variants: [
+  //     {
+  //       size: "1 legged",
+  //       specification: "L95 x W45 x H50cm",
+  //       price: "410",
+  //     },
+  //     {
+  //       size: "2 legged",
+  //       specification: "L75 x W50 x H50cm",
+  //       price: "450",
+  //     },
+  //   ],
+  // },
+  // {
+  //   name: "Coffee Table with glass",
+  //   slug: "coffee-table-glass",
+  //   SKU: "STAB003",
+  //   category: "cat-home-furniture",
+  //   sub_category: "Side Tables",
+  //   description:
+  //     "Introducing our Teak Wood Coffee Table with Glass, a harmonious blend of natural allure and contemporary design. Handcrafted from premium teak wood, this coffee table exudes timeless beauty and durability. With its generous size and sturdy construction, this coffee table provides a perfect gathering spot for coffee conversations or stylishly displaying decor items. ",
 
-    images: [],
-    variants: [
-      {
-        size: "Medium",
-        specification: "L90 x W50 x H50cm",
-        price: "470",
-      },
-      {
-        size: "Large",
-        specification: "L95 x W65 x H50cm",
-        price: "490",
-      },
-    ],
-  },
+  //   images: [],
+  //   variants: [
+  //     {
+  //       size: "Medium",
+  //       specification: "L90 x W50 x H50cm",
+  //       price: "470",
+  //     },
+  //     {
+  //       size: "Large",
+  //       specification: "L95 x W65 x H50cm",
+  //       price: "490",
+  //     },
+  //   ],
+  // },
 ];
 
 export const categories = [
