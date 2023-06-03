@@ -187,7 +187,7 @@ function Product({
                       <strong>Material</strong> : {selectedVariant.material}
                     </h3>
                   </div>
-                  {selectedVariant.finishing !== "" && (
+                  {selectedVariant.finishing !== null && (
                     <div className="flex items-center justify-between">
                       <h3 className="text-sm font-medium text-gray-900">
                         <strong>Finishing</strong> : {selectedVariant.finishing}
