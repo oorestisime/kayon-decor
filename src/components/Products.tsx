@@ -29,7 +29,7 @@ export const Products = ({ products }: { products: ProductType[] }) => {
           >
             <div className="aspect-h-4 aspect-w-3 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-96">
               <Image
-                quality={60}
+                quality={40}
                 placeholder="blur"
                 priority={false}
                 src={product.images[0]}
