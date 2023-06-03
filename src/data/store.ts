@@ -233,11 +233,13 @@ import SilangBasket3 from "@/images/Silang-Baskets/SilangBaskets3.jpeg";
 import RusticBoard7 from "@/images/boards/rustic-board7.jpg";
 import TheMoonPlatter3 from "@/images/The-moon-platter/The moon platter3.png";
 import LingKaranTray from "@/images/Lingkaran-tray/Lingkaran-tray.png";
+import TeakWoodUtensils13 from "@/images/Wooden-Utensils/Teak_wood_utensils-13.jpg";
 
 export const products = [
   {
     name: "Leaf Haven",
     slug: "leaf-haven",
+    SKU: "P001",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     favorite: true,
@@ -247,17 +249,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "L24 x W14 x H2cm",
+        dimensions: "L24 x W14 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12",
       },
       {
         size: "Medium",
-        specification: "L27 x W16 x H2cm",
+        dimensions: "L27 x W16 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14",
       },
       {
         size: "Large",
-        specification: "L30 x W18 x H2cm",
+        dimensions: "L30 x W18 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
     ],
@@ -265,6 +273,7 @@ export const products = [
   {
     name: "Teddy plate",
     slug: "teddy-plate",
+    SKU: "P002",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
 
@@ -274,12 +283,16 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "L17 x W15 x H2cm",
+        dimensions: "L17 x W15 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12",
       },
       {
         size: "Large",
-        specification: "L20 x W22 x H2cm",
+        dimensions: "L20 x W22 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
     ],
@@ -287,6 +300,7 @@ export const products = [
   {
     name: "Autumn Leaf plate",
     slug: "atumn-leaf-plate",
+    SKU: "P003",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     description:
@@ -301,17 +315,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "L18 x W15 x H2cm",
+        dimensions: "L18 x W15 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "10",
       },
       {
         size: "Medium",
-        specification: "L33 x W22 x H2cm",
+        dimensions: "L33 x W22 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
       {
         size: "Large",
-        specification: "L45 x W25 x H2cm",
+        dimensions: "L45 x W25 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "24",
       },
     ],
@@ -319,6 +339,7 @@ export const products = [
   {
     name: "Margherita plate",
     slug: "margherita-plate",
+    SKU: "P004",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     featured: true,
@@ -329,17 +350,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H2 x D15cm",
+        dimensions: "H2 x Diam.15cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "7",
       },
       {
         size: "Medium",
-        specification: "H2 x D20cm",
+        dimensions: "H2cm x Diam.20cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12",
       },
       {
         size: "Large",
-        specification: "H2 x D25cm",
+        dimensions: "H2 x Diam.25cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
     ],
@@ -347,6 +374,7 @@ export const products = [
   {
     name: "Love Bird Plate",
     slug: "love-bird-plate",
+    SKU: "P005",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     description:
@@ -356,7 +384,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L15 x W15 x H2cm",
+        dimensions: "L15 x W15 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "10",
       },
     ],
@@ -364,6 +394,7 @@ export const products = [
   {
     name: "Heart shaped plate",
     slug: "heart-shaped-plate",
+    SKU: "P006",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     description:
@@ -373,13 +404,17 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "L14 x W11 x H2cm",
+        dimensions: "L14 x W11 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "7",
       },
 
       {
         size: "Large",
-        specification: "L15 x W15 x H2cm",
+        dimensions: "L15 x W15 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12",
       },
     ],
@@ -387,6 +422,7 @@ export const products = [
   {
     name: "Owl Haven Platters",
     slug: "owl-haven",
+    SKU: "P007",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     description:
@@ -396,13 +432,17 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "L23 x W15 x H2cm",
+        dimensions: "L23 x W15 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12",
       },
 
       {
         size: "Large",
-        specification: "L30 x W15 x H2cm",
+        dimensions: "L30 x W15 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14",
       },
     ],
@@ -410,6 +450,7 @@ export const products = [
   {
     name: "Noodles bowl",
     slug: "noodles-bowl",
+    SKU: "B001",
     category: "cat-tablewares",
     sub_category: "Bowls",
     featured: true,
@@ -420,22 +461,30 @@ export const products = [
     variants: [
       {
         size: "XSmall",
-        specification: "D13 x H8cm",
+        dimensions: "H8  x Diam.13cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12",
       },
       {
         size: "Small",
-        specification: "D15 x H9cm",
+        dimensions: "H9 x Diam.15cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14",
       },
       {
         size: "Medium",
-        specification: "D18 x H8cm",
+        dimensions: "H8 x Diam.18cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
       {
         size: "Large",
-        specification: "D20 x H9cm",
+        dimensions: "H9 x Diam.20cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "24",
       },
     ],
@@ -443,6 +492,7 @@ export const products = [
   {
     name: "The Nemo Plate",
     slug: "the-nemo-plate",
+    SKU: "P008",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     featured: true,
@@ -453,7 +503,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L30 x W16 x H2cm",
+        dimensions: "L30 x W16 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
     ],
@@ -461,6 +513,7 @@ export const products = [
   {
     name: "The Munching Platter",
     slug: "the-munching-platter",
+    SKU: "P009",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     description:
@@ -470,7 +523,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L50 x W25 x H2cm",
+        dimensions: "L50 x W25 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "36",
       },
     ],
@@ -478,6 +533,7 @@ export const products = [
   {
     name: "Pizza Plate round",
     slug: "pizza-plate-round",
+    SKU: "P010",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     description:
@@ -487,17 +543,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "L20 x W32 x H2cm",
+        dimensions: "L20 x W32 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
       {
         size: "Medium",
-        specification: "L25 x W37 x H2cm",
+        dimensions: "L25 x W37 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "21",
       },
       {
         size: "Large",
-        specification: "L30 x W42 x H2cm",
+        dimensions: "L30 x W42 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "30",
       },
     ],
@@ -505,6 +567,7 @@ export const products = [
   {
     name: "The Wooden Rock Plate",
     slug: "the-wooden-rock-plate",
+    SKU: "P011",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     description:
@@ -519,7 +582,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L12 x W9  x H2cm",
+        dimensions: "L12 x W9  x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "10",
       },
     ],
@@ -527,6 +592,7 @@ export const products = [
   {
     name: "The Square Wooden plate",
     slug: "the-square-wooden-plate",
+    SKU: "P012",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     description:
@@ -540,7 +606,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L23 x W23 x H2cm",
+        dimensions: "L23 x W23 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14",
       },
     ],
@@ -548,6 +616,7 @@ export const products = [
   {
     name: "The Moon Platter",
     slug: "the-moon-platter",
+    SKU: "P013",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     description:
@@ -557,7 +626,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "D35 x H2cm",
+        dimensions: "H2 x Diam.35cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "36",
       },
     ],
@@ -565,6 +636,7 @@ export const products = [
   {
     name: "The square pizza plate",
     slug: "the-square-pizza-plate",
+    SKU: "P014",
     category: "cat-tablewares",
     sub_category: "Plates/Platters",
     featured: true,
@@ -575,7 +647,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L20 x W30 x H2cm",
+        dimensions: "L20 x W30 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
     ],
@@ -583,6 +657,7 @@ export const products = [
   {
     name: "Classic Serving tray",
     slug: "classic-serving-tray",
+    SKU: "T001-T006",
     category: "cat-tablewares",
     sub_category: "Trays",
     description:
@@ -602,32 +677,44 @@ export const products = [
     variants: [
       {
         size: "XSmall",
-        specification: "L20 x W13 x H2cm",
+        dimensions: "L20 x W13 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "9.5",
       },
       {
         size: "Small",
-        specification: "L22 x W14 x H2cm",
+        dimensions: "L22 x W14 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12",
       },
       {
         size: "Medium",
-        specification: "L25 x W15 x H2cm",
+        dimensions: "L25 x W15 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14.5",
       },
       {
         size: "Large",
-        specification: "L26 x W16 x H2cm",
+        dimensions: "L26 x W16 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
       {
         size: "XLarge",
-        specification: "L28 x W17 x H2cm",
+        dimensions: "L28 x W17 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "24",
       },
       {
         size: "XXLarge",
-        specification: "L30 x W18 x H2cm",
+        dimensions: "L30 x W18 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "30",
       },
     ],
@@ -635,6 +722,7 @@ export const products = [
   {
     name: "The tray platter",
     slug: "the-tray-platter",
+    SKU: "T007",
     category: "cat-tablewares",
     sub_category: "Trays",
     description:
@@ -644,7 +732,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L40 x W20 x H2cm",
+        dimensions: "L40 x W20 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "21",
       },
     ],
@@ -652,6 +742,7 @@ export const products = [
   {
     name: "Lingkaran tray",
     slug: "lingkaran-tray",
+    SKU: "T008",
     category: "cat-tablewares",
     sub_category: "Trays",
     description:
@@ -660,27 +751,37 @@ export const products = [
     variants: [
       {
         size: "XSmall",
-        specification: "L14 x W10 x H2cm",
+        dimensions: "L14 x W10 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "10",
       },
       {
         size: "Small",
-        specification: "L20 x W14 x H2cm",
+        dimensions: "L20 x W14 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12.99",
       },
       {
         size: "Medium",
-        specification: "L25 x W18 x H2cm",
+        dimensions: "L25 x W18 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14.99",
       },
       {
         size: "Large",
-        specification: "L30 x W20 x H2cm",
+        dimensions: "L30 x W20 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18.99",
       },
       {
         size: "XLarge",
-        specification: "L35 x W26 x H2cm",
+        dimensions: "L35 x W26 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "25.99",
       },
     ],
@@ -689,6 +790,7 @@ export const products = [
   {
     name: "The Wave Bowl",
     slug: "the-wave-bowl",
+    SKU: "B002",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -698,7 +800,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L37 x W12 x H4cm",
+        dimensions: "L37 x W12 x H4cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
     ],
@@ -706,6 +810,7 @@ export const products = [
   {
     name: "Peanut bowl",
     slug: "peanut-bowl",
+    SKU: "B003",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -715,17 +820,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "L25 x W10 x H4cm",
+        dimensions: "L25 x W10 x H4cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12",
       },
       {
         size: "Medium",
-        specification: "L35 x W10 x H4cm",
+        dimensions: "L35 x W10 x H4cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14",
       },
       {
         size: "Large",
-        specification: "L45 x W10 x H4cm",
+        dimensions: "L45 x W10 x H4cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
     ],
@@ -733,6 +844,7 @@ export const products = [
   {
     name: "The acal Bowl",
     slug: "the-acal-bowl",
+    SKU: "B004",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -742,7 +854,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "D10 x H2cm",
+        dimensions: "H2 x Diam.10cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "6",
       },
     ],
@@ -750,6 +864,7 @@ export const products = [
   {
     name: "Cereal Bowl",
     slug: "cereal-bowl",
+    SKU: "B005",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -759,7 +874,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "H7cm x Diam.22cm ",
+        dimensions: "H7cm x Diam.22cm ",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
     ],
@@ -767,6 +884,7 @@ export const products = [
   {
     name: "Pop Corn Bowl",
     slug: "pop-corn-bowl",
+    SKU: "B006",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -776,7 +894,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "D18 x H6cm",
+        dimensions: "H6 x  Diam.18cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14",
       },
     ],
@@ -784,6 +904,7 @@ export const products = [
   {
     name: "Rice Bowl",
     slug: "rice-bowl",
+    SKU: "B007",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -793,7 +914,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "D17 x H9cm",
+        dimensions: "H9 x Diam.17cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14",
       },
     ],
@@ -801,6 +924,7 @@ export const products = [
   {
     name: "Snack Bowl",
     slug: "snack-bowl",
+    SKU: "B008",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -810,7 +934,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "D17 x H5cm",
+        dimensions: "H5 x Diam.17cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14",
       },
     ],
@@ -818,6 +944,7 @@ export const products = [
   {
     name: "Serving Bowl",
     slug: "serving-bowl",
+    SKU: "B009",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -827,7 +954,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "D14 x H5cm",
+        dimensions: "H5 x Diam.14cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12",
       },
     ],
@@ -835,6 +964,7 @@ export const products = [
   {
     name: "Yoghurt Bowl",
     slug: "yoghurt-bowl",
+    SKU: "B010",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -844,7 +974,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "D12.5 x H4.5cm",
+        dimensions: "H4.5 x Diam.12.5cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14",
       },
     ],
@@ -852,6 +984,7 @@ export const products = [
   {
     name: "Oats Breakfast Bowl",
     slug: "oats-breakfast-bowl",
+    SKU: "B011",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -861,7 +994,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "D10 x H5cm",
+        dimensions: "H5 x Diam.10cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12",
       },
     ],
@@ -869,6 +1004,7 @@ export const products = [
   {
     name: "Treats Serving Bowl",
     slug: "treats-serving-bowl",
+    SKU: "B012",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -878,7 +1014,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "D9 x H4.5cm",
+        dimensions: "H4.5 x Diam.9cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12",
       },
     ],
@@ -886,6 +1024,7 @@ export const products = [
   {
     name: "Deep Bowl with Lid",
     slug: "deep-bowl-with-lid",
+    SKU: "B013",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -900,7 +1039,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "D14 x H8cm",
+        dimensions: "H8 x Diam.14cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "21",
       },
     ],
@@ -908,6 +1049,7 @@ export const products = [
   {
     name: "The Flower Pot bowl",
     slug: "the-flower-pot-bowl",
+    SKU: "B014",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -923,7 +1065,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "D7 x H4cm",
+        dimensions: " H4 x Diam.7cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "10",
       },
     ],
@@ -931,6 +1075,7 @@ export const products = [
   {
     name: "Salad Bowl",
     slug: "salad-bowl",
+    SKU: "B015",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -940,7 +1085,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "D28 x H10cm",
+        dimensions: "H10 x Diam.28cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "50",
       },
     ],
@@ -948,6 +1095,7 @@ export const products = [
   {
     name: "The Ashtray Square Bowl",
     slug: "the-ashtray-square-bowl",
+    SKU: "B016",
     category: "cat-tablewares",
     sub_category: "Bowls",
     description:
@@ -965,7 +1113,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L16 x W16 x H8cm",
+        dimensions: "L16 x W16 x H8cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "21",
       },
     ],
@@ -974,6 +1124,7 @@ export const products = [
   {
     name: "Fruit Board",
     slug: "fruit-board",
+    SKU: "WB002",
     category: "cat-kitchenware",
     sub_category: "Wooden Boards",
     description:
@@ -983,7 +1134,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L40 x W16 x H2cm",
+        dimensions: "L40 x W16 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14",
       },
     ],
@@ -991,6 +1144,7 @@ export const products = [
   {
     name: "Deli Board",
     slug: "deli-board",
+    SKU: "WB003",
     category: "cat-kitchenware",
     sub_category: "Wooden Boards",
     description:
@@ -1001,19 +1155,25 @@ export const products = [
       {
         size: "Small",
 
-        specification: "L40 x W17 x H2cm",
+        dimensions: "L40 x W17 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
       {
         size: "Medium",
 
-        specification: "L45 x W21 x H2cm",
+        dimensions: "L45 x W21 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "21.5",
       },
       {
         size: "Large",
 
-        specification: "L50 x W25 x H2cm",
+        dimensions: "L50 x W25 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "24",
       },
     ],
@@ -1021,6 +1181,7 @@ export const products = [
   {
     name: "Cuting Board",
     slug: "cuting-board",
+    SKU: "WB004",
     category: "cat-kitchenware",
     sub_category: "Wooden Boards",
     description:
@@ -1031,13 +1192,17 @@ export const products = [
       {
         size: "Medium",
 
-        specification: "L40 x W20 x H2cm",
+        dimensions: "L40 x W20 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
       {
         size: "Large",
 
-        specification: "L45 x W25 x H2cm",
+        dimensions: "L45 x W25 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "24",
       },
     ],
@@ -1045,6 +1210,7 @@ export const products = [
   {
     name: "Appetizer Board",
     slug: "appetizer-board",
+    SKU: "WB005",
     category: "cat-kitchenware",
     sub_category: "Wooden Boards",
     featured: true,
@@ -1056,13 +1222,17 @@ export const products = [
       {
         size: "Medium",
 
-        specification: "L40 x W17 x H2cm",
+        dimensions: "L40 x W17 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
       {
         size: "Large",
 
-        specification: "L45 x W21 x H2cm",
+        dimensions: "L45 x W21 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "24",
       },
     ],
@@ -1070,6 +1240,7 @@ export const products = [
   {
     name: "Cheese Board",
     slug: "cheese-board",
+    SKU: "WB001",
     category: "cat-kitchenware",
     sub_category: "Wooden Boards",
     featured: true,
@@ -1080,7 +1251,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L22 x W12 x H2cm",
+        dimensions: "L22 x W12 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "7",
       },
     ],
@@ -1088,6 +1261,7 @@ export const products = [
   {
     name: "Prep Board",
     slug: "prep-board",
+    SKU: "WB006",
     category: "cat-kitchenware",
     sub_category: "Wooden Boards",
     description:
@@ -1098,19 +1272,25 @@ export const products = [
       {
         size: "Small",
 
-        specification: "L35 x W14 x H2cm",
+        dimensions: "L35 x W14 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12",
       },
       {
         size: "Medium",
 
-        specification: "L40 x W17 x H2cm",
+        dimensions: "L40 x W17 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
       {
         size: "Large",
 
-        specification: "L45 x W20 x H2cm",
+        dimensions: "L45 x W20 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "24",
       },
     ],
@@ -1118,6 +1298,7 @@ export const products = [
   {
     name: "Vegetables Board",
     slug: "vegetables-board",
+    SKU: "WB007",
     category: "cat-kitchenware",
     sub_category: "Wooden Boards",
     description:
@@ -1127,7 +1308,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L50 x W25 x H2cm",
+        dimensions: "L50 x W25 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "24",
       },
     ],
@@ -1135,6 +1318,7 @@ export const products = [
   {
     name: "Fish Board",
     slug: "fish-board",
+    SKU: "WB008",
     category: "cat-kitchenware",
     sub_category: "Wooden Boards",
     description:
@@ -1144,7 +1328,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L45 x W13 x H2cm",
+        dimensions: "L45 x W13 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14",
       },
     ],
@@ -1152,6 +1338,7 @@ export const products = [
   {
     name: "Meat Board",
     slug: "meat-board",
+    SKU: "WB009",
     category: "cat-kitchenware",
     sub_category: "Wooden Boards",
 
@@ -1162,7 +1349,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L16 x W40 x H2cm",
+        dimensions: "L16 x W40 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
     ],
@@ -1170,6 +1359,7 @@ export const products = [
   {
     name: "Rustic rounded board",
     slug: "rustic-rounded-board",
+    SKU: "WB010",
     category: "cat-kitchenware",
     sub_category: "Wooden Boards",
     description:
@@ -1188,27 +1378,37 @@ export const products = [
     variants: [
       {
         size: "XSmall",
-        specification: "D15cm",
+        dimensions: "Diam.15cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "15",
       },
       {
         size: "Small",
-        specification: "D20cm",
+        dimensions: "Diam.20cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "20",
       },
       {
         size: "Medium",
-        specification: "D25cm",
+        dimensions: "Diam.25cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "25",
       },
       {
         size: "Large",
-        specification: "D30cm",
+        dimensions: "Diam.30cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "30",
       },
       {
         size: "XLarge",
-        specification: "D40cm",
+        dimensions: "Diam.40cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "40",
       },
     ],
@@ -1216,6 +1416,7 @@ export const products = [
   {
     name: "Grinding Bowl",
     slug: "grinding-bowl",
+    SKU: "GB001",
     category: "cat-kitchenware",
     sub_category: "Grinding Bowls",
     featured: true,
@@ -1226,12 +1427,16 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "D11 x H9cm",
+        dimensions: "H9 x Diam.11cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12",
       },
       {
         size: "Large",
-        specification: "D13 x H19cm",
+        dimensions: "H19 x Diam.13cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14",
       },
     ],
@@ -1239,6 +1444,7 @@ export const products = [
   {
     name: "Wooden Utensils",
     slug: "wooden-utensils",
+    SKU: "WU001 - WU013",
     category: "cat-kitchenware",
     sub_category: "Wooden Utensils",
     featured: true,
@@ -1259,66 +1465,98 @@ export const products = [
       TeakWoodUtensils10,
       TeakWoodUtensils11,
       TeakWoodUtensils12,
+      TeakWoodUtensils13,
     ],
     variants: [
       {
-        size: "A",
-        specification: "Different sizes and styles available",
-        price: "10",
+        size: " TYPE A",
+        dimensions: "L36 x W10cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
+        price: "14.99",
       },
       {
-        size: "B",
-        specification: "Different sizes and styles available",
-        price: "10",
-      },
-      {
-        size: "C",
-        specification: "Different sizes and styles available",
-        price: "10",
-      },
-      {
-        size: "D",
-        specification: "Different sizes and styles available",
-        price: "10",
-      },
-      {
-        size: "A17",
-        specification: "L17 x 9cm",
-        price: "6",
-      },
-      {
-        size: "A18",
-        specification: "L19 x 7cm",
-        price: "7.5",
-      },
-      {
-        size: "A22",
-        specification: "L23 x 7cm",
-        price: "8",
-      },
-      {
-        size: "A30",
-        specification: "L32 x 6cm",
-        price: "8.99",
-      },
-      {
-        size: "A31 (set)",
-        specification: "L29 x 9cm",
-        price: "10.99",
-      },
-      {
-        size: "A35",
-        specification: "L27 x 8cm",
+        size: "TYPE B",
+        dimensions: "L28 x W8.5cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "9.99",
       },
       {
-        size: "A36",
-        specification: "L30 x 10cm",
+        size: "TYPE C",
+        dimensions: "L29 x W9cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
+        price: "8.99",
+      },
+      {
+        size: "TYPE D",
+        dimensions: "L23 x W7.5cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
+        price: "8.99",
+      },
+      {
+        size: "TYPE E",
+        dimensions: "L35 x W6cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
+        price: "11.99",
+      },
+      {
+        size: "TYPE F",
+        dimensions: "L19 x W7cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
+        price: "7.50",
+      },
+      {
+        size: "TYPE G",
+        dimensions: "L23 x W7cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
+        price: "8.50",
+      },
+      {
+        size: "TYPE H",
+        dimensions: "L32 x W6cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
+        price: "8.99",
+      },
+      {
+        size: "TYPE I",
+        dimensions: "L29 x W9cm (pack of 2)",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
+        price: "14.99",
+      },
+      {
+        size: "TYPE J",
+        dimensions: "L27 x W8cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
+        price: "11.99",
+      },
+      {
+        size: "TYPE K",
+        dimensions: "L30 x W10cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "7.99",
       },
       {
-        size: "A37",
-        specification: "L40 x 8cm",
+        size: "TYPE L",
+        dimensions: "L40 x W8cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
+        price: "10.99",
+      },
+      {
+        size: "TYPE M",
+        dimensions: "L35 x W12cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "10.99",
       },
     ],
@@ -1326,30 +1564,27 @@ export const products = [
   {
     name: "Gucci",
     slug: "gucci",
+    SKU: "GU001",
     category: "cat-home-decor",
     sub_category: "Gucci",
     featured: true,
     description:
       "Infuse your space with the warmth and beauty of nature with our Teak Wooden Decorative Piece. Handcrafted from teak wood, this exquisite creation serves as a captivating focal point for any room. Its unique grain patterns and smooth finish evoke a sense of tranquility and timeless elegance. Transform your décor with this eco-friendly and elevating teak wooden decorative piece, and experience the harmonious blend of nature and refinement.",
 
-    images: [
-      BigGucci,
-      BigGucci2,
-      BigGucci3,
-      SmallGucci,
-      SmallGucci2,
-      SmallGucci3,
-      SmallGucci4,
-    ],
+    images: [BigGucci, BigGucci8, SmallGucci, TwoGucci4, TwoGucci5],
     variants: [
       {
         size: "Small",
-        specification: "Teak Wood, Dimensions: D30 x H30cm",
+        dimensions: "H30 x Diam.30cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "107",
       },
       {
         size: "Large",
-        specification: "Teak Wood, Dimensions: D30 x H50cm",
+        dimensions: "H50 x Diam.30cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "140",
       },
     ],
@@ -1357,6 +1592,7 @@ export const products = [
   {
     name: "Diamond Baskets",
     slug: "diamond-baskets",
+    SKU: "BASK001",
     category: "cat-home-decor",
     sub_category: "Baskets",
 
@@ -1366,17 +1602,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H30 x D30cm",
+        dimensions: "H30 x Diam.30cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "48",
       },
       {
         size: "Medium",
-        specification: "H32 x D35cm",
+        dimensions: "H32 x Diam.35cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "55",
       },
       {
         size: "Large",
-        specification: "H35 x D40cm",
+        dimensions: "H35 x Diam.40cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "65",
       },
     ],
@@ -1384,6 +1626,7 @@ export const products = [
   {
     name: "Tropical Knot baskets",
     slug: "tropical-knot",
+    SKU: "BASK002",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1392,17 +1635,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H40 x D30cm",
+        dimensions: "H40 x Diam.30cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "48",
       },
       {
         size: "Medium",
-        specification: "H45 x D35cm",
+        dimensions: "H45 x Diam.35cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "60",
       },
       {
         size: "Large",
-        specification: "H50 x D40cm",
+        dimensions: "H50 x Diam.40cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "70",
       },
     ],
@@ -1410,6 +1659,7 @@ export const products = [
   {
     name: "Boho storage baskets",
     slug: "boho-storage",
+    SKU: "BASK003",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1418,17 +1668,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H23 x D25cm",
+        dimensions: "H23 x Diam.25cm",
+        material: "Mendong (water grass), Cotton Rope",
+        finishing: "",
         price: "48",
       },
       {
         size: "Medium",
-        specification: "H25 x D28cm",
+        dimensions: "H25 x Diam.28cm",
+        material: "Mendong (water grass), Cotton Rope",
+        finishing: "",
         price: "60",
       },
       {
         size: "Large",
-        specification: "H27 x D32cm",
+        dimensions: "H27 x Diam.32cm",
+        material: "Mendong (water grass), Cotton Rope",
+        finishing: "",
         price: "70",
       },
     ],
@@ -1436,6 +1692,7 @@ export const products = [
   {
     name: "Janat baskets",
     slug: "janat-baskets",
+    SKU: "BASK004",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1444,17 +1701,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H28 x D28cm",
+        dimensions: "H28 x Diam.28cm",
+        material: "Seagrass, Raffia",
+        finishing: "",
         price: "48",
       },
       {
         size: "Medium",
-        specification: "H30 x D35cm",
+        dimensions: "H30 x Diam.35cm",
+        material: "Seagrass, Raffia",
+        finishing: "",
         price: "60",
       },
       {
         size: "Large",
-        specification: "H33 x D40cm",
+        dimensions: "H33 x Diam.40cm",
+        material: "Seagrass, Raffia",
+        finishing: "",
         price: "70",
       },
     ],
@@ -1462,6 +1725,7 @@ export const products = [
   {
     name: "Garis laundry baskets",
     slug: "garis-laundry",
+    SKU: "BASK005",
     category: "cat-home-decor",
     sub_category: "Baskets",
     featured: true,
@@ -1471,17 +1735,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H28 x D26cm",
+        dimensions: "H28 x Diam.26cm",
+        material: "Banana Fiber, Raffia",
+        finishing: "",
         price: "48",
       },
       {
         size: "Medium",
-        specification: "H30 x D35cm",
+        dimensions: "H30 x Diam.35cm",
+        material: "Banana Fiber, Raffia",
+        finishing: "",
         price: "60",
       },
       {
         size: "Large",
-        specification: "H35 x D48cm",
+        dimensions: "H35 x Diam.48cm",
+        material: "Banana Fiber, Raffia",
+        finishing: "",
         price: "70",
       },
     ],
@@ -1489,6 +1759,7 @@ export const products = [
   {
     name: "Alam baskets",
     slug: "alam-baskets",
+    SKU: "BASK006",
     category: "cat-home-decor",
     sub_category: "Baskets",
     favorite: true,
@@ -1500,17 +1771,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H28 x D28cm",
+        dimensions: "H28 x Diam.28cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "48",
       },
       {
         size: "Medium",
-        specification: "H30 x D35cm",
+        dimensions: "H30 x Diam.35cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "60",
       },
       {
         size: "Large",
-        specification: "H33 x D40cm",
+        dimensions: "H33 x Diam.40cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "70",
       },
     ],
@@ -1518,6 +1795,7 @@ export const products = [
   {
     name: "Anyam baskets",
     slug: "anyam-baskets",
+    SKU: "BASK007",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1526,17 +1804,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H40 x D30cm",
+        dimensions: "H40 x Diam.30cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "48",
       },
       {
         size: "Medium",
-        specification: "H45 x D35cm",
+        dimensions: "H45 x Diam.35cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "60",
       },
       {
         size: "Large",
-        specification: "H50 x D40cm",
+        dimensions: "H50 x Diam.40cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "70",
       },
     ],
@@ -1544,6 +1828,7 @@ export const products = [
   {
     name: "Indah baskets",
     slug: "indah-baskets",
+    SKU: "BASK008",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1552,17 +1837,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H15 x D32cm",
+        dimensions: "H15 x Diam.32cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "35",
       },
       {
         size: "Medium",
-        specification: "H17 x D38cm",
+        dimensions: "H17 x Diam.38cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "45",
       },
       {
         size: "Large",
-        specification: "H18 x D45cm",
+        dimensions: "H18 x Diam.45cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "50",
       },
     ],
@@ -1570,6 +1861,7 @@ export const products = [
   {
     name: "Karya baskets",
     slug: "karya-baskets",
+    SKU: "BASK009",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1578,12 +1870,16 @@ export const products = [
     variants: [
       {
         size: "Medium",
-        specification: "H24 x D32cm",
+        dimensions: "H24 x Diam.32cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "50",
       },
       {
         size: "Large",
-        specification: "H27 x D40cm",
+        dimensions: "H27 x Diam.40cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "60",
       },
     ],
@@ -1591,6 +1887,7 @@ export const products = [
   {
     name: "Cuci baskets",
     slug: "cuci-baskets",
+    SKU: "BASK010",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1599,17 +1896,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H40  x D30cm",
+        dimensions: "H40  x Diam.30cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "48",
       },
       {
         size: "Medium",
-        specification: "H45 x D35cm",
+        dimensions: "H45 x Diam.35cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "60",
       },
       {
         size: "Large",
-        specification: "H50 x D40cm",
+        dimensions: "H50 x Diam.40cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "70",
       },
     ],
@@ -1617,6 +1920,7 @@ export const products = [
   {
     name: "Harmoni baskets",
     slug: "harmoni-baskets",
+    SKU: "BASK011",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1625,17 +1929,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H26 x D30cm",
+        dimensions: "H26 x Diam.30cm",
+        material: "Banana Fiber, Cotton Rope, Raffia",
+        finishing: "",
         price: "48",
       },
       {
         size: "Medium",
-        specification: "H30 x D35cm",
+        dimensions: "H30 x Diam.35cm",
+        material: "Banana Fiber, Cotton Rope, Raffia",
+        finishing: "",
         price: "60",
       },
       {
         size: "Large",
-        specification: "H34 x D40cm",
+        dimensions: "H34 x Diam.40cm",
+        material: "Banana Fiber, Cotton Rope, Raffia",
+        finishing: "",
         price: "70",
       },
     ],
@@ -1643,6 +1953,7 @@ export const products = [
   {
     name: "Abu-abu baskets",
     slug: "abu-abu",
+    SKU: "BASK012",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1651,12 +1962,16 @@ export const products = [
     variants: [
       {
         size: "Medium",
-        specification: "H24 x D30cm",
+        dimensions: "H24 x Diam.30cm",
+        material: "Mendong (water grass), Raffia",
+        finishing: "",
         price: "50",
       },
       {
         size: "Large",
-        specification: "H30 x D38cm",
+        dimensions: "H30 x Diam.38cm",
+        material: "Mendong (water grass), Raffia",
+        finishing: "",
         price: "60",
       },
     ],
@@ -1664,6 +1979,7 @@ export const products = [
   {
     name: "Hitam baskets",
     slug: "hitam-baskets",
+    SKU: "BASK013",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1672,17 +1988,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H26 x D28cm",
+        dimensions: "H26 x Diam.28cm",
+        material: "Seagrass, Raffia",
+        finishing: "",
         price: "48",
       },
       {
         size: "Medium",
-        specification: "H30 x D34cm",
+        dimensions: "H30 x Diam.34cm",
+        material: "Seagrass, Raffia",
+        finishing: "",
         price: "60",
       },
       {
         size: "Large",
-        specification: "H33 x D38cm",
+        dimensions: "H33 x Diam.38cm",
+        material: "Seagrass, Raffia",
+        finishing: "",
         price: "70",
       },
     ],
@@ -1690,6 +2012,7 @@ export const products = [
   {
     name: "Robek baskets",
     slug: "robek-baskets",
+    SKU: "BASK014",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1698,17 +2021,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H35 x D30cm",
+        dimensions: "H35 x Diam.30cm",
+        material: "Seagrass, Iron Bone",
+        finishing: "",
         price: "55",
       },
       {
         size: "Medium",
-        specification: "H40 x D35cm",
+        dimensions: "H40 x Diam.35cm",
+        material: "Seagrass, Iron Bone",
+        finishing: "",
         price: "65",
       },
       {
         size: "Large",
-        specification: "H50 x D40cm",
+        dimensions: "H50 x Diam.40cm",
+        material: "Seagrass, Iron Bone",
+        finishing: "",
         price: "80",
       },
     ],
@@ -1716,6 +2045,7 @@ export const products = [
   {
     name: "Penatu baskets",
     slug: "penatu-baskets",
+    SKU: "BASK015",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1725,17 +2055,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H35 x D28cm",
+        dimensions: "H35 x Diam.28cm",
+        material: "Banana Fiber, Cotton Rope, Iron Bone",
+        finishing: "",
         price: "55",
       },
       {
         size: "Medium",
-        specification: "H40 x D38cm",
+        dimensions: "H40 x Diam.38cm",
+        material: "Banana Fiber, Cotton Rope, Iron Bone",
+        finishing: "",
         price: "65",
       },
       {
         size: "Large",
-        specification: "H45 x D48cm",
+        dimensions: "H45 x Diam.48cm",
+        material: "Banana Fiber, Cotton Rope, Iron Bone",
+        finishing: "",
         price: "85",
       },
     ],
@@ -1743,6 +2079,7 @@ export const products = [
   {
     name: "Tropic Vibe baskets",
     slug: "tropic-vibe",
+    SKU: "BASK016",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1751,17 +2088,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H40 x D30cm",
+        dimensions: "H40 x Diam.30cm",
+        material: "Banana Fiber, Cotton Rope, Iron Bone",
+        finishing: "",
         price: "55",
       },
       {
         size: "Medium",
-        specification: "H45 x D35cm",
+        dimensions: "H45 x Diam.35cm",
+        material: "Banana Fiber, Cotton Rope, Iron Bone",
+        finishing: "",
         price: "65",
       },
       {
         size: "Large",
-        specification: "H50 x D40cm",
+        dimensions: "H50 x Diam.40cm",
+        material: "Banana Fiber, Cotton Rope, Iron Bone",
+        finishing: "",
         price: "80",
       },
     ],
@@ -1769,6 +2112,7 @@ export const products = [
   {
     name: "Triwarna baskets",
     slug: "triwarna-baskets",
+    SKU: "BASK017",
     category: "cat-home-decor",
     sub_category: "Baskets",
     description:
@@ -1777,22 +2121,30 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H34 x D28cm",
+        dimensions: "H34 x Diam.28cm",
+        material: "Seagrass, Raffia",
+        finishing: "",
         price: "45",
       },
       {
         size: "Medium",
-        specification: "H42 x D32cm",
+        dimensions: "H42 x Diam.32cm",
+        material: "Seagrass, Raffia",
+        finishing: "",
         price: "50",
       },
       {
         size: "Large",
-        specification: "H46 x D35cm",
+        dimensions: "H46 x Diam.35cm",
+        material: "Seagrass, Raffia",
+        finishing: "",
         price: "60",
       },
       {
         size: "XLarge",
-        specification: "H50 x D38cm",
+        dimensions: "H50 x Diam.38cm",
+        material: "Seagrass, Raffia",
+        finishing: "",
         price: "75",
       },
     ],
@@ -1801,6 +2153,7 @@ export const products = [
   {
     name: "Tua baskets",
     slug: "tua-baskets",
+    SKU: "BASK018",
     category: "cat-home-decor",
     sub_category: "Baskets",
 
@@ -1810,17 +2163,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H20 x D32cm",
+        dimensions: "H20 x Diam.32cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "48",
       },
       {
         size: "Medium",
-        specification: "H25 x D37cm",
+        dimensions: "H25 x Diam.37cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "60",
       },
       {
         size: "Large",
-        specification: "H34 x D40cm",
+        dimensions: "H34 x Diam.40cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "70",
       },
     ],
@@ -1828,6 +2187,7 @@ export const products = [
   {
     name: "Rattan baskets",
     slug: "rattan-baskets",
+    SKU: "BASK019",
     category: "cat-home-decor",
     sub_category: "Baskets",
 
@@ -1837,17 +2197,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H15 x D32cm",
+        dimensions: "H15 x Diam.32cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "35",
       },
       {
         size: "Medium",
-        specification: "H17 x D38cm",
+        dimensions: "H17 x Diam.38cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "45",
       },
       {
         size: "Large",
-        specification: "H18 x D45cm",
+        dimensions: "H18 x Diam.45cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "50",
       },
     ],
@@ -1855,6 +2221,7 @@ export const products = [
   {
     name: "Blossom baskets",
     slug: "blossom-baskets",
+    SKU: "BASK020",
     category: "cat-home-decor",
     sub_category: "Baskets",
 
@@ -1864,17 +2231,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H15 x D15cm",
+        dimensions: "H15 x Diam.15cm",
+        material: "Seagrass, Banana Fiber",
+        finishing: "",
         price: "38",
       },
       {
         size: "Medium",
-        specification: "H18 x D18cm",
+        dimensions: "H18 x Diam.18cm",
+        material: "Seagrass, Banana Fiber",
+        finishing: "",
         price: "45",
       },
       {
         size: "Large",
-        specification: "H20 x D20cm",
+        dimensions: "H20 x Diam.20cm",
+        material: "Seagrass, Banana Fiber",
+        finishing: "",
         price: "50",
       },
     ],
@@ -1882,6 +2255,7 @@ export const products = [
   {
     name: "Sarang baskets",
     slug: "sarang-baskets",
+    SKU: "BASK021",
     category: "cat-home-decor",
     sub_category: "Baskets",
 
@@ -1891,17 +2265,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H20 x D25cm",
+        dimensions: "H20 x Diam.25cm",
+        material: "Rafia, Seagrass, Banana Fiber",
+        finishing: "",
         price: "48",
       },
       {
         size: "Medium",
-        specification: "H23 x D35cm",
+        dimensions: "H23 x Diam.35cm",
+        material: "Rafia, Seagrass, Banana Fiber",
+        finishing: "",
         price: "55",
       },
       {
         size: "Large",
-        specification: "H25 x D45cm",
+        dimensions: "H25 x Diam.45cm",
+        material: "Rafia, Seagrass, Banana Fiber",
+        finishing: "",
         price: "60",
       },
     ],
@@ -1909,6 +2289,7 @@ export const products = [
   {
     name: "Silang Baskets",
     slug: "silang-baskets",
+    SKU: "BASK022",
     category: "cat-home-decor",
     sub_category: "Baskets",
     featured: true,
@@ -1919,37 +2300,43 @@ export const products = [
     variants: [
       {
         size: "Medium",
-        specification: "H24 x D32cm",
+        dimensions: "H24 x Diam.32cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "50",
       },
       {
         size: "Large",
-        specification: "H27 x D40cm",
+        dimensions: "H27 x Diam.40cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "60",
       },
     ],
   },
-  {
-    name: "Wooden Soap Dispenser",
-    slug: "wooden-soap-dispenser",
-    category: "cat-home-decor",
-    sub_category: "Accessories",
+  // {
+  //   name: "Wooden Soap Dispenser",
+  //   slug: "wooden-soap-dispenser",
+  //   SKU: "A001",
+  //   category: "cat-home-decor",
+  //   sub_category: "Accessories",
 
-    description:
-      "Elevate your bathroom aesthetics with the Teak Wooden Soap Dispenser. Crafted from beautiful teak wood, this dispenser combines functionality and style effortlessly. Its smooth and durable design adds a touch of natural elegance to any sink or countertop. Enhance your daily handwashing routine with this eco-friendly and luxurious teak wooden soap dispenser.",
+  //   description:
+  //     "Elevate your bathroom aesthetics with the Teak Wooden Soap Dispenser. Crafted from beautiful teak wood, this dispenser combines functionality and style effortlessly. Its smooth and durable design adds a touch of natural elegance to any sink or countertop. Enhance your daily handwashing routine with this eco-friendly and luxurious teak wooden soap dispenser.",
 
-    images: [SoapBottle],
-    variants: [
-      {
-        size: "",
-        specification: "D16 x H7cm",
-        price: "12",
-      },
-    ],
-  },
+  //   images: [SoapBottle],
+  //   variants: [
+  //     {
+  //       size: "",
+  //       dimensions: "H7 x Diam.16cm",
+  //       price: "12",
+  //     },
+  //   ],
+  // },
   // {
   //   name: "Deco wooden stand",
   //   slug: "deco-wooden-stand",
+  //   SKU: "A002"
   //   category: "cat-home-decor",
   //   sub_category: "Accessories",
   //   featured: true,
@@ -1960,7 +2347,10 @@ export const products = [
   //   variants: [
   //     {
   //       size: "",
-  //       specification: "50 cm height",
+  //       dimensions: "50 cm height",
+  //       material: "Teak wood",
+
+  //   finishing: "Natural Beeswax Wood Polish",
   //       price: "95",
   //     },
   //   ],
@@ -1968,12 +2358,13 @@ export const products = [
   {
     name: "Wooden Natural Dining Tables",
     slug: "wooden-natural-dining-tables",
+    SKU: "TAB001",
     category: "cat-home-furniture",
     sub_category: "Tables",
     featured: true,
     favorite: true,
     description:
-      "Experience the beauty of nature in your dining space with our Suar Wood Dining Tables. Handcrafted from premium Suar wood, these tables bring a touch of rustic elegance to any home. Each table is unique, featuring the natural grain patterns and rich colors of the Suar wood, creating a truly one-of-a-kind centerpiece for your dining area. With their sturdy construction and timeless design, these Suar wood dining tables are not only stunning but also built to last. Gather around and create lasting memories with friends and family on a Suar wood dining table that effortlessly combines nature's beauty with functional style. Pre-ordering: Unique designs",
+      "Experience the beauty of nature in your dining space with our Suar Wood Dining Tables. Handcrafted from premium Suar wood, these tables bring a touch of rustic elegance to any home. Each table is unique, featuring the natural grain patterns and rich colors of the Suar wood, creating a truly one-of-a-kind centerpiece for your dining area. With their sturdy construction and timeless design, these Suar wood dining tables are not only stunning but also built to last. Gather around and create lasting memories with friends and family on a Suar wood dining table that effortlessly combines nature's beauty with functional style.",
 
     images: [
       TablesFavorite,
@@ -1990,22 +2381,34 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "L150 x W80 x H75cm     T7cm",
+        dimensions: "L150 x W80 x H75cm     T7cm",
+        material: "Teak wood",
+
+        finishing: "Natural Beeswax Wood Polish",
         price: "1560",
       },
       {
         size: "Medium",
-        specification: "L200 x W80 x H75cm     T7cm",
+        dimensions: "L200 x W80 x H75cm     T7cm",
+        material: "Teak wood",
+
+        finishing: "Natural Beeswax Wood Polish",
         price: "1990",
       },
       {
         size: "Large",
-        specification: "L250 x W80 x H75cm    T10cm",
+        dimensions: "L250 x W80 x H75cm    T10cm",
+        material: "Teak wood",
+
+        finishing: "Natural Beeswax Wood Polish",
         price: "2475",
       },
       {
         size: "XLarge",
-        specification: "L300 x W80 x H75cm    T10cm",
+        dimensions: "L300 x W80 x H75cm    T10cm",
+        material: "Teak wood",
+
+        finishing: "Natural Beeswax Wood Polish",
         price: "2870",
       },
     ],
@@ -2013,24 +2416,29 @@ export const products = [
   {
     name: "Lounge Arm Chair ",
     slug: "lounge-arm-chair",
+    SKU: "CH001 - CH002",
     category: "cat-home-furniture",
     sub_category: "Chairs",
     featured: true,
     description:
-      "Indulge in the ultimate relaxation experience with our Teak Rope Lounge Arm Chair. Crafted with precision and artistry, this chair combines the timeless beauty of teak wood with the comfort of rope seating. The teak wood frame with arms exudes elegance and durability, while the intricately woven rope provides a supportive and comfortable seating surface. Whether lounging by the poolside or on your patio, this chair invites you to unwind and embrace serenity in style. Pre-ordering: Indoor / Outdoor lounge Chair with arm. Select which one",
+      "Indulge in the ultimate relaxation experience with our Teak Rope Lounge Arm Chair. Crafted with precision and artistry, this chair combines the timeless beauty of teak wood with the comfort of rope seating. The teak wood frame with arms exudes elegance and durability, while the intricately woven rope provides a supportive and comfortable seating surface. Whether lounging by the poolside or on your patio, this chair invites you to unwind and embrace serenity in style.",
 
     images: [LoungeArmChair1, LoungeArmChair2],
     variants: [
       {
         size: "Indoor",
-        specification:
-          "Material: Teak wood & Robe Luum,   Finishing color: Natural Teak,   Dimensions: L80 x W60 x H75cm,  Custom Design",
+        dimensions: "L80 x W60 x H75cm",
+        material: "Teak wood & Robe Luum",
+
+        finishing: "Natural Teak Oil",
         price: "430",
       },
       {
         size: "Outdoor",
-        specification:
-          "Material: Teak wood & Robe Synthetic,    Finishing color: Natural Teak,    Dimensions: L80 x W60 x H75cm, Custom Design  ",
+        dimensions: "L80 x W60 x H75cm",
+        material: "Teak wood & Robe Synthetic",
+
+        finishing: "Natural Teak Oil",
         price: "460",
       },
     ],
@@ -2038,23 +2446,28 @@ export const products = [
   {
     name: "Lounge  Chair ",
     slug: "lounge-chair",
+    SKU: "CH003 - CH004",
     category: "cat-home-furniture",
     sub_category: "Chairs",
     description:
-      "Experience the epitome of relaxation with our Teak Rope Lounge Chair. Designed with minimalism in mind, this chair features a sleek and streamlined silhouette, enhanced by the use of teak wood and rope materials. The teak wood frame exudes natural beauty and durability, while the rope seating offers a comfortable and supportive experience. Whether placed by the poolside or on your sun-soaked patio, this armless lounge chair is a perfect spot to unwind and soak up the ambiance. Elevate your indoor or outdoor oasis with the understated elegance and comfort of our Teak Rope Lounge Chair, designed for moments of pure tranquility. Pre-ordering: Indoor / Outdoor lounge Chair without arm. Select which one",
+      "Experience the epitome of relaxation with our Teak Rope Lounge Chair. Designed with minimalism in mind, this chair features a sleek and streamlined silhouette, enhanced by the use of teak wood and rope materials. The teak wood frame exudes natural beauty and durability, while the rope seating offers a comfortable and supportive experience. Whether placed by the poolside or on your sun-soaked patio, this armless lounge chair is a perfect spot to unwind and soak up the ambiance. Elevate your indoor or outdoor oasis with the understated elegance and comfort of our Teak Rope Lounge Chair, designed for moments of pure tranquility.",
 
     images: [LoungeChair1, LoungeChair2, LoungeChair3],
     variants: [
       {
         size: "Indoor",
-        specification:
-          "Material: Teak wood & Robe Luum,     Finishing color: Natural Teak,      Dimensions: L80 x W60 x H72cm,  Custom Design",
+        dimensions: "L80 x W60 x H72cm",
+        material: "Teak wood & Robe Luum",
+
+        finishing: "Natural Teak Oil",
         price: "400",
       },
       {
         size: "Outdoor",
-        specification:
-          "Material: Teak wood & Robe Synthetic,   Finishing color: Natural Teak,       Dimensions: L80 x W60 x H72cm,  Custom Design",
+        dimensions: "L80 x W60 x H72cm",
+        material: "Teak wood & Robe Synthetic",
+
+        finishing: "Natural Teak Oil",
         price: "430",
       },
     ],
@@ -2062,17 +2475,20 @@ export const products = [
   {
     name: "Mini Bench",
     slug: "mini-bench",
+    SKU: "CH005",
     category: "cat-home-furniture",
     sub_category: "Chairs",
     description:
-      "Introducing our Small Teak Rope Lounge Bench, where comfort meets style in a compact design. Crafted with precision and attention to detail, this bench showcases the beauty of teak wood combined with the elegance of rope accents. The teak wood frame provides a sturdy and durable foundation, while the intricately rope seat adds a touch of modern sophistication. Perfect for cozy outdoor spaces or intimate indoor settings, this small teak rope lounge bench offers a comfortable seating option that effortlessly blends natural beauty with contemporary flair. Pre-ordering: Mini bench",
+      "Introducing our Small Teak Rope Lounge Bench, where comfort meets style in a compact design. Crafted with precision and attention to detail, this bench showcases the beauty of teak wood combined with the elegance of rope accents. The teak wood frame provides a sturdy and durable foundation, while the intricately rope seat adds a touch of modern sophistication. Perfect for cozy outdoor spaces or intimate indoor settings, this small teak rope lounge bench offers a comfortable seating option that effortlessly blends natural beauty with contemporary flair.",
 
     images: [MiniBench, MiniBench2],
     variants: [
       {
         size: "",
-        specification:
-          "Material: Teak wood & Robe Luum,  Finishing color: Natural Teak, Dimensions: L90 x W70 x H82cm,    Custom Design",
+        dimensions: "Dimensions: L90 x W70 x H82cm",
+        material: "Teak wood & Robe Luum",
+
+        finishing: "Natural Teak Oil",
         price: "150",
       },
     ],
@@ -2080,18 +2496,21 @@ export const products = [
   {
     name: "Sofa Single Seater",
     slug: "sofa-single-seater",
+    SKU: "CH006",
     category: "cat-home-furniture",
     sub_category: "Chairs",
     featured: true,
     description:
-      "Experience comfort and style in a compact form with our Small Teak Sofa Single Seater. Meticulously crafted from premium teak wood, this sofa embodies timeless elegance and durability. Its sleek design and gently curved frame exude a sense of sophistication, while the plush cushioning provides a cozy seating experience. Perfectly scaled for smaller spaces or as an accent piece, this single-seater teak sofa effortlessly combines functionality with exquisite craftsmanship. Elevate your living space with the charm and comfort of our Small Teak Sofa Single Seater, a perfect retreat for relaxation and unwinding. Pre-ordering: Chair with fabric",
+      "Experience comfort and style in a compact form with our Small Teak Sofa Single Seater. Meticulously crafted from premium teak wood, this sofa embodies timeless elegance and durability. Its sleek design and gently curved frame exude a sense of sophistication, while the plush cushioning provides a cozy seating experience. Perfectly scaled for smaller spaces or as an accent piece, this single-seater teak sofa effortlessly combines functionality with exquisite craftsmanship. Elevate your living space with the charm and comfort of our Small Teak Sofa Single Seater, a perfect retreat for relaxation and unwinding.",
 
     images: [SofaSingleSeater1, SofaSingleSeater2],
     variants: [
       {
         size: "",
-        specification:
-          "Material: Teak wood Fabric: Venna Dark grey,   Finishing color: Natural Teak,   Dimensions: L90 x W70 x H82cm     Custom Design",
+        dimensions: "L90 x W70 x H82cm",
+        material: "Teak wood & Venna Dark grey fabric",
+
+        finishing: "Natural Teak Oil ",
         price: "475",
       },
     ],
@@ -2099,18 +2518,20 @@ export const products = [
   {
     name: "Kennedy dining chair",
     slug: "kennedy-dining-chair",
+    SKU: "CH007",
     category: "cat-home-furniture",
     sub_category: "Chairs",
     featured: true,
     description:
-      "Introducing our Teak Wood Kennedy Dining Chair, where beauty meets functionality in perfect harmony. Crafted from high-quality teak wood, this dining chair showcases the natural elegance and durability of the material. The intricately rope backrest adds a touch of contemporary style and provides comfortable support for your back. With its ergonomic design and sturdy construction, this chair offers both comfort and stability during your dining experiences. Whether used for casual family meals or elegant dinner parties, our Teak Wood Kennedy Dining Chair adds a touch of sophistication and comfort to any dining setting. Pre-ordering",
+      "Introducing our Teak Wood Kennedy Dining Chair, where beauty meets functionality in perfect harmony. Crafted from high-quality teak wood, this dining chair showcases the natural elegance and durability of the material. The intricately rope backrest adds a touch of contemporary style and provides comfortable support for your back. With its ergonomic design and sturdy construction, this chair offers both comfort and stability during your dining experiences. Whether used for casual family meals or elegant dinner parties, our Teak Wood Kennedy Dining Chair adds a touch of sophistication and comfort to any dining setting.",
 
     images: [KennedyDiningChair],
     variants: [
       {
         size: "",
-        specification:
-          "Material: Teak wood & Synthetic Rope,      Finishing color: Natural teak oil       Dimensions: L45 x W50 x H80cm",
+        dimensions: "L45 x W50 x H80cm",
+        material: "Teak wood & Synthetic Rope",
+        finishing: "Natural Teak Oil ",
         price: "270",
       },
     ],
@@ -2118,18 +2539,21 @@ export const products = [
   {
     name: "Island Oasis Armchair",
     slug: "island-oasis",
+    SKU: "CH008",
     category: "cat-home-furniture",
     sub_category: "Chairs",
 
     description:
-      "Introducing our luxurious 'Island Oasis' sofa chair, the perfect addition to elevate your indoor or outdoor space. Crafted with the highest quality solid teak wood, this chair offers unparalleled durability and resistance to weathering, ensuring that it lasts for years to come. The curved armrests provide the ultimate comfort, making it the perfect spot to relax after a long day. The chair is upholstered with soft, yet durable fabric, giving you a comfortable seating experience that you'll love. Its stylish and elegant design will add a touch of sophistication to any room or patio. Invest in our teak fabric arm sofa chair and experience the ultimate in comfort, quality, and style. Order yours today and take the first step towards luxury living! Pre-ordering",
+      "Introducing our luxurious 'Island Oasis' sofa chair, the perfect addition to elevate your indoor or outdoor space. Crafted with the highest quality solid teak wood, this chair offers unparalleled durability and resistance to weathering, ensuring that it lasts for years to come. The curved armrests provide the ultimate comfort, making it the perfect spot to relax after a long day. The chair is upholstered with soft, yet durable fabric, giving you a comfortable seating experience that you'll love. Its stylish and elegant design will add a touch of sophistication to any room or patio. Invest in our teak fabric arm sofa chair and experience the ultimate in comfort, quality, and style. Order yours today and take the first step towards luxury living!",
 
     images: [IslandOasisArmchair],
     variants: [
       {
         size: "",
-        specification:
-          "Material: Teak wood, Finishing color: Natural teak oil, Dimensions L70 x W75 x H85cm",
+        dimensions: "L70 x W75 x H85cm",
+        material: "Teak wood",
+
+        finishing: "Natural Teak Oil ",
         price: "550",
       },
     ],
@@ -2137,66 +2561,71 @@ export const products = [
   {
     name: "Cane Chair",
     slug: "cane-chair",
+    SKU: "CH009",
     category: "cat-home-furniture",
     sub_category: "Chairs",
 
     description:
-      "Introducing our elegant teak 'Cane' chair, the perfect accent piece for any home. This chair features a solid teak wood frame that provides exceptional strength and durability, ensuring it will last for years to come. The intricate rope detailing on the arms adds a touch of sophistication, making this chair an eye-catching addition to any room. The chair is upholstered with high-quality fabric, offering both comfort and durability, so you can relax in style. The teak wood frame and rope accents create a natural, rustic look that complements any decor. This chair is suitable for indoor use, making it a practical addition to any living space. Experience the ultimate in style and comfort with our teak rope arm chair. Order yours today and add a touch of elegance to your home decor. Pre-ordering",
+      "Introducing our elegant teak 'Cane' chair, the perfect accent piece for any home. This chair features a solid teak wood frame that provides exceptional strength and durability, ensuring it will last for years to come. The intricate rope detailing on the arms adds a touch of sophistication, making this chair an eye-catching addition to any room. The chair is upholstered with high-quality fabric, offering both comfort and durability, so you can relax in style. The teak wood frame and rope accents create a natural, rustic look that complements any decor. This chair is suitable for indoor use, making it a practical addition to any living space. Experience the ultimate in style and comfort with our teak rope arm chair. Order yours today and add a touch of elegance to your home decor.",
 
     images: [CaneChair],
     variants: [
       {
         size: "",
-        specification:
-          "Material: Teak wood and Rope, Fabric: Venna Grey, Finishing color: Natural Walnut, Dimensions L65 x W50 x H70cm",
+        dimensions: "L65 x W50 x H70cm",
+        material: "Teak wood & Rope & Venna Grey fabric",
+
+        finishing: "Natural Walnut Oil ",
         price: "550",
       },
     ],
   },
-  {
-    name: "Coffee Table",
-    slug: "coffee-table",
-    category: "cat-home-furniture",
-    sub_category: "Side Tables",
-    description:
-      "Introducing our Teak Wood Coffee Table, where beauty meets functionality in perfect harmony. Handcrafted from high-quality teak wood, this coffee table exudes natural elegance and durability. The rich grain patterns and warm tones of the wood create a stunning focal point in any living room. Its sleek and timeless design provides ample surface area for displaying décor or resting your favorite beverages. Whether you're enjoying a morning cup of coffee or gathering with friends and family, our Teak Wood Coffee Table is the perfect addition to your living space.",
+  // {
+  //   name: "Coffee Table",
+  //   slug: "coffee-table",
+  //   SKU: "STAB001 - STAB002",
+  //   category: "cat-home-furniture",
+  //   sub_category: "Side Tables",
+  //   description:
+  //     "Introducing our Teak Wood Coffee Table, where beauty meets functionality in perfect harmony. Handcrafted from high-quality teak wood, this coffee table exudes natural elegance and durability. The rich grain patterns and warm tones of the wood create a stunning focal point in any living room. Its sleek and timeless design provides ample surface area for displaying décor or resting your favorite beverages. Whether you're enjoying a morning cup of coffee or gathering with friends and family, our Teak Wood Coffee Table is the perfect addition to your living space.",
 
-    images: [],
-    variants: [
-      {
-        size: "1 legged",
-        specification: "L95 x W45 x H50cm",
-        price: "410",
-      },
-      {
-        size: "2 legged",
-        specification: "L75 x W50 x H50cm",
-        price: "450",
-      },
-    ],
-  },
-  {
-    name: "Coffee Table with glass",
-    slug: "coffee-table-glass",
-    category: "cat-home-furniture",
-    sub_category: "Side Tables",
-    description:
-      "Introducing our Teak Wood Coffee Table with Glass, a harmonious blend of natural allure and contemporary design. Handcrafted from premium teak wood, this coffee table exudes timeless beauty and durability. With its generous size and sturdy construction, this coffee table provides a perfect gathering spot for coffee conversations or stylishly displaying decor items. ",
+  //   images: [],
+  //   variants: [
+  //     {
+  //       size: "1 legged",
+  //       dimensions: "L95 x W45 x H50cm",
+  //       price: "410",
+  //     },
+  //     {
+  //       size: "2 legged",
+  //       dimensions: "L75 x W50 x H50cm",
+  //       price: "450",
+  //     },
+  //   ],
+  // },
+  // {
+  //   name: "Coffee Table with glass",
+  //   slug: "coffee-table-glass",
+  //   SKU: "STAB003",
+  //   category: "cat-home-furniture",
+  //   sub_category: "Side Tables",
+  //   description:
+  //     "Introducing our Teak Wood Coffee Table with Glass, a harmonious blend of natural allure and contemporary design. Handcrafted from premium teak wood, this coffee table exudes timeless beauty and durability. With its generous size and sturdy construction, this coffee table provides a perfect gathering spot for coffee conversations or stylishly displaying decor items. ",
 
-    images: [],
-    variants: [
-      {
-        size: "Medium",
-        specification: "L90 x W50 x H50cm",
-        price: "470",
-      },
-      {
-        size: "Large",
-        specification: "L95 x W65 x H50cm",
-        price: "490",
-      },
-    ],
-  },
+  //   images: [],
+  //   variants: [
+  //     {
+  //       size: "Medium",
+  //       dimensions: "L90 x W50 x H50cm",
+  //       price: "470",
+  //     },
+  //     {
+  //       size: "Large",
+  //       dimensions: "L95 x W65 x H50cm",
+  //       price: "490",
+  //     },
+  //   ],
+  // },
 ];
 
 export const categories = [

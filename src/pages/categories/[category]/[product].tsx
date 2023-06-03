@@ -15,6 +15,7 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { getProductUrl } from "@/utils";
 import { Seo } from "@/components/Seo";
 import { Story } from "@/components/Story";
+import Link from "next/link";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -96,7 +97,9 @@ function Product({
               <h1 className="text-3xl font-bold tracking-tight text-gray-900">
                 {product.name}
               </h1>
-
+              <div className="mt-2 space-y-6 text-sm text-gray-700">
+                <p>SKU: {product.SKU}</p>
+              </div>
               <div className="mt-3">
                 <h2 className="sr-only">Product information</h2>
                 <p className="text-3xl tracking-tight text-gray-900">
@@ -111,37 +114,95 @@ function Product({
                   {product.description}
                 </div>
               </div>
-
+              {product.sub_category === "Baskets" && (
+                <div className="flex items-center justify-between mt-1">
+                  <Link
+                    href="/contact"
+                    className="text-sm font-medium text-brown-primary hover:underline hover:text-brown-dark"
+                  >
+                    <strong>
+                      Contact us for further information about different colors
+                      and availability
+                    </strong>
+                  </Link>
+                </div>
+              )}
+              {product.slug === "wooden-utensils" && (
+                <div className="flex items-center justify-between mt-1">
+                  <Link
+                    href="/contact"
+                    className="text-sm font-medium text-brown-primary hover:underline hover:text-brown-dark"
+                  >
+                    <strong>
+                      Contact us for further information in different variants
+                    </strong>
+                  </Link>
+                </div>
+              )}
+              {product.slug === "lounge-arm-chair" && (
+                <div>
+                  <div className="flex items-center justify-between mt-1">
+                    <h3 className="text-sm font-medium text-brown-dark">
+                      {" "}
+                      <em>The bench is sold seperatly</em>
+                    </h3>
+                  </div>
+                  <div className="flex items-center justify-between mt-1">
+                    <Link
+                      href="/contact"
+                      className="text-sm font-medium text-brown-primary hover:underline hover:text-brown-dark"
+                    >
+                      <strong>
+                        Contact us for a bundle price for both items
+                      </strong>
+                    </Link>
+                  </div>
+                </div>
+              )}
+              {product.slug === "mini-bench" && (
+                <div>
+                  <div className="flex items-center justify-between mt-1">
+                    <h3 className="text-sm font-medium text-brown-dark">
+                      {" "}
+                      <em>The chair is sold seperatly</em>
+                    </h3>
+                  </div>
+                  <div className="flex items-center justify-between mt-1">
+                    <Link
+                      href="/contact"
+                      className="text-sm font-medium text-brown-primary hover:underline hover:text-brown-dark"
+                    >
+                      <strong>
+                        Contact us for a bundle price for both items
+                      </strong>
+                    </Link>
+                  </div>
+                </div>
+              )}
               <div className="mt-6">
-                {/* Sizes */}
+                {/* Sizes */}{" "}
                 {product.variants.length > 1 && (
                   <div className="mt-10">
                     <div className="flex items-center justify-between">
                       <h3 className="text-sm font-medium text-gray-900">
-                        <strong>Specifications</strong> -{" "}
-                        {selectedVariant.specification}
+                        <strong>Material</strong> : {selectedVariant.material}
                       </h3>
                     </div>
-                    {product.sub_category === "Baskets" && (
-                      <div className="flex items-center justify-between mt-3">
+                    {selectedVariant.finishing !== "" && (
+                      <div className="flex items-center justify-between">
                         <h3 className="text-sm font-medium text-gray-900">
-                          <strong>
-                            Contact us for further information about different
-                            colors and availability
-                          </strong>
+                          <strong>Finishing</strong> :{" "}
+                          {selectedVariant.finishing}
                         </h3>
                       </div>
                     )}
-                    {product.slug === "wooden-utensils" && (
-                      <div className="flex items-center justify-between mt-3">
-                        <h3 className="text-sm font-medium text-gray-900">
-                          <strong>
-                            Contact us for further information in different
-                            variants
-                          </strong>
-                        </h3>
-                      </div>
-                    )}
+                    <div className="flex items-center justify-between mt-3">
+                      <h3 className="text-sm font-medium text-gray-900">
+                        <strong>Dimensions</strong> :{" "}
+                        {selectedVariant.dimensions}
+                      </h3>
+                    </div>
+
                     <RadioGroup
                       value={selectedVariant}
                       onChange={setSelectedVariant}
@@ -191,8 +252,21 @@ function Product({
                   <div className="mt-10">
                     <div className="flex items-center justify-between">
                       <h3 className="text-sm font-medium text-gray-900">
-                        <strong>Specifications</strong> -{" "}
-                        {selectedVariant.specification}
+                        <strong>Materials</strong> : {selectedVariant.material}
+                      </h3>
+                    </div>
+                    {selectedVariant.finishing !== "" && (
+                      <div className="flex items-center justify-between">
+                        <h3 className="text-sm font-medium text-gray-900">
+                          <strong>Finishing</strong> :{" "}
+                          {selectedVariant.finishing}
+                        </h3>
+                      </div>
+                    )}
+                    <div className="flex items-center justify-between mt-3">
+                      <h3 className="text-sm font-medium text-gray-900">
+                        <strong>Dimensions</strong> :{" "}
+                        {selectedVariant.dimensions}
                       </h3>
                     </div>
                   </div>

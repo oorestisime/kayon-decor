@@ -17,6 +17,25 @@ export const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const path = usePathname();
 
+  const getNavItemStyle = (active: Boolean, open: Boolean) => {
+    const navStyles = [
+      "relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm transition-colors duration-200 ease-out  hover:text-brown-primary hover:border-brown-primary",
+    ];
+
+    if (active) {
+      navStyles.push(
+        "font-bold outline-none text-brown-primary border-transparent"
+      );
+    } else if (open) {
+      navStyles.push(
+        "border-brown-primary text-brown-primary outline-none font-medium"
+      );
+    } else if (!active && !open) {
+      navStyles.push("font-medium text-gray-700 border-transparent");
+    }
+
+    return classNames(...navStyles);
+  };
   return (
     <>
       <Transition.Root show={mobileMenuOpen} as={Fragment}>
@@ -115,14 +134,9 @@ export const Navigation = () => {
                               <>
                                 <div className="relative flex">
                                   <Popover.Button
-                                    className={classNames(
-                                      path === `/categories/${category.slug}`
-                                        ? "text-brown-primary outline-none font-bold"
-                                        : "font-medium text-gray-700",
+                                    className={getNavItemStyle(
+                                      path === `/categories/${category.slug}`,
                                       open
-                                        ? "!border-brown-primary !text-brown-primary outline-none"
-                                        : "border-transparent hover:text-brown-primary hover:border-brown-primary",
-                                      "relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm transition-colors duration-200 ease-out"
                                     )}
                                   >
                                     {category.name}
@@ -226,7 +240,7 @@ export const Navigation = () => {
                       <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                     </button>
                     <Link href="/">
-                      <Image className="h-8 w-auto" src={KayonLogo} alt="" />
+                      <Image className="h-12 w-auto" src={KayonLogo} alt="" />
                     </Link>
                     <CartMenu
                       justify={false}
