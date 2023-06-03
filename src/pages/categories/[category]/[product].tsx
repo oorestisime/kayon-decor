@@ -181,28 +181,26 @@ function Product({
               )}
               <div className="mt-6">
                 {/* Sizes */}{" "}
-                {product.variants.length > 1 && (
-                  <div className="mt-10">
+                <div className="mt-10">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-sm font-medium text-gray-900">
+                      <strong>Material</strong> : {selectedVariant.material}
+                    </h3>
+                  </div>
+                  {selectedVariant.finishing !== null && (
                     <div className="flex items-center justify-between">
                       <h3 className="text-sm font-medium text-gray-900">
-                        <strong>Material</strong> : {selectedVariant.material}
+                        <strong>Finishing</strong> : {selectedVariant.finishing}
                       </h3>
                     </div>
-                    {selectedVariant.finishing !== "" && (
-                      <div className="flex items-center justify-between">
-                        <h3 className="text-sm font-medium text-gray-900">
-                          <strong>Finishing</strong> :{" "}
-                          {selectedVariant.finishing}
-                        </h3>
-                      </div>
-                    )}
-                    <div className="flex items-center justify-between mt-3">
-                      <h3 className="text-sm font-medium text-gray-900">
-                        <strong>Dimensions</strong> :{" "}
-                        {selectedVariant.dimensions}
-                      </h3>
-                    </div>
+                  )}
+                  <div className="flex items-center justify-between mt-3">
+                    <h3 className="text-sm font-medium text-gray-900">
+                      <strong>Dimensions</strong> : {selectedVariant.dimensions}
+                    </h3>
+                  </div>
 
+                  {product.variants.length > 1 && (
                     <RadioGroup
                       value={selectedVariant}
                       onChange={setSelectedVariant}
@@ -246,31 +244,8 @@ function Product({
                         ))}
                       </div>
                     </RadioGroup>
-                  </div>
-                )}
-                {product.variants.length === 1 && (
-                  <div className="mt-10">
-                    <div className="flex items-center justify-between">
-                      <h3 className="text-sm font-medium text-gray-900">
-                        <strong>Materials</strong> : {selectedVariant.material}
-                      </h3>
-                    </div>
-                    {selectedVariant.finishing !== "" && (
-                      <div className="flex items-center justify-between">
-                        <h3 className="text-sm font-medium text-gray-900">
-                          <strong>Finishing</strong> :{" "}
-                          {selectedVariant.finishing}
-                        </h3>
-                      </div>
-                    )}
-                    <div className="flex items-center justify-between mt-3">
-                      <h3 className="text-sm font-medium text-gray-900">
-                        <strong>Dimensions</strong> :{" "}
-                        {selectedVariant.dimensions}
-                      </h3>
-                    </div>
-                  </div>
-                )}
+                  )}
+                </div>
                 <AddToBag product={product} variant={selectedVariant} />
               </div>
             </div>
