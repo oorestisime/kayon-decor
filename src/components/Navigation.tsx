@@ -5,7 +5,7 @@ import { navigation } from "@/data/navigation";
 import Link from "next/link";
 import { getProductUrl } from "@/utils";
 import Image from "next/image";
-import KayonLogo from "@/images/Logo/Brown_Logo.jpg";
+import KayonLogo from "@/images/Logo/Brown_Logo.png";
 import { CartMenu } from "./CartMenu";
 import { usePathname } from "next/navigation";
 
