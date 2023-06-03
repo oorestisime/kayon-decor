@@ -1,6 +1,6 @@
 import Image from "next/image";
-import firstPagePhoto from "@/images/1stpage-photo.jpeg";
-import firstPagePhoto2 from "@/images/1stpage-photo2.jpeg";
+import firstPagePhoto from "@/images/1stpage-photo.jpg";
+import firstPagePhoto2 from "@/images/1stpage-photo2.jpg";
 import Link from "next/link";
 export const Story = () => {
   return (

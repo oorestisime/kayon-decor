@@ -1,11 +1,11 @@
 import { NextSeo } from "next-seo";
 import Image from "next/image";
-import Aboutus1 from "@/images/About-us/aboutus1.jpeg";
-import Aboutus2 from "@/images/About-us/aboutus2.jpeg";
-import Aboutus3 from "@/images/About-us/aboutus3.jpeg";
-import Aboutus4 from "@/images/About-us/aboutus4.jpeg";
-import Aboutus5 from "@/images/About-us/aboutus5.jpeg";
-import AboutusEnd from "@/images/About-us/aboutus-endpage.jpeg";
+import Aboutus1 from "@/images/About-us/aboutus1.jpg";
+import Aboutus2 from "@/images/About-us/aboutus2.jpg";
+import Aboutus3 from "@/images/About-us/aboutus3.jpg";
+import Aboutus4 from "@/images/About-us/aboutus4.jpg";
+import Aboutus5 from "@/images/About-us/aboutus5.jpg";
+import AboutusEnd from "@/images/About-us/aboutus-endpage.jpg";
 import { Seo } from "@/components/Seo";
 const stats = [
   { label: "distance from local artisans", value: "10.000 Km" },

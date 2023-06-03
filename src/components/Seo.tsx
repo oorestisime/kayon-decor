@@ -1,6 +1,6 @@
 import { NextSeo } from "next-seo";
-import firstPagePhoto from "@/images/1stpage-photo.jpeg";
-import firstPagePhoto2 from "@/images/1stpage-photo2.jpeg";
+import firstPagePhoto from "@/images/1stpage-photo.jpg";
+import firstPagePhoto2 from "@/images/1stpage-photo2.jpg";
 
 export const Seo = ({
   url,

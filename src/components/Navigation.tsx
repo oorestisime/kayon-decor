@@ -180,9 +180,11 @@ export const Navigation = () => {
                                             >
                                               <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
                                                 <Image
+                                                  placeholder="blur"
+                                                  quality={50}
                                                   src={item.images[0]}
                                                   className="object-cover object-center"
-                                                  alt="item image"
+                                                  alt={item.name}
                                                 />
                                               </div>
                                               <Popover.Button
