@@ -240,7 +240,7 @@ export const Navigation = () => {
                       <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                     </button>
                     <Link href="/">
-                      <Image className="h-8 w-auto" src={KayonLogo} alt="" />
+                      <Image className="h-12 w-auto" src={KayonLogo} alt="" />
                     </Link>
                     <CartMenu
                       justify={false}
