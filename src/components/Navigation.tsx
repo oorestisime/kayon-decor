@@ -22,11 +22,7 @@ export const Navigation = () => {
       "relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm transition-colors duration-200 ease-out  hover:text-brown-primary hover:border-brown-primary",
     ];
 
-    if (active && open) {
-      navStyles.push(
-        "border-brown-primary text-brown-primary outline-none font-bold"
-      );
-    } else if (active) {
+    if (active) {
       navStyles.push(
         "font-bold outline-none text-brown-primary border-transparent"
       );
