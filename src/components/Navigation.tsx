@@ -219,9 +219,9 @@ export const Navigation = () => {
                             href={page.slug}
                             className={classNames(
                               path === `${page.slug}`
-                                ? "text-brown-primary outline-none font-bold"
-                                : "font-medium  text-gray-700",
-                              "flex items-center text-sm hover:text-brown-primary hover:border-brown-primary "
+                                ? "text-brown-primary outline-none font-bold border-brown-primary "
+                                : "font-medium  text-gray-700  border-transparent",
+                              "flex items-center text-sm hover:text-brown-primary hover:border-brown-primary border-b-2 transition-colors duration-200 ease-out"
                             )}
                           >
                             {page.name}

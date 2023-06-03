@@ -3,6 +3,7 @@
 import { ProductType, VariantType } from "@/data/store";
 import { GlobalCartContext } from "@/lib/cart";
 import { useContext } from "react";
+import { toast } from "react-toastify";
 
 export const AddToBag = ({
   product,
@@ -12,6 +13,8 @@ export const AddToBag = ({
   variant: VariantType;
 }) => {
   const { addItem, cartHasProduct, removeItem } = useContext(GlobalCartContext);
+  const notifyAdd = () => toast.success("Added to bag");
+  const notifyRemove = () => toast.error("Removed from bag");
 
   if (cartHasProduct(product.slug, variant)) {
     return (
@@ -20,7 +23,10 @@ export const AddToBag = ({
           suppressHydrationWarning
           type="submit"
           className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-brown-primary px-8 py-3 text-base font-medium text-white hover:bg-brown-dark focus:outline-none focus:ring-2 focus:ring-brown-primary focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
-          onClick={() => removeItem(product.slug, variant)}
+          onClick={() => {
+            removeItem(product.slug, variant);
+            notifyRemove();
+          }}
         >
           Remove from bag
         </button>
@@ -33,13 +39,14 @@ export const AddToBag = ({
         suppressHydrationWarning
         type="submit"
         className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-brown-primary px-8 py-3 text-base font-medium text-white hover:bg-brown-dark focus:outline-none focus:ring-2 focus:ring-brown-primary focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
-        onClick={() =>
+        onClick={() => {
           addItem({
             product: product.slug,
             variant,
             quantity: 1,
-          })
-        }
+          });
+          notifyAdd();
+        }}
       >
         Pre-order now!
       </button>

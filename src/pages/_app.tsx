@@ -6,6 +6,9 @@ import type { AppProps } from "next/app";
 import { Playfair_Display } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
+import { ToastContainer } from "react-toastify";
+import { Slide, Zoom, Flip, Bounce } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const playfairDisplay = Playfair_Display({
   weight: ["400", "600"],
@@ -26,12 +29,26 @@ export default function App({ Component, pageProps }: AppProps) {
           <Navigation />
           <Component {...pageProps} />
           <Analytics />
+
           <Footer />
           <Script
             strategy="lazyOnload"
             src="//code.jivosite.com/widget/mgE74Gh6AE"
           />
         </GlobalCartContextProvider>
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          transition={Slide}
+          newestOnTop
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />
       </div>
     </>
   );
