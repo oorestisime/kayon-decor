@@ -3,9 +3,7 @@
 import { ProductType, VariantType } from "@/data/store";
 import { GlobalCartContext } from "@/lib/cart";
 import { useContext } from "react";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { Slide, Zoom, Flip, Bounce } from "react-toastify";
+import { toast } from "react-toastify";
 
 export const AddToBag = ({
   product,
@@ -32,19 +30,6 @@ export const AddToBag = ({
         >
           Remove from bag
         </button>
-        <ToastContainer
-          position="top-right"
-          autoClose={5000}
-          hideProgressBar={false}
-          transition={Slide}
-          newestOnTop
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="light"
-        />
       </div>
     );
   }
@@ -65,19 +50,6 @@ export const AddToBag = ({
       >
         Pre-order now!
       </button>
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        transition={Slide}
-        newestOnTop
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-      />
     </div>
   );
 };
