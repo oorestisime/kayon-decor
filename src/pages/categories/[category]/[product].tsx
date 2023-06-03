@@ -252,8 +252,7 @@ function Product({
                   <div className="mt-10">
                     <div className="flex items-center justify-between">
                       <h3 className="text-sm font-medium text-gray-900">
-                        <strong>Materials</strong> :{" "}
-                        {selectedVariant.dimensions}
+                        <strong>Materials</strong> : {selectedVariant.material}
                       </h3>
                     </div>
                     {selectedVariant.finishing !== "" && (
