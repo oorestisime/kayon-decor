@@ -249,17 +249,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "L24 x W14 x H2cm",
+        dimensions: "L24 x W14 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12",
       },
       {
         size: "Medium",
-        specification: "L27 x W16 x H2cm",
+        dimensions: "L27 x W16 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14",
       },
       {
         size: "Large",
-        specification: "L30 x W18 x H2cm",
+        dimensions: "L30 x W18 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
     ],
@@ -277,12 +283,16 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "L17 x W15 x H2cm",
+        dimensions: "L17 x W15 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12",
       },
       {
         size: "Large",
-        specification: "L20 x W22 x H2cm",
+        dimensions: "L20 x W22 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
     ],
@@ -305,17 +315,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "L18 x W15 x H2cm",
+        dimensions: "L18 x W15 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "10",
       },
       {
         size: "Medium",
-        specification: "L33 x W22 x H2cm",
+        dimensions: "L33 x W22 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
       {
         size: "Large",
-        specification: "L45 x W25 x H2cm",
+        dimensions: "L45 x W25 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "24",
       },
     ],
@@ -334,17 +350,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H2 x Diam.15cm",
+        dimensions: "H2 x Diam.15cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "7",
       },
       {
         size: "Medium",
-        specification: "H2cm x Diam.20cm",
+        dimensions: "H2cm x Diam.20cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12",
       },
       {
         size: "Large",
-        specification: "H2 x Diam.25cm",
+        dimensions: "H2 x Diam.25cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
     ],
@@ -362,7 +384,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L15 x W15 x H2cm",
+        dimensions: "L15 x W15 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "10",
       },
     ],
@@ -380,13 +404,17 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "L14 x W11 x H2cm",
+        dimensions: "L14 x W11 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "7",
       },
 
       {
         size: "Large",
-        specification: "L15 x W15 x H2cm",
+        dimensions: "L15 x W15 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12",
       },
     ],
@@ -404,13 +432,17 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "L23 x W15 x H2cm",
+        dimensions: "L23 x W15 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12",
       },
 
       {
         size: "Large",
-        specification: "L30 x W15 x H2cm",
+        dimensions: "L30 x W15 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14",
       },
     ],
@@ -429,22 +461,30 @@ export const products = [
     variants: [
       {
         size: "XSmall",
-        specification: "H8  x Diam.13cm",
+        dimensions: "H8  x Diam.13cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12",
       },
       {
         size: "Small",
-        specification: "H9 x Diam.15cm",
+        dimensions: "H9 x Diam.15cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14",
       },
       {
         size: "Medium",
-        specification: "H8 x Diam.18cm",
+        dimensions: "H8 x Diam.18cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
       {
         size: "Large",
-        specification: "H9 x Diam.20cm",
+        dimensions: "H9 x Diam.20cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "24",
       },
     ],
@@ -463,7 +503,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L30 x W16 x H2cm",
+        dimensions: "L30 x W16 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
     ],
@@ -481,7 +523,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L50 x W25 x H2cm",
+        dimensions: "L50 x W25 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "36",
       },
     ],
@@ -499,17 +543,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "L20 x W32 x H2cm",
+        dimensions: "L20 x W32 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
       {
         size: "Medium",
-        specification: "L25 x W37 x H2cm",
+        dimensions: "L25 x W37 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "21",
       },
       {
         size: "Large",
-        specification: "L30 x W42 x H2cm",
+        dimensions: "L30 x W42 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "30",
       },
     ],
@@ -532,7 +582,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L12 x W9  x H2cm",
+        dimensions: "L12 x W9  x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "10",
       },
     ],
@@ -554,7 +606,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L23 x W23 x H2cm",
+        dimensions: "L23 x W23 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14",
       },
     ],
@@ -572,7 +626,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "H2 x Diam.35cm",
+        dimensions: "H2 x Diam.35cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "36",
       },
     ],
@@ -591,7 +647,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L20 x W30 x H2cm",
+        dimensions: "L20 x W30 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
     ],
@@ -619,32 +677,44 @@ export const products = [
     variants: [
       {
         size: "XSmall",
-        specification: "L20 x W13 x H2cm",
+        dimensions: "L20 x W13 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "9.5",
       },
       {
         size: "Small",
-        specification: "L22 x W14 x H2cm",
+        dimensions: "L22 x W14 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12",
       },
       {
         size: "Medium",
-        specification: "L25 x W15 x H2cm",
+        dimensions: "L25 x W15 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14.5",
       },
       {
         size: "Large",
-        specification: "L26 x W16 x H2cm",
+        dimensions: "L26 x W16 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
       {
         size: "XLarge",
-        specification: "L28 x W17 x H2cm",
+        dimensions: "L28 x W17 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "24",
       },
       {
         size: "XXLarge",
-        specification: "L30 x W18 x H2cm",
+        dimensions: "L30 x W18 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "30",
       },
     ],
@@ -662,7 +732,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L40 x W20 x H2cm",
+        dimensions: "L40 x W20 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "21",
       },
     ],
@@ -679,27 +751,37 @@ export const products = [
     variants: [
       {
         size: "XSmall",
-        specification: "L14 x W10 x H2cm",
+        dimensions: "L14 x W10 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "10",
       },
       {
         size: "Small",
-        specification: "L20 x W14 x H2cm",
+        dimensions: "L20 x W14 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12.99",
       },
       {
         size: "Medium",
-        specification: "L25 x W18 x H2cm",
+        dimensions: "L25 x W18 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14.99",
       },
       {
         size: "Large",
-        specification: "L30 x W20 x H2cm",
+        dimensions: "L30 x W20 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18.99",
       },
       {
         size: "XLarge",
-        specification: "L35 x W26 x H2cm",
+        dimensions: "L35 x W26 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "25.99",
       },
     ],
@@ -718,7 +800,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L37 x W12 x H4cm",
+        dimensions: "L37 x W12 x H4cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
     ],
@@ -736,17 +820,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "L25 x W10 x H4cm",
+        dimensions: "L25 x W10 x H4cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12",
       },
       {
         size: "Medium",
-        specification: "L35 x W10 x H4cm",
+        dimensions: "L35 x W10 x H4cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14",
       },
       {
         size: "Large",
-        specification: "L45 x W10 x H4cm",
+        dimensions: "L45 x W10 x H4cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
     ],
@@ -764,7 +854,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "H2 x Diam10cm",
+        dimensions: "H2 x Diam.10cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "6",
       },
     ],
@@ -782,7 +874,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "H7cm x Diam.22cm ",
+        dimensions: "H7cm x Diam.22cm ",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
     ],
@@ -800,7 +894,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "H6 x  Diam.18cm",
+        dimensions: "H6 x  Diam.18cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14",
       },
     ],
@@ -818,7 +914,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "H9 x Diam.17cm",
+        dimensions: "H9 x Diam.17cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14",
       },
     ],
@@ -836,7 +934,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "H5 x Diam.17cm",
+        dimensions: "H5 x Diam.17cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14",
       },
     ],
@@ -854,7 +954,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "H5 x Diam.14cm",
+        dimensions: "H5 x Diam.14cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12",
       },
     ],
@@ -872,7 +974,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "H4.5 x Diam.12.5cm",
+        dimensions: "H4.5 x Diam.12.5cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14",
       },
     ],
@@ -890,7 +994,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "H5 x Diam.10cm",
+        dimensions: "H5 x Diam.10cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12",
       },
     ],
@@ -908,7 +1014,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "H4.5 x Diam.9cm",
+        dimensions: "H4.5 x Diam.9cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12",
       },
     ],
@@ -931,7 +1039,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "H8 x Diam.14cm",
+        dimensions: "H8 x Diam.14cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "21",
       },
     ],
@@ -955,7 +1065,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: " H4 x Diam.7cm",
+        dimensions: " H4 x Diam.7cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "10",
       },
     ],
@@ -973,7 +1085,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "H10 x Diam.28cm",
+        dimensions: "H10 x Diam.28cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "50",
       },
     ],
@@ -999,7 +1113,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L16 x W16 x H8cm",
+        dimensions: "L16 x W16 x H8cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "21",
       },
     ],
@@ -1018,7 +1134,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L40 x W16 x H2cm",
+        dimensions: "L40 x W16 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14",
       },
     ],
@@ -1037,19 +1155,25 @@ export const products = [
       {
         size: "Small",
 
-        specification: "L40 x W17 x H2cm",
+        dimensions: "L40 x W17 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
       {
         size: "Medium",
 
-        specification: "L45 x W21 x H2cm",
+        dimensions: "L45 x W21 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "21.5",
       },
       {
         size: "Large",
 
-        specification: "L50 x W25 x H2cm",
+        dimensions: "L50 x W25 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "24",
       },
     ],
@@ -1068,13 +1192,17 @@ export const products = [
       {
         size: "Medium",
 
-        specification: "L40 x W20 x H2cm",
+        dimensions: "L40 x W20 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
       {
         size: "Large",
 
-        specification: "L45 x W25 x H2cm",
+        dimensions: "L45 x W25 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "24",
       },
     ],
@@ -1094,13 +1222,17 @@ export const products = [
       {
         size: "Medium",
 
-        specification: "L40 x W17 x H2cm",
+        dimensions: "L40 x W17 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
       {
         size: "Large",
 
-        specification: "L45 x W21 x H2cm",
+        dimensions: "L45 x W21 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "24",
       },
     ],
@@ -1119,7 +1251,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L22 x W12 x H2cm",
+        dimensions: "L22 x W12 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "7",
       },
     ],
@@ -1138,19 +1272,25 @@ export const products = [
       {
         size: "Small",
 
-        specification: "L35 x W14 x H2cm",
+        dimensions: "L35 x W14 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12",
       },
       {
         size: "Medium",
 
-        specification: "L40 x W17 x H2cm",
+        dimensions: "L40 x W17 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
       {
         size: "Large",
 
-        specification: "L45 x W20 x H2cm",
+        dimensions: "L45 x W20 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "24",
       },
     ],
@@ -1168,7 +1308,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L50 x W25 x H2cm",
+        dimensions: "L50 x W25 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "24",
       },
     ],
@@ -1186,7 +1328,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L45 x W13 x H2cm",
+        dimensions: "L45 x W13 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14",
       },
     ],
@@ -1205,7 +1349,9 @@ export const products = [
     variants: [
       {
         size: "",
-        specification: "L16 x W40 x H2cm",
+        dimensions: "L16 x W40 x H2cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "18",
       },
     ],
@@ -1232,27 +1378,37 @@ export const products = [
     variants: [
       {
         size: "XSmall",
-        specification: "Diam.15cm",
+        dimensions: "Diam.15cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "15",
       },
       {
         size: "Small",
-        specification: "Diam.20cm",
+        dimensions: "Diam.20cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "20",
       },
       {
         size: "Medium",
-        specification: "Diam.25cm",
+        dimensions: "Diam.25cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "25",
       },
       {
         size: "Large",
-        specification: "Diam.30cm",
+        dimensions: "Diam.30cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "30",
       },
       {
         size: "XLarge",
-        specification: "Diam.40cm",
+        dimensions: "Diam.40cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "40",
       },
     ],
@@ -1271,12 +1427,16 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H9 x Diam.11cm",
+        dimensions: "H9 x Diam.11cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "12",
       },
       {
         size: "Large",
-        specification: "H19 x Diam.13cm",
+        dimensions: "H19 x Diam.13cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14",
       },
     ],
@@ -1310,67 +1470,93 @@ export const products = [
     variants: [
       {
         size: " TYPE A",
-        specification: "L36 x W10cm",
+        dimensions: "L36 x W10cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14.99",
       },
       {
         size: "TYPE B",
-        specification: "L28 x W8.5cm",
+        dimensions: "L28 x W8.5cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "9.99",
       },
       {
         size: "TYPE C",
-        specification: "L29 x W9cm",
+        dimensions: "L29 x W9cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "8.99",
       },
       {
         size: "TYPE D",
-        specification: "L23 x W7.5cm",
+        dimensions: "L23 x W7.5cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "8.99",
       },
       {
         size: "TYPE E",
-        specification: "L35 x W6cm",
+        dimensions: "L35 x W6cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "11.99",
       },
       {
         size: "TYPE F",
-        specification: "L19 x W7cm",
+        dimensions: "L19 x W7cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "7.50",
       },
       {
         size: "TYPE G",
-        specification: "L23 x W7cm",
+        dimensions: "L23 x W7cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "8.50",
       },
       {
         size: "TYPE H",
-        specification: "L32 x W6cm",
+        dimensions: "L32 x W6cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "8.99",
       },
       {
         size: "TYPE I",
-        specification: "L29 x W9cm (pack of 2)",
+        dimensions: "L29 x W9cm (pack of 2)",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "14.99",
       },
       {
         size: "TYPE J",
-        specification: "L27 x W8cm",
+        dimensions: "L27 x W8cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "11.99",
       },
       {
         size: "TYPE K",
-        specification: "L30 x W10cm",
+        dimensions: "L30 x W10cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "7.99",
       },
       {
         size: "TYPE L",
-        specification: "L40 x W8cm",
+        dimensions: "L40 x W8cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "10.99",
       },
       {
         size: "TYPE M",
-        specification: "L35 x W12cm",
+        dimensions: "L35 x W12cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "10.99",
       },
     ],
@@ -1389,12 +1575,16 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "Teak Wood, Dimensions: H30 x Diam.30cm",
+        dimensions: "H30 x Diam.30cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "107",
       },
       {
         size: "Large",
-        specification: "Teak Wood, Dimensions: H50 x Diam.30cm",
+        dimensions: "H50 x Diam.30cm",
+        material: "Teak Wood",
+        finishing: "Natural Beeswax Wood Polish",
         price: "140",
       },
     ],
@@ -1412,17 +1602,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H30 x Diam.30cm",
+        dimensions: "H30 x Diam.30cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "48",
       },
       {
         size: "Medium",
-        specification: "H32 x Diam.35cm",
+        dimensions: "H32 x Diam.35cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "55",
       },
       {
         size: "Large",
-        specification: "H35 x Diam.40cm",
+        dimensions: "H35 x Diam.40cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "65",
       },
     ],
@@ -1439,17 +1635,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H40 x Diam.30cm",
+        dimensions: "H40 x Diam.30cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "48",
       },
       {
         size: "Medium",
-        specification: "H45 x Diam.35cm",
+        dimensions: "H45 x Diam.35cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "60",
       },
       {
         size: "Large",
-        specification: "H50 x Diam.40cm",
+        dimensions: "H50 x Diam.40cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "70",
       },
     ],
@@ -1466,17 +1668,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H23 x Diam.25cm",
+        dimensions: "H23 x Diam.25cm",
+        material: "Mendong (water grass), Cotton Rope",
+        finishing: "",
         price: "48",
       },
       {
         size: "Medium",
-        specification: "H25 x Diam.28cm",
+        dimensions: "H25 x Diam.28cm",
+        material: "Mendong (water grass), Cotton Rope",
+        finishing: "",
         price: "60",
       },
       {
         size: "Large",
-        specification: "H27 x Diam.32cm",
+        dimensions: "H27 x Diam.32cm",
+        material: "Mendong (water grass), Cotton Rope",
+        finishing: "",
         price: "70",
       },
     ],
@@ -1493,17 +1701,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H28 x Diam.28cm",
+        dimensions: "H28 x Diam.28cm",
+        material: "Seagrass, Raffia",
+        finishing: "",
         price: "48",
       },
       {
         size: "Medium",
-        specification: "H30 x Diam.35cm",
+        dimensions: "H30 x Diam.35cm",
+        material: "Seagrass, Raffia",
+        finishing: "",
         price: "60",
       },
       {
         size: "Large",
-        specification: "H33 x Diam.40cm",
+        dimensions: "H33 x Diam.40cm",
+        material: "Seagrass, Raffia",
+        finishing: "",
         price: "70",
       },
     ],
@@ -1521,17 +1735,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H28 x Diam.26cm",
+        dimensions: "H28 x Diam.26cm",
+        material: "Banana Fiber, Raffia",
+        finishing: "",
         price: "48",
       },
       {
         size: "Medium",
-        specification: "H30 x Diam.35cm",
+        dimensions: "H30 x Diam.35cm",
+        material: "Banana Fiber, Raffia",
+        finishing: "",
         price: "60",
       },
       {
         size: "Large",
-        specification: "H35 x Diam.48cm",
+        dimensions: "H35 x Diam.48cm",
+        material: "Banana Fiber, Raffia",
+        finishing: "",
         price: "70",
       },
     ],
@@ -1551,17 +1771,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H28 x Diam.28cm",
+        dimensions: "H28 x Diam.28cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "48",
       },
       {
         size: "Medium",
-        specification: "H30 x Diam.35cm",
+        dimensions: "H30 x Diam.35cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "60",
       },
       {
         size: "Large",
-        specification: "H33 x Diam.40cm",
+        dimensions: "H33 x Diam.40cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "70",
       },
     ],
@@ -1578,17 +1804,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H40 x Diam.30cm",
+        dimensions: "H40 x Diam.30cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "48",
       },
       {
         size: "Medium",
-        specification: "H45 x Diam.35cm",
+        dimensions: "H45 x Diam.35cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "60",
       },
       {
         size: "Large",
-        specification: "H50 x Diam.40cm",
+        dimensions: "H50 x Diam.40cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "70",
       },
     ],
@@ -1605,17 +1837,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H15 x Diam.32cm",
+        dimensions: "H15 x Diam.32cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "35",
       },
       {
         size: "Medium",
-        specification: "H17 x Diam.38cm",
+        dimensions: "H17 x Diam.38cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "45",
       },
       {
         size: "Large",
-        specification: "H18 x Diam.45cm",
+        dimensions: "H18 x Diam.45cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "50",
       },
     ],
@@ -1632,12 +1870,16 @@ export const products = [
     variants: [
       {
         size: "Medium",
-        specification: "H24 x Diam.32cm",
+        dimensions: "H24 x Diam.32cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "50",
       },
       {
         size: "Large",
-        specification: "H27 x Diam.40cm",
+        dimensions: "H27 x Diam.40cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "60",
       },
     ],
@@ -1654,17 +1896,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H40  x Diam.30cm",
+        dimensions: "H40  x Diam.30cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "48",
       },
       {
         size: "Medium",
-        specification: "H45 x Diam.35cm",
+        dimensions: "H45 x Diam.35cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "60",
       },
       {
         size: "Large",
-        specification: "H50 x Diam.40cm",
+        dimensions: "H50 x Diam.40cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "70",
       },
     ],
@@ -1681,17 +1929,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H26 x Diam.30cm",
+        dimensions: "H26 x Diam.30cm",
+        material: "Banana Fiber, Cotton Rope, Raffia",
+        finishing: "",
         price: "48",
       },
       {
         size: "Medium",
-        specification: "H30 x Diam.35cm",
+        dimensions: "H30 x Diam.35cm",
+        material: "Banana Fiber, Cotton Rope, Raffia",
+        finishing: "",
         price: "60",
       },
       {
         size: "Large",
-        specification: "H34 x Diam.40cm",
+        dimensions: "H34 x Diam.40cm",
+        material: "Banana Fiber, Cotton Rope, Raffia",
+        finishing: "",
         price: "70",
       },
     ],
@@ -1708,12 +1962,16 @@ export const products = [
     variants: [
       {
         size: "Medium",
-        specification: "H24 x Diam.30cm",
+        dimensions: "H24 x Diam.30cm",
+        material: "Mendong (water grass), Raffia",
+        finishing: "",
         price: "50",
       },
       {
         size: "Large",
-        specification: "H30 x Diam.38cm",
+        dimensions: "H30 x Diam.38cm",
+        material: "Mendong (water grass), Raffia",
+        finishing: "",
         price: "60",
       },
     ],
@@ -1730,17 +1988,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H26 x Diam.28cm",
+        dimensions: "H26 x Diam.28cm",
+        material: "Seagrass, Raffia",
+        finishing: "",
         price: "48",
       },
       {
         size: "Medium",
-        specification: "H30 x Diam.34cm",
+        dimensions: "H30 x Diam.34cm",
+        material: "Seagrass, Raffia",
+        finishing: "",
         price: "60",
       },
       {
         size: "Large",
-        specification: "H33 x Diam.38cm",
+        dimensions: "H33 x Diam.38cm",
+        material: "Seagrass, Raffia",
+        finishing: "",
         price: "70",
       },
     ],
@@ -1757,17 +2021,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H35 x Diam.30cm",
+        dimensions: "H35 x Diam.30cm",
+        material: "Seagrass, Iron Bone",
+        finishing: "",
         price: "55",
       },
       {
         size: "Medium",
-        specification: "H40 x Diam.35cm",
+        dimensions: "H40 x Diam.35cm",
+        material: "Seagrass, Iron Bone",
+        finishing: "",
         price: "65",
       },
       {
         size: "Large",
-        specification: "H50 x Diam.40cm",
+        dimensions: "H50 x Diam.40cm",
+        material: "Seagrass, Iron Bone",
+        finishing: "",
         price: "80",
       },
     ],
@@ -1785,17 +2055,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H35 x Diam.28cm",
+        dimensions: "H35 x Diam.28cm",
+        material: "Banana Fiber, Cotton Rope, Iron Bone",
+        finishing: "",
         price: "55",
       },
       {
         size: "Medium",
-        specification: "H40 x Diam.38cm",
+        dimensions: "H40 x Diam.38cm",
+        material: "Banana Fiber, Cotton Rope, Iron Bone",
+        finishing: "",
         price: "65",
       },
       {
         size: "Large",
-        specification: "H45 x Diam.48cm",
+        dimensions: "H45 x Diam.48cm",
+        material: "Banana Fiber, Cotton Rope, Iron Bone",
+        finishing: "",
         price: "85",
       },
     ],
@@ -1812,17 +2088,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H40 x Diam.30cm",
+        dimensions: "H40 x Diam.30cm",
+        material: "Banana Fiber, Cotton Rope, Iron Bone",
+        finishing: "",
         price: "55",
       },
       {
         size: "Medium",
-        specification: "H45 x Diam.35cm",
+        dimensions: "H45 x Diam.35cm",
+        material: "Banana Fiber, Cotton Rope, Iron Bone",
+        finishing: "",
         price: "65",
       },
       {
         size: "Large",
-        specification: "H50 x Diam.40cm",
+        dimensions: "H50 x Diam.40cm",
+        material: "Banana Fiber, Cotton Rope, Iron Bone",
+        finishing: "",
         price: "80",
       },
     ],
@@ -1839,22 +2121,30 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H34 x Diam.28cm",
+        dimensions: "H34 x Diam.28cm",
+        material: "Seagrass, Raffia",
+        finishing: "",
         price: "45",
       },
       {
         size: "Medium",
-        specification: "H42 x Diam.32cm",
+        dimensions: "H42 x Diam.32cm",
+        material: "Seagrass, Raffia",
+        finishing: "",
         price: "50",
       },
       {
         size: "Large",
-        specification: "H46 x Diam.35cm",
+        dimensions: "H46 x Diam.35cm",
+        material: "Seagrass, Raffia",
+        finishing: "",
         price: "60",
       },
       {
         size: "XLarge",
-        specification: "H50 x Diam.38cm",
+        dimensions: "H50 x Diam.38cm",
+        material: "Seagrass, Raffia",
+        finishing: "",
         price: "75",
       },
     ],
@@ -1873,17 +2163,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H20 x Diam.32cm",
+        dimensions: "H20 x Diam.32cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "48",
       },
       {
         size: "Medium",
-        specification: "H25 x Diam.37cm",
+        dimensions: "H25 x Diam.37cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "60",
       },
       {
         size: "Large",
-        specification: "H34 x Diam.40cm",
+        dimensions: "H34 x Diam.40cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "70",
       },
     ],
@@ -1901,17 +2197,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H15 x Diam.32cm",
+        dimensions: "H15 x Diam.32cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "35",
       },
       {
         size: "Medium",
-        specification: "H17 x Diam.38cm",
+        dimensions: "H17 x Diam.38cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "45",
       },
       {
         size: "Large",
-        specification: "H18 x Diam.45cm",
+        dimensions: "H18 x Diam.45cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "50",
       },
     ],
@@ -1929,17 +2231,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H15 x Diam.15cm",
+        dimensions: "H15 x Diam.15cm",
+        material: "Seagrass, Banana Fiber",
+        finishing: "",
         price: "38",
       },
       {
         size: "Medium",
-        specification: "H18 x Diam.18cm",
+        dimensions: "H18 x Diam.18cm",
+        material: "Seagrass, Banana Fiber",
+        finishing: "",
         price: "45",
       },
       {
         size: "Large",
-        specification: "H20 x Diam.20cm",
+        dimensions: "H20 x Diam.20cm",
+        material: "Seagrass, Banana Fiber",
+        finishing: "",
         price: "50",
       },
     ],
@@ -1957,17 +2265,23 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "H20 x Diam.25cm",
+        dimensions: "H20 x Diam.25cm",
+        material: "Rafia, Seagrass, Banana Fiber",
+        finishing: "",
         price: "48",
       },
       {
         size: "Medium",
-        specification: "H23 x Diam.35cm",
+        dimensions: "H23 x Diam.35cm",
+        material: "Rafia, Seagrass, Banana Fiber",
+        finishing: "",
         price: "55",
       },
       {
         size: "Large",
-        specification: "H25 x Diam.45cm",
+        dimensions: "H25 x Diam.45cm",
+        material: "Rafia, Seagrass, Banana Fiber",
+        finishing: "",
         price: "60",
       },
     ],
@@ -1986,12 +2300,16 @@ export const products = [
     variants: [
       {
         size: "Medium",
-        specification: "H24 x Diam.32cm",
+        dimensions: "H24 x Diam.32cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "50",
       },
       {
         size: "Large",
-        specification: "H27 x Diam.40cm",
+        dimensions: "H27 x Diam.40cm",
+        material: "Banana Fiber, Cotton Rope",
+        finishing: "",
         price: "60",
       },
     ],
@@ -2010,7 +2328,7 @@ export const products = [
   //   variants: [
   //     {
   //       size: "",
-  //       specification: "H7 x Diam.16cm",
+  //       dimensions: "H7 x Diam.16cm",
   //       price: "12",
   //     },
   //   ],
@@ -2029,7 +2347,10 @@ export const products = [
   //   variants: [
   //     {
   //       size: "",
-  //       specification: "50 cm height",
+  //       dimensions: "50 cm height",
+  //       material: "Teak wood",
+
+  //   finishing: "Natural Beeswax Wood Polish",
   //       price: "95",
   //     },
   //   ],
@@ -2060,22 +2381,34 @@ export const products = [
     variants: [
       {
         size: "Small",
-        specification: "L150 x W80 x H75cm     T7cm",
+        dimensions: "L150 x W80 x H75cm     T7cm",
+        material: "Teak wood",
+
+        finishing: "Natural Beeswax Wood Polish",
         price: "1560",
       },
       {
         size: "Medium",
-        specification: "L200 x W80 x H75cm     T7cm",
+        dimensions: "L200 x W80 x H75cm     T7cm",
+        material: "Teak wood",
+
+        finishing: "Natural Beeswax Wood Polish",
         price: "1990",
       },
       {
         size: "Large",
-        specification: "L250 x W80 x H75cm    T10cm",
+        dimensions: "L250 x W80 x H75cm    T10cm",
+        material: "Teak wood",
+
+        finishing: "Natural Beeswax Wood Polish",
         price: "2475",
       },
       {
         size: "XLarge",
-        specification: "L300 x W80 x H75cm    T10cm",
+        dimensions: "L300 x W80 x H75cm    T10cm",
+        material: "Teak wood",
+
+        finishing: "Natural Beeswax Wood Polish",
         price: "2870",
       },
     ],
@@ -2094,14 +2427,18 @@ export const products = [
     variants: [
       {
         size: "Indoor",
-        specification:
-          "Material: Teak wood & Robe Luum,   Finishing color: Natural Teak,   Dimensions: L80 x W60 x H75cm,  Custom Design",
+        dimensions: "L80 x W60 x H75cm",
+        material: "Teak wood & Robe Luum",
+
+        finishing: "Natural Teak Oil",
         price: "430",
       },
       {
         size: "Outdoor",
-        specification:
-          "Material: Teak wood & Robe Synthetic,    Finishing color: Natural Teak,    Dimensions: L80 x W60 x H75cm, Custom Design  ",
+        dimensions: "L80 x W60 x H75cm",
+        material: "Teak wood & Robe Synthetic",
+
+        finishing: "Natural Teak Oil",
         price: "460",
       },
     ],
@@ -2119,14 +2456,18 @@ export const products = [
     variants: [
       {
         size: "Indoor",
-        specification:
-          "Material: Teak wood & Robe Luum,     Finishing color: Natural Teak,      Dimensions: L80 x W60 x H72cm,  Custom Design",
+        dimensions: "L80 x W60 x H72cm",
+        material: "Teak wood & Robe Luum",
+
+        finishing: "Natural Teak Oil",
         price: "400",
       },
       {
         size: "Outdoor",
-        specification:
-          "Material: Teak wood & Robe Synthetic,   Finishing color: Natural Teak,       Dimensions: L80 x W60 x H72cm,  Custom Design",
+        dimensions: "L80 x W60 x H72cm",
+        material: "Teak wood & Robe Synthetic",
+
+        finishing: "Natural Teak Oil",
         price: "430",
       },
     ],
@@ -2144,8 +2485,10 @@ export const products = [
     variants: [
       {
         size: "",
-        specification:
-          "Material: Teak wood & Robe Luum,  Finishing color: Natural Teak, Dimensions: L90 x W70 x H82cm,    Custom Design",
+        dimensions: "Dimensions: L90 x W70 x H82cm",
+        material: "Teak wood & Robe Luum",
+
+        finishing: "Natural Teak Oil",
         price: "150",
       },
     ],
@@ -2164,8 +2507,10 @@ export const products = [
     variants: [
       {
         size: "",
-        specification:
-          "Material: Teak wood Fabric: Venna Dark grey,   Finishing color: Natural Teak,   Dimensions: L90 x W70 x H82cm     Custom Design",
+        dimensions: "L90 x W70 x H82cm",
+        material: "Teak wood & Venna Dark grey fabric",
+
+        finishing: "Natural Teak Oil ",
         price: "475",
       },
     ],
@@ -2184,8 +2529,10 @@ export const products = [
     variants: [
       {
         size: "",
-        specification:
-          "Material: Teak wood & Synthetic Rope,      Finishing color: Natural teak oil       Dimensions: L45 x W50 x H80cm",
+        dimensions: "L45 x W50 x H80cm",
+        material: "Teak wood & Synthetic Rope",
+
+        finishing: "Natural Teak Oil ",
         price: "270",
       },
     ],
@@ -2204,8 +2551,10 @@ export const products = [
     variants: [
       {
         size: "",
-        specification:
-          "Material: Teak wood, Finishing color: Natural teak oil, Dimensions L70 x W75 x H85cm",
+        dimensions: "L70 x W75 x H85cm",
+        material: "Teak wood",
+
+        finishing: "Natural Teak Oil ",
         price: "550",
       },
     ],
@@ -2224,8 +2573,10 @@ export const products = [
     variants: [
       {
         size: "",
-        specification:
-          "Material: Teak wood and Rope, Fabric: Venna Grey, Finishing color: Natural Walnut, Dimensions L65 x W50 x H70cm",
+        dimensions: "L65 x W50 x H70cm",
+        material: "Teak wood & Rope & Venna Grey fabric",
+
+        finishing: "Natural Walnut Oil ",
         price: "550",
       },
     ],
@@ -2243,12 +2594,12 @@ export const products = [
   //   variants: [
   //     {
   //       size: "1 legged",
-  //       specification: "L95 x W45 x H50cm",
+  //       dimensions: "L95 x W45 x H50cm",
   //       price: "410",
   //     },
   //     {
   //       size: "2 legged",
-  //       specification: "L75 x W50 x H50cm",
+  //       dimensions: "L75 x W50 x H50cm",
   //       price: "450",
   //     },
   //   ],
@@ -2266,12 +2617,12 @@ export const products = [
   //   variants: [
   //     {
   //       size: "Medium",
-  //       specification: "L90 x W50 x H50cm",
+  //       dimensions: "L90 x W50 x H50cm",
   //       price: "470",
   //     },
   //     {
   //       size: "Large",
-  //       specification: "L95 x W65 x H50cm",
+  //       dimensions: "L95 x W65 x H50cm",
   //       price: "490",
   //     },
   //   ],

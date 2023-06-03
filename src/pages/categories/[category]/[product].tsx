@@ -185,8 +185,21 @@ function Product({
                   <div className="mt-10">
                     <div className="flex items-center justify-between">
                       <h3 className="text-sm font-medium text-gray-900">
-                        <strong>Specifications</strong> -{" "}
-                        {selectedVariant.specification}
+                        <strong>Material</strong> : {selectedVariant.material}
+                      </h3>
+                    </div>
+                    {selectedVariant.finishing !== "" && (
+                      <div className="flex items-center justify-between">
+                        <h3 className="text-sm font-medium text-gray-900">
+                          <strong>Finishing</strong> :{" "}
+                          {selectedVariant.finishing}
+                        </h3>
+                      </div>
+                    )}
+                    <div className="flex items-center justify-between mt-3">
+                      <h3 className="text-sm font-medium text-gray-900">
+                        <strong>Dimensions</strong> :{" "}
+                        {selectedVariant.dimensions}
                       </h3>
                     </div>
 
@@ -239,8 +252,22 @@ function Product({
                   <div className="mt-10">
                     <div className="flex items-center justify-between">
                       <h3 className="text-sm font-medium text-gray-900">
-                        <strong>Specifications</strong> -{" "}
-                        {selectedVariant.specification}
+                        <strong>Materials</strong> :{" "}
+                        {selectedVariant.dimensions}
+                      </h3>
+                    </div>
+                    {selectedVariant.finishing !== "" && (
+                      <div className="flex items-center justify-between">
+                        <h3 className="text-sm font-medium text-gray-900">
+                          <strong>Finishing</strong> :{" "}
+                          {selectedVariant.finishing}
+                        </h3>
+                      </div>
+                    )}
+                    <div className="flex items-center justify-between mt-3">
+                      <h3 className="text-sm font-medium text-gray-900">
+                        <strong>Dimensions</strong> :{" "}
+                        {selectedVariant.dimensions}
                       </h3>
                     </div>
                   </div>
