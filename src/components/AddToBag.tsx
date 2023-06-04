@@ -13,8 +13,8 @@ export const AddToBag = ({
   variant: VariantType;
 }) => {
   const { addItem, cartHasProduct, removeItem } = useContext(GlobalCartContext);
-  const notifyAdd = () => toast.success("Added to bag");
-  const notifyRemove = () => toast.error("Removed from bag");
+  const notifyAdd = () => toast.success("Item successfuly added!");
+  const notifyRemove = () => toast.error("Item successfuly removed!");
 
   if (cartHasProduct(product.slug, variant)) {
     return (
@@ -28,7 +28,7 @@ export const AddToBag = ({
             notifyRemove();
           }}
         >
-          Remove from bag
+          Remove from bag!
         </button>
       </div>
     );

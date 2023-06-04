@@ -122,7 +122,6 @@ function Product({
                   >
                     <strong>
                       Contact us for further information about different colors
-                      and availability
                     </strong>
                   </Link>
                 </div>
@@ -134,7 +133,8 @@ function Product({
                     className="text-sm font-medium text-brown-primary hover:underline hover:text-brown-dark"
                   >
                     <strong>
-                      Contact us for further information in different variants
+                      Contact us for further information for the different
+                      variants
                     </strong>
                   </Link>
                 </div>
@@ -143,7 +143,6 @@ function Product({
                 <div>
                   <div className="flex items-center justify-between mt-1">
                     <h3 className="text-sm font-medium text-brown-dark">
-                      {" "}
                       <em>The bench is sold seperatly</em>
                     </h3>
                   </div>
@@ -163,7 +162,6 @@ function Product({
                 <div>
                   <div className="flex items-center justify-between mt-1">
                     <h3 className="text-sm font-medium text-brown-dark">
-                      {" "}
                       <em>The chair is sold seperatly</em>
                     </h3>
                   </div>
@@ -179,8 +177,19 @@ function Product({
                   </div>
                 </div>
               )}
+              {["sofa-single-seater", "island-oasis", "cane-chair"].includes(
+                product.slug
+              ) && (
+                <div className="flex items-center justify-between mt-1">
+                  <Link
+                    href="/contact"
+                    className="text-sm font-medium text-brown-primary hover:underline hover:text-brown-dark"
+                  >
+                    <strong>Contact us for different fabric colors!</strong>
+                  </Link>
+                </div>
+              )}
               <div className="mt-6">
-                {/* Sizes */}{" "}
                 <div className="mt-10">
                   <div className="flex items-center justify-between">
                     <h3 className="text-sm font-medium text-gray-900">

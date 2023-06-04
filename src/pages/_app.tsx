@@ -3,14 +3,14 @@ import { Navigation } from "@/components/Navigation";
 import { GlobalCartContextProvider } from "@/lib/cart";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import { Playfair_Display } from "next/font/google";
+import { Lora } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 import { ToastContainer } from "react-toastify";
-import { Slide, Zoom, Flip, Bounce } from "react-toastify";
+import { Slide } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const playfairDisplay = Playfair_Display({
+const playfairDisplay = Lora({
   weight: ["400", "600"],
   style: ["normal", "italic"],
   subsets: ["latin"],

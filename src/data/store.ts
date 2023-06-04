@@ -2368,7 +2368,6 @@ export const products = [
 
     images: [
       TablesFavorite,
-      Twom5LongSuarWoodTableWithLeg,
       Onem5LongSuarWoodTableWithLeg,
       TwomLongSuarWoodTableWithLeg,
       TwomLongSuarWoodTableWithLeg2,
@@ -2381,33 +2380,29 @@ export const products = [
     variants: [
       {
         size: "Small",
-        dimensions: "L150 x W80 x H75cm     T7cm",
-        material: "Teak wood",
-
+        dimensions: "L150 x W80 x H75cm T7cm",
+        material: "Suar wood",
         finishing: "Natural Beeswax Wood Polish",
         price: "1560",
       },
       {
         size: "Medium",
-        dimensions: "L200 x W80 x H75cm     T7cm",
-        material: "Teak wood",
-
+        dimensions: "L200 x W80 x H75cm T7cm",
+        material: "Suar wood",
         finishing: "Natural Beeswax Wood Polish",
         price: "1990",
       },
       {
         size: "Large",
-        dimensions: "L250 x W80 x H75cm    T10cm",
-        material: "Teak wood",
-
+        dimensions: "L250 x W80 x H75cm T10cm",
+        material: "Suar wood",
         finishing: "Natural Beeswax Wood Polish",
         price: "2475",
       },
       {
         size: "XLarge",
-        dimensions: "L300 x W80 x H75cm    T10cm",
-        material: "Teak wood",
-
+        dimensions: "L300 x W80 x H75cm T10cm",
+        material: "Suar wood",
         finishing: "Natural Beeswax Wood Polish",
         price: "2870",
       },
@@ -2428,47 +2423,42 @@ export const products = [
       {
         size: "Indoor",
         dimensions: "L80 x W60 x H75cm",
-        material: "Teak wood & Robe Luum",
-
+        material: "Teak wood & Rope Luum",
         finishing: "Natural Teak Oil",
-        price: "430",
+        price: "450",
       },
       {
         size: "Outdoor",
         dimensions: "L80 x W60 x H75cm",
-        material: "Teak wood & Robe Synthetic",
-
+        material: "Teak wood & Rope Synthetic",
         finishing: "Natural Teak Oil",
-        price: "460",
+        price: "480",
       },
     ],
   },
   {
-    name: "Lounge  Chair ",
+    name: "Lounge Chair ",
     slug: "lounge-chair",
     SKU: "CH003 - CH004",
     category: "cat-home-furniture",
     sub_category: "Chairs",
     description:
       "Experience the epitome of relaxation with our Teak Rope Lounge Chair. Designed with minimalism in mind, this chair features a sleek and streamlined silhouette, enhanced by the use of teak wood and rope materials. The teak wood frame exudes natural beauty and durability, while the rope seating offers a comfortable and supportive experience. Whether placed by the poolside or on your sun-soaked patio, this armless lounge chair is a perfect spot to unwind and soak up the ambiance. Elevate your indoor or outdoor oasis with the understated elegance and comfort of our Teak Rope Lounge Chair, designed for moments of pure tranquility.",
-
     images: [LoungeChair1, LoungeChair2, LoungeChair3],
     variants: [
       {
         size: "Indoor",
         dimensions: "L80 x W60 x H72cm",
-        material: "Teak wood & Robe Luum",
-
+        material: "Teak wood & Rope Luum",
         finishing: "Natural Teak Oil",
-        price: "400",
+        price: "430",
       },
       {
         size: "Outdoor",
         dimensions: "L80 x W60 x H72cm",
-        material: "Teak wood & Robe Synthetic",
-
+        material: "Teak wood & Rope Synthetic",
         finishing: "Natural Teak Oil",
-        price: "430",
+        price: "460",
       },
     ],
   },
@@ -2484,12 +2474,18 @@ export const products = [
     images: [MiniBench, MiniBench2],
     variants: [
       {
-        size: "",
+        size: "Indoor",
         dimensions: "Dimensions: L90 x W70 x H82cm",
-        material: "Teak wood & Robe Luum",
-
+        material: "Teak wood & Rope Luum",
         finishing: "Natural Teak Oil",
         price: "150",
+      },
+      {
+        size: "Outdoor",
+        dimensions: "Dimensions: L90 x W70 x H82cm",
+        material: "Teak wood & Rope Synthetic",
+        finishing: "Natural Teak Oil",
+        price: "170",
       },
     ],
   },
@@ -2502,14 +2498,12 @@ export const products = [
     featured: true,
     description:
       "Experience comfort and style in a compact form with our Small Teak Sofa Single Seater. Meticulously crafted from premium teak wood, this sofa embodies timeless elegance and durability. Its sleek design and gently curved frame exude a sense of sophistication, while the plush cushioning provides a cozy seating experience. Perfectly scaled for smaller spaces or as an accent piece, this single-seater teak sofa effortlessly combines functionality with exquisite craftsmanship. Elevate your living space with the charm and comfort of our Small Teak Sofa Single Seater, a perfect retreat for relaxation and unwinding.",
-
     images: [SofaSingleSeater1, SofaSingleSeater2],
     variants: [
       {
         size: "",
         dimensions: "L90 x W70 x H82cm",
-        material: "Teak wood & Venna Dark grey fabric",
-
+        material: "Teak wood & Venna fabric",
         finishing: "Natural Teak Oil ",
         price: "475",
       },
@@ -2531,7 +2525,6 @@ export const products = [
         size: "",
         dimensions: "L45 x W50 x H80cm",
         material: "Teak wood & Synthetic Rope",
-
         finishing: "Natural Teak Oil ",
         price: "270",
       },
@@ -2553,7 +2546,6 @@ export const products = [
         size: "",
         dimensions: "L70 x W75 x H85cm",
         material: "Teak wood",
-
         finishing: "Natural Teak Oil ",
         price: "550",
       },
@@ -2565,7 +2557,6 @@ export const products = [
     SKU: "CH009",
     category: "cat-home-furniture",
     sub_category: "Chairs",
-
     description:
       "Introducing our elegant teak 'Cane' chair, the perfect accent piece for any home. This chair features a solid teak wood frame that provides exceptional strength and durability, ensuring it will last for years to come. The intricate rope detailing on the arms adds a touch of sophistication, making this chair an eye-catching addition to any room. The chair is upholstered with high-quality fabric, offering both comfort and durability, so you can relax in style. The teak wood frame and rope accents create a natural, rustic look that complements any decor. This chair is suitable for indoor use, making it a practical addition to any living space. Experience the ultimate in style and comfort with our teak rope arm chair. Order yours today and add a touch of elegance to your home decor.",
 
