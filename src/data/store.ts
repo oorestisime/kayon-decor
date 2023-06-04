@@ -2626,7 +2626,7 @@ export const categories = [
     name: "Home Furniture",
     slug: "home-furniture",
     description: "Hand crafted furniture from Bali",
-    subCategory: ["Tables", "Chairs", "Side Tables"],
+    subCategory: ["Tables", "Chairs"],
     imageSrc: "",
     featured: products.filter(
       (product) => product.category === "cat-home-furniture" && product.featured
@@ -2660,7 +2660,7 @@ export const categories = [
     name: "Home Decor",
     slug: "home-decor",
     description: "Hand crafted decoration from Bali",
-    subCategory: ["Gucci", "Baskets", "Accessories"],
+    subCategory: ["Gucci", "Baskets"],
     imageSrc: "",
     featured: products.filter(
       (product) => product.category === "cat-home-decor" && product.featured
