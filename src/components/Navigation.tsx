@@ -23,9 +23,7 @@ export const Navigation = () => {
     ];
 
     if (active) {
-      navStyles.push(
-        "font-bold outline-none text-brown-primary border-transparent"
-      );
+      navStyles.push("outline-none text-brown-primary border-transparent");
     } else if (open) {
       navStyles.push(
         "border-brown-primary text-brown-primary outline-none font-medium"
@@ -219,7 +217,7 @@ export const Navigation = () => {
                             href={page.slug}
                             className={classNames(
                               path === `${page.slug}`
-                                ? "text-brown-primary outline-none font-bold border-brown-primary "
+                                ? "text-brown-primary outline-none border-none"
                                 : "font-medium  text-gray-700  border-transparent",
                               "flex items-center text-sm hover:text-brown-primary hover:border-brown-primary border-b-2 transition-colors duration-200 ease-out"
                             )}
