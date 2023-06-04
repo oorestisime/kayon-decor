@@ -106,7 +106,7 @@ export const Navigation = () => {
       </Transition.Root>
       {/* Navigation */}
 
-      <header className="relative z-10">
+      <header className="sticky h-16 top-0 bg-white z-10">
         <nav aria-label="Top">
           <div className="bg-white bg-opacity-10 backdrop-blur-md backdrop-filter">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
