@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className="flex justify-center space-x-6 md:order-2">
           <Link
             key="Instagram"
-            href="https://www.instagram.com/kayondecor23/"
+            href="https://www.instagram.com/kayondecor/"
             className="text-gray-400 hover:text-brown-primary"
           >
             <span className="sr-only">Instagram</span>
