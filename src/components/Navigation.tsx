@@ -88,15 +88,13 @@ export const Navigation = () => {
                     </Link>
                   ))}
                   {navigation.pages.map((page) => (
-                    <div key={page.name} className="flow-root">
-                      <Link
-                        onClick={() => setMobileMenuOpen(false)}
-                        href={page.slug}
-                        className="-m-2 block p-2 font-medium text-gray-900"
-                      >
-                        {page.name}
-                      </Link>
-                    </div>
+                    <Link
+                      onClick={() => setMobileMenuOpen(false)}
+                      href={page.slug}
+                      className="-m-2 block p-2 font-medium text-gray-900"
+                    >
+                      {page.name}
+                    </Link>
                   ))}
                 </div>
               </Dialog.Panel>

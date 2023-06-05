@@ -240,7 +240,7 @@ export const products = [
     name: "Leaf Haven",
     slug: "leaf-haven",
     SKU: "P001",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Plates/Platters",
     favorite: true,
     description:
@@ -274,7 +274,7 @@ export const products = [
     name: "Teddy plate",
     slug: "teddy-plate",
     SKU: "P002",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Plates/Platters",
 
     description:
@@ -301,7 +301,7 @@ export const products = [
     name: "Autumn Leaf plate",
     slug: "atumn-leaf-plate",
     SKU: "P003",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Plates/Platters",
     description:
       "Teak wood leaf-shaped tableware is a unique and elegant addition to any dining setting. Made from high-quality teak wood, each piece resembles a natural leaf with intricate vein details. These tableware items are eco-friendly, durable, and easy to maintain. Perfect for indoor and outdoor use, they're sure to impress at any gathering.",
@@ -340,7 +340,7 @@ export const products = [
     name: "Margherita plate",
     slug: "margherita-plate",
     SKU: "P004",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Plates/Platters",
     featured: true,
     description:
@@ -375,7 +375,7 @@ export const products = [
     name: "Love Bird Plate",
     slug: "love-bird-plate",
     SKU: "P005",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Plates/Platters",
     description:
       "Crafted from teak wood, the Lovebird Shaped Plate combines natural beauty with a touch of romance. Its charming design, inspired by lovebirds, adds a whimsical and endearing element to your dining experience. Perfect for serving small bites or as a decorative piece, this unique plate effortlessly captures the essence of love and nature in a delightful and compact form.",
@@ -395,7 +395,7 @@ export const products = [
     name: "Heart shaped plate",
     slug: "heart-shaped-plate",
     SKU: "P006",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Plates/Platters",
     description:
       "Radiating love and warmth, the Teak Heart Shaped Plate is a captivating blend of elegance and sentiment. Handcrafted from teak wood, this exquisite plate features a heart-shaped design that adds a touch of romance to your table setting. Perfect for serving appetizers, desserts, or as a decorative centerpiece, it is a symbol of love and a stunning addition to any occasion.",
@@ -423,7 +423,7 @@ export const products = [
     name: "Owl Haven Platters",
     slug: "owl-haven",
     SKU: "P007",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Plates/Platters",
     description:
       "Unleash the charm of nature with the Teak Owl Shaped Plate. Crafted from teak wood, this enchanting plate showcases a whimsical owl design, capturing the spirit of wisdom and mystery. Ideal for serving snacks, small treats, or as a decorative accent, it infuses your table with a touch of woodland magic. Elevate your dining experience with this unique and delightful owl-shaped plate.",
@@ -451,7 +451,7 @@ export const products = [
     name: "Noodles bowl",
     slug: "noodles-bowl",
     SKU: "B001",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Bowls",
     featured: true,
     description:
@@ -493,7 +493,7 @@ export const products = [
     name: "The Nemo Plate",
     slug: "the-nemo-plate",
     SKU: "P008",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Plates/Platters",
     featured: true,
     description:
@@ -514,7 +514,7 @@ export const products = [
     name: "The Munching Platter",
     slug: "the-munching-platter",
     SKU: "P009",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Plates/Platters",
     description:
       "Introducing our stunning teak munching platter, the perfect addition to your dining and entertaining needs. Crafted from high-quality teak wood, this platter offers exceptional durability and natural resistance to wear and tear, ensuring it will last for years to come. Its simple yet elegant design makes it the ideal serving platter for any occasion, from formal dinner parties to casual family gatherings. The natural wood grain patterns on the surface give the platter a unique and rustic feel that will enhance the presentation of any dish you serve. Its generous size allows you to serve a variety of dishes, making it a versatile addition to your tableware collection. Its easy-to-clean surface makes it a practical choice for everyday use. Elevate your dining experience with our teak platter. Order yours today and impress your guests with style and functionality.",
@@ -534,7 +534,7 @@ export const products = [
     name: "Pizza Plate round",
     slug: "pizza-plate-round",
     SKU: "P010",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Plates/Platters",
     description:
       "Indulge in rustic elegance with the Teak Pizza Round Serving Plate. Handcrafted from teak wood, this circular plate is designed specifically for serving your favorite pizzas.The sturdy construction ensures durability while showcasing the richness of teak. Elevate your pizza nights with this exquisite wooden serving plate.",
@@ -568,7 +568,7 @@ export const products = [
     name: "The Wooden Rock Plate",
     slug: "the-wooden-rock-plate",
     SKU: "P011",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Plates/Platters",
     description:
       "Embrace nature-inspired design with the Wooden Rock Shaped Plate. Crafted from premium wood, this plate replicates the organic beauty of a smooth rock. Its unique shape and textured surface add a touch of earthy elegance to your dining or decor experience. Perfect for serving appetizers, desserts, or as a decorative centerpiece, this plate brings a sense of natural tranquility to your home.",
@@ -593,7 +593,7 @@ export const products = [
     name: "The Square Wooden plate",
     slug: "the-square-wooden-plate",
     SKU: "P012",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Plates/Platters",
     description:
       "Elevate your dining presentation with the Square Wooden Plate. Crafted from premium wood, this sleek and modern plate adds a touch of natural sophistication to your table. Its square shape offers a contemporary twist on traditional tableware, perfect for showcasing your culinary creations in style. Versatile and timeless, this wooden plate is a must-have for any discerning host or hostess.",
@@ -617,7 +617,7 @@ export const products = [
     name: "The Moon Platter",
     slug: "the-moon-platter",
     SKU: "P013",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Plates/Platters",
     description:
       "Embrace celestial beauty with the Moon Shaped Wooden Platter. Crafted from fine wood, this captivating platter features a graceful crescent moon design that adds a touch of enchantment to your table. Its smooth surface and elegant curves provide a stunning backdrop for presenting your culinary creations. Perfect for serving appetizers, desserts, or as a decorative accent, this moon-shaped platter brings a celestial touch to your dining experience.",
@@ -637,7 +637,7 @@ export const products = [
     name: "The square pizza plate",
     slug: "the-square-pizza-plate",
     SKU: "P014",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Plates/Platters",
     featured: true,
     description:
@@ -658,7 +658,7 @@ export const products = [
     name: "Classic Serving tray",
     slug: "classic-serving-tray",
     SKU: "T001-T006",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Trays",
     description:
       "Experience versatility and elegance with our Wooden Rectangular Trays. Handcrafted from premium teak wood, these sleek and sturdy trays offer a perfect combination of style and functionality. With their rectangular shape, they provide ample space for serving appetizers, drinks, or even organizing small items. Add a touch of natural beauty to your home decor with these timeless wooden trays.",
@@ -723,7 +723,7 @@ export const products = [
     name: "The tray platter",
     slug: "the-tray-platter",
     SKU: "T007",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Trays",
     description:
       "Experience the allure of teak wood with our Tray Platter. Handcrafted from premium teak, this elegant tray showcases the natural beauty and rich grain patterns of the wood. Its versatile design makes it perfect for serving snacks, drinks, or displaying decorative items. With its blend of sophistication and durability, this teak wooden tray platter is a must-have addition to your home or entertaining space.",
@@ -743,7 +743,7 @@ export const products = [
     name: "Lingkaran tray",
     slug: "lingkaran-tray",
     SKU: "T008",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Trays",
     description:
       "Elevate your home decor with our Teak Wood Rounded Tray. Crafted from exquisite teak wood, this tray showcases a rich color and intricate grain patterns. Its rounded shape adds a modern touch to its classic design. Perfect for serving or displaying, it offers ample space and is easy to maintain. Bring elegance and functionality to your living space with this stunning teak wood tray.",
@@ -791,7 +791,7 @@ export const products = [
     name: "The Wave Bowl",
     slug: "the-wave-bowl",
     SKU: "B002",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Bowls",
     description:
       "Ride the wave of style and functionality with our Teak Wooden Wave Shaped Snack Bowl. Handcrafted from teak wood, this bowl features a unique wave design that adds a touch of coastal charm to your snacking experience. Its organic curves and smooth finish make it perfect for serving snacks, candies, or small treats. Elevate your table setting with this eye-catching and versatile teak wooden snack bowl.",
@@ -811,7 +811,7 @@ export const products = [
     name: "Peanut bowl",
     slug: "peanut-bowl",
     SKU: "B003",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Bowls",
     description:
       "Experience the natural beauty of teak wood with our Peanut Bowl. Handcrafted from premium teak, this bowl is specially designed for serving peanuts and other small snacks. Its compact size and smooth finish make it perfect for any occasion. Add a touch of elegance to your snack time with this teak wooden peanut bowl. It's coming in three different sizes.",
@@ -845,7 +845,7 @@ export const products = [
     name: "The acal Bowl",
     slug: "the-acal-bowl",
     SKU: "B004",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Bowls",
     description:
       "Experience natural beauty and sustainable style with our Teak Wooden Acai Bowl. Handcrafted from teak wood, this bowl is perfect for enjoying acai bowls or other healthy meals. Its smooth interior and earthy charm add a touch of organic elegance to your dining experience. Elevate your health-conscious lifestyle with this eco-friendly teak wooden acai bowl.",
@@ -865,7 +865,7 @@ export const products = [
     name: "Cereal Bowl",
     slug: "cereal-bowl",
     SKU: "B005",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Bowls",
     description:
       "Start your day with a touch of nature using our Teak Wooden Cereal Bowl. Handcrafted from teak wood, this bowl combines functionality and aesthetics seamlessly. Its smooth texture and warm tones add a rustic charm to your breakfast routine. Enjoy your favorite cereals in style with this eco-friendly teak wooden cereal bowl.",
@@ -885,7 +885,7 @@ export const products = [
     name: "Pop Corn Bowl",
     slug: "pop-corn-bowl",
     SKU: "B006",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Bowls",
     description:
       "Elevate your movie nights with our Teak Wooden Popcorn Bowl. Handcrafted from teak wood, this bowl adds a touch of natural elegance to your popcorn experience. Its sturdy construction and generous size make it perfect for sharing and enjoying your favorite snack. Enhance your home entertainment with this eco-friendly and stylish teak wooden popcorn bowl.",
@@ -905,7 +905,7 @@ export const products = [
     name: "Rice Bowl",
     slug: "rice-bowl",
     SKU: "B007",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Bowls",
     description:
       "Savor the flavors of your favorite rice dishes in our Teak Wooden Rice Bowl. Handcrafted from teak wood, this bowl combines functionality with timeless beauty. Its smooth interior and sturdy construction make it the perfect vessel for serving rice. Elevate your dining experience with this eco-friendly and elegant teak wooden rice bowl.",
@@ -925,7 +925,7 @@ export const products = [
     name: "Snack Bowl",
     slug: "snack-bowl",
     SKU: "B008",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Bowls",
     description:
       "Experience snacking in style with our Teak Wooden Snack Bowl. Handcrafted from teak wood, this bowl combines natural beauty with practicality. Its compact size and smooth finish make it ideal for serving your favorite snacks. Elevate your snacking experience with this eco-friendly and charming teak wooden bowl.",
@@ -945,7 +945,7 @@ export const products = [
     name: "Serving Bowl",
     slug: "serving-bowl",
     SKU: "B009",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Bowls",
     description:
       "Serve in style with our Teak Wooden Serving Bowl. Handcrafted from teak wood, this bowl showcases the natural beauty and rich tones of the wood. Its spacious design makes it perfect for serving salads, fruits, or other delicious dishes. Elevate your dining experience with this eco-friendly and elegant teak wooden serving bowl.",
@@ -965,7 +965,7 @@ export const products = [
     name: "Yoghurt Bowl",
     slug: "yoghurt-bowl",
     SKU: "B010",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Bowls",
     description:
       "Indulge in yoghurt with rustic sophistication using our Teak Wooden Yoghurt Bowl. Handcrafted from teak wood, this bowl exudes natural beauty and organic charm. Its smooth texture and ergonomic design make it an ideal choice for serving and enjoying yoghurt. Enjoy your dining experience with this eco-friendly and stylish teak wooden bowl.",
@@ -985,7 +985,7 @@ export const products = [
     name: "Oats Breakfast Bowl",
     slug: "oats-breakfast-bowl",
     SKU: "B011",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Bowls",
     description:
       "Start your day with a touch of elegance using our Teak Wooden Oats Breakfast Bowl. Handcrafted from teak wood, this bowl combines beauty and functionality seamlessly. Its smooth interior and ergonomic design make it perfect for serving and enjoying your nutritious oats breakfast. Elevate your morning routine with this eco-friendly and stylish teak wooden bowl.",
@@ -1005,7 +1005,7 @@ export const products = [
     name: "Treats Serving Bowl",
     slug: "treats-serving-bowl",
     SKU: "B012",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Bowls",
     description:
       "Delight in delectable treats with our Teak Wooden Treats Bowl. Handcrafted from teak wood, this bowl blends natural beauty with practicality. Its compact size and smooth finish make it perfect for serving and displaying your favorite sweets and snacks. Enhance your snacking experience with this eco-friendly and charming teak wooden bowl.",
@@ -1025,7 +1025,7 @@ export const products = [
     name: "Deep Bowl with Lid",
     slug: "deep-bowl-with-lid",
     SKU: "B013",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Bowls",
     description:
       "Discover the perfect blend of functionality and elegance with our Teak Wooden Bowl with Lid. Handcrafted from teak wood, this bowl features a convenient lid that keeps your food fresh and secure. Its smooth finish and natural beauty add a touch of sophistication to your table setting. Ideal for storing and serving a variety of items, this teak wooden bowl with lid is a stylish and practical addition to your kitchen collection.",
@@ -1050,7 +1050,7 @@ export const products = [
     name: "The Flower Pot bowl",
     slug: "the-flower-pot-bowl",
     SKU: "B014",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Bowls",
     description:
       "Discover the beauty of simplicity with our Small Teak Wooden Pot. Handcrafted from teak wood, this compact pot combines functionality with natural elegance. Its smooth texture and warm tones make it perfect for serving small portions or a plant pot. Add a touch of timeless charm to your table or décor with this small teak wooden product.",
@@ -1076,7 +1076,7 @@ export const products = [
     name: "Salad Bowl",
     slug: "salad-bowl",
     SKU: "B015",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Bowls",
     description:
       "Experience the art of salad presentation with our Teak Wooden Salad Bowl. Handcrafted from teak wood, this bowl combines natural beauty with practicality. Its spacious design and smooth finish make it perfect for tossing and serving fresh salads. Lift your dining experience with this eco-friendly and elegant teak wooden salad bowl.",
@@ -1096,7 +1096,7 @@ export const products = [
     name: "The Ashtray Square Bowl",
     slug: "the-ashtray-square-bowl",
     SKU: "B016",
-    category: "cat-tablewares",
+    category: "cat-tableware",
     sub_category: "Bowls",
     description:
       "Handcrafted from teak wood, this square-shaped bowl provides a stylish and functional solution for ash disposal. Its smooth surface and sturdy construction make it a perfect accessory for smokers. Elevate your smoking area with this eco-friendly and timeless teak wooden ashtray bowl.",
@@ -2633,14 +2633,14 @@ export const categories = [
     ),
   },
   {
-    id: "cat-tablewares",
-    name: "Tablewares",
-    slug: "tablewares",
+    id: "cat-tableware",
+    name: "Tableware",
+    slug: "tableware",
     description: "Hand crafted tableware from Bali",
     subCategory: ["Plates/Platters", "Bowls", "Trays"],
     imageSrc: "",
     featured: products.filter(
-      (product) => product.category === "cat-tablewares" && product.featured
+      (product) => product.category === "cat-tableware" && product.featured
     ),
   },
   {
