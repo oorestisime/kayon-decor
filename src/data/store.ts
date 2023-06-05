@@ -2526,7 +2526,7 @@ export const products = [
         dimensions: "L45 x W50 x H80cm",
         material: "Teak wood & Synthetic Rope",
         finishing: "Natural Teak Oil ",
-        price: "270",
+        price: "300",
       },
     ],
   },
