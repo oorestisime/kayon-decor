@@ -9,6 +9,7 @@ import Script from "next/script";
 import { ToastContainer } from "react-toastify";
 import { Slide } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { BackToTop } from "@/components/BackToTop";
 
 const playfairDisplay = Lora({
   weight: ["400", "600"],
@@ -49,6 +50,7 @@ export default function App({ Component, pageProps }: AppProps) {
           pauseOnHover
           theme="light"
         />
+        <BackToTop />
       </div>
     </>
   );
