@@ -5,7 +5,7 @@ export const BackToTop = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      window.scrollY > 500 ? setBackToTop(true) : setBackToTop(false);
+      window.scrollY > 1500 ? setBackToTop(true) : setBackToTop(false);
     });
   }, []);
 
@@ -21,7 +21,7 @@ export const BackToTop = () => {
         <button
           onClick={scrollUp}
           id="topButton"
-          className="fixed z-10 p-3 bg-brown-primary rounded-full shadow-md bottom-10 left-10 text-white animate-bounce"
+          className="fixed z-10 p-3 bg-brown-primary rounded-full shadow-md  bottom-10 left-10 text-white animate-bounce"
         >
           <svg
             className="w-8 h-8"
