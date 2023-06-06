@@ -6,13 +6,12 @@ export const BackToTop = () => {
   const [backToTop, setBackToTop] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    const scrollHandler = () => {
       window.scrollY > 1500 ? setBackToTop(true) : setBackToTop(false);
-    });
+    };
+    window.addEventListener("scroll", scrollHandler);
     return () => {
-      window.removeEventListener("scroll", () => {
-        window.scrollY > 1500 ? setBackToTop(true) : setBackToTop(false);
-      });
+      window.removeEventListener("scroll", scrollHandler);
     };
   }, []);
 
