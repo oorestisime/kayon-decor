@@ -9,6 +9,11 @@ export const BackToTop = () => {
     window.addEventListener("scroll", () => {
       window.scrollY > 1500 ? setBackToTop(true) : setBackToTop(false);
     });
+    return () => {
+      window.removeEventListener("scroll", () => {
+        window.scrollY > 1500 ? setBackToTop(true) : setBackToTop(false);
+      });
+    };
   }, []);
 
   const scrollUp = () => {
