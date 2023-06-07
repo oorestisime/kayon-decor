@@ -33,12 +33,14 @@ export default async function handler(
   await sendEmail({
     to: "kayondecor@gmail.com",
     from: "kayondecor@gmail.com",
-    subject: "Contact - Kayon Decor",
-    html: template
-      .replace("{{name}}", req.body.name)
-      .replace("{{email}}", req.body.email)
-      .replace("{{message}}", req.body.message),
-  });
 
+    templateId: "d-9c55a19593e443248df6011c1ebce772",
+    dynamicTemplateData: {
+      name: req.body.name,
+      email: req.body.email,
+      subject: `${req.body.name} has contacted us!`,
+      message: req.body.message,
+    },
+  });
   return res.status(200).json({ message: "Email sent successfully" });
 }

@@ -1,13 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { sendEmail } from "@/lib/email";
 
-const template = `
-Person contacted:
-
-Name: {{name}}
-Email: {{email}}
-Items: {{items}}
-`;
+import { CartItemType } from "@/lib/cart";
 
 const validateEmail = (email: string) => {
   return String(email)
@@ -34,15 +28,31 @@ export default async function handler(
   if (!validateEmail(req.body.email)) {
     return res.status(400).json({ message: "Invalid email" });
   }
-  const items = JSON.stringify(req.body.items);
+
   await sendEmail({
     to: "kayondecor@gmail.com",
     from: "kayondecor@gmail.com",
-    subject: "Get Quote - Kayon Decor",
-    html: template
-      .replace("{{name}}", req.body.name)
-      .replace("{{email}}", req.body.email)
-      .replace("{{items}}", items),
+
+    templateId: "d-4c070176727045449abc84bc7d2b07b2",
+    dynamicTemplateData: {
+      name: req.body.name,
+      email: req.body.email,
+      subject: `We got a new preorder from ${req.body.name}`,
+      products: req.body.items.map((item: CartItemType) => ({
+        productName: item.product,
+        size: item.variant?.size,
+        qty: item.quantity,
+      })),
+    },
+  });
+  await sendEmail({
+    to: req.body.email,
+    from: "kayondecor@gmail.com",
+    templateId: "d-346f58fc3dad43549e8cc72b529aad7e",
+    dynamicTemplateData: {
+      name: req.body.name,
+      subject: `Thank you ${req.body.name} for your Preorder Request!`,
+    },
   });
 
   return res.status(200).json({ message: "Email sent successfully" });
