@@ -37,27 +37,6 @@ export default async function handler(
     return res.status(400).json({ message: "Invalid email" });
   }
   const items = JSON.stringify(req.body.items);
-  function toTitleCase(str: string): string {
-    return str
-      .split("-")
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-      .join(" ");
-  }
-
-  const productsArray: string[] = req.body.items.map(
-    (item: CartItemType) => item.product
-  );
-  const productsTitleCase: string[] = productsArray.map((product) =>
-    toTitleCase(product)
-  );
-
-  let products: string;
-  if (productsTitleCase.length > 1) {
-    const lastProduct = productsTitleCase.pop();
-    products = `${productsTitleCase.join(", ")} and ${lastProduct}`;
-  } else {
-    products = productsTitleCase[0];
-  }
 
   await sendEmail({
     to: "kayondecor@gmail.com",
@@ -75,7 +54,6 @@ export default async function handler(
     dynamicTemplateData: {
       name: req.body.name,
       subject: `Thank you ${req.body.name} for your Preorder Request!`,
-      items: products,
     },
   });
 
