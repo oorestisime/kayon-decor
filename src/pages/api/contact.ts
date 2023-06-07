@@ -39,14 +39,6 @@ export default async function handler(
       .replace("{{email}}", req.body.email)
       .replace("{{message}}", req.body.message),
   });
-  await sendEmail({
-    to: req.body.email,
-    from: "kayondecor@gmail.com",
-    subject: `Thank you ${req.body.name} for your preorder request!`,
-    templateId: "d-346f58fc3dad43549e8cc72b529aad7e",
-    dynamicTemplateData: {
-      name: req.body.name,
-    },
-  });
+
   return res.status(200).json({ message: "Email sent successfully" });
 }
