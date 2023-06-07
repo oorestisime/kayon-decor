@@ -1,5 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { sendEmail } from "@/lib/email";
+import { Products } from "@/components/Products";
+import { CartItemType } from "@/lib/cart";
 
 const template = `
 Person contacted:
@@ -35,6 +37,11 @@ export default async function handler(
     return res.status(400).json({ message: "Invalid email" });
   }
   const items = JSON.stringify(req.body.items);
+
+  const products: string = JSON.stringify(
+    req.body.items.map((item: CartItemType) => item.product)
+  );
+
   await sendEmail({
     to: "kayondecor@gmail.com",
     from: "kayondecor@gmail.com",
@@ -51,7 +58,7 @@ export default async function handler(
     templateId: "d-346f58fc3dad43549e8cc72b529aad7e",
     dynamicTemplateData: {
       name: req.body.name,
-      products: items,
+      products: products,
     },
   });
 

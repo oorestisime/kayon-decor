@@ -4,7 +4,7 @@ import { useLocalStorage } from "react-use";
 
 const cartKey = "kayon-cart";
 
-type CartItemType = {
+export type CartItemType = {
   product: string;
   variant: VariantType;
   quantity: number;
