@@ -38,8 +38,14 @@ export default async function handler(
   }
   const items = JSON.stringify(req.body.items);
   function toTitleCase(str: string) {
-    return str.replace(/\w\S*/g, function (txt) {
-      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    return str.replace(/(\w+)-(\w+)/g, function (_, word1, word2) {
+      return (
+        word1.charAt(0).toUpperCase() +
+        word1.substr(1).toLowerCase() +
+        " " +
+        word2.charAt(0).toUpperCase() +
+        word2.substr(1).toLowerCase()
+      );
     });
   }
   const products: string = req.body.items
