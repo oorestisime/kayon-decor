@@ -1,15 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { sendEmail } from "@/lib/email";
-import { Products } from "@/components/Products";
+
 import { CartItemType } from "@/lib/cart";
-
-const template = `
-Person contacted:
-
-Name: {{name}}
-Email: {{email}}
-Items: {{items}}
-`;
 
 const validateEmail = (email: string) => {
   return String(email)
