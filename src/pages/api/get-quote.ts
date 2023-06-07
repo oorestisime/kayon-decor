@@ -51,6 +51,7 @@ export default async function handler(
     templateId: "d-346f58fc3dad43549e8cc72b529aad7e",
     dynamicTemplateData: {
       name: req.body.name,
+      products: items,
     },
   });
 
