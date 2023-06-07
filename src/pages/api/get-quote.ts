@@ -37,16 +37,11 @@ export default async function handler(
     return res.status(400).json({ message: "Invalid email" });
   }
   const items = JSON.stringify(req.body.items);
-  function toTitleCase(str: string) {
-    return str.replace(/(\w+)-(\w+)/g, function (_, word1, word2) {
-      return (
-        word1.charAt(0).toUpperCase() +
-        word1.substr(1).toLowerCase() +
-        " " +
-        word2.charAt(0).toUpperCase() +
-        word2.substr(1).toLowerCase()
-      );
-    });
+  function toTitleCase(str: string): string {
+    return str
+      .split("-")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+      .join(" ");
   }
   const products: string = req.body.items
     .map((item: CartItemType) => item.product)
