@@ -36,16 +36,22 @@ export default async function handler(
   if (!validateEmail(req.body.email)) {
     return res.status(400).json({ message: "Invalid email" });
   }
-  const items = JSON.stringify(req.body.items);
 
   await sendEmail({
     to: "kayondecor@gmail.com",
     from: "kayondecor@gmail.com",
-    subject: "Get Quote - Kayon Decor",
-    html: template
-      .replace("{{name}}", req.body.name)
-      .replace("{{email}}", req.body.email)
-      .replace("{{items}}", items),
+
+    templateId: "d-4c070176727045449abc84bc7d2b07b2",
+    dynamicTemplateData: {
+      name: req.body.name,
+      email: req.body.email,
+      subject: `We got a new preorder from ${req.body.name}`,
+      products: req.body.items.map((item: CartItemType) => ({
+        productName: item.product,
+        size: item.variant?.size,
+        qty: item.quantity,
+      })),
+    },
   });
   await sendEmail({
     to: req.body.email,
