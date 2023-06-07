@@ -65,7 +65,7 @@ export default async function handler(
     dynamicTemplateData: {
       name: req.body.name,
       subject: `Thank you ${req.body.name} for your Preorder Request!`,
-      items: correctedProducts,
+      items: products,
     },
   });
 
