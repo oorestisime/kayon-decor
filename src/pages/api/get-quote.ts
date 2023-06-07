@@ -43,11 +43,21 @@ export default async function handler(
       .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
       .join(" ");
   }
-  const products: string = req.body.items
-    .map((item: CartItemType) => item.product)
-    .join(", ");
 
-  const correctedProducts = toTitleCase(products);
+  const productsArray: string[] = req.body.items.map(
+    (item: CartItemType) => item.product
+  );
+  const productsTitleCase: string[] = productsArray.map((product) =>
+    toTitleCase(product)
+  );
+
+  let products: string;
+  if (productsTitleCase.length > 1) {
+    const lastProduct = productsTitleCase.pop();
+    products = `${productsTitleCase.join(", ")} and ${lastProduct}`;
+  } else {
+    products = productsTitleCase[0];
+  }
 
   await sendEmail({
     to: "kayondecor@gmail.com",
