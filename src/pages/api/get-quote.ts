@@ -45,7 +45,7 @@ export default async function handler(
   }
   const products: string = req.body.items
     .map((item: CartItemType) => item.product)
-    .join(",");
+    .join(", ");
 
   const correctedProducts = toTitleCase(products);
 
@@ -64,7 +64,7 @@ export default async function handler(
     templateId: "d-346f58fc3dad43549e8cc72b529aad7e",
     dynamicTemplateData: {
       name: req.body.name,
-      subject: `Thank you ${req.body.name} for your preorder request!`,
+      subject: `Thank you ${req.body.name} for your Preorder Request!`,
       items: correctedProducts,
     },
   });
