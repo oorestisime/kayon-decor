@@ -6,6 +6,21 @@ export const Footer = () => {
       <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
         <div className="flex justify-center space-x-6 md:order-2">
           <Link
+            key="Facebook"
+            href="https://www.facebook.com/kayondecor/"
+            className="text-gray-400 hover:text-brown-primary"
+          >
+            <span className="sr-only">Facebook</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+            </svg>
+          </Link>
+          <Link
             key="Instagram"
             href="https://www.instagram.com/kayondecor/"
             className="text-gray-400 hover:text-brown-primary"
@@ -14,7 +29,7 @@ export const Footer = () => {
             <svg
               fill="currentColor"
               viewBox="0 0 24 24"
-              className="h-6 w-6"
+              className="h-7 w-7"
               aria-hidden="true"
             >
               <path
@@ -25,6 +40,7 @@ export const Footer = () => {
             </svg>
           </Link>
         </div>
+
         <div className="mt-8 md:order-1 md:mt-0">
           <p className="text-center text-xs leading-5 text-gray-500">
             &copy; 2023 Kayon Decor, Inc. All rights reserved.
