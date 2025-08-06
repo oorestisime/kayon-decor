@@ -5,19 +5,21 @@ import Link from "next/link";
 export const Story = () => {
   return (
     <section aria-labelledby="cause-heading">
-      <div className="relative bg-gray-800 px-6 py-32 sm:px-12 sm:py-40 lg:px-16">
-        <div className="absolute inset-0 overflow-hidden">
-          <Image
-            src={firstPagePhoto2}
-            alt="first Page Photo"
-            className="h-full w-full object-cover object-story-photo"
-          />
-        </div>
+      <div 
+        className="relative bg-gray-800 px-6 py-32 sm:px-12 sm:py-40 lg:px-16"
+        style={{
+          backgroundImage: `url(${firstPagePhoto2.src})`,
+          backgroundSize: 'cover',
+          backgroundPosition: '100% 85%',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
         <div
           aria-hidden="true"
-          className="absolute inset-0 bg-gray-900 bg-opacity-50"
+          className="absolute inset-0 z-10"
+          style={{ backgroundColor: 'rgba(17, 24, 39, 0.5)' }}
         />
-        <div className="relative mx-auto flex max-w-3xl flex-col items-center text-center">
+        <div className="relative mx-auto flex max-w-3xl flex-col items-center text-center z-20">
           <h2
             id="cause-heading"
             className="text-3xl font-bold tracking-tight text-white sm:text-4xl"

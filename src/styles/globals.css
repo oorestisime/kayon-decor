@@ -1,6 +1,48 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-brown-primary: #937a68;
+  --color-brown-dark: #665548;
+}
+
+@layer utilities {
+  .bg-brown-primary {
+    background-color: #937a68;
+  }
+  .bg-brown-dark {
+    background-color: #665548;
+  }
+  .text-brown-primary {
+    color: #937a68;
+  }
+  .text-brown-dark {
+    color: #665548;
+  }
+  .border-brown-primary {
+    border-color: #937a68;
+  }
+  .border-brown-dark {
+    border-color: #665548;
+  }
+  .ring-brown-primary {
+    --tw-ring-color: #937a68;
+  }
+  .ring-brown-dark {
+    --tw-ring-color: #665548;
+  }
+  .hover\:bg-brown-primary:hover {
+    background-color: #937a68;
+  }
+  .hover\:bg-brown-dark:hover {
+    background-color: #665548;
+  }
+  .hover\:text-brown-primary:hover {
+    color: #937a68;
+  }
+  .focus\:ring-brown-primary:focus {
+    --tw-ring-color: #937a68;
+  }
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;

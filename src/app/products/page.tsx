@@ -1,3 +1,5 @@
+"use client";
+
 import { Fragment, useState } from "react";
 import {
   Dialog,
@@ -15,8 +17,9 @@ import {
 import { ChevronDownIcon, PlusIcon } from "@heroicons/react/20/solid";
 import { Products } from "@/components/Products";
 import { products as allProducts, categories } from "@/data/store";
-import { SubCategoryType } from "./categories/[category]";
-import { Seo } from "@/components/Seo";
+export type SubCategoryType = {
+  [key: string]: boolean;
+};
 
 export default function Example() {
   function classNames(...classes: string[]) {
@@ -47,11 +50,6 @@ export default function Example() {
     filteredProducts.length > 0 ? filteredProducts : allProducts;
   return (
     <>
-      <Seo
-        title={`Products | Kayon Decor`}
-        description="Discover our diverse range of products on the Products List page. Each offering is presented with quality and design in mind. Explore detailed descriptions, variations and pricing to find the perfect solution to fit your needs."
-        url={`https://kayon-decor.com/products`}
-      />
       {/* Mobile filter dialog */}
       <Transition.Root show={mobileFiltersOpen} as={Fragment}>
         <Dialog

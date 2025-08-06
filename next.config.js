@@ -1,12 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-};
-
-module.exports = {
-  experimental: {
-    scrollRestoration: true,
-  },
   async redirects() {
     return [
       {
@@ -22,3 +16,5 @@ module.exports = {
     ];
   },
 };
+
+module.exports = nextConfig;

@@ -25,7 +25,7 @@ export const Products = ({ products }: { products: ProductType[] }) => {
         {products.map((product) => (
           <div
             key={product.slug}
-            className="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white"
+            className="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white isolate"
           >
             <div className="aspect-h-4 aspect-w-3 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-96">
               <Image

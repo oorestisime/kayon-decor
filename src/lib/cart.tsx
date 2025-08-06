@@ -1,5 +1,7 @@
+"use client";
+
 import { VariantType } from "@/data/store";
-import { ReactElement, createContext } from "react";
+import { ReactNode, createContext } from "react";
 import { useLocalStorage } from "react-use";
 
 const cartKey = "kayon-cart";
@@ -48,7 +50,7 @@ export const GlobalCartContext = createContext<IGlobalContextProps>({
 export const GlobalCartContextProvider = ({
   children,
 }: {
-  children: ReactElement[];
+  children: ReactNode;
 }) => {
   const [value, setValue] = useLocalStorage(cartKey, defaultCart);
 

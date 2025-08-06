@@ -1,3 +1,5 @@
+"use client";
+
 import { Story } from "@/components/Story";
 import {
   ProductType,
@@ -7,12 +9,10 @@ import {
 } from "@/data/store";
 import { GlobalCartContext } from "@/lib/cart";
 import { getProductUrl } from "@/utils";
-import { NextSeo } from "next-seo";
 import Image from "next/image";
 import Link from "next/link";
 import { useContext, useEffect, useState, FormEvent } from "react";
 import { XMarkIcon as XMarkIconMini } from "@heroicons/react/20/solid";
-import { Seo } from "@/components/Seo";
 
 const Product = ({
   product,
@@ -147,12 +147,6 @@ function Cart() {
 
   return (
     <>
-      <Seo
-        title={`Get A Quote | Kayon Decor`}
-        description="Get a personalized quote on your select items!"
-        url={`https://kayon-decor.com/cart`}
-      />
-
       <main className="mx-auto max-w-2xl px-4 pb-24 pt-16 sm:px-6 lg:max-w-7xl lg:px-8">
         <h1 className="text-3xl pb-4 font-bold tracking-tight text-gray-900 sm:text-4xl">
           {submitted ? "Thank you!" : "Shopping Cart"}

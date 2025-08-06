@@ -1,5 +1,16 @@
+import { Metadata } from "next";
 import { FAQ } from "@/components/FAQ";
-import { Seo } from "@/components/Seo";
+
+export const metadata: Metadata = {
+  title: "FAQ | Kayon Decor",
+  description: "Visit our FAQ page for swift answers to commonly asked questions. From product inquiries to service details, we've compiled a comprehensive list to provide you with instant solutions. Explore and gain a clearer understanding of our offerings!",
+  openGraph: {
+    title: "FAQ | Kayon Decor",
+    description: "Visit our FAQ page for swift answers to commonly asked questions. From product inquiries to service details, we've compiled a comprehensive list to provide you with instant solutions. Explore and gain a clearer understanding of our offerings!",
+    url: "https://kayon-decor.com/faq",
+  },
+};
+
 export default function faq() {
   const faqs = [
     {
@@ -60,26 +71,19 @@ export default function faq() {
     },
   ];
   return (
-    <>
-      <Seo
-        title={`FAQ | Kayon Decor`}
-        description="Visit our FAQ page for swift answers to commonly asked questions. From product inquiries to service details, we've compiled a comprehensive list to provide you with instant solutions. Explore and gain a clearer understanding of our offerings!"
-        url={`https://kayon-decor.com/faq`}
-      />
-      <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
-        <div className="mx-auto max-w-4xl divide-y divide-gray-900/10">
-          <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">
-            Frequently asked questions
-          </h2>
-          <FAQ data={faqs} />
-        </div>
-        <div className="mx-auto mt-24 max-w-4xl divide-y divide-gray-900/10">
-          <h3 className="text-base leading-10 tracking-tight text-gray-900">
-            If you have any other questions, please feel free to reach out to
-            our customer service team. We're here to assist you.
-          </h3>
-        </div>
+    <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
+      <div className="mx-auto max-w-4xl divide-y divide-gray-900/10">
+        <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">
+          Frequently asked questions
+        </h2>
+        <FAQ data={faqs} />
       </div>
-    </>
+      <div className="mx-auto mt-24 max-w-4xl divide-y divide-gray-900/10">
+        <h3 className="text-base leading-10 tracking-tight text-gray-900">
+          If you have any other questions, please feel free to reach out to
+          our customer service team. We're here to assist you.
+        </h3>
+      </div>
+    </div>
   );
 }

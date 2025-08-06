@@ -1,17 +1,7 @@
-import { Fragment, useState } from "react";
-import { Favorite } from "@/components/Favorite";
-import { Story } from "@/components/Story";
-import {
-  categories,
-  CategoryType,
-  products as allProducts,
-  ProductType,
-} from "@/data/store";
-import { Products } from "@/components/Products";
-import { getProductUrl } from "@/utils";
+"use client";
 
+import { Fragment, useState } from "react";
 import Image from "next/image";
-import { NextSeo } from "next-seo";
 import { ChevronDownIcon, PlusIcon } from "@heroicons/react/24/outline";
 import {
   Dialog,
@@ -20,16 +10,18 @@ import {
   Tab,
   Transition,
 } from "@headlessui/react";
-import Product from "./[product]";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+
+import { CategoryType, ProductType } from "@/data/store";
+import { Products } from "@/components/Products";
 import { Breadcrumb } from "@/components/Breadcrumb";
-import { Seo } from "@/components/Seo";
+import { Story } from "@/components/Story";
 
 export type SubCategoryType = {
   [key: string]: boolean;
 };
 
-function Category({
+export function CategoryClient({
   category,
   products,
   subCategories,
@@ -65,11 +57,6 @@ function Category({
 
   return (
     <>
-      <Seo
-        title={`${category.name} | Kayon Decor`}
-        description={category.description}
-        url={`https://kayon-decor.com/categories/${category.slug}`}
-      />
       {/* Mobile filter dialog */}
       <Transition.Root show={mobileFiltersOpen} as={Fragment}>
         <Dialog
@@ -124,7 +111,6 @@ function Category({
                             <input
                               id={subCategory}
                               name={`${subCategory}`}
-                              //@ts-ignore
                               checked={checkedSubCategories[subCategory]}
                               onChange={() => handleOnChange(subCategory)}
                               type="checkbox"
@@ -147,107 +133,77 @@ function Category({
           </div>
         </Dialog>
       </Transition.Root>
+      
       <main className="mx-auto max-w-2xl px-4 lg:max-w-7xl lg:px-8">
-        <div className="mt-10">
-          <Breadcrumb category={category} />
-        </div>
-        <div className="pb-24 lg:grid lg:grid-cols-3 lg:gap-x-8 xl:grid-cols-4">
+        <Breadcrumb category={category} />
+        
+        <div className="pt-12 pb-24 lg:grid lg:grid-cols-3 lg:gap-x-8 xl:grid-cols-4">
           <aside>
-            <h2 className="sr-only">Categories</h2>
+            <h2 className="sr-only">Filters</h2>
+
             <button
               type="button"
               className="inline-flex items-center lg:hidden"
               onClick={() => setMobileFiltersOpen(true)}
             >
               <span className="text-sm font-medium text-gray-700">
-                Categories
+                Filters
               </span>
               <PlusIcon
                 className="ml-1 h-5 w-5 flex-shrink-0 text-gray-400"
                 aria-hidden="true"
               />
             </button>
+
             <div className="hidden lg:block">
               <form className="space-y-10 divide-y divide-gray-200">
-                <div key={category.name} className={"pt-10"}>
-                  <fieldset>
-                    <legend className="block text-lg font-bold text-gray-900">
-                      Categories
-                    </legend>
-                    <div className="space-y-3 pt-6">
-                      {subCategories.map((subCategory, index) => (
-                        <div key={subCategory} className="flex items-center">
-                          <input
-                            id={subCategory}
-                            name={`${subCategory}`}
-                            type="checkbox"
-                            //@ts-ignore
-                            checked={checkedSubCategories[subCategory]}
-                            onChange={() => handleOnChange(subCategory)}
-                            className="h-4 w-4 rounded border-gray-300 text-brown-primary focus:ring-brown-primary"
-                          />
-                          <label
-                            htmlFor={`${subCategory}`}
-                            className="ml-3 text-sm text-gray-600"
-                          >
-                            {subCategory}
-                          </label>
-                        </div>
-                      ))}
-                    </div>
-                  </fieldset>
-                </div>
+                <fieldset>
+                  <legend className="block text-sm font-medium text-gray-900">
+                    Category
+                  </legend>
+                  <div className="space-y-3 pt-6">
+                    {subCategories.map((subCategory, index) => (
+                      <div key={subCategory} className="flex items-center">
+                        <input
+                          id={`${subCategory}-${index}`}
+                          name={`${subCategory}`}
+                          checked={checkedSubCategories[subCategory]}
+                          onChange={() => handleOnChange(subCategory)}
+                          type="checkbox"
+                          className="h-4 w-4 rounded border-gray-300 text-brown-primary focus:ring-brown-primary"
+                        />
+                        <label
+                          htmlFor={`${subCategory}-${index}`}
+                          className="ml-3 text-sm text-gray-600"
+                        >
+                          {subCategory}
+                        </label>
+                      </div>
+                    ))}
+                  </div>
+                </fieldset>
               </form>
             </div>
           </aside>
 
-          <Products products={renderedProducts} />
+          <section
+            aria-labelledby="product-heading"
+            className="mt-6 lg:col-span-2 lg:mt-0 xl:col-span-3"
+          >
+            <h2 id="product-heading" className="sr-only">
+              Products
+            </h2>
+
+            <Products products={renderedProducts} />
+          </section>
         </div>
+
+        {category.story && (
+          <div className="my-8">
+            <Story story={category.story} />
+          </div>
+        )}
       </main>
-      <Story />
     </>
   );
-}
-
-export default Category;
-
-export async function getStaticPaths() {
-  return {
-    paths: categories.map((category) => ({
-      params: { category: category.slug },
-    })),
-    fallback: false,
-  };
-}
-
-export async function getStaticProps({
-  params,
-}: {
-  params: { category: string };
-}) {
-  const category = categories.find(
-    (category) => category.slug === params.category
-  );
-  if (!category) {
-    return {
-      notFound: true,
-    };
-  }
-
-  const products = allProducts.filter(
-    (product) => product.category === category.id
-  );
-
-  const subCategories = [
-    ...new Set(products.map((product) => product.sub_category)),
-  ];
-
-  return {
-    props: {
-      key: category.slug,
-      category,
-      products,
-      subCategories,
-    },
-  };
 }

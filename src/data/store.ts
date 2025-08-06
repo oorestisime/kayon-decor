@@ -2677,6 +2677,9 @@ export const categoryMap: { [key: string]: CategoryType } = categories.reduce(
   (map, category) => {
     // @ts-ignore
     map[category.id] = category;
+    // Also map by slug for URL lookups
+    // @ts-ignore
+    map[category.slug] = category;
     return map;
   },
   {}

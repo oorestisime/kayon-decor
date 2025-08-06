@@ -1,3 +1,5 @@
+"use client";
+
 import { Fragment, useState } from "react";
 import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/outline";
@@ -89,6 +91,7 @@ export const Navigation = () => {
                   ))}
                   {navigation.pages.map((page) => (
                     <Link
+                      key={page.name}
                       onClick={() => setMobileMenuOpen(false)}
                       href={page.slug}
                       className="-m-2 block p-2 font-medium text-gray-900"
@@ -174,13 +177,15 @@ export const Navigation = () => {
                                               key={item.name}
                                               className="group relative"
                                             >
-                                              <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
+                                              <div className="relative aspect-square overflow-hidden rounded-md bg-gray-100 group-hover:opacity-75">
                                                 <Image
                                                   placeholder="blur"
                                                   quality={50}
                                                   src={item.images[0]}
-                                                  className="object-cover object-center"
+                                                  className="h-full w-full object-cover object-center"
                                                   alt={item.name}
+                                                  fill
+                                                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                                                 />
                                               </div>
                                               <Popover.Button
