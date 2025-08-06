@@ -36,11 +36,10 @@ export const Hero = () => {
             <div className="mx-auto max-w-2xl py-24 lg:max-w-none lg:py-64">
               <div className="lg:pr-16">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl xl:text-6xl">
-                  Premium wooden furniture at affordable prices
+                  Discover Authentic Balinese Craftsmanship
                 </h1>
                 <p className="mt-4 text-xl text-gray-600">
-                  All our furniture is made from local balinese artisans from
-                  the best products. Yet they are affordable.
+                  Handcrafted with care by local artisans, offering premium quality at prices you'll love.
                 </p>
                 <div className="mt-6">
                   <Link
