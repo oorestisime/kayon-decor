@@ -95,25 +95,10 @@ export default function ContactPage() {
                   />
                 </dt>
                 <dd>
-                  Lykavitou 7, Nea Ekali
-                  <br />
-                  3111 Limassol, Cyprus
+                  Limassol, Cyprus
                 </dd>
               </div>
-              <div className="flex gap-x-4">
-                <dt className="flex-none">
-                  <span className="sr-only">Telephone</span>
-                  <PhoneIcon
-                    className="h-7 w-6 text-gray-400"
-                    aria-hidden="true"
-                  />
-                </dt>
-                <dd>
-                  <a className="hover:text-gray-900" href="tel:+357 99809955">
-                    +357 99809955 / 99 980636
-                  </a>
-                </dd>
-              </div>
+              
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">Email</span>
