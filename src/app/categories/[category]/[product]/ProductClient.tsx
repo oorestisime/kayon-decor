@@ -136,7 +136,9 @@ export function ProductClient({
                                   as="span"
                                   className="block text-sm font-medium text-gray-900"
                                 >
-                                  {variant.size || variant.dimensions || `Option ${index + 1}`}
+                                  {variant.size ||
+                                    variant.dimensions ||
+                                    `Option ${index + 1}`}
                                 </RadioGroup.Label>
                                 {variant.price && (
                                   <RadioGroup.Description
@@ -181,51 +183,6 @@ export function ProductClient({
               <div className="mt-8">
                 <AddToBag product={product} variant={selectedVariant} />
               </div>
-
-              {product.story && (
-                <div className="mt-10">
-                  <Story story={product.story} />
-                </div>
-              )}
-
-              {product.relatedProducts && product.relatedProducts.length > 0 && (
-                <div className="mt-10">
-                  <h3 className="text-lg font-medium text-gray-900">
-                    Related Products
-                  </h3>
-                  <div className="mt-4 grid grid-cols-2 gap-4">
-                    {product.relatedProducts.map((relatedId) => {
-                      const relatedProduct = allProducts.find(
-                        (p) => p.id === relatedId
-                      );
-                      if (!relatedProduct) return null;
-                      const relatedCategory = Object.values(categoryMap).find(
-                        (c) => c.id === relatedProduct.category
-                      );
-                      if (!relatedCategory) return null;
-
-                      return (
-                        <Link
-                          key={relatedId}
-                          href={getProductUrl(relatedProduct, relatedCategory)}
-                          className="group"
-                        >
-                          <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200">
-                            <Image
-                              src={relatedProduct.images[0]}
-                              alt={relatedProduct.name}
-                              className="h-full w-full object-contain object-center group-hover:opacity-75"
-                            />
-                          </div>
-                          <h3 className="mt-2 text-sm text-gray-700">
-                            {relatedProduct.name}
-                          </h3>
-                        </Link>
-                      );
-                    })}
-                  </div>
-                </div>
-              )}
             </div>
           </div>
         </div>

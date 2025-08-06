@@ -198,11 +198,9 @@ export function CategoryClient({
           </section>
         </div>
 
-        {category.story && (
-          <div className="my-8">
-            <Story story={category.story} />
-          </div>
-        )}
+        <div className="my-8">
+          <Story />
+        </div>
       </main>
     </>
   );
