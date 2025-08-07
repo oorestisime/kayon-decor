@@ -72,18 +72,20 @@ export default function ContactPage() {
               />
             </div>
             <h2 className="text-3xl font-bold tracking-tight text-gray-900">
-              Get in touch
+              Get in Touch – We’d Love to Hear from You!
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              We're here to help you with all your buying needs! If you have
-              any questions about our products, need assistance placing an
-              order, or want to explore customization options, we're just a
-              message away. Fill out the contact form provided, and our
-              dedicated team will promptly respond to your inquiry.
-              Alternatively, you can also reach us via email or phone. We
-              appreciate your interest in our offerings and can't wait to
-              assist you in finding the perfect products. Get in touch with us
-              today and let's make your shopping experience exceptional!
+              We're here to make your shopping experience as smooth and enjoyable as possible. 
+              <br />
+              If you have any questions about our products, need help placing an order, 
+              or want to explore custom options that suit your style, don’t hesitate to reach out. <br />
+              We’re just a message away and are always ready to assist you!<br />
+              Fill out the contact form, and we’ll get back to you as soon as possible. 
+              <br />
+              <br />
+              Prefer a quicker connection? You can always drop us an email or send us a message on Instagram – we’re always checking in and love hearing from you.
+              We can’t wait to help you find the perfect piece for your home. 
+              Reach out today, and let’s start making your vision a reality!
             </p>
             <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
               <div className="flex gap-x-4">
