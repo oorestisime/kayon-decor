@@ -1,5 +1,5 @@
 import { offers } from "@/data/navigation";
-import WebsitePhotoPageOne from "@/images/website-photo-1stpage.jpg";
+import WebsitePhotoPageOne from "@/images/website-photo-1stpage-new.jpg";
 import Image from "next/image";
 import Link from "next/link";
 
